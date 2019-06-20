@@ -9,7 +9,8 @@ class Mining(object):
 
     @staticmethod
     def national_data(mining_file):
-        """Import 2012 Economic Census data for mining. Fuel use in MMBtu.
+        """
+        Import 2012 Economic Census data for mining. Fuel use in MMBtu.
         """
         data = pd.read_excel(mining_file, \
             sheetname = 'Mining_6D_US_MMBtu', index_col = 'NAICS_2012')
@@ -29,22 +30,22 @@ class Mining(object):
 
         return national_2014_TBtu
 
-    @staticmethod       
+    @staticmethod
     def county_frac_calc(cbp_corrected):
         """
-        Apply mining intensities by fuel type and 6-digit NAICS codes 
+        Apply mining intensities by fuel type and 6-digit NAICS codes
         to corrected 2014 CBP facility counts. Does not included
         electricity from mining facilities reporting on Form EIA-923.
         """
         mining_cbp = cbp_corrected[(cbp_corrected.naics > 210000) & \
             (cbp_corrected.naics < 220000)][
-                ['fipstate', 'fipscty', 'naics', 'est', 'n1_4', 'n5_9', 
-                    'n10_19','n20_49', 'n50_99', 'n100_249', 'n250_499', 
+                ['fipstate', 'fipscty', 'naics', 'est', 'n1_4', 'n5_9',
+                    'n10_19','n20_49', 'n50_99', 'n100_249', 'n250_499',
                         'n500_999','n1000']
                 ]
 
         m_national_counts = mining_cbp.groupby('naics')[
-            ['n1_4', 'n5_9', 'n10_19','n20_49', 'n50_99', 'n100_249', 
+            ['n1_4', 'n5_9', 'n10_19','n20_49', 'n50_99', 'n100_249',
                 'n250_499', 'n500_999','n1000']
             ].aggregate(np.sum).sum(axis = 1)
 
@@ -53,10 +54,10 @@ class Mining(object):
 
         return mining_cbp
 
-    @staticmethod   
+    @staticmethod
     def county_energy_calc(mining_cbp, national_2014_TBtu, GHGs):
         """
-        Calculate county-level energy use (in TBtu) for mining NAICS. 
+        Calculate county-level energy use (in TBtu) for mining NAICS.
         """
         county_energy = pd.DataFrame(
             mining_cbp[['fipstate', 'fipscty', 'naics']]
@@ -75,7 +76,7 @@ class Mining(object):
                         national_2014_TBtu.loc[n, fuel]
 
 
-        return county_energy    
+        return county_energy
 
     #to run:
     #mining_national_2014 = mining.national_data()
