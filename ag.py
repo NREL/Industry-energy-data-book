@@ -3,11 +3,6 @@ import pandas as pd
 import numpy as np
 
 class Ag(object):
-    """
-    Estimate 2014 county-level data based on 2012 USDA Census results.
-    Only diesel, gasoline, LP gas, and 'other' (assumed to be residual
-    fuel oil) are included.
-    """
     
     @staticmethod
     def state_expense_by_naics():
