@@ -53,6 +53,21 @@ class Ag(object):
                     inplace=True)
         sebn.set_index('state', inplace=True)
         sebn = sebn.sort_index(ascending=True)
+        
+        #The formatting of ag_expense_$ is problemmatic (need to remove 
+        # commas)
+        sebn.fillna('0', inplace=True)
+        
+        sebn['ag_expense_$'] = sebn['ag_expense_$'].apply(
+                lambda x: x.replace(',', "")
+                ).astype(int)
+        
+        # Find fraction by state. Sum expenses by index using 
+        # .sum(level='state')
+        sebn['ag_expense_state_pct'] = sebn['ag_expense_$'].divide(
+                sebn['ag_expense_$'].sum(level='state')
+                )
+        
         print(sebn.head(50))
         #sebn.to_csv('C:\iedb\code\sebn.csv')
         
