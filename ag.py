@@ -4,9 +4,7 @@ import urllib
 import json
 
 """
-Estimate 2014 county-level data based on 2012 USDA Census results.
-Only diesel, gasoline, LP gas, and 'other' (assumed to be residual
-fuel oil) are included.
+Estimate 2017 county-level electricity data based on 2017 USDA Census results.
 """
 
 
