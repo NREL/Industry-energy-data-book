@@ -255,7 +255,7 @@ region_lpg.set_index('region', inplace=True)
 
 ####### Reformat the column of fuel type
 region_lpg['fuel_type'] = region_lpg['fuel_type'].replace(
-                          'FUELS, LP GAS - EXPENSE, MEASURED IN $', 'LP GAS')
+                          'FUELS, LP GAS - EXPENSE, MEASURED IN $', 'LPG')
 region_lpg = region_lpg.sort_index(ascending=True)
 #print(region_lpg)
     
@@ -375,9 +375,9 @@ Final columns: state, state_abbv, region, NAICS, fuel_type, fuel_expenses_$
 """
 
 ####### Step 1
-region_file = pd.read_csv('ag_SOURCE_region.csv')
+region_file = pd.read_csv('ag_source_region.csv')
 
-region = region_file.drop(['diesel_padd','gasoline_padd'], axis=1)
+region = region_file[['state', 'state_abbv', 'region']]
 
 state_tot = pd.merge(state_tot, region, on=[
             'state', 'state_abbv'], how='outer')
@@ -429,7 +429,9 @@ price_diesel_region.columns = ['Date',
                                'WEST COAST',
                                'CALIFORNIA',
                                'WEST COAST EXCEPT CALIFORNIA']
-price_diesel_region = price_diesel_region.drop(['US', 'EAST COAST'], axis=1)
+
+price_diesel_region = price_diesel_region.drop([
+                      'US', 'EAST COAST', 'WEST COAST'], axis=1)
 
 
 ####### Only keep 2017 data 
@@ -461,11 +463,12 @@ price_diesel_region.reset_index(level=0, inplace=True)
 
 
 ####### Add state column
-region_file = pd.read_csv('ag_SOURCE_region.csv')
-region = region_file.drop(['region','gasoline_padd','state_abbv'], axis=1)
+region_file = pd.read_csv('ag_source_region.csv')
+region = region_file[['state','diesel_padd']]
 
 price_diesel = pd.merge(
                price_diesel_region, region, on='diesel_padd', how='outer')
+
 price_diesel.set_index('state', inplace=True)
 price_diesel= price_diesel.drop('diesel_padd', axis=1)
 price_diesel = price_diesel.sort_index()
@@ -528,7 +531,7 @@ price_gasol_region.index.name = 'gasoline_padd'
 #print(price_gasol_region)
 
 
-####### Calculate 2017 average diesel price
+####### Calculate 2017 average gasoline price
 price_gasol_region['price_dollar_per_gal'] = price_gasol_region.mean(axis=1)
 price_gasol_region = price_gasol_region[['price_dollar_per_gal']]
 #print(price_gasol_region)
@@ -543,11 +546,12 @@ price_gasol_region.reset_index(level=0, inplace=True)
 
 
 ####### Add state column
-region_file = pd.read_csv('ag_SOURCE_region.csv')
-region = region_file.drop(['region','diesel_padd','state_abbv'], axis=1)
+region_file = pd.read_csv('ag_source_region.csv')
+region = region_file[['state', 'gasoline_padd']]
 
 price_gasoline = pd.merge(
                  price_gasol_region, region, on='gasoline_padd', how='outer')
+
 price_gasoline.set_index('state', inplace=True)
 price_gasoline= price_gasoline.drop('gasoline_padd', axis=1)
 price_gasoline = price_gasoline.sort_index()
@@ -560,9 +564,62 @@ price_gasoline = price_gasoline.sort_index()
 
 # price_lpg: region level lp gas price ($/gal) ################################
 """
-https://www.eia.gov/dnav/pet/pet_pri_wfr_a_EPLLPA_PRS_dpgal_w.htm
-Wholesale propane prices
+Automatically collect 2017 monthly wholesale propane price data by region from
+EIA and calculate state-level data.
 """
+
+price_lpg_region = pd.read_excel(
+     'https://www.eia.gov/dnav/pet/xls/PET_PRI_WFR_A_EPLLPA_PWR_DPGAL_W.xls',
+     sheet_name='Data 1', header=2)
+
+price_lpg_region.columns = ['Date', 'US', 'EAST COAST', 'CENTRAL ATLANTIC',
+                            'MARYLAND', 'NEW JERSEY', 'NEW YORK',
+                            'PENNSYLVANIA', 'LOWER ATLANTIC', 'GEORGIA',
+                            'NORTH CAROLINA', 'VIRGINIA', 'MIDWEST',
+                            'ILLINOIS', 'INDIANA', 'IOWA', 'KANSAS',
+                            'KENTUCKY', 'MICHIGAN', 'MINNESOTA', 'MISSOURI',
+                            'NEBRASKA', 'NORTH DAKOTA', 'OHIO', 'OKLAHOMA',
+                            'SOUTH DAKOTA', 'WISCONSIN', 'GULF COAST',
+                            'ALABAMA', 'ARKANSAS', 'MISSISSIPPI', 'TEXAS',
+                            'ROCKY MOUNTAIN', 'COLORADO']
+
+####### Only keep 2017 data
+price_lpg_region = price_lpg_region.loc[price_lpg_region['Date'].dt.year==2017]
+price_lpg_region.reset_index(level=0, inplace=True)
+price_lpg_region = price_lpg_region.drop(['index','Date'], axis=1)
+#print(price_lpg_region)
+
+
+####### Transpose the dataframe
+price_lpg_region = price_lpg_region.transpose()
+price_lpg_region.index.name = 'lpg_padd'
+#print(price_lpg_region)
+
+
+####### Calculate 2017 average wholesale propane price
+price_lpg_region['price_dollar_per_gal'] = price_lpg_region.mean(axis=1)
+price_lpg_region = price_lpg_region[['price_dollar_per_gal']]
+#print(price_lpg_region)
+
+
+####### Mark the fuel type
+price_lpg_region['fuel_type'] = 'LPG'
+price_lpg_region = price_lpg_region[['fuel_type', 'price_dollar_per_gal']]
+price_lpg_region.reset_index(level=0, inplace=True)
+#print(price_lpg_region)
+
+
+####### Add state column
+region_file = pd.read_csv('ag_source_region.csv')
+region = region_file[['state', 'lpg_padd']]
+
+price_lpg = pd.merge(price_lpg_region, region, on='lpg_padd', how='outer')
+
+price_lpg.set_index('state', inplace=True)
+price_lpg= price_lpg.drop('lpg_padd', axis=1)
+price_lpg = price_lpg.sort_index()
+#print(price_lpg)
+
 
 
 
@@ -570,9 +627,68 @@ Wholesale propane prices
 
 # price_other: region level heating oil price ($/gal) #########################
 """
-https://www.eia.gov/dnav/pet/pet_pri_wfr_a_EPLLPA_PRS_dpgal_w.htm
-Wholesale heating oil prices
+Automatically collect 2017 monthly wholesale propane price data by region from
+EIA and calculate state-level data.
 """
+
+price_other_region = pd.read_excel(
+     'https://www.eia.gov/dnav/pet/xls/PET_PRI_WFR_A_EPD2F_PWR_DPGAL_W.xls',
+     sheet_name='Data 1', header=2)
+
+price_other_region.columns = ['Date', 'US', 'EAST COAST', 'NEW ENGLAND', 
+                              'CONNECTICUT', 'MAINE', 'MASSACHUSETTS', 
+                              'NEW HAMPSHIRE', 'RHODE ISLAND', 'VERMONT', 
+                              'CENTRAL ATLANTIC', 'DELAWARE', 'MARYLAND', 
+                              'NEW JERSEY', 'NEW YORK', 'PENNSYLVANIA', 
+                              'LOWER ATLANTIC', 'NORTH CAROLINA', 'VIRGINIA', 
+                              'MIDWEST', 'ILLINOIS', 'INDIANA', 'IOWA', 
+                              'KANSAS', 'KENTUCKY', 'MICHIGAN', 'MINNESOTA', 
+                              'MISSOURI', 'NEBRASKA', 'NORTH DAKOTA', 'OHIO', 
+                              'SOUTH DAKOTA', 'WISCONSIN']
+
+price_other_region = price_other_region.drop(
+                     ['EAST COAST', 'NEW ENGLAND'], axis=1)
+
+
+####### Only keep 2017 data
+price_other_region = price_other_region.loc[
+                     price_other_region['Date'].dt.year==2017]
+
+price_other_region.reset_index(level=0, inplace=True)
+price_other_region = price_other_region.drop(['index','Date'], axis=1)
+#print(price_other_region)
+
+
+####### Transpose the dataframe
+price_other_region = price_other_region.transpose()
+price_other_region.index.name = 'other_padd'
+#print(price_other_region)
+
+
+####### Calculate 2017 average wholesale heating oil price
+price_other_region['price_dollar_per_gal'] = price_other_region.mean(axis=1)
+price_other_region = price_other_region[['price_dollar_per_gal']]
+#print(price_other_region)
+
+
+####### Mark the fuel type
+price_other_region['fuel_type'] = 'OTHER'
+price_other_region = price_other_region[['fuel_type', 'price_dollar_per_gal']]
+price_other_region.reset_index(level=0, inplace=True)
+#print(price_other_region)
+
+
+####### Add state column
+region_file = pd.read_csv('ag_source_region.csv')
+region = region_file[['state', 'other_padd']]
+
+price_other = pd.merge(
+              price_other_region, region, on='other_padd', how='outer')
+
+price_other.set_index('state', inplace=True)
+price_other= price_other.drop('other_padd', axis=1)
+price_other = price_other.sort_index()
+#print(price_other)
 
 
 
@@ -580,6 +696,28 @@ Wholesale heating oil prices
 
 
 # price: state prices by fuel type ($/mmbtu) ##################################
+"""
+Concatenate price_diesel, price_gasoline, price_lpg, and price_other.
+Convert $/gallon to $/barrel then to $/mmbtu
+"""
+
+price = pd.concat([price_diesel, price_gasoline, price_lpg, price_other])
+
+price['price_dollar_per_barrel'] = price['price_dollar_per_gal'] * 42
+
+heat_content = pd.DataFrame(
+               {'fuel_type': ['DIESEL', 'GASOLINE', 'LPG', 'OTHER'],
+                'mmbtu_per_barrel':[5.772, 5.053, 3.836, 6.287]})              # https://www.eia.gov/totalenergy/data/monthly/pdf/sec13.pdf
+
+price = price.reset_index().merge(heat_content, how='outer').set_index('state')
+
+price['price_dollar_per_mmbtu'] = \
+                   price['price_dollar_per_barrel'] / price['mmbtu_per_barrel']
+
+price = price.drop([
+                  'price_dollar_per_gal', 'price_dollar_per_barrel', 
+                  'mmbtu_per_barrel'], axis=1)
+#print(price)
 
 
 
@@ -591,7 +729,18 @@ Wholesale heating oil prices
 
 
 # 3.FUEL CONSUMPTION ##########################################################
-# fuel_state: state fuel consumption (mmbtu) ##################################
+# fuel_state: state fuel use (mmbtu) ##########################################
+"""
+Merge expense and price. Divide expense by price to calculate state-level fuel
+consumption by NAICS. 
+"""
+
+fuel_state = pd.merge(expense, price, on=['state','fuel_type'], how='outer')
+
+fuel_state['fuel_state_mmbtu'] = \
+        fuel_state['fuel_expense_dollar']/fuel_state['price_dollar_per_mmbtu']
+        
+#print(fuel_state.head(50))
 
 
 
@@ -667,5 +816,21 @@ fc['fc_statefraction'] = fc['farm_counts'].divide(
 
 
 
+
  
-# fuel_county: county fuel consumption (mmbtu) ################################
+# fuel_county: county fuel use (mmbtu) ########################################
+"""
+Calculations based on fuel_state (state-level fuel use by NAICS) and fc 
+(county farm counts by NAICS)
+"""
+
+fuel_county = fc.reset_index().merge(fuel_state).set_index('state')
+
+fuel_county['fuel_county_mmbtu'] = \
+                    fuel_county.fc_statefraction * fuel_county.fuel_state_mmbtu
+                    
+fuel_county = fuel_county[['state_abbv', 'county', 'NAICS', 'fuel_type',
+                           'fuel_state_mmbtu', 'fuel_county_mmbtu']]
+                    
+fuel_county.to_csv('ag_output_fuel_use_by_county_mmbtu.csv')
+#print(fuel_county.head(50))
