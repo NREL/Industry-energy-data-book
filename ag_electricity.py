@@ -4,15 +4,15 @@ import urllib
 import json
 
 """
-Estimate 2017 county-level electricity data based on 2017 USDA Census results.
+Estimate 2017 county-level electricity use in the agricultural sector 
+based on 2017 USDA Census results.
 """
 
 
 
 
 
-
-# aebn: state agricultural expenses by NAICS #################################
+# aebn: state agricultural expenses by NAICS ##################################
 """
 Automatically collect state-level agricultural expense data by NAICS
 code from USDA NASS 2017 Census results. 
@@ -69,7 +69,6 @@ aebn['ag_expense_$'] = aebn['ag_expense_$'].apply(lambda x: x.replace(
 ####### Find fraction by state
 aebn['ag_expense_state_pct'] = aebn['ag_expense_$'].divide(
                                aebn['ag_expense_$'].sum(level='state'))
-#aebn.to_csv('ag_expenses_by_naics_000dollars.csv')
 #print(aebn.head(50))
     
     
@@ -77,18 +76,23 @@ aebn['ag_expense_state_pct'] = aebn['ag_expense_$'].divide(
     
     
     
-# ep: state electricity price ################################################
+# ep: state electricity price #################################################
 """
 Automatically collect 2017 annual electricity sales (MWh) and revenues 
 (000 $) data by state and calculate electricity prices ($/kWh) in each 
-state. 
+state from EIA. 
 """
     
 ####### Collect electricity revenue data (000 $) 
 rev = pd.read_excel(
         'http://www.eia.gov/electricity/data/state/revenue_annual.xlsx',
-        header=1, nrows=51)
-    
+        header=1)
+
+rev = rev.loc[rev['Year']==2017]
+rev = rev.loc[rev['Industry Sector Category']=='Total Electric Industry']
+rev = rev.loc[rev['State']!='US']
+rev = rev[['State','Industrial']]
+
 rev = rev[['State','Industrial']]
 rev.rename(columns = {'State':'state_abbv',
                       'Industrial':'rev_000$'}, inplace = True)
@@ -98,9 +102,13 @@ rev.rename(columns = {'State':'state_abbv',
 ####### Collect electricity sales data (MWh) 
 sal = pd.read_excel(
         'http://www.eia.gov/electricity/data/state/sales_annual.xlsx',
-         header=1, nrows=51)
+         header=1)
 
+sal = sal.loc[sal['Year']==2017]
+sal = sal.loc[sal['Industry Sector Category']=='Total Electric Industry']
+sal = sal.loc[sal['State']!='US']
 sal = sal[['State','Industrial']]
+
 sal.rename(columns = {'State':'state_abbv',
                       'Industrial':'sal_mwh'}, inplace = True)
 #print(sal)
@@ -110,7 +118,6 @@ sal.rename(columns = {'State':'state_abbv',
 merge = pd.merge(sal, rev, on='state_abbv')
 merge['ep_kwh'] = merge['rev_000$']/merge['sal_mwh']
 ep = merge[['state_abbv','ep_kwh']]
-#ep.to_csv('ag_electricity_price_dollarsperkwh.csv')
 #print(ep)
 
 
@@ -118,14 +125,14 @@ ep = merge[['state_abbv','ep_kwh']]
 
 
 
-# ee: state electricity expenses #############################################
+# ee: state electricity expenses ##############################################
 """
 Collect 2017 farm sector electricity expenses by state from USDA ERS
 https://data.ers.usda.gov/reports.aspx?ID=17842#
 P474eafd3e12544e19338a00227af3001_2_252iT0R0x17
 """
 
-ee_source = pd.read_excel('ag_SOURCE_electricity_expenses.xlsx',
+ee_source = pd.read_excel('ag_source_electricity_expenses.xlsx',
                           sheet_name=18, 
                           header=5,
                           usecols="B:C"
@@ -133,7 +140,6 @@ ee_source = pd.read_excel('ag_SOURCE_electricity_expenses.xlsx',
 ee = ee_source.drop(ee_source.index[[0,1,2]])
 ee.columns = ['state','ee_000_dollars']
 ee['state'] = ee['state'].str.upper()
-#ee.to_csv('ag_electricity_expenses_000dollars.csv)
 #print(ee.head(10))
 
 
@@ -141,7 +147,7 @@ ee['state'] = ee['state'].str.upper()
 
 
 
-# elec_state: state electricity use by NAICS #################################
+# elec_state: state electricity use by NAICS ##################################
 """
 Calculate 2017 agricultural sector electricity use (MMBtu) by NAICS code in 
 each state based on aebn (the share of a subsector's ag expenses in a state's 
@@ -157,7 +163,6 @@ elec_state['elec_state_mmbtu']= \
 
 elec_state = elec_state[['state_abbv', 'NAICS', 'elec_state_mmbtu']]
 
-elec_state.to_csv('ag_electricity_use_by_state_mmbtu.csv')
 #print(elec_state.head(50))
 
 
@@ -165,7 +170,7 @@ elec_state.to_csv('ag_electricity_use_by_state_mmbtu.csv')
 
 
 
-# fc: county farm counts by NAICS ############################################
+# fc: county farm counts by NAICS #############################################
 
 """
 Automatically collect county-level farm counts data by NAICS from USDA NASS 
@@ -213,13 +218,11 @@ fc.rename(columns = {'state_name':'state',
                      inplace=True)
 fc.set_index('state', inplace=True)
 fc = fc.sort_index(ascending=True)
-fc.to_csv('ag_farm_counts.csv')
 #print(fc.head(20))
 
 
 ####### Remove observations for NAICS 1119, which double counts observations 
 ####### for 11192 and "11193 & 11194 & 11199".
-fc = pd.read_csv('ag_farm_counts.csv', index_col=[0])                            # Only for test
 fc = fc[fc.NAICS != '1119']
 #print(fc.head(20))
 
@@ -233,28 +236,25 @@ fc['farm_counts'] = fc['farm_counts'].apply(lambda x: x.replace(
 fc['fc_statefraction'] = fc['farm_counts'].divide(
                          fc['farm_counts'].sum(level='state'))
 #print(fc.head(20))
-#fc.to_csv('ag_farm_counts_state_fraction.csv')
 
 
 
 
 
 
-# elec_county: county electricity use by NAICS ###############################
+# elec_county: county electricity use by NAICS ################################
 """
 Calculations based on elec_state (state electricity use by NAICS) and fc 
 (county farm counts by NAICS)
 """
 
-fc = pd.read_csv(
-        'ag_farm_counts_state_fraction.csv', index_col=[0])                     # Only for test
-elec_state = pd.read_csv(
-        'ag_electricity_use_by_state_mmbtu.csv', index_col=[0])                 # Only for test
-
 elec_county = fc.reset_index().merge(elec_state).set_index('state')
 
 elec_county['elec_county_mmbtu'] = \
                     elec_county.fc_statefraction * elec_county.elec_state_mmbtu
+                    
+elec_county = elec_county[['state_abbv', 'county', 'NAICS', 'elec_state_mmbtu', 
+                           'elec_county_mmbtu']]
 
-elec_county.to_csv('ag_electricity_use_by_county_mmbtu.csv')
+elec_county.to_csv('ag_output_electricity_use_by_county_mmbtu.csv')
 #print(elec_county.head(20))
