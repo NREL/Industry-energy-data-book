@@ -58,11 +58,11 @@ state_tot = state_tot.drop(['domaincat_desc','a','b','c'], axis=1)
 invalid = '                 (D)'
 state_tot = state_tot.replace(invalid, state_tot.replace([invalid], '0'))
 state_tot.rename(columns = {'state_name':'state', 
-                            'state_alpha':'state_abbv', 
+                            'state_alpha':'state_abbr', 
                             'Value':'state_fuel_expense'}, 
                             inplace=True)
 state_tot = state_tot.sort_index(ascending=True)
-state_tot = state_tot[['state','state_abbv','NAICS','state_fuel_expense']]
+state_tot = state_tot[['state','state_abbr','NAICS','state_fuel_expense']]
 #print(state_tot.head(50))
     
     
@@ -371,19 +371,19 @@ Step 1： In the dataframe 'state_tot', add each state's region.
 Step 2: Merge 'frac' and 'state_tot'. Name the merged df as 'expense'.
 Step 3: Create a new column 'fuel_expense_$', which equals 
         'state_fuel_expense_$' * 'fuel_type_frac'. 
-Final columns: state, state_abbv, region, NAICS, fuel_type, fuel_expenses_$
+Final columns: state, state_abbr, region, NAICS, fuel_type, fuel_expenses_$
 """
 
 ####### Step 1
 region_file = pd.read_csv('input_region.csv')
 
-region = region_file[['state', 'state_abbv', 'region']]
+region = region_file[['state', 'state_abbr', 'region']]
 
 state_tot = pd.merge(state_tot, region, on=[
-            'state', 'state_abbv'], how='outer')
+            'state', 'state_abbr'], how='outer')
 
 state_tot = state_tot[[
-            'state','state_abbv','region','NAICS','state_fuel_expense']]
+            'state','state_abbr','region','NAICS','state_fuel_expense']]
 
 
 ####### Step 2
@@ -592,7 +592,7 @@ price_lpg_region = price_lpg_region.drop(['index','Date'], axis=1)
 
 ####### Transpose the dataframe
 price_lpg_region = price_lpg_region.transpose()
-price_lpg_region.index.name = 'lpg_padd'
+price_lpg_region.index.name = 'lpg_wholesale_padd'
 #print(price_lpg_region)
 
 
@@ -611,12 +611,13 @@ price_lpg_region.reset_index(level=0, inplace=True)
 
 ####### Add state column
 region_file = pd.read_csv('input_region.csv')
-region = region_file[['state', 'lpg_padd']]
+region = region_file[['state', 'lpg_wholesale_padd']]
 
-price_lpg = pd.merge(price_lpg_region, region, on='lpg_padd', how='outer')
+price_lpg = pd.merge(price_lpg_region, region, 
+                     on='lpg_wholesale_padd', how='outer')
 
 price_lpg.set_index('state', inplace=True)
-price_lpg= price_lpg.drop('lpg_padd', axis=1)
+price_lpg= price_lpg.drop('lpg__wholesale_padd', axis=1)
 price_lpg = price_lpg.sort_index()
 #print(price_lpg)
 
@@ -733,7 +734,7 @@ price = price.drop([
 """
 Merge expense and price. Divide expense by price to calculate state-level fuel
 consumption by NAICS. 
-Columns: state, state_abbv, region, NAICS, fuel_type, fuel_expense_dollar,
+Columns: state, state_abbr, region, NAICS, fuel_type, fuel_expense_dollar,
 price_dollar_per_mmbtu, fuel_state_mmbtu.
 """
 
@@ -791,7 +792,7 @@ fc = fc.drop(['domaincat_desc','a','b','c'], axis=1)
 invalid = '                 (D)'
 fc = fc.replace(invalid, fc.replace([invalid], '0'))
 fc.rename(columns = {'state_name':'state', 
-                     'state_alpha':'state_abbv', 
+                     'state_alpha':'state_abbr', 
                      'Value':'farm_counts',
                      'county_name':'county'}, 
                      inplace=True)
@@ -831,10 +832,10 @@ fc = fc.reset_index()
 Calculations based on fuel_state (state-level fuel use by NAICS) and fc 
 (county farm counts by NAICS).
 Index: state.
-Columns: state_abbv, county, NAICS, fuel_type, fuel_county_mmbtu.
+Columns: state_abbr, county, NAICS, fuel_type, fuel_county_mmbtu.
 """
 
-fuel_state = fuel_state[['state', 'state_abbv', 'NAICS', 'fuel_type',
+fuel_state = fuel_state[['state', 'state_abbr', 'NAICS', 'fuel_type',
                          'fuel_state_mmbtu']]
 
 fuel_county = pd.merge(fuel_state, fc, on='state', how='outer')
@@ -842,7 +843,7 @@ fuel_county = pd.merge(fuel_state, fc, on='state', how='outer')
 fuel_county['fuel_county_mmbtu'] = \
                     fuel_county.fc_statefraction * fuel_county.fuel_state_mmbtu
                     
-fuel_county = fuel_county[['state', 'state_abbv', 'county', 'NAICS', 
+fuel_county = fuel_county[['state', 'state_abbr', 'county', 'NAICS', 
                            'fuel_type', 'fuel_county_mmbtu']]
                     
 #print(fuel_county.head(50))
@@ -933,4 +934,5 @@ fuel_county = fuel_county.drop('fuel_county_mmbtu', axis=1)
 fuel_county.set_index('state', inplace=True)
 
 fuel_county.to_csv('ag_output_fuel_use_by_county.csv')
+
 #print(fuel_county.head(50))
