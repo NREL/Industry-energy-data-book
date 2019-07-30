@@ -2,6 +2,8 @@ import pandas as pd
 import requests
 import urllib
 import json
+import get_cbp
+
 
 """
 Estimate 2000-2017 county-level fuel consumption in the construction sector 
@@ -512,7 +514,7 @@ bea = bea.astype({'year': int})
 
 
 
-# (3.2)GDP GROWTH RATE AS A MULTIPLIER ########################################
+# (3.2)GDP Growth Rate as A Multiplier ########################################
 """
 multiplier: Index: state. Columns: 1997, 1998, 1999 ... 2018.
 """
@@ -522,47 +524,123 @@ multiplier['base_year_2012'] = multiplier[2012]
 years = range(1997,2019)
 for y in years:
     multiplier[y] = multiplier[y] / multiplier['base_year_2012']
+
+
+multiplier.reset_index(inplace=True)                                           
+multiplier = multiplier.drop('base_year_2012', axis=1)                     
+multiplier['state'] = multiplier['state'].str.upper()
+
+multiplier.set_index('state',inplace=True)
+multiplier = multiplier.drop(['FAR WEST', 'GREAT LAKES', 'MIDEAST', 
+                              'NEW ENGLAND', 'PLAINS', 'ROCKY MOUNTAIN',
+                              'SOUTHEAST', 'SOUTHWEST', 'UNITED STATES'])
+multiplier.reset_index(inplace=True) 
     
 #print(multiplier.head(20))
+    
+
+
+
+
+
+cbp = cbp.loc[[23, 236, 237, 238]].
+
+
+
+
+# 4.COUNTY-LEVEL DATA #########################################################
+# (4.1)Fraction of County Establishment Counts ################################
+"""
+cbp_source: 2012 establishment counts by NAICS code and county. Columns: 
+fipstate, fipscty, naics, empflag, emp_nf, emp, qp1_nf, qp1, ap_nf, ap, est, 
+n1_4, n5_9, n10_19, n20_49, n50_99, n100_249, n250_499, n500_999, n1000, 
+n1000_1, n1000_2, n1000_3, n1000_4, censtate, cencty, COUNTY_FIPS, region, 
+Under 50, naics_n, industry.
+
+cbp: state, county, NAICS, est.
+
+frac: state, county, NAICS (only keep 23, 236, 237, 238), est, est_county_frac.
+"""
+
+cbp_source = get_cbp.CBP(2012)
+cbp = cbp_source.cbp
+
+cbp = cbp[['fipstate', 'COUNTY_FIPS', 'naics', 'est']]
+
+
+######## Only keep NAICS 23, 236, 237 & 238
+cbp.set_index('naics', inplace=True)
+cbp = cbp.loc[[23, 236, 237, 238]].reset_index()
+cbp.rename(columns = {'naics':'NAICS',
+                      'fipstate':'state_fips',
+                      'COUNTY_FIPS':'county_fips'}, 
+                      inplace=True)
+
+    
+####### Add state names and county names
+fips = pd.read_csv('input_us_fips_codes.csv')
+fips = fips[['State', 'County_Name', 'FIPS State', 'COUNTY_FIPS']]
+fips.rename(columns = {'State':'state', 
+                       'County_Name':'county',
+                       'FIPS State':'state_fips',
+                       'COUNTY_FIPS':'county_fips'},
+                       inplace=True)
+
+cbp = pd.merge(cbp, fips, on=['state_fips','county_fips'], how='outer')
+
+cbp = cbp[['state','county','NAICS','est']]
+cbp = cbp.dropna()
+cbp.set_index('state',inplace=True)
+#print(county_frac.head(50))
+
+
+
+####### Calculate fraction of county establishment counts
+def frac(NAICS):
+    df = cbp.loc[cbp['NAICS'] == NAICS]
+    df['est_county_frac'] = df['est'].divide(df['est'].sum(level='state'))
+    return df
+
+frac = pd.concat([frac(23), frac(236), frac(237), frac(238)])
+frac.reset_index(level=0,  inplace=True)
+frac['state'] = frac['state'].str.upper()
+frac['county'] = frac['county'].str.upper()
 
 
 
 
 
 
+# (4.2)County Fuel Consumption ################################################
+"""
+
+"""
+
+fuel_county = pd.merge(fuel_state, frac, on=['state','NAICS'], how='outer')
+
+fuel_county['fuel_county_mmbtu'] = \
+               fuel_county['fuel_state_mmbtu'] * fuel_county['est_county_frac']
+               
+fuel_county = fuel_county[['state','state_abbr','county','NAICS','fuel_type',
+                           'fuel_county_mmbtu']]
+
+fuel_county.set_index('state',inplace=True)                                    #Only for test
+fuel_county.to_csv('output\cons.csv')                                          #Only for test
 
 
+####### 2000-2017 County-level Fuel Use
+fuel_county = pd.read_csv('output\cons.csv')                                   #Only for test
+fuel_county = pd.merge(fuel_county, multiplier, on='state', how='outer')
 
+years = range(1997, 2019)
+for y in years:
+    fuel_county[y] = fuel_county[y] * fuel_county['fuel_county_mmbtu']
+    fuel_county = fuel_county.rename(columns={y: str(y)+'_fuel_county_mmbtu'})
+    
+fuel_county = fuel_county.drop('fuel_county_mmbtu', axis=1)
 
+fuel_county.set_index('state', inplace=True)
 
+fuel_county.to_csv('output\cons_county.csv')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#print(fuel_county.head(10))
