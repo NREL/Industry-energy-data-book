@@ -454,9 +454,6 @@ fuel_state.set_index(['state', 'state_abbr', 'NAICS'], inplace=True)
 fuel_state = fuel_state.sort_index().reset_index()
 #print(fuel_state.head(100))
 
-fuel_state.set_index('state', inplace=True)                                    # Only for test
-fuel_state.to_csv('cons_fuel_state.csv')                                       # Only for test
-
 
 
 
@@ -543,7 +540,6 @@ multiplier.reset_index(inplace=True)
 
 
 
-cbp = cbp.loc[[23, 236, 237, 238]].
 
 
 
@@ -624,12 +620,8 @@ fuel_county['fuel_county_mmbtu'] = \
 fuel_county = fuel_county[['state','state_abbr','county','NAICS','fuel_type',
                            'fuel_county_mmbtu']]
 
-fuel_county.set_index('state',inplace=True)                                    #Only for test
-fuel_county.to_csv('output\cons.csv')                                          #Only for test
-
 
 ####### 2000-2017 County-level Fuel Use
-fuel_county = pd.read_csv('output\cons.csv')                                   #Only for test
 fuel_county = pd.merge(fuel_county, multiplier, on='state', how='outer')
 
 years = range(1997, 2019)
