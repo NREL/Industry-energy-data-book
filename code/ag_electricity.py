@@ -16,6 +16,8 @@ based on 2017 USDA Census results.
 """
 Automatically collect state-level agricultural expense data by NAICS
 code from USDA NASS 2017 Census results. 
+Index: state
+Columns: state_abbr, state_ansi, ag_expense_$, NAICS, ag_expense_state_pct.
 """
 
 base_url = 'http://quickstats.nass.usda.gov/api/api_GET/'
@@ -53,7 +55,7 @@ aebn = aebn.drop(['domaincat_desc','a','b','c'], axis=1)
 invalid = '                 (D)'
 aebn = aebn.replace(invalid, aebn.replace([invalid], '0'))
 aebn.rename(columns = {'state_name':'state', 
-                       'state_alpha':'state_abbv', 
+                       'state_alpha':'state_abbr', 
                        'Value':'ag_expense_$'}, 
                        inplace=True)
 aebn.set_index('state', inplace=True)
@@ -80,7 +82,8 @@ aebn['ag_expense_state_pct'] = aebn['ag_expense_$'].divide(
 """
 Automatically collect 2017 annual electricity sales (MWh) and revenues 
 (000 $) data by state and calculate electricity prices ($/kWh) in each 
-state from EIA. 
+state from EIA.
+Columns: state_abbr, ep_kwh. 
 """
     
 ####### Collect electricity revenue data (000 $) 
@@ -91,10 +94,9 @@ rev = pd.read_excel(
 rev = rev.loc[rev['Year']==2017]
 rev = rev.loc[rev['Industry Sector Category']=='Total Electric Industry']
 rev = rev.loc[rev['State']!='US']
-rev = rev[['State','Industrial']]
 
 rev = rev[['State','Industrial']]
-rev.rename(columns = {'State':'state_abbv',
+rev.rename(columns = {'State':'state_abbr',
                       'Industrial':'rev_000$'}, inplace = True)
 #print(rev)
     
@@ -109,15 +111,15 @@ sal = sal.loc[sal['Industry Sector Category']=='Total Electric Industry']
 sal = sal.loc[sal['State']!='US']
 sal = sal[['State','Industrial']]
 
-sal.rename(columns = {'State':'state_abbv',
+sal.rename(columns = {'State':'state_abbr',
                       'Industrial':'sal_mwh'}, inplace = True)
 #print(sal)
     
     
 ####### Calculate electricity price ($/kWh)
-merge = pd.merge(sal, rev, on='state_abbv')
+merge = pd.merge(sal, rev, on='state_abbr')
 merge['ep_kwh'] = merge['rev_000$']/merge['sal_mwh']
-ep = merge[['state_abbv','ep_kwh']]
+ep = merge[['state_abbr','ep_kwh']]
 #print(ep)
 
 
@@ -130,13 +132,14 @@ ep = merge[['state_abbv','ep_kwh']]
 Collect 2017 farm sector electricity expenses by state from USDA ERS
 https://data.ers.usda.gov/reports.aspx?ID=17842#
 P474eafd3e12544e19338a00227af3001_2_252iT0R0x17
+Columns: state, ee_000_dollars.
 """
 
-ee_source = pd.read_excel('ag_source_electricity_expenses.xlsx',
+ee_source = pd.read_excel('input_ag_electricity_expenses.xlsx',
                           sheet_name=18, 
                           header=5,
                           usecols="B:C"
-                          )                                                       #API?
+                          )                                                    #Read a zipped excel file?
 ee = ee_source.drop(ee_source.index[[0,1,2]])
 ee.columns = ['state','ee_000_dollars']
 ee['state'] = ee['state'].str.upper()
@@ -153,15 +156,19 @@ Calculate 2017 agricultural sector electricity use (MMBtu) by NAICS code in
 each state based on aebn (the share of a subsector's ag expenses in a state's 
 total ag expenses), ee (each state's electricity expenses, 000$), and ep
 (each state's electricity price, $/kWh).
+Columns: state, state_abbr, NAICS, elec_state_mmbtu.
 """
 
-elec_state = aebn.reset_index().merge(ep).merge(ee).set_index('state')
+elec_state = aebn.reset_index().merge(ep).merge(ee)
 
-elec_state['elec_state_mmbtu']= \
+elec_state['fuel_state_mmbtu']= \
         elec_state.ag_expense_state_pct * elec_state.ee_000_dollars*1000 \
         / elec_state.ep_kwh *0.00341214
 
-elec_state = elec_state[['state_abbv', 'NAICS', 'elec_state_mmbtu']]
+elec_state['fuel_type'] = 'ELECTRICITY'
+
+elec_state = elec_state[['state', 'state_abbr', 'NAICS', 'fuel_type', 
+                         'fuel_state_mmbtu']]
 
 #print(elec_state.head(50))
 
@@ -171,10 +178,10 @@ elec_state = elec_state[['state_abbv', 'NAICS', 'elec_state_mmbtu']]
 
 
 # fc: county farm counts by NAICS #############################################
-
 """
 Automatically collect county-level farm counts data by NAICS from USDA NASS 
 2017 Census results and calculate each county's state fraction. 
+Columns: state, county, fc_statefraction.
 """
 
 base_url = 'http://quickstats.nass.usda.gov/api/api_GET/'
@@ -212,13 +219,11 @@ fc = fc.drop(['domaincat_desc','a','b','c'], axis=1)
 invalid = '                 (D)'
 fc = fc.replace(invalid, fc.replace([invalid], '0'))
 fc.rename(columns = {'state_name':'state', 
-                     'state_alpha':'state_abbv', 
+                     'state_alpha':'state_abbr', 
                      'Value':'farm_counts',
                      'county_name':'county'}, 
                      inplace=True)
-fc.set_index('state', inplace=True)
-fc = fc.sort_index(ascending=True)
-#print(fc.head(20))
+#print(fc.head(100))
 
 
 ####### Remove observations for NAICS 1119, which double counts observations 
@@ -233,9 +238,16 @@ fc['farm_counts'] = fc['farm_counts'].apply(lambda x: x.replace(
 
 
 ####### Calculate the fraction of county-level establishments by NAICS
+state_county = fc[['state','county']]
+state_county = state_county.drop_duplicates()
+fc = fc.groupby('county')['farm_counts'].sum().reset_index()
+fc = pd.merge(state_county, fc, on='county', how='outer')
+fc.set_index(['state','county'], inplace=True)
+fc = fc.sort_index()
 fc['fc_statefraction'] = fc['farm_counts'].divide(
                          fc['farm_counts'].sum(level='state'))
-#print(fc.head(20))
+fc = fc.reset_index()
+#print(fc)
 
 
 
@@ -246,15 +258,20 @@ fc['fc_statefraction'] = fc['farm_counts'].divide(
 """
 Calculations based on elec_state (state electricity use by NAICS) and fc 
 (county farm counts by NAICS)
+Index: state.
+Columns: state_abbr, county, NAICS, fuel_type, fuel_county_mmbtu.
 """
 
-elec_county = fc.reset_index().merge(elec_state).set_index('state')
+elec_county = pd.merge(elec_state, fc, on='state', how='outer')
 
-elec_county['elec_county_mmbtu'] = \
-                    elec_county.fc_statefraction * elec_county.elec_state_mmbtu
+elec_county['fuel_county_mmbtu'] = \
+                    elec_county.fc_statefraction * elec_county.fuel_state_mmbtu
                     
-elec_county = elec_county[['state_abbv', 'county', 'NAICS', 'elec_state_mmbtu', 
-                           'elec_county_mmbtu']]
+elec_county = elec_county[['state', 'state_abbr', 'county', 'NAICS', 
+                           'fuel_type', 'fuel_county_mmbtu']]
 
-elec_county.to_csv('ag_output_electricity_use_by_county_mmbtu.csv')
+elec_county.set_index('state', inplace=True)
+
+elec_county.to_csv('ag_output_electricity_use_by_county.csv')
+
 #print(elec_county.head(20))
