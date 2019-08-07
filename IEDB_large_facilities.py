@@ -76,19 +76,23 @@ def summarize_ghgrp_energy(data):
     
     sns.stripplot(x='REPORTING_YEAR', y='MMBtu_TOTAL',
                   data=year_plant[year_plant.REPORTING_YEAR.isin([2010, 2017])],
-                  dodge=True, jitter=True,
-                  alpha=.25, zorder=1)
+                  dodge=True, jitter=True, palette=sns.color_palette("Paired"),
+                  alpha=.30, zorder=1)
 
-
-    sns.pointplot(x='REPORTING_YEAR', y='MMBtu_TOTAL',
-                  data=year_plant[year_plant.REPORTING_YEAR.isin([2010, 2017])],
-                  dodge=False, join=False, palette="dark", estimator=np.median,
-                  markers="s", scale=1, ci=None)
+    sns.stripplot(
+            x=[2010, 2017],
+            y=year_plant[
+                    year_plant.REPORTING_YEAR.isin([2010, 2017])
+                    ].groupby('REPORTING_YEAR').MMBtu_TOTAL.median(),
+            dodge=False, jitter=False, palette=sns.color_palette("Paired"), 
+            marker="D", size=12, linewidth=2, alpha=1,
+            edgecolor='black')
+#    
     
-#    [ax.text(p[0], p[1], p[1], color='black') for p in zip(
-#            ax.get_xticks(), np.around(year_plant[year_plant.REPORTING_YEAR.isin(
-#                    [2010, 2017]
-#                    )].groupby('REPORTING_YEAR').MMBtu_TOTAL.median().values,0))]
+    [ax.text(p[0], p[1], p[1], color='black') for p in zip(
+            ax.get_xticks(), np.around(year_plant[year_plant.REPORTING_YEAR.isin(
+                    [2010, 2017]
+                    )].groupby('REPORTING_YEAR').MMBtu_TOTAL.median().values,0))]
 
     ax.set_yscale('log')
     
@@ -100,6 +104,14 @@ def summarize_ghgrp_energy(data):
 
     fig.savefig('Y:/6A20/Public/IEDB/large_fac_summary.png', dpi=100,
                 bbox_inches='tight')
+    
+    print(
+        np.around(
+            year_plant[year_plant.REPORTING_YEAR.isin([2010, 2017])].groupby(
+                    'REPORTING_YEAR'
+                    ).MMBtu_TOTAL.median().values,0
+            )
+        )
     
     #Fuel mix plot over time
     year_fuel = data.groupby(['REPORTING_YEAR','FUEL_TYPE', 'MECS_FT'],
