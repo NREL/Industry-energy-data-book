@@ -35,50 +35,54 @@ class CBP:
 
                 html = 'https://api.census.gov/data/2012/cbp/variables.json'
 
-            if naics_file in os.listdir(self.data_dir):
+#            if naics_file in os.listdir(self.data_dir):
+#
+#                naics_df = pd.read_csv(self.data_dir+naics_file)
 
-                naics_df = pd.read_csv(self.data_dir+naics_file)
+#        else:
+
+            r = requests.get(html)
+
+            if year >=2012:
+
+                naics_df = pd.DataFrame.from_dict(
+                    r.json()['variables']['NAICS2012']['values']['item'],
+                    orient='index'
+                    )
+
+                naics_df = naics_df[2:]
+
+                naics_df.reset_index(inplace=True)
+
+                naics_df.columns=['naics', 'desc']
 
             else:
 
-                r = requests.get(html)
+                naics_df = pd.DataFrame(r.json()[2:],
+                                        columns=['naics', 'desc', 'us'])
 
-                if year >=2012:
-
-                    naics_df = pd.DataFrame.from_dict(
-                        r.json()['variables']['NAICS2012']['values']['item'],
-                        orient='index'
+                naics_df.drop(['us'], axis=1, inplace=True)
+                
+                naics_df['naics'] = naics_df.naics.apply(
+                        lambda x: x.strip()
                         )
 
-                    naics_df = naics_df[2:]
+            naics_df = pd.DataFrame(
+                    naics_df[(naics_df.naics != '31-33') &
+                             (naics_df.naics != '44-45') &
+                             (naics_df.naics != '48-49')])
 
-                    naics_df.reset_index(inplace=True)
+            naics_df['n_naics'] = naics_df.naics.apply(
+                    lambda x: len(x)
+                    )
 
-                    naics_df.columns=['naics', 'desc']
+            naics_df['naics'] = naics_df.naics.astype('int')
 
-                else:
+            naics_df = pd.DataFrame(
+                    naics_df[naics_df.naics.between(1, 400000)]
+                    )
 
-                    naics_df = pd.DataFrame(r.json()[2:],
-                                            columns=['naics', 'desc', 'us'])
-
-                    naics_df.drop(['us'], axis=1, inplace=True)
-
-                naics_df = pd.DataFrame(
-                        naics_df[(naics_df.naics != '31-33 ') &
-                                 (naics_df.naics != '44-45 ') &
-                                 (naics_df.naics != '48-49 ')])
-
-                naics_df['n_naics'] = naics_df.naics.apply(
-                        lambda x: len(x)
-                        )
-
-                naics_df['naics'] = naics_df.naics.astype('int')
-
-                naics_df = pd.DataFrame(
-                        naics_df[naics_df.naics.between(1, 400000)]
-                        )
-
-                naics_df.to_csv(self.data_dir + naics_file)
+#            naics_df.to_csv(self.data_dir + naics_file)
 
             return naics_df
 

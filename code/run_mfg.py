@@ -36,22 +36,7 @@ def Manufacturing(calculation_years=range(2010, 2018)):
     
         # update NAICS codes for energy_ghgrp based on ghgrp_matching
         cmfg.update_naics(ghgrp_matching)
-    
-        #EIA electricity data; dask dataframe, partitioned by STATE
-        ghgrp_electricity, elect_fac_ids = cmfg.GHGRP_electricity_calc()
-    
-        ghgrp_electricity['year'] = y
-    
-        # GHGRP matching for EIA electricity data
-        ghgrp_matching_923 = ghgrp_matching[ghgrp_matching.FACILITY_ID.isin(
-                elect_fac_ids
-                )]
-    
-        cbp_matching_923 = cm.ghgrp_counts(cbp.cbp_matching,
-                                           ghgrp_matching_923)
-    
-        cbp_corrected_923 = cm.correct_cbp(cbp_matching_923)
-    
+        
         # Separate process for combustion fuels
         cbp.cbp_matching = cm.ghgrp_counts(cbp.cbp_matching, ghgrp_matching)
     
@@ -76,13 +61,8 @@ def Manufacturing(calculation_years=range(2010, 2018)):
             
             mecs_intensities.to_pickle('mecs_intensities.pkl')
             
-            print(os.listdir())
-            
         else:
-            
-            print(y)
-            
-            print(os.listdir())
+
             mecs_intensities = pd.read_pickle('mecs_intensities.pkl')
             
         #%%
@@ -93,6 +73,21 @@ def Manufacturing(calculation_years=range(2010, 2018)):
         mfg_comb_energy = cmfg.combfuel_calc(cbp_corrected, mecs_intensities)
     
         mfg_comb_energy['year'] = y
+        
+        #EIA electricity data; dask dataframe, partitioned by STATE
+        ghgrp_electricity, elect_fac_ids = cmfg.GHGRP_electricity_calc()
+    
+        ghgrp_electricity['year'] = y
+    
+        # GHGRP matching for EIA electricity data
+        ghgrp_matching_923 = ghgrp_matching[ghgrp_matching.FACILITY_ID.isin(
+                elect_fac_ids
+                )]
+    
+        cbp_matching_923 = cm.ghgrp_counts(cbp.cbp_matching,
+                                           ghgrp_matching_923)
+    
+        cbp_corrected_923 = cm.correct_cbp(cbp_matching_923)
     
         #estimate non-ghgrp electricity use. Dask dataframe partitioned by STATE
         mfg_elect_energy = cmfg.electricity_calc(cbp_corrected_923,
@@ -102,18 +97,28 @@ def Manufacturing(calculation_years=range(2010, 2018)):
     
         if y == calculation_years[0]:
     
-            mfg_energy = mfg_comb_energy.append(mfg_elect_energy)
+            mfg_energy = dd.multi.concat(
+                    [mfg_comb_energy, mfg_elect_energy, ghgrp_electricity],
+                    axis=0, join='outer', interleave_partitions=True
+                     )
     
-            mfg_energy = mfg_energy.append(ghgrp_electricity)
+#            mfg_energy = mfg_energy.append(ghgrp_electricity,
+#                                           interleave_partions=True)
     
         else:
     
-            mfg_energy = mfg_energy.append(mfg_comb_energy)
-    
-            mfg_energy = mfg_energy.append(mfg_elect_energy)
-    
-            mfg_energy = mfg_energy.append(ghgrp_electricity)
-    
+            mfg_energy = dd.multi.concat(
+                    [mfg_energy, mfg_comb_energy, mfg_elect_energy,
+                     ghgrp_electricity], axis=0, join='outer',
+                     interleave_partitions=True
+                     )
+#    
+#            mfg_energy = mfg_energy.append(mfg_elect_energy,
+#                                           interleave_partitions=True)
+#    
+#            mfg_energy = mfg_energy.append(ghgrp_electricity,
+#                                           interleave_partitions=True)
+#    
     mfg_energy = mfg_energy.calculate()[0]
 
     return mfg_energy

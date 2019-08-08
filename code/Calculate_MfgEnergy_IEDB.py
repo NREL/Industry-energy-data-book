@@ -300,7 +300,10 @@ class Manufacturing_energy:
                                 )
 
                         eia923_dis.columns = \
-                            [x.replace('\n', '') for x in eia923_dis.columns]
+                            [x.replace('\n', ' ') for x in eia923_dis.columns]
+                            
+                        eia923_dis.columns = \
+                            [x.replace('  ', ' ') for x in eia923_dis.columns]
                             
                         eia923_dis.columns = \
                             [x.title() for x in eia923_dis.columns]
@@ -329,7 +332,10 @@ class Manufacturing_energy:
                                 )
 
                         eia923_gen.columns = \
-                            [x.replace('\n', '') for x in eia923_gen.columns]
+                            [x.replace('\n', ' ') for x in eia923_gen.columns]
+                            
+                        eia923_gen.columns = \
+                            [x.replace('  ', ' ') for x in eia923_gen.columns]
                             
                         eia923_gen.columns = \
                             [x.title() for x in eia923_gen.columns]
@@ -381,16 +387,15 @@ class Manufacturing_energy:
                             ['Retail Sales', 'Sales For Resale']
                             ].sum(axis=1)
                         )
-                                    
+               
         else:
             
             eia923['Net_electricity'] = eia923[
                     ['Incoming Electricity', 'RE_gen']
                     ].sum(axis=1).subtract(
-                        eia923[['Retail Sales', 'Sales for Resale',
+                        eia923[['Retail Sales', 'Sales For Resale',
                                 'Tolling Agreements']].sum(axis=1)
                         )
-            
 
         # Convert from MWh to MMBtu
         eia923['Net_electricity'].update(eia923.Net_electricity.multiply(
@@ -417,7 +422,7 @@ class Manufacturing_energy:
             self.energy_ghgrp_y.set_index('FACILITY_ID')[
                 ~self.energy_ghgrp_y.set_index('FACILITY_ID').index.duplicated()
                 ][['MECS_Region', 'COUNTY_FIPS', 'PRIMARY_NAICS_CODE',
-                   'MECS_NAICS', 'STATE']], how='inner')
+                   'MECS_NAICS', 'fipstate']], how='inner')
 
         ghgrp_electricity['data_source'] = 'eia'
 
@@ -430,8 +435,8 @@ class Manufacturing_energy:
             ghgrp_electricity.COUNTY_FIPS.astype(int)
 
         ghgrp_electricity = dd.from_pandas(
-            ghgrp_electricity.set_index('STATE'),
-            npartitions=len(ghgrp_electricity.STATE.unique())
+            ghgrp_electricity.set_index('fipstate'),
+            npartitions=len(ghgrp_electricity.fipstate.unique())
             )
 
         return ghgrp_electricity, elect_fac_ids
@@ -664,7 +669,7 @@ class Manufacturing_energy:
             elect_nonghgrp.COUNTY_FIPS.astype(int)
 
         elect_nonghgrp = elect_nonghgrp.groupby(
-                ['MECS_Region', 'STATE', 'COUNTY_FIPS', 'naics', 'MECS_NAICS',
+                ['MECS_Region', 'COUNTY_FIPS', 'naics', 'MECS_NAICS',
                  'MECS_FT', 'fipstate', 'fipscty', 'Emp_Size'], as_index=False
                 )[['MMBtu_TOTAL', 'est_count']].sum()
 
