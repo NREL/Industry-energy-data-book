@@ -426,8 +426,6 @@ class Manufacturing_energy:
 
         ghgrp_electricity['data_source'] = 'eia'
 
-        ghgrp_electricity['Emp_Size'] = 'ghgrp'
-
         ghgrp_electricity.rename(columns={'PRIMARY_NAICS_CODE':'naics'},
                                        inplace=True)
 
@@ -514,6 +512,8 @@ class Manufacturing_energy:
         counts, calculated MECS intensities, and calculated facility energy use
         for GHGRP facilites.
         Net electricity undergoes an additional adjustment.
+        
+        County sums are not disaggregated by employment size class.
 
         Returns a Dask DataFrame
         """
@@ -558,7 +558,7 @@ class Manufacturing_energy:
 
         energy_nonghgrp = energy_nonghgrp.groupby(
                 ['MECS_Region', 'COUNTY_FIPS', 'naics', 'MECS_NAICS',
-                 'MECS_FT', 'fipstate', 'fipscty', 'Emp_Size'], as_index=False
+                 'MECS_FT', 'fipstate', 'fipscty'], as_index=False
                 )[['MMBtu_TOTAL', 'est_count']].sum()
 
         energy_nonghgrp['data_source'] = 'mecs_ipf'
@@ -574,8 +574,6 @@ class Manufacturing_energy:
                 ).MMBtu_TOTAL.sum()
 
         energy_ghgrp_y['data_source'] = 'ghgrp'
-
-        energy_ghgrp_y['Emp_Size'] = 'ghgrp'
 
         energy_ghgrp_y.rename(columns={'PRIMARY_NAICS_CODE':'naics'},
                                        inplace=True)
@@ -670,7 +668,7 @@ class Manufacturing_energy:
 
         elect_nonghgrp = elect_nonghgrp.groupby(
                 ['MECS_Region', 'COUNTY_FIPS', 'naics', 'MECS_NAICS',
-                 'MECS_FT', 'fipstate', 'fipscty', 'Emp_Size'], as_index=False
+                 'MECS_FT', 'fipstate', 'fipscty'], as_index=False
                 )[['MMBtu_TOTAL', 'est_count']].sum()
 
         elect_nonghgrp['data_source'] = 'mecs_ipf'
@@ -921,7 +919,6 @@ class Manufacturing_energy:
             df.rename(columns={'PRIMARY_NAICS_CODE':'naics',
                                'FACILITY_ID': 'est_count'}, inplace=True)
 
-            df['Emp_Size'] = 'ghgrp'
 
             df['data_source'] = 'ghgrp'
 
