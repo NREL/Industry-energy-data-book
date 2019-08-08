@@ -27,7 +27,7 @@ class IPF_seed:
             
             skipfooter = 46
 
-        self.filepath = os.path.join('../', 'data_foundation/data for calculations/')
+        self.filepath = os.path.join('../', 'calculation_data/')
 
         self.url_3_2 =\
             'https://www.eia.gov/consumption/manufacturing/data/'+\
