@@ -115,6 +115,8 @@ class CBP:
                 naics = int(re.findall("\d+", naics)[0])
 
             return naics
+        
+        cbp.columns = [x.lower() for x in cbp.columns]
 
         cbp.naics = cbp.naics.apply(fix_naics)
 

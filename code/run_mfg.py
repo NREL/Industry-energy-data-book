@@ -15,7 +15,8 @@ import dask.dataframe as dd
 import os
 
 
-def Manufacturing(calculation_years=range(2010, 2018)):
+
+def Manufacturing(calculation_years=range(2010, 2017)): #CBP data only through 2016; 2017 scheduled for Nov 2019
     
     energy_ghgrp = pd.read_parquet(
             'c:/Users/cmcmilla/Solar-for-Industry-Process-Heat/'+\
@@ -38,14 +39,12 @@ def Manufacturing(calculation_years=range(2010, 2018)):
         cmfg.update_naics(ghgrp_matching)
         
         # Separate process for combustion fuels
-        cbp.cbp_matching = cm.ghgrp_counts(cbp.cbp_matching, ghgrp_matching)
+        cbp_matching_counts = cm.ghgrp_counts(cbp.cbp_matching, ghgrp_matching)
     
-        cbp_corrected = cm.correct_cbp(cbp.cbp_matching)
+        cbp_corrected = cm.correct_cbp(cbp_matching_counts)
         
         # Run IPF only for MECS years, 2010 and 2014
         if (y == 2010) | (y == 2014):
-            
-            print('this is happening')
     
             seed_methods = ipf_seed.IPF_seed(year=y)
         
@@ -57,7 +56,7 @@ def Manufacturing(calculation_years=range(2010, 2018)):
             # Run IPF. Saves resulting energy values as csv
             ipf_methods.mecs_ipf(seed_df)
         
-            mecs_intensities = cmfg.calc_intensities(cbp.cbp_matching)
+            mecs_intensities = cmfg.calc_intensities(cbp_matching_counts)
             
             mecs_intensities.to_pickle('mecs_intensities.pkl')
             
@@ -65,7 +64,6 @@ def Manufacturing(calculation_years=range(2010, 2018)):
 
             mecs_intensities = pd.read_pickle('mecs_intensities.pkl')
             
-        #%%
         # Calculates non-ghgrp combustion energy use and combines with
         # ghgrp energy use. Distinguishes between data sources with 'data_source'
         # column.
@@ -84,6 +82,8 @@ def Manufacturing(calculation_years=range(2010, 2018)):
                 elect_fac_ids
                 )]
     
+        print('cbp_matching: ', cbp.cbp_matching.columns)
+        
         cbp_matching_923 = cm.ghgrp_counts(cbp.cbp_matching,
                                            ghgrp_matching_923)
     
@@ -119,6 +119,6 @@ def Manufacturing(calculation_years=range(2010, 2018)):
 #            mfg_energy = mfg_energy.append(ghgrp_electricity,
 #                                           interleave_partitions=True)
 #    
-    mfg_energy = mfg_energy.calculate()[0]
+#    mfg_energy = mfg_energy.calculate()[0]
 
     return mfg_energy

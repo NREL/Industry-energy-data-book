@@ -274,20 +274,10 @@ class Manufacturing_energy:
             
             if self.year == 2010:
                 
-                dis_sheet = 'Schedule 6'
-                
                 skip_rows_dis = 8
                 
                 code_column = 'Sector_Code'
                 
-            elif self.year == 2011:
-                
-                dis_sheet = 'Source_and_disposition, 2011'
-            
-            else:
-                
-                dis_sheet = 'Source_and_disposition'
-
             for f in file_list:
 
                 if re.search('Disposition', f):
@@ -296,7 +286,7 @@ class Manufacturing_energy:
 
                         eia923_dis = pd.read_excel(
                                 data_file, skiprows=skip_rows_dis, 
-                                sheet_name=dis_sheet
+                                sheet_name=0
                                 )
 
                         eia923_dis.columns = \
@@ -360,6 +350,15 @@ class Manufacturing_energy:
 
                     continue
 
+        print('year:', self.year, '\n', 'dist columns:', eia923_dis.columns,
+              '\n', 'gen index:', eia923_gen.index.names)
+        
+        # Disposition file for 2011 labels plant names as Pplant State.
+        if self.year == 2011:
+        
+            eia923_dis.rename(columns={'Pplant State': 'Plant Name'},
+                              inplace=True)
+    
         eia923 = eia923_dis.set_index('Plant Name').join(eia923_gen)
 
         eia923.replace('.', 0, inplace=True)
@@ -368,7 +367,8 @@ class Manufacturing_energy:
 
         for col in ['Other Incoming Electricity', 'Incoming Electricity',
                     'RE_gen', 'Retail Sales', 'Sales for Resale',
-                    'Sales For Resale','Tolling Agreements']:
+                    'Sales For Resale', 'Other Outgoing Electricity',
+                    'Outgoing Electricity', 'Tolling Agreements']:
             
             if col in eia923.columns:
 
@@ -384,10 +384,23 @@ class Manufacturing_energy:
                     ['Other Incoming Electricity', 'RE_gen']
                     ].sum(axis=1).subtract(
                         eia923[
-                            ['Retail Sales', 'Sales For Resale']
+                            ['Retail Sales', 'Sales For Resale', 
+                             'Other Outgoing Electricity']
                             ].sum(axis=1)
                         )
-               
+                
+                
+        elif self.year == 2011:
+
+            eia923['Net_electricity'] = eia923[
+                    ['Incoming Electricity', 'RE_gen']
+                    ].sum(axis=1).subtract(
+                        eia923[
+                            ['Retail Sales', 'Sales For Resale', 
+                             'Outgoing Electricity']
+                            ].sum(axis=1)
+                        )   
+
         else:
             
             eia923['Net_electricity'] = eia923[
@@ -422,7 +435,7 @@ class Manufacturing_energy:
             self.energy_ghgrp_y.set_index('FACILITY_ID')[
                 ~self.energy_ghgrp_y.set_index('FACILITY_ID').index.duplicated()
                 ][['MECS_Region', 'COUNTY_FIPS', 'PRIMARY_NAICS_CODE',
-                   'MECS_NAICS', 'fipstate']], how='inner')
+                   'MECS_NAICS']], how='inner')
 
         ghgrp_electricity['data_source'] = 'eia'
 
@@ -431,6 +444,12 @@ class Manufacturing_energy:
 
         ghgrp_electricity['COUNTY_FIPS'] = \
             ghgrp_electricity.COUNTY_FIPS.astype(int)
+            
+        ghgrp_electricity.drop(['EIA_PLANT_ID', 'Plant Code'], axis=1,
+                               inplace=True)
+            
+        ghgrp_electricity['fipstate'] = \
+            [int(str(x)[0:(len(str(x)))-3]) for x in ghgrp_electricity.COUNTY_FIPS]
 
         ghgrp_electricity = dd.from_pandas(
             ghgrp_electricity.set_index('fipstate'),
@@ -541,7 +560,7 @@ class Manufacturing_energy:
                     mecs_intensities.MECS_FT != 'Net_electricity'
                     ].set_index(
                         ['MECS_NAICS_dummies']
-                        ), on=['MECS_NAICS_dummies', 'MECS_Region', 'Emp_Size'],
+                        ), on=['MECS_NAICS_dummies','MECS_Region','Emp_Size'],
                          how='inner'
             )
 
@@ -563,10 +582,10 @@ class Manufacturing_energy:
 
         energy_nonghgrp['data_source'] = 'mecs_ipf'
 
-        energy_nonghgrp = pd.merge(
-            energy_nonghgrp, self.energy_ghgrp_y[['COUNTY_FIPS', 'STATE']],
-            on='COUNTY_FIPS', how='left'
-            )
+#        energy_nonghgrp = pd.merge(
+#            energy_nonghgrp, self.energy_ghgrp_y[['COUNTY_FIPS', 'STATE']],
+#            on='COUNTY_FIPS', how='left'
+#            )
 
         energy_ghgrp_y = self.energy_ghgrp_y.groupby(
                 ['MECS_Region', 'STATE', 'COUNTY_FIPS', 'PRIMARY_NAICS_CODE',
@@ -919,9 +938,7 @@ class Manufacturing_energy:
             df.rename(columns={'PRIMARY_NAICS_CODE':'naics',
                                'FACILITY_ID': 'est_count'}, inplace=True)
 
-
             df['data_source'] = 'ghgrp'
-
 
         # Calculate end use of energy estimated from MECS data with MECS end
         # use.
