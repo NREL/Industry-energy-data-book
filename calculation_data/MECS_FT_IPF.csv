@@ -1,0 +1,192 @@
+EPA_FUEL_TYPE,MECS_FT
+Anthracite,Coal
+Bituminous,Coal
+Subbituminous,Coal
+Lignite,Coal
+Coal Coke,Coke_and_breeze
+Mixed (Commercial sector),Coal
+Mixed (Industrial coking),Coal
+Mixed (Industrial sector),Coal
+Mixed (Electric Power sector),Coal
+Natural Gas (Weighted U.S. Average),Natural_gas
+Distillate Fuel Oil No. 1,Diesel
+Distillate Fuel Oil No. 2,Diesel
+Distillate Fuel Oil No. 4,Diesel
+Residual Fuel Oil No. 5,Residual_fuel_oil
+Residual Fuel Oil No. 6,Residual_fuel_oil
+Used Oil,Other
+Kerosene,Other
+Liquefied petroleum gases (LPG),LPG_NGL
+Propane,LPG_NGL
+Propylene,LPG_NGL
+Ethane,LPG_NGL
+Ethanol,Other
+Ethylene,LPG_NGL
+Isobutane,LPG_NGL
+Isobutylene,LPG_NGL
+Butane,LPG_NGL
+Butylene,LPG_NGL
+Naphtha (<401 deg F),Other
+Natural Gasoline,LPG_NGL
+Other Oil (>401 deg F),Other
+Pentanes Plus,LPG_NGL
+Petrochemical Feedstocks,Other
+Petroleum Coke,Other
+Special Naphtha,Other
+Unfinished Oils,Other
+Heavy Gas Oils,Other
+Lubricants,Other
+Motor Gasoline,Other
+Aviation Gasoline,Other
+Kerosene-Type Jet Fuel,Other
+Asphalt and Road Oil,Other
+Crude Oil,Other
+Municipal Solid Waste,Other
+Tires,Other
+Plastics,Other
+Blast Furnace Gas,Other
+Coke Oven Gas,Other
+Propane Gas,LPG_NGL
+Fuel Gas,Other
+Wood and Wood Residuals (dry basis),Other
+Agricultural Byproducts,Other
+Peat,Other
+Solid Byproducts,Other
+Landfill Gas,Other
+Other Biomass Gases,Other
+Biomass Ethanol,Other
+Biodiesel,Other
+Rendered Animal Fat,Other
+Vegetable Oil,Other
+Biogas (Captured methane),Other
+Wood and Wood Residuals,Other
+Coke,Coke_and_breeze
+Ethanol (100%),Other
+Biodiesel (100%),Other
+Waste oil,Other
+OCCrejects,Other
+OCCRejects,Other
+OCC Rejects,Other
+Wastewater Treatment Plant Sludge,Other
+Wood Oil,Other
+No.6 oil & Used Oil Blend,Residual_fuel_oil
+No6 Oil & Used Oil Blend,Residual_fuel_oil
+No6 Fuel Oil Blend,Residual_fuel_oil
+Refinery Fuel Gas 1,Other
+Refinery Fuel Gas 2,Other
+Refinery Fuel Gas 661703,Other
+Refinery Fuel Gas 662701,Other
+Process Gas,Other
+Waste oil,Other
+Engineered Fuel,Other
+Old Corrugated Container Rejects,Other
+OCC Rejects,Other
+Mixture (Bituminous & Subbituminous Coal),Coal
+Blend (bituminous/subituminous),Coal
+Wood  wood oil  and wood pellets,Other
+Blended Fuel Oil,Residual_fuel_oil
+No.6 Oil & Used Oil Blend,Residual_fuel_oil
+Coal Blend,Coal
+Demethanizer Fuel,Other
+Fuel,Other
+Acid Gas,Other
+Ultra-Low Sulfur Diesel,Diesel
+Acetylene,LPG_NGL
+Jet A (Tier 1),LPG_NGL
+Waste Coal,Coal
+Waste Coal - NPC,Coal
+Waste coal,Coal
+Diesel fuel,Diesel
+Off Spec Jet A (Tier 3),LPG_NGL
+tire fluff,Other
+Tire fluff,Other
+Tire Fluff,Other
+CFU MD Fuel Gas,Other
+4UF Fuel Gas,Other
+SRUMD Fuel Gas,Other
+HCC3 NG/OG Blend A,Other
+HCC3 NG/OG A and B,Other
+HCC-3A NG/OG A and B,Other
+HCC3A NG/OG Blend A,Other
+FurnGas,Other
+NOx Red. Agent,Other
+Ethylene Unit Tail Gas,Other
+Other Gaseous Fuel,Other
+Natural and Process Gas Blend,Other
+VPS-2 Waste Gas,Other
+VPS-1 Waste Gas,Other
+H-OIL Waste Gas,Other
+Butane (gaseous),LPG_NGL
+Vacuum Tail Gas,Other
+Light Straight Run Gasoline,Other
+Other Gaseous Fuel,Other
+KATT,Other
+KATT Fuel,Other
+Blend (solid),Coal
+Bituminous Coal and Coke Blend,Coal
+HYD-01,Other
+Abatement Gas,Other
+Heavy Residue,Other
+Oilfield Gas,Other
+Tail Gas,Other
+Vacuum Gas,Other
+OFG,Other
+Refinery Fuel Gas,Other
+PSA Gas,Other
+Combined Purge Gas and Cold Box Fuel,Other
+Ethylene off-gas,Other
+Other Gaseous Fuel,Other
+vent gas (Oxo Propane Recycle),Other
+Oxo Propane Recycle,Other
+WGA,Other
+LFG,Other
+Waste 1,Other
+Waste 2,Other
+Reactor offgas,Other
+Corn Syrup from Ethanol Production,Other
+PSA Off-gas,Other
+FXG,Other
+LOP-RFG,Other
+CF-RFG,Other
+LSR,Other
+Sweet Fuel Gas,Other
+Railroad Ties,Other
+Tire chips,Other
+RDF,Other
+Mixed Gas (NG + MAP),Other
+Process Off-gas,Other
+Process OffGas,Other
+OffGas,Other
+Other - Off Gas,Other
+Off Gas (Other),Other
+Blend (solid),Coal
+70/30 Coal/Coke Blend,Coal
+70/30 Coal/Pet Coke Blend,Coal
+Carpet Fines,Other
+Processed Oily Waste,Other
+Methane Fuel Gas,Other
+Other Gaseous Fuel,Other
+Refinery Fuel/ Bullet Gas,Other
+P-300 Liquid Bottoms,Other
+Diesel #2  ultra low sulfur,Diesel
+Syngas,Other
+#2 Diesel,Diesel
+Lignite Activation,Coal
+Mixed Fuel Gas,Other
+Biogenic Process Derived Fuel,Other
+Biogenic Process Derived Fuel (PDF),Other
+Biogenic Process Derived Fuel (Glidfuel),Other
+Condensate Tank Vapors,Other
+Subbitumious,Coal
+Blend (liquid),Residual_fuel_oil
+Blend (gas),Other
+Process Gas Only,Other
+diesel,Diesel
+Mixed Gas (NG + MAP),Other
+Hydrogen Fuel Gas,Other
+CRU MD Fuel Gas,Other
+Remediation - Thermal Oxidizer,Other
+CFU MD Fuel Gas,Other
+Refinery Produced Gas,Other
+refinery gas,Other
+Other (gas),Other

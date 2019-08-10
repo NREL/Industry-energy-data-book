@@ -28,11 +28,40 @@ def Construction(calculation_years=range(2010, 2017)):
     census_data = census_data.sort_index().reset_index()
 
     census_data = census_data.apply(pd.to_numeric, errors='ignore')
-
-    # Calculate state-level diesel consumption
+    
+    
+    # Calculate state-level energy use (all in MMBtu)
+    # Diesel use
     diesel_state = cons.calc_diesel_state(census_data)
 
-    # Calculate state-level natural gas consumption
+    # Natural gas use
     ng_state = cons.calc_ng_state(census_data)
+    
+    # Electricity use
+    elect_state = cons.calc_elec_state(census_data)
+    
+    # Liquid petroleum gas use
+    lpg_state = cons.calc_lpg_state(census_data)
+    
+    energy_state = pd.concat(
+            [diesel_state, ng_state, elect_state, lpg_state], axis=0,
+            ignore_index=True
+            )
+    
+    # Calculate GDP multiplier
+    multiplier = cons.calc_bea_multiplier()
+    
+    # Calculate county fraction of state construction establishments by 
+    # NAICS code.
+    county_frac = cons.calc_county_fraction(cbp_2012)
+    
+    # Format state energy data.
+    
+    # Calculate county energy 
+    cons_energy = cons.calc_county_energy(
+       energy_state, county_frac, multiplier,
+       calculation_years=range(2010, 2017)
+       )
+    
 
     

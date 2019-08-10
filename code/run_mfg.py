@@ -15,7 +15,6 @@ import dask.dataframe as dd
 import os
 
 
-
 def Manufacturing(calculation_years=range(2010, 2017)): #CBP data only through 2016; 2017 scheduled for Nov 2019
     
     energy_ghgrp = pd.read_parquet(

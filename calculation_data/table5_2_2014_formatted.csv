@@ -1,0 +1,1477 @@
+﻿naics,enduse_cat,not_total,end_use,total,net_electricity,fuel_oil,diesel,natural_gas,NGL_HGL,coal,other
+31,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1015,492,1,58,433,27,4,0
+31,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,17.02,0,0.01,3,12,0.01,2,0
+31,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,630.01,247,0.01,4,369,7,3,0
+31,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,170,170,0,0,0,0,0,0
+31,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,74,13,0,39,2,20,0,0
+31,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,95.03,52,0.01,2,41,0.01,0.01,0
+31,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,30.03,11,0.01,11,8,0.01,0.01,0
+31,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,5356,2028,8,26,2953,43,298,0
+31,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,176,176,0,0,0,0,0,0
+31,Direct Uses-Total Process,TRUE,Machine Drive,1432.01,1253,0.01,13,162,3,1,0
+31,Direct Uses-Total Process,TRUE,Other Process Use,267.01,66,0.01,8,173,3,17,0
+31,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,216.03,189,0.01,0.01,27,0.01,0,0
+31,Direct Uses-Total Process,TRUE,Process Heating,3261,342,7,5,2590,37,280,0
+31,End Use Not Reported,FALSE,End Use Not Reported,5761,48,0.01,3,168,5,81,5455
+31,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,2772,33,21,12,2305,8,393,0
+31,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1915,0,10,9,1549,3,344,0
+31,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,856,33,11,4,756,4,48,0
+31,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,14903,2600,30,99,5858,84,776,5455
+311,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,109.04,46,0.02,12,49,2,0.02,0
+311,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,2.02,0,0,2,0.01,0.01,0,0
+311,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,55.02,20,0.01,1,33,1,0.01,0
+311,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,18,18,0,0,0,0,0,0
+311,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,8.01,2,0,5,0.01,1,0,0
+311,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,21.03,5,0.01,1,15,0.01,0.01,0
+311,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,4.02,0.01,0,3,1,0.01,0,0
+311,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,389.03,189,0.03,3,181,2,14,0
+311,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,1,1,0,0,0,0,0,0
+311,Direct Uses-Total Process,TRUE,Machine Drive,111.02,106,0.02,1,4,0.01,0,0
+311,Direct Uses-Total Process,TRUE,Other Process Use,17.99,5,0,1.98,11,0.01,0,0
+311,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,69.03,66,0.02,0.01,3,0.01,0,0
+311,Direct Uses-Total Process,TRUE,Process Heating,188.02,11,0.02,0.01,162,1,14,0
+311,End Use Not Reported,FALSE,End Use Not Reported,197,5,0,0.01,10,0.01,22,158
+311,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,420,7,3,4,330,2,74,0
+311,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,250,0,1,3,183,1,62,0
+311,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,170,7,2,1,147,1,12,0
+311,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,1114,247,4,20,570,6,110,158
+312,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,17.01,9,0,1,6,1,0.01,0
+312,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+312,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,9.03,4,0,0.01,5,0.01,0.01,0
+312,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,3,3,0,0,0,0,0,0
+312,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,2.02,1,0,0.01,0.01,1,0,0
+312,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,1,0,0.01,0.01,0.01,0,0
+312,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+312,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,27.07,21,0,0.03,6,0.03,0.01,0
+312,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+312,Direct Uses-Total Process,TRUE,Machine Drive,12.03,12,0,0.01,0.01,0.01,0,0
+312,Direct Uses-Total Process,TRUE,Other Process Use,1.03,1,0,0.01,0.01,0.01,0,0
+312,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,7.01,7,0,0,0.01,0,0,0
+312,Direct Uses-Total Process,TRUE,Process Heating,7.03,1,0,0.01,6,0.01,0.01,0
+312,End Use Not Reported,FALSE,End Use Not Reported,9.02,3,0,0.01,2,0.01,0,4
+312,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,42.05,1,0.01,0.02,34,0.02,7,0
+312,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,18.02,0,0,0.01,13,0.01,5,0
+312,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,24.03,1,0.01,0.01,21,0.01,2,0
+312,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,95,33,0.01,1,48,1,7,4
+313,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,14.1,11,0.01,0.05,3,0.4,0,0
+313,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+313,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,8.03,6,0.01,0.01,2,0.1,0,0
+313,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,3,3,0,0,0,0,0,0
+313,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.1,0,0
+313,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,1,0,0.01,0.01,0.1,0,0
+313,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.1,0,0
+313,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,50.07,31,0.01,0.02,19,0.4,0,0
+313,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+313,Direct Uses-Total Process,TRUE,Machine Drive,31,25,0,0,5.99,0.1,0,0
+313,Direct Uses-Total Process,TRUE,Other Process Use,2.02,1,0,0.01,1,0.1,0,0
+313,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,2.02,2,0,0,0.01,0.1,0,0
+313,Direct Uses-Total Process,TRUE,Process Heating,16.03,4,0.01,0.01,12,0.1,0,0
+313,End Use Not Reported,FALSE,End Use Not Reported,12,0.01,0,0,1,0.01,0,12
+313,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,20.05,1,0.01,0.02,13,0.2,6,0
+313,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,14.03,0,0.01,0.01,9,0.1,5,0
+313,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,6.02,1,0,0.01,4,0.1,1,0
+313,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,97,43,0.03,0.09,36,1,6,12
+314,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,7.09,3,0,0.05,4,0.04,0,0
+314,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+314,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,5.02,1,0,0.01,4,0.01,0,0
+314,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+314,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.33,0,0.01,0,0.01,0,0
+314,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.33,0,0.01,0.01,0.01,0,0
+314,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.33,0,0.01,0,0.01,0,0
+314,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,12.06,6,0,0.03,6,0.03,0,0
+314,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+314,Direct Uses-Total Process,TRUE,Machine Drive,5.03,4.6,0,0.01,0.01,0.01,0,0
+314,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+314,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1,0.7,0,0,0,0,0,0
+314,Direct Uses-Total Process,TRUE,Process Heating,7.02,0.7,0,0.01,6,0.01,0,0
+314,End Use Not Reported,FALSE,End Use Not Reported,1,0.01,0,0.01,0.01,0.01,0,0.01
+314,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,8.06,0.01,0.01,0.02,7,0.02,1,0
+314,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,3.03,0,0.01,0.01,2,0.01,1,0
+314,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,4.04,0.01,0,0.01,4,0.01,0.01,0
+314,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,27,9,0.01,0.11,16,1,1,0.01
+315,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1.06,1,0,0.02,0.45,0.02,0,0
+315,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+315,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,1,0,0.01,0.225,0.01,0,0
+315,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+315,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+315,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.02,0.01,0,0,0.225,0,0,0
+315,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0,0,0,0,0,0,0,0
+315,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,1.06,1,0,0.01,0.4,0.02,0,0
+315,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+315,Direct Uses-Total Process,TRUE,Machine Drive,1.01,1,0,0,0.1,0,0,0
+315,Direct Uses-Total Process,TRUE,Other Process Use,0.03,0,0,0.01,0.1,0.01,0,0
+315,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+315,Direct Uses-Total Process,TRUE,Process Heating,0.03,0.01,0,0,0.1,0.01,0,0
+315,End Use Not Reported,FALSE,End Use Not Reported,0.04,0.44,0,0,0.1,0.01,0,0.01
+315,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.03,0.44,0,0.01,1.15,0.01,0,0
+315,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.02,0,0,0,0.575,0.01,0,0
+315,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.03,0.44,0,0.01,0.575,0,0,0
+315,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,5,3,0,0.04,2,0.06,0,0.01
+316,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,0.13,0.05,0,0.03,0.02,0.03,0,0
+316,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+316,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,0.04,0.01,0,0.01,0.01,0.01,0,0
+316,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+316,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+316,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+316,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0.01,0,0.01,0,0,0,0
+316,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,2.04,1,0.01,0.01,1,0.02,0,0
+316,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+316,Direct Uses-Total Process,TRUE,Machine Drive,1.01,1,0,0,0.01,0,0,0
+316,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0.01,0,0.01,0.01,0,0
+316,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+316,Direct Uses-Total Process,TRUE,Process Heating,1.03,0.01,0,0.01,1,0.01,0,0
+316,End Use Not Reported,FALSE,End Use Not Reported,0.04,0.01,0,0,0.01,0.01,0,0.01
+316,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,0.05,0.01,0.01,0.01,0.02,0,0,0
+316,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.03,0,0.01,0.01,0.01,0,0,0
+316,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.02,0.01,0,0,0.01,0,0,0
+316,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,3,1,0.02,0.05,1,0.06,0,0.01
+321,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,26,11,0,7,6,2,0,0
+321,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.01,0,0
+321,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,12.02,6,0,0.01,6,0.01,0,0
+321,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,4,4,0,0,0,0,0,0
+321,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,9.02,0.01,0,7,0.01,2,0,0
+321,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,1,0,0.01,0.01,0.01,0,0
+321,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+321,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,95.04,60,0.03,2,32,1,0.01,0
+321,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+321,Direct Uses-Total Process,TRUE,Machine Drive,57.02,54,0.01,1,2,0.01,0,0
+321,Direct Uses-Total Process,TRUE,Other Process Use,4,1,0.01,0.98,2,0.01,0,0
+321,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.02,1,0,0.01,0.01,0,0,0
+321,Direct Uses-Total Process,TRUE,Process Heating,33.03,4,0.01,0.01,28,1,0.01,0
+321,End Use Not Reported,FALSE,End Use Not Reported,250,1,0,0.98,0.01,0.01,0,248
+321,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,13.04,1,0,0.02,11,0.02,1,0
+321,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,7.03,0,0,0.01,7,0.01,0.01,0
+321,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,5.03,1,0,0.01,4,0.01,0.01,0
+321,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,384,73,0.03,10,49,3,1,248
+322,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,47.03,19,0.03,2,22,2,2,0
+322,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,5.03,0,0.01,0.01,3,0.01,2,0
+322,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,25.04,8,0.01,0.01,17,0.01,0.01,0
+322,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,8,8,0,0,0,0,0,0
+322,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,5.01,1,0,1.96,0.01,2,0,0
+322,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,4.02,2,0,0.01,2,0.01,0,0
+322,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.05,0.01,0.01,0.01,0.01,0.01,0,0
+322,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,319.06,165,4,0.5,143,0.5,7,0
+322,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,2,2,0,0,0,0,0,0
+322,Direct Uses-Total Process,TRUE,Machine Drive,159.04,142,0.01,0.166666667,17,0.166666667,0.01,0
+322,Direct Uses-Total Process,TRUE,Other Process Use,16.02,11,0,0.166666667,3,0.166666667,2,0
+322,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,4.01,4,0,0,0.01,0,0,0
+322,Direct Uses-Total Process,TRUE,Process Heating,140.02,8,4,0.166666667,123,0.166666667,5,0
+322,End Use Not Reported,FALSE,End Use Not Reported,1299,2,0.01,0.01,2.97,0.01,3,1291
+322,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,423.01,5,12,2,270,0.4,134,0
+322,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,364.01,0,8,2,228,0.4,126,0
+322,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,60.01,5,5,0.01,42,0,8,0
+322,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,2090,191,17,5,436,3,146,1291
+323,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,28.05,14,0,0.05,13,1,0,0
+323,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,1.98,0,0,0.01,1.97,0,0,0
+323,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,19.02,8,0,0.01,11,0.01,0,0
+323,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,4,4,0,0,0,0,0,0
+323,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,2.02,1,0,0.01,0.01,1,0,0
+323,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,1,0,0.01,0.01,0.01,0,0
+323,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0.01,0,0,0
+323,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,50.05,32,0,0.02,18,0.03,0,0
+323,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,1,1,0,0,0,0,0,0
+323,Direct Uses-Total Process,TRUE,Machine Drive,27.02,26,0,0.01,1,0.01,0,0
+323,Direct Uses-Total Process,TRUE,Other Process Use,1.03,1,0,0.01,0.01,0.01,0,0
+323,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,4.01,4,0,0,0.01,0,0,0
+323,Direct Uses-Total Process,TRUE,Process Heating,19.01,2,0,0,17,0.01,0,0
+323,End Use Not Reported,FALSE,End Use Not Reported,4.01,2.99,0,0,1,0.01,0,0.01
+323,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,7.06,0.01,0.01,0.02,7,0.02,0,0
+323,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,3.02,0,0,0.01,3,0.01,0,0
+323,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,4.04,0.01,0.01,0.01,4,0.01,0,0
+323,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,89,49,0.01,0.09,39,1,0,0.01
+324,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,26.07,12,0.01,5,9,0.05,0.01,0
+324,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,3.02,0,0,0.01,3,0.01,0,0
+324,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,11.03,6,0.01,0.01,5,0.01,0,0
+324,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,4,4,0,0,0,0,0,0
+324,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,4.03,0.01,0,4,0.01,0.01,0,0
+324,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,2.03,2,0,0.01,0.01,0.01,0,0
+324,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,1.04,0.01,0,1,0.01,0.01,0.01,0
+324,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,805,150,3,5,609,30,8,0
+324,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+324,Direct Uses-Total Process,TRUE,Machine Drive,159.02,144,0.01,2,13,0.01,0,0
+324,Direct Uses-Total Process,TRUE,Other Process Use,41.02,2,0.01,1,30,0.01,8,0
+324,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,8.03,7,0.01,0.01,1,0.01,0,0
+324,Direct Uses-Total Process,TRUE,Process Heating,599,-2,3,2,566,30,0,0
+324,End Use Not Reported,FALSE,End Use Not Reported,2324,3,0.01,0.01,104,0.01,0,2216
+324,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,358,1,1,1,349,5,1,0
+324,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,242.01,0,0.01,1,238,2,1,0
+324,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,116.01,1,1,0.01,111,3,0,0
+324,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,3513,167,4,11,1071,36,8,2216
+325,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,129.01,64,0.01,4,58,1,2,0
+325,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.25,0.01,0.01,0,0
+325,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,83.03,33,0.01,0.25,48,0.01,2,0
+325,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,21,21,0,0,0,0,0,0
+325,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,5.01,1,0,3,0.01,1,0,0
+325,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,13.02,6,0,0.25,7,0.01,0,0
+325,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,4.02,2,0,0.25,2,0.01,0,0
+325,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,1280.01,380,0.01,3,880,1,16,0
+325,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,58,58,0,0,0,0,0,0
+325,Direct Uses-Total Process,TRUE,Machine Drive,346.02,253,0,2,91,0.01,0.01,0
+325,Direct Uses-Total Process,TRUE,Other Process Use,76.01,9,0,0.33,66,1,0,0
+325,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,55.02,39,0,0.33,16,0.01,0,0
+325,Direct Uses-Total Process,TRUE,Process Heating,745.02,20,0.01,0.33,708,1,16,0
+325,End Use Not Reported,FALSE,End Use Not Reported,889,7,0,0.01,11,1,56,814
+325,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1228.02,7,2,3,1053,0.02,163,0
+325,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,862.02,0,0.01,2,720,0.01,140,0
+325,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,367.01,7,2,1,333,0.01,24,0
+325,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,3527,458,2,10,2002,4,237,814
+326,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,68.05,43,0,1.04,21,3,0.01,0
+326,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+326,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,40.02,19,0,0.01,20,1,0.01,0
+326,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,17,17,0,0,0,0,0,0
+326,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,3.02,1,0,0.01,0.01,2,0,0
+326,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,5.02,4,0,0.01,1,0.01,0,0
+326,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,3.02,2,0,1,0.01,0.01,0,0
+326,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,170.05,145,0,0.02,25,0.03,0,0
+326,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,1,1,0,0,0,0,0,0
+326,Direct Uses-Total Process,TRUE,Machine Drive,99.02,98,0,0.01,1,0.01,0,0
+326,Direct Uses-Total Process,TRUE,Other Process Use,2.02,2,0,0,0.01,0.01,0,0
+326,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,15.01,15,0,0,0.01,0,0,0
+326,Direct Uses-Total Process,TRUE,Process Heating,52.02,29,0,0.01,23,0.01,0,0
+326,End Use Not Reported,FALSE,End Use Not Reported,7,1,0,0.01,2,1,0,2.99
+326,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,48.95,1,0,0.01,42,0.02,5.92,0
+326,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,26.92,0,0,0,21,0.01,5.91,0
+326,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,22.03,1,0,0.01,21,0.01,0.01,0
+326,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,294,190,0,1.08,90,4,5.93,2.99
+327,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,49.02,16,0.01,11,21,1,0.01,0
+327,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.01,0,0
+327,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,27.04,8,0.01,0.01,19,0.01,0.01,0
+327,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,6,6,0,0,0,0,0,0
+327,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,9.02,0.01,0,8,0.01,0.96,0,0
+327,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,4.02,2,0,0.01,2,0.01,0,0
+327,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,2.03,0.01,0,2,0.01,0.01,0,0
+327,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,626.01,105,0.01,8,278,1,234,0
+327,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,2,2,0,0,0,0,0,0
+327,Direct Uses-Total Process,TRUE,Machine Drive,77.01,64,0,4,8,0.01,1,0
+327,Direct Uses-Total Process,TRUE,Other Process Use,9.01,3,0,3,3,0.01,0,0
+327,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,7.01,5,0,0,2,0.01,0,0
+327,Direct Uses-Total Process,TRUE,Process Heating,532.01,31,0.01,1,266,1,233,0
+327,End Use Not Reported,FALSE,End Use Not Reported,136,4.98,0,0.01,21,1,0.01,109
+327,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,15.05,1,0.01,0.02,13,0.02,1,0
+327,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,12.03,0,0.01,0.01,11,0.01,1,0
+327,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,3.02,1,0,0.01,2,0.01,0,0
+327,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,827,128,0.03,19,333,3,235,109
+331,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,88.01,35,0.2,5,47,1.3,0,0
+331,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.075,0,0
+331,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,54.03,15,0.2,0.01,39,0.075,0,0
+331,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,14,14,0,0,0,0,0,0
+331,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,8,1,0,5,1,1,0,0
+331,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,11.02,4,0,0.01,7,0.075,0,0
+331,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,2.02,1,0,0.01,1,0.075,0,0
+331,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,912.02,388,0.4,1,504,1,18,0
+331,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,99,99,0,0,0,0,0,0
+331,Direct Uses-Total Process,TRUE,Machine Drive,127.03,115,0.2,0.01,12,0.01,0,0
+331,Direct Uses-Total Process,TRUE,Other Process Use,50.02,7,0,0.01,36,0.01,7,0
+331,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,11.02,6,0,0.01,5,0.01,0,0
+331,Direct Uses-Total Process,TRUE,Process Heating,625.01,160,0.2,1,452,0.97,11,0
+331,End Use Not Reported,FALSE,End Use Not Reported,595,9,0.01,0.01,6,0.01,0,580
+331,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,87.06,2,0.4,0.02,85,0.45,0,0
+331,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,62.03,0,0.01,0.01,62,0.01,0,0
+331,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,25.03,2,0.39,0.01,23,0.44,0,0
+331,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,1684,433,1,6,643,3,18,580
+332,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,96,41,0,2,47,6,0,0
+332,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+332,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,69.95,22,0,0.97,45,1.98,0,0
+332,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,13,13,0,0,0,0,0,0
+332,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,6.01,1,0,1,0.01,4,0,0
+332,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,7.02,5,0,0.01,2,0.01,0,0
+332,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+332,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,216.03,97,0,0.03,118,1,0,0
+332,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,5,5,0,0,0,0,0,0
+332,Direct Uses-Total Process,TRUE,Machine Drive,66.02,61,0,0.01,5,0.01,0,0
+332,Direct Uses-Total Process,TRUE,Other Process Use,7.01,5,0,0.01,1.99,0.01,0,0
+332,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,5.01,5,0,0,0.01,0,0,0
+332,Direct Uses-Total Process,TRUE,Process Heating,133.99,22,0,0.01,111,0.98,0,0
+332,End Use Not Reported,FALSE,End Use Not Reported,10,2.99,0,0,6,0.01,0,1
+332,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,22.03,2.01,0,0,20,0.02,0,0
+332,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,16.01,0,0,0,16,0.01,0,0
+332,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,6.02,2.01,0,0,4,0.01,0,0
+332,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,344,143,0,2,191,7,0,1
+333,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,66.99,31,0.02,1.97,32,2,0,0
+333,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.01,0,0
+333,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,47.99,16,0.01,0.01,31,0.97,0,0
+333,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,11,11,0,0,0,0,0,0
+333,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,2.02,1,0,0.01,0.01,1,0,0
+333,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,5.94,3,0,1.93,1,0.01,0,0
+333,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.05,0.01,0.01,0.01,0.01,0.01,0,0
+333,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,76,47,0,3,25,1,0,0
+333,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,1,1,0,0,0,0,0,0
+333,Direct Uses-Total Process,TRUE,Machine Drive,35.02,33,0,0.01,2,0.01,0,0
+333,Direct Uses-Total Process,TRUE,Other Process Use,10.49,2,0,3,4.99,0.5,0,0
+333,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,3.03,3,0,0.01,0.01,0.01,0,0
+333,Direct Uses-Total Process,TRUE,Process Heating,26.48,8,0,0,18,0.48,0,0
+333,End Use Not Reported,FALSE,End Use Not Reported,4,0.98,0,0.01,1,0.01,0,2
+333,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,17.01,1,0,0.02,14,0.01,1.98,0
+333,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,12,0,0,0.01,10,0.01,1.98,0
+333,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,5.01,1,0,0.01,4,0,0,0
+333,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,164,80,0.02,5,72,3,1.98,2
+334,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,63.1,46,0.01,0.05,17,0.04,0,0
+334,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+334,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,42.03,27,0.01,0.01,15,0.01,0,0
+334,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,10,10,0,0,0,0,0,0
+334,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+334,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,7.02,6,0,0.01,1,0.01,0,0
+334,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,3.02,2,0,0.01,1,0.01,0,0
+334,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,77.06,63,0,0.03,14,0.03,0,0
+334,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,3,3,0,0,0,0,0,0
+334,Direct Uses-Total Process,TRUE,Machine Drive,26.03,26,0,0.01,0.01,0.01,0,0
+334,Direct Uses-Total Process,TRUE,Other Process Use,12.02,8,0,0.01,4,0.01,0,0
+334,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,13.01,13,0,0,0.01,0,0,0
+334,Direct Uses-Total Process,TRUE,Process Heating,23.02,13,0,0.01,10,0.01,0,0
+334,End Use Not Reported,FALSE,End Use Not Reported,5,2,0,0,0.01,0.01,0,1.89
+334,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,17.03,1,0,0.01,16,0.02,0,0
+334,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,5.01,0,0,0,5,0.01,0,0
+334,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,12.02,1,0,0.01,11,0.01,0,0
+334,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,162,112,0.01,1,47,0.1,0,1.89
+335,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,20.05,12,0,0.05,7,0.99,0,0
+335,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0,0.1955,0,0
+335,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,13.02,7,0,0.01,6,0.1955,0,0
+335,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,4,4,0,0,0,0,0,0
+335,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.1955,0,0
+335,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,1,0,0.01,0.01,0.1955,0,0
+335,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.2,0,0
+335,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,45.03,28,0,0.02,17,0.01,0,0
+335,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,3,3,0,0,0,0,0,0
+335,Direct Uses-Total Process,TRUE,Machine Drive,11.02,11,0,0.01,0.01,0,0,0
+335,Direct Uses-Total Process,TRUE,Other Process Use,1.01,1,0,0,0.01,0,0,0
+335,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,3.01,3,0,0,0.01,0,0,0
+335,Direct Uses-Total Process,TRUE,Process Heating,25.02,9,0,0.01,16,0.01,0,0
+335,End Use Not Reported,FALSE,End Use Not Reported,2,0.01,0,0.01,0,0.01,0,2
+335,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,3.02,0.01,0,0,3,0.01,0,0
+335,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1,0,0,0,1,0,0,0
+335,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,2.02,0.01,0,0,2,0.01,0,0
+335,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,71,40,0,0.08,27,1,0,2
+336,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,118,58,0,2,55,3,0,0
+336,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,1.01,0,0,0.01,0.99,0.25,0,0
+336,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,78.02,29,0,0.01,49,0.25,0,0
+336,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,19,19,0,0,0,0,0,0
+336,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,5.01,2,0,1,0.01,2,0,0
+336,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,8.02,6,0,0.01,2,0.25,0,0
+336,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,5.98,2,0,0.97,3,0.25,0,0
+336,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,158.97,92,0,1.97,64,1,0,0
+336,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,1,1,0,0,0,0,0,0
+336,Direct Uses-Total Process,TRUE,Machine Drive,63.95,59,0,1.95,2.99,0.25,0,0
+336,Direct Uses-Total Process,TRUE,Other Process Use,12.02,7,0,0.01,5,0.25,0,0
+336,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,8.02,8,0,0,0.01,0.25,0,0
+336,Direct Uses-Total Process,TRUE,Process Heating,73.02,17,0,0.01,56,0.25,0,0
+336,End Use Not Reported,FALSE,End Use Not Reported,14,2,0,0.01,2,0.01,0,9
+336,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,27.03,1,1,0.02,24,0.05,1,0
+336,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,7.02,0,0,0.01,7,0,0.01,0
+336,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,20.02,1,1,0.01,17,0.05,1,0
+336,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,318,154,1,4,145,4,1,9
+337,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,16.06,7,0,0.05,8,1,0.01,0
+337,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.2,0,0
+337,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,10.03,3,0,0.01,7,0.2,0.01,0
+337,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,3,3,0,0,0,0,0,0
+337,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.2,0,0
+337,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,1,0,0.01,0.01,0.2,0,0
+337,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.2,0,0
+337,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,16.06,10,0,0.01,6,0.04,0.01,0
+337,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+337,Direct Uses-Total Process,TRUE,Machine Drive,8.02,8,0,0,0.01,0.01,0,0
+337,Direct Uses-Total Process,TRUE,Other Process Use,0.02,0.01,0,0,0,0.01,0,0
+337,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.03,0.01,0,0,0.01,0.01,0,0
+337,Direct Uses-Total Process,TRUE,Process Heating,7.03,1,0,0.01,6,0.01,0.01,0
+337,End Use Not Reported,FALSE,End Use Not Reported,4,0.01,0,0,0.01,0.01,0,4
+337,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.04,0.01,0,0.01,0.99,0.02,0.01,0
+337,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1,0,0,0.01,0.98,0.01,0,0
+337,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.04,0.01,0,0,0.01,0.01,0.01,0
+337,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,37,17,0,0.07,15,1,0.03,4
+339,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,22.11,13,0.02,0.04,9,0.5,0,0
+339,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,2,0,0,0.01,1.98,0.1,0,0
+339,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,13.03,7,0.01,0.01,6,0.1,0,0
+339,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,4,4,0,0,0,0,0,0
+339,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.1,0,0
+339,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,2.02,1,0.01,0,1,0.1,0,0
+339,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.1,0,0
+339,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,20.07,15,0,0.03,5,0.5,0,0
+339,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+339,Direct Uses-Total Process,TRUE,Machine Drive,9.03,9,0,0.01,0.01,0.125,0,0
+339,Direct Uses-Total Process,TRUE,Other Process Use,2,1,0,0.01,0.98,0.125,0,0
+339,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,2.02,2,0,0,0.01,0.125,0,0
+339,Direct Uses-Total Process,TRUE,Process Heating,7.02,3,0,0.01,4,0.125,0,0
+339,End Use Not Reported,FALSE,End Use Not Reported,0.43,0.01,0,0,0.01,0.01,0,0.4
+339,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,12.51,0.01,0,0.51,11.99,0,0,0
+339,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,11.49,0,0,0.5,10.99,0,0,0
+339,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.02,0.01,0,0.01,1,0,0,0
+339,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,57,29,0.02,0.58,26,1,0,0.4
+3112,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,10.08,5,0.01,1,4,0.05,0.02,0
+3112,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.01,0,0
+3112,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,5.04,2,0.01,0.01,3,0.01,0.01,0
+3112,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+3112,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.03,0.01,0,1,0.01,0.01,0,0
+3112,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.04,0.01,0,0.01,1,0.01,0.01,0
+3112,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+3112,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,86.08,43,0.01,0.04,42,0.03,1,0
+3112,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3112,Direct Uses-Total Process,TRUE,Machine Drive,37.02,36,0,0.01,1,0.01,0,0
+3112,Direct Uses-Total Process,TRUE,Other Process Use,5.03,0.01,0,0.01,5,0.01,0,0
+3112,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,7.01,5,0,0.01,2,0,0,0
+3112,Direct Uses-Total Process,TRUE,Process Heating,37.03,1,0.01,0.01,35,0.01,1,0
+3112,End Use Not Reported,FALSE,End Use Not Reported,52,0.01,0,0.01,0.01,0.01,22,29
+3112,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,130.05,2,0.01,0.02,86,0.02,42,0
+3112,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,66.03,0,0.01,0.01,36,0.01,30,0
+3112,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,64.02,2,0,0.01,50,0.01,12,0
+3112,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,278,50,0.03,1,133,0.11,65,29
+3114,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,17.06,7,0.02,0.04,9,1,0,0
+3114,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+3114,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,10.03,3,0.01,0.01,7,0.25,0,0
+3114,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+3114,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.03,1,0,0.01,0.01,0.25,0,0
+3114,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,2.02,1,0.01,0,1,0.25,0,0
+3114,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.25,0,0
+3114,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,45.08,24,0.01,0.04,21,0.03,0,0
+3114,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3114,Direct Uses-Total Process,TRUE,Machine Drive,9.03,9,0,0.01,0.01,0.01,0,0
+3114,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+3114,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,13.02,13,0,0.01,0.01,0,0,0
+3114,Direct Uses-Total Process,TRUE,Process Heating,22.03,2,0.01,0.01,20,0.01,0,0
+3114,End Use Not Reported,FALSE,End Use Not Reported,12,0.01,0,0.01,6,0.01,0,5
+3114,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,70.07,1,0.02,0.02,69,0.02,0.01,0
+3114,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,46.04,0,0.01,0.01,46,0.01,0.01,0
+3114,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,24.03,1,0.01,0.01,23,0.01,0,0
+3114,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,146,33,0.05,1,105,1,0.01,5
+3115,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,11.06,6,0.01,1,4,0.04,0.01,0
+3115,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+3115,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,7.04,3,0.01,0.01,3.6,0.01,0.01,0
+3115,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+3115,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+3115,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,2.01,1,0,0,0.6,0.01,0,0
+3115,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,1.03,0.01,0,1,0.01,0.01,0,0
+3115,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,43.11,25,0.03,0.5,18,0.03,0.01,0
+3115,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3115,Direct Uses-Total Process,TRUE,Machine Drive,13.03,12,0.01,0.125,1,0.01,0,0
+3115,Direct Uses-Total Process,TRUE,Other Process Use,2.02,1,0,0.125,1,0.01,0,0
+3115,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,12.03,12,0.01,0.125,0.01,0,0,0
+3115,Direct Uses-Total Process,TRUE,Process Heating,16.04,1,0.01,0.125,15,0.01,0.01,0
+3115,End Use Not Reported,FALSE,End Use Not Reported,6,2,0,0.01,2,0.01,0,2
+3115,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,47.02,1,1,1,44,0.02,0,0
+3115,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,23.03,0,0.01,0.01,23,0.01,0,0
+3115,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,23.02,1,1,0.99,21,0.01,0,0
+3115,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,109,35,1,3,68,1,0.02,2
+3116,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,34.05,11,0.01,4,19,0.4,0,0
+3116,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+3116,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,12.02,4,0,0.01,8,0.1,0,0
+3116,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,5,5,0,0,0,0,0,0
+3116,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.03,0.01,0,1,0.01,0.1,0,0
+3116,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,12.03,1,0.01,0.01,11,0.1,0,0
+3116,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,2.03,0.01,0,2,0.01,0.1,0,0
+3116,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,75.08,48,0,0.04,27,0.4,0,0
+3116,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3116,Direct Uses-Total Process,TRUE,Machine Drive,19.02,18,0,0.01,1,0.1,0,0
+3116,Direct Uses-Total Process,TRUE,Other Process Use,6.02,2,0,0.01,4,0.1,0,0
+3116,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,26.03,26,0,0.01,0.01,0.1,0,0
+3116,Direct Uses-Total Process,TRUE,Process Heating,25.02,3,0,0.01,22,0.1,0,0
+3116,End Use Not Reported,FALSE,End Use Not Reported,8,1.98,0,0.01,1,0.01,0,5
+3116,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,84.01,2,1,1,79,1.21,0.01,0
+3116,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,51.02,0,1,1,49,0.01,0.01,0
+3116,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,33.02,2,0.01,0.01,30,1.2,0,0
+3116,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,201,62,1,5,126,2,0.01,5
+3121,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,15,8,0,1,5,1,0,0
+3121,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.25,0.01,0,0,0
+3121,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,7.02,3,0,0.25,4,0.01,0,0
+3121,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,3,3,0,0,0,0,0,0
+3121,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,2.02,1,0,0.25,0.01,1,0,0
+3121,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.02,1,0,0,0.01,0.01,0,0
+3121,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.25,0.01,0.01,0,0
+3121,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,24.06,19,0,0.03,5,0.03,0,0
+3121,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3121,Direct Uses-Total Process,TRUE,Machine Drive,11.03,11,0,0.01,0.01,0.01,0,0
+3121,Direct Uses-Total Process,TRUE,Other Process Use,1.03,1,0,0.01,0.01,0.01,0,0
+3121,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,6.01,6,0,0,0.01,0,0,0
+3121,Direct Uses-Total Process,TRUE,Process Heating,6.02,1,0,0.01,5,0.01,0,0
+3121,End Use Not Reported,FALSE,End Use Not Reported,9,3,0,0.01,2,0.01,0,4
+3121,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,37.05,0.01,0,0.02,31,0.02,6,0
+3121,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,17.02,0,0,0.01,13,0.01,4,0
+3121,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,20.03,0.01,0,0.01,18,0.01,2,0
+3121,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,86,30,0,1,43,1,6,4
+3122,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,3.09,2,0,0.05,1,0.03,0.2,0
+3122,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+3122,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.04,1,0,0.01,0.01,0.01,0.2,0
+3122,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.25,0,0,0,0,0,0
+3122,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.25,0,0.01,0.01,0.01,0,0
+3122,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.25,0,0.01,0.01,0,0,0
+3122,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.25,0,0.01,0.01,0.01,0,0
+3122,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,3.06,1.6,0,0.02,1,0.03,0.3,0
+3122,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.25,0,0,0,0,0,0
+3122,Direct Uses-Total Process,TRUE,Machine Drive,1.03,0.6,0,0.01,0.01,0.01,0,0
+3122,Direct Uses-Total Process,TRUE,Other Process Use,0.03,0.25,0,0,0.01,0.01,0,0
+3122,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.25,0,0,0.01,0,0,0
+3122,Direct Uses-Total Process,TRUE,Process Heating,1.04,0.25,0,0.01,1,0.01,0.3,0
+3122,End Use Not Reported,FALSE,End Use Not Reported,0.01,0,0,0,0,0,0,0.01
+3122,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,4.08,0.01,0.01,0.02,4,0.02,0.5,0
+3122,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1.03,0,0,0.01,1,0.01,0.1,0
+3122,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,3.05,0.01,0.01,0.01,3,0.01,0.4,0
+3122,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,9,3.35,0.01,0.09,5,0.08,1,0.01
+3212,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,7,3,0,1.04,2,1,0,0
+3212,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+3212,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,2.02,1,0,0.01,1,0.01,0,0
+3212,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+3212,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,2.01,0.01,0,1,0,1,0,0
+3212,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.5,0.01,0,0
+3212,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.5,0.01,0,0
+3212,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,43.06,21,0,0.5,22,0.03,0,0
+3212,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3212,Direct Uses-Total Process,TRUE,Machine Drive,20.02,19,0,0.166666667,1,0.01,0,0
+3212,Direct Uses-Total Process,TRUE,Other Process Use,2.03,0.01,0,0.166666667,2,0.01,0,0
+3212,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+3212,Direct Uses-Total Process,TRUE,Process Heating,21.02,2,0,0.166666667,19,0.01,0,0
+3212,End Use Not Reported,FALSE,End Use Not Reported,104,0.01,0,0.01,0.01,0.01,0,104
+3212,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,6.04,1,0,0.45,4,0.02,1,0
+3212,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,3.03,0,0,0.225,2.8,0.01,0.2,0
+3212,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,3.03,1,0,0.225,1.2,0.01,0.8,0
+3212,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,161,25,0,2,28,1,1,104
+3219,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,13,6,0,2,4,1,0,0
+3219,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.01,0,0
+3219,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,8.02,4,0,0.01,4,0.01,0,0
+3219,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+3219,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,3.02,0.01,0,2,0.01,1,0,0
+3219,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+3219,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.01,0,0
+3219,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,29.01,23,0.01,0.97,5,0.5,0,0
+3219,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3219,Direct Uses-Total Process,TRUE,Machine Drive,22.01,21,0.01,0.01,0.98,0.166666667,0,0
+3219,Direct Uses-Total Process,TRUE,Other Process Use,1.96,1,0,0.94,0.01,0.166666667,0,0
+3219,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.03,0.01,0,0.01,0.01,0,0,0
+3219,Direct Uses-Total Process,TRUE,Process Heating,5.02,1,0,0.01,4,0.166666667,0,0
+3219,End Use Not Reported,FALSE,End Use Not Reported,47.03,0.01,0,0.01,0.01,0.01,0,46.99
+3219,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,4.05,0.01,0,0.02,4,0.4,0,0
+3219,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,3.02,0,0,0.01,3,0.02,0,0
+3219,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.03,0.01,0,0.01,1,0.38,0,0
+3219,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,94,29,0.01,3,13,2,0,46.99
+3254,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,27.1,18,0,0.5,8,0.05,1,0
+3254,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.1,0.01,0.01,0,0
+3254,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,20.02,12,0,0.1,7,0.01,1,0
+3254,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,5,5,0,0,0,0,0,0
+3254,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.1,0.01,0.01,0,0
+3254,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,2.02,1,0,0.1,1,0.01,0,0
+3254,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.1,0.01,0.01,0,0
+3254,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,23.07,18,0,0.3,5,0.03,0,0
+3254,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3254,Direct Uses-Total Process,TRUE,Machine Drive,10.03,10,0,0.075,0.01,0.01,0,0
+3254,Direct Uses-Total Process,TRUE,Other Process Use,2.02,1,0,0.075,1,0.01,0,0
+3254,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,6.02,6,0,0.075,0.01,0,0,0
+3254,Direct Uses-Total Process,TRUE,Process Heating,5.02,1,0,0.075,4,0.01,0,0
+3254,End Use Not Reported,FALSE,End Use Not Reported,4,0.01,0,0.01,0.01,0,0,4
+3254,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,39.04,1,0,0.1,36,0.02,2,0
+3254,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,21.02,0,0,0.01,19,0.01,2,0
+3254,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,18.03,1,0,0.09,17,0.01,0.01,0
+3254,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,94,36,0,1,50,0.1,3,4
+3312,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,8.05,3,0,1,4,0.05,0,0
+3312,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.25,0.01,0,0
+3312,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,4.02,1,0,0.01,3,0.01,0,0
+3312,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+3312,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.03,0.01,0,1,0.25,0.01,0,0
+3312,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.25,0.01,0,0
+3312,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0,0.25,0.01,0,0
+3312,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,38.07,19,0,0.04,19,0.03,0,0
+3312,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3312,Direct Uses-Total Process,TRUE,Machine Drive,15,13,0,0.01,1.98,0.01,0,0
+3312,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+3312,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.02,1,0,0.01,0.01,0,0,0
+3312,Direct Uses-Total Process,TRUE,Process Heating,23.02,6,0,0.01,17,0.01,0,0
+3312,End Use Not Reported,FALSE,End Use Not Reported,7,0.01,0,0.01,0.01,0.01,0,7
+3312,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,3.03,0.01,0,0.01,3,0.01,0,0
+3312,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1.02,0,0,0.01,1,0.01,0,0
+3312,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,2.01,0.01,0,0,2,0,0,0
+3312,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,57,22,0,1,27,0.1,0,7
+3313,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,16.05,6,0.01,1,9,0.04,0,0
+3313,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+3313,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,9.03,2,0.01,0.01,7,0.01,0,0
+3313,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+3313,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,2.02,0.01,0,0.97,0.7,0.01,0,0
+3313,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,3.01,1,0,0,2,0.01,0,0
+3313,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.01,0,0
+3313,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,191.08,111,0.01,0.04,80,0.03,0,0
+3313,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,88,88,0,0,0,0,0,0
+3313,Direct Uses-Total Process,TRUE,Machine Drive,22.02,17,0,0.01,5,0.01,0,0
+3313,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+3313,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.02,1,0,0.01,0.01,0,0,0
+3313,Direct Uses-Total Process,TRUE,Process Heating,79.03,5,0.01,0.01,74,0.01,0,0
+3313,End Use Not Reported,FALSE,End Use Not Reported,8,0.01,0,0.01,2,0.01,0,6
+3313,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,27.04,0.01,0.01,0,27,0.02,0,0
+3313,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,24.01,0,0,0,24,0.01,0,0
+3313,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,3.03,0.01,0.01,0,3,0.01,0,0
+3313,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,243,117,0.03,1,117,1,0,6
+3314,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,8.09,4,0,0.05,4,0.04,0,0
+3314,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+3314,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,6.02,2,0,0.01,4,0.01,0,0
+3314,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+3314,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+3314,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.01,0.01,0,0
+3314,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+3314,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,72.03,40,0,0.03,30,1,1,0
+3314,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,6,6,0,0,0,0,0,0
+3314,Direct Uses-Total Process,TRUE,Machine Drive,10.03,10,0,0.01,0.01,0.01,0,0
+3314,Direct Uses-Total Process,TRUE,Other Process Use,4.03,3,0,0.01,0.01,0.01,1,0
+3314,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1,1,0,0,0,0,0,0
+3314,Direct Uses-Total Process,TRUE,Process Heating,49.01,19,0,0.01,29,1,0,0
+3314,End Use Not Reported,FALSE,End Use Not Reported,7,0.01,0,0,0,0.01,0,7
+3314,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,8.05,0.01,0,0.02,8,0.02,0,0
+3314,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,5.02,0,0,0.01,4.6,0.01,0,0
+3314,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,4.03,0.01,0,0.01,3.5,0.01,0,0
+3314,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,96,44,0,0.1,42,1,1,7
+3315,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,21.06,8,0.01,1,12,0.5,0,0
+3315,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.1,0,0
+3315,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,16.03,5,0.01,0.01,11,0.1,0,0
+3315,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,3,3,0,0,0,0,0,0
+3315,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.03,0.01,0,1,0.01,0.1,0,0
+3315,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,2.02,1,0,0.01,1,0.1,0,0
+3315,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.1,0,0
+3315,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,78.09,36,0.01,0.03,42,0.4,0.01,0
+3315,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3315,Direct Uses-Total Process,TRUE,Machine Drive,14.03,13,0.01,0.01,1,0.1,0,0
+3315,Direct Uses-Total Process,TRUE,Other Process Use,2.02,1,0,0.01,1,0.1,0,0
+3315,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.02,1,0,0,0.01,0.1,0,0
+3315,Direct Uses-Total Process,TRUE,Process Heating,61.03,21,0,0.01,40,0.1,0.01,0
+3315,End Use Not Reported,FALSE,End Use Not Reported,16,0.01,0,0.01,0.01,0.01,0,15
+3315,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.05,0.01,0,0.02,1,0.1,0,0
+3315,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1.02,0,0,0.01,1,0.01,0,0
+3315,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.03,0.01,0,0.01,1,0.09,0,0
+3315,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,118,45,0.02,1,55,1,0.01,15
+3364,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,29.09,16,0,1.04,12,0.05,0,0
+3364,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,1,0,0,0.01,0.98,0.01,0,0
+3364,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,18.02,8,0,0.01,10,0.01,0,0
+3364,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,6,6,0,0,0,0,0,0
+3364,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.03,0.01,0,1,0.01,0.01,0,0
+3364,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,3.02,2,0,0.01,1,0.01,0,0
+3364,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+3364,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,20.85,15,0,0.81,5,0.04,0,0
+3364,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+3364,Direct Uses-Total Process,TRUE,Machine Drive,7.81,7,0,0.79,0.01,0.01,0,0
+3364,Direct Uses-Total Process,TRUE,Other Process Use,2.02,1,0,0.01,1,0.01,0,0
+3364,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,2.02,2,0,0,0.01,0.01,0,0
+3364,Direct Uses-Total Process,TRUE,Process Heating,8.02,4,0,0.01,4,0.01,0,0
+3364,End Use Not Reported,FALSE,End Use Not Reported,6,1,0,0.01,0.01,0.01,0,5
+3364,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,11.05,0.01,0.01,0.02,11,0.01,0,0
+3364,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,4.01,0,0,0.01,4,0,0,0
+3364,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,8.04,0.01,0.01,0.01,8,0.01,0,0
+3364,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,68,32,0.01,1.88,29,0.11,0,5
+31131,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.05,1,0,1,0.02,0.03,0,0
+31131,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+31131,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,0.5,0.2,0,0,0.01,0.01,0,0
+31131,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.3,0.2,0,0,0,0,0,0
+31131,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.02,0.2,0,1,0,0.01,0,0
+31131,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.2,0.2,0,0,0.01,0,0,0
+31131,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.2,0,0.01,0,0.01,0,0
+31131,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,21.02,3,0.01,0.01,5,0,13,0
+31131,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+31131,Direct Uses-Total Process,TRUE,Machine Drive,3.02,3,0.01,0.01,0,0,0,0
+31131,Direct Uses-Total Process,TRUE,Other Process Use,0.01,0,0,0,0.01,0,0,0
+31131,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+31131,Direct Uses-Total Process,TRUE,Process Heating,18.01,0.01,0,0,5,0,13,0
+31131,End Use Not Reported,FALSE,End Use Not Reported,108,0,0,0,0,0.01,0,108
+31131,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,43.03,0.01,0.02,1,10,0,32,0
+31131,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,41.01,0,0.01,1,8,0,32,0
+31131,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,3.02,0.01,0.01,0,3,0,0,0
+31131,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,174,4,0.03,2,16,0.04,45,108
+311221,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,3.08,2,0,0.04,1,0.04,0,0
+311221,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0,0.01,0,0
+311221,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,2.02,1,0,0.01,1,0.01,0,0
+311221,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+311221,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+311221,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+311221,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.01,0,0,0.01,0,0,0,0
+311221,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,36.03,20,0,0.02,15,0.01,1,0
+311221,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0,0,0,0,0,0,0,0
+311221,Direct Uses-Total Process,TRUE,Machine Drive,16.02,16,0,0.01,0.01,0,0,0
+311221,Direct Uses-Total Process,TRUE,Other Process Use,0.02,0.01,0,0,0.01,0,0,0
+311221,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,3.01,3,0,0,0.01,0,0,0
+311221,Direct Uses-Total Process,TRUE,Process Heating,16.03,0.01,0,0.01,15,0.01,1,0
+311221,End Use Not Reported,FALSE,End Use Not Reported,35,0,0,0,0,0.01,22,13
+311221,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,66.01,1,0,0.01,32,0,33,0
+311221,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,37,0,0,0,14,0,23,0
+311221,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,28.01,1,0,0.01,18,0,9,0
+311221,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,138,22,0,0.07,48,0.06,55,13
+321113,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,6.1,2,0,4,0.05,0.05,0,0
+321113,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.125,0.01,0.01,0,0
+321113,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,1,0,0.125,0.01,0.01,0,0
+321113,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+321113,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,4.03,0.01,0,3.5,0.01,0.01,0,0
+321113,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.125,0.01,0.01,0,0
+321113,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.125,0.01,0.01,0,0
+321113,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,20.06,15,0.02,0.6,4,0.03,0.01,0
+321113,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+321113,Direct Uses-Total Process,TRUE,Machine Drive,13.04,13,0.01,0.2,0.01,0.01,0,0
+321113,Direct Uses-Total Process,TRUE,Other Process Use,0.03,0.01,0,0.2,0,0.01,0,0
+321113,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+321113,Direct Uses-Total Process,TRUE,Process Heating,5.04,1,0.01,0.2,4,0.01,0.01,0
+321113,End Use Not Reported,FALSE,End Use Not Reported,96,0.01,0,0.98,0,0.01,0,95
+321113,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,2.04,0.01,0,0.02,2,0.01,0,0
+321113,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1.02,0,0,0.01,1,0.01,0,0
+321113,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.02,0.01,0,0.01,1,0,0,0
+321113,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,123,17,0.02,5,6,0.1,0.01,95
+321219,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.12,2,0,0.05,0.03,0.04,0,0
+321219,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+321219,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,1,0,0.01,0.01,0.01,0,0
+321219,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+321219,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+321219,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.01,0.01,0,0
+321219,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+321219,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,32.05,15,0,0.02,17,0.03,0,0
+321219,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+321219,Direct Uses-Total Process,TRUE,Machine Drive,14.02,13,0,0.01,1,0.01,0,0
+321219,Direct Uses-Total Process,TRUE,Other Process Use,2.02,0.01,0,0,2,0.01,0,0
+321219,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+321219,Direct Uses-Total Process,TRUE,Process Heating,15.02,1,0,0.01,14,0.01,0,0
+321219,End Use Not Reported,FALSE,End Use Not Reported,58,0.01,0,0,0,0,0,58
+321219,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,4.04,0.01,0,0.01,3,0.02,1,0
+321219,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,2.03,0,0,0.01,2,0.01,0.01,0
+321219,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.03,0.01,0,0,1,0.01,0.01,0
+321219,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,96,17,0,0.08,20,0.09,1,58
+322110,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,0.1,0.04,0,0.5,0.02,0.03,0,0
+322110,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+322110,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,0.03,0.01,0,0,0.01,0.01,0,0
+322110,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+322110,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.5,0,0.01,0,0
+322110,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+322110,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0,0,0,0,0,0,0,0
+322110,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,18.04,4,0.01,0.4,14,0.01,0,0
+322110,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0,0,0,0,0,0,0,0
+322110,Direct Uses-Total Process,TRUE,Machine Drive,4.01,4,0,0.2,0,0,0,0
+322110,Direct Uses-Total Process,TRUE,Other Process Use,0,0,0,0,0,0,0,0
+322110,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+322110,Direct Uses-Total Process,TRUE,Process Heating,14.04,0.01,0.01,0.2,14,0.01,0,0
+322110,End Use Not Reported,FALSE,End Use Not Reported,216,0,0,0,0,0.01,0,216
+322110,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,18.04,0.01,2,0.02,15,0.01,1,0
+322110,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,18.02,0,2,0.01,15,0.01,1,0
+322110,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.02,0.01,0,0.01,0,0,0,0
+322110,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,255,5,2,1,29,0.06,1,216
+322121,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,13.03,4,0.03,1,6,1,1,0
+322121,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,4.02,0,0.01,0.01,3,0,1,0
+322121,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,4.04,1,0.01,0.01,3,0.01,0.01,0
+322121,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+322121,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,2.02,0.01,0,1,0.01,1,0,0
+322121,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.01,0.01,0,0
+322121,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0,0.01,0.01,0.01,0.01,0,0
+322121,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,125.05,53,2,0.03,65,0.02,5,0
+322121,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+322121,Direct Uses-Total Process,TRUE,Machine Drive,64.04,49,0.01,0.01,15,0.01,0.01,0
+322121,Direct Uses-Total Process,TRUE,Other Process Use,3.02,0.01,0,0.01,1,0,2,0
+322121,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.01,1,0,0,0.01,0,0,0
+322121,Direct Uses-Total Process,TRUE,Process Heating,56.02,2,2,0.01,49,0.01,3,0
+322121,End Use Not Reported,FALSE,End Use Not Reported,431,0,0,0.01,0,0.01,3,427
+322121,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,183.01,2,7,1,89,0.01,84,0
+322121,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,157.01,0,3,1,75,0.01,78,0
+322121,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,27.01,2,4,0.01,15,0,6,0
+322121,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,752,59,9,2,160,1,93,427
+322122,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1.06,1,0,0.02,0.02,0.02,0,0
+322122,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+322122,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,0.03,0.25,0,0,0.01,0.01,0,0
+322122,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.25,0,0,0,0,0,0
+322122,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.25,0,0.01,0,0.01,0,0
+322122,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.02,0.25,0,0,0.01,0,0,0
+322122,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.01,0,0,0.01,0,0,0,0
+322122,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,28.03,26,0,0.02,2,0.01,0,0
+322122,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,1,1,0,0,0,0,0,0
+322122,Direct Uses-Total Process,TRUE,Machine Drive,16.01,16,0,0.01,0,0,0,0
+322122,Direct Uses-Total Process,TRUE,Other Process Use,9.02,9,0,0.01,0.01,0,0,0
+322122,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+322122,Direct Uses-Total Process,TRUE,Process Heating,2.02,0.01,0,0,2,0.01,0,0
+322122,End Use Not Reported,FALSE,End Use Not Reported,23,1,0,0,0,0,0,22
+322122,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,8.01,1,0,0.01,6,0,1,0
+322122,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,7.01,0,0,0.01,6,0,1,0
+322122,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.01,1,0,0,0.01,0,0,0
+322122,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,59,28,0,0.05,8,0.03,1,22
+322130,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,11.07,4,0.02,1,6,0.5,0.01,0
+322130,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.04,0,0.01,0.01,0.01,0,0.01,0
+322130,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,7.03,1.5,0.01,0.01,5,0.125,0,0
+322130,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,1.5,0,0,0,0,0,0
+322130,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.02,0.01,0,1,0,0.125,0,0
+322130,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,2.01,1,0,0,1,0.125,0,0
+322130,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.125,0,0
+322130,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,96.06,49,2,0.03,42,0.4,3,0
+322130,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+322130,Direct Uses-Total Process,TRUE,Machine Drive,48.02,46,0,0.01,2,0.133333333,0,0
+322130,Direct Uses-Total Process,TRUE,Other Process Use,3.02,1,0,0.01,2,0.133333333,0,0
+322130,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1,1,0,0,0,0,0,0
+322130,Direct Uses-Total Process,TRUE,Process Heating,44.02,1,2,0.01,38,0.133333333,3,0
+322130,End Use Not Reported,FALSE,End Use Not Reported,622,1,0.01,0.01,0,0.01,0,621
+322130,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,187.01,1,3,1,140,0.1,42,0
+322130,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,167.01,0,3,1,122,0.1,41,0
+322130,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,20.02,1,0.01,0.01,18,0,1,0
+322130,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,917,55,5,2,188,1,45,621
+324110,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,21.04,11,0,4,6,0.04,0,0
+324110,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,3.02,0,0,0.01,3,0.01,0,0
+324110,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,8.02,6,0,0.01,2,0.01,0,0
+324110,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,4,4,0,0,0,0,0,0
+324110,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,3.01,0,0,3,0,0.01,0,0
+324110,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,2.03,2,0,0.01,0.01,0.01,0,0
+324110,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,1.02,0.01,0,1,0.01,0,0,0
+324110,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,737,145,2,1,559,30,0,0
+324110,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+324110,Direct Uses-Total Process,TRUE,Machine Drive,150.01,140,0,1,9,0.01,0,0
+324110,Direct Uses-Total Process,TRUE,Other Process Use,29.02,1,0,0.01,28,0.01,0,0
+324110,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,7.02,7,0,0,0.01,0.01,0,0
+324110,Direct Uses-Total Process,TRUE,Process Heating,550.01,-3,2,0.01,521,30,0,0
+324110,End Use Not Reported,FALSE,End Use Not Reported,2275,2,0.01,0.01,104,0.01,0,2168
+324110,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,341,1,1,1,332,5,1,0
+324110,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,230.01,0,0,0.01,227,2,1,0
+324110,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,110.01,1,1,0.99,105,3,0,0
+324110,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,3372,160,3,6,1000,35,1,2168
+324121,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.1,0.05,0.01,1,1,0.04,0,0
+324121,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.05,0.01,0,0,0
+324121,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.04,0.01,0.01,0.05,1,0.01,0,0
+324121,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+324121,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.03,0.01,0,0.8,0.01,0.01,0,0
+324121,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.05,0.01,0.01,0,0
+324121,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.05,0.01,0.01,0,0
+324121,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,45,3,2,3,36,1,0,0
+324121,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+324121,Direct Uses-Total Process,TRUE,Machine Drive,7.02,2,0.333,1,4,0.01,0,0
+324121,Direct Uses-Total Process,TRUE,Other Process Use,2.04,0.01,0.333,0.5,2,0.01,0,0
+324121,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.04,0.01,0.333,0.5,0.01,0,0,0
+324121,Direct Uses-Total Process,TRUE,Process Heating,34,1,1,1,30,1,0,0
+324121,End Use Not Reported,FALSE,End Use Not Reported,4.04,0.01,0,0.01,0.01,0.01,0,4
+324121,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,5.05,0.01,0,0.5,5,0.02,0,0
+324121,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,5.02,0,0,0.01,5,0.01,0,0
+324121,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.03,0.01,0,0.49,1,0.01,0,0
+324121,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,57,3,2,5,42,1,0,4
+324122,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1.13,0.04,0,0.05,1,0.04,0,0
+324122,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+324122,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,0.01,0,0.01,1,0.01,0,0
+324122,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+324122,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+324122,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.01,0.01,0,0
+324122,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0,0,0.01,0.01,0.01,0,0
+324122,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,9.07,2,0,0.03,7,0.03,0.01,0
+324122,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+324122,Direct Uses-Total Process,TRUE,Machine Drive,2.03,2,0,0.01,0.01,0.01,0,0
+324122,Direct Uses-Total Process,TRUE,Other Process Use,0.05,0.01,0,0.01,0.01,0.01,0.01,0
+324122,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.01,0,0,0.01,0,0,0
+324122,Direct Uses-Total Process,TRUE,Process Heating,7.03,0.01,0,0.01,7,0.01,0,0
+324122,End Use Not Reported,FALSE,End Use Not Reported,0.03,0,0,0.01,0,0.01,0,0.01
+324122,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,3.06,0.01,0.01,0.02,3,0.02,0,0
+324122,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,2.03,0,0.01,0.01,2,0.01,0,0
+324122,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.03,0.01,0,0.01,1,0.01,0,0
+324122,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,13.24,2,0.01,0.11,11,0.1,0.01,0.01
+324199,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1.13,0.05,0,0.04,1,0.03,0.01,0
+324199,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+324199,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,0.01,0,0.01,1,0.01,0,0
+324199,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+324199,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+324199,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+324199,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0,0.01,0
+324199,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,11.06,-1,0,0.03,5,0.03,7,0
+324199,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0,0,0,0,0,0,0,0
+324199,Direct Uses-Total Process,TRUE,Machine Drive,-0.99,-1,0,0.01,0,0,0,0
+324199,Direct Uses-Total Process,TRUE,Other Process Use,7.03,0.01,0,0.01,0,0.01,7,0
+324199,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.01,0,0,0,0.01,0,0
+324199,Direct Uses-Total Process,TRUE,Process Heating,5.03,0.01,0,0.01,5,0.01,0,0
+324199,End Use Not Reported,FALSE,End Use Not Reported,44.01,0,0,0,0,0.01,0,44
+324199,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,2.04,0.01,0,0.02,2,0.01,0,0
+324199,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1.02,0,0,0.01,1,0.01,0,0
+324199,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.02,0.01,0,0.01,1,0,0,0
+324199,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,58.17,-1,0,0.09,8,0.08,7,44
+325110,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.07,1,0,0.05,1,0.02,0,0
+325110,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+325110,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,1,0,0.01,0.01,0.01,0,0
+325110,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+325110,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+325110,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0.01,0.01,0,0,0
+325110,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,1.02,0.01,0,0.01,1,0,0,0
+325110,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,240.05,19,0,0.02,221,0.03,0,0
+325110,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,3,3,0,0,0,0,0,0
+325110,Direct Uses-Total Process,TRUE,Machine Drive,19.02,12,0,0.01,7,0.01,0,0
+325110,Direct Uses-Total Process,TRUE,Other Process Use,8.02,0,0,0.01,8,0.01,0,0
+325110,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,6,3,0,0,3,0,0,0
+325110,Direct Uses-Total Process,TRUE,Process Heating,204.01,1,0,0,203,0.01,0,0
+325110,End Use Not Reported,FALSE,End Use Not Reported,207.02,0,0,0.01,0,0.01,0,207
+325110,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,87.05,0.01,0,0.02,87,0.02,0,0
+325110,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,68.02,0,0,0.01,68,0.01,0,0
+325110,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,19.03,0.01,0,0.01,19,0.01,0,0
+325110,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,538,20,0,1,309,1,0,207
+325120,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,18.07,2,0,0.04,16,0.03,0,0
+325120,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+325120,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,17.02,1,0,0.01,16,0.01,0,0
+325120,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.25,0,0,0,0,0,0
+325120,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.25,0,0.01,0.01,0.01,0,0
+325120,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.25,0,0.01,0.01,0.01,0,0
+325120,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0.25,0,0.01,0,0,0,0
+325120,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,83.03,66,0,0.03,17,0,0,0
+325120,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+325120,Direct Uses-Total Process,TRUE,Machine Drive,69.01,64,0,0.01,5,0,0,0
+325120,Direct Uses-Total Process,TRUE,Other Process Use,4,0,0,0,4,0,0,0
+325120,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.02,1,0,0.01,0.01,0,0,0
+325120,Direct Uses-Total Process,TRUE,Process Heating,8.01,1,0,0.01,7,0,0,0
+325120,End Use Not Reported,FALSE,End Use Not Reported,3.02,0.01,0,0,0,0.01,0,3
+325120,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,5.04,0.01,0,0.02,5,0.01,0,0
+325120,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,2.02,0,0,0.01,2,0.01,0,0
+325120,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,3.02,0.01,0,0.01,3,0,0,0
+325120,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,109.14,68,0,0.09,38,0.05,0,3
+325180,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,10.04,6,0,1,3,0.04,0,0
+325180,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+325180,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,4.02,2,0,0.01,2.5,0.01,0,0
+325180,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+325180,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.02,0.01,0,1,0,0.01,0,0
+325180,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,1,0,0.01,0.5,0.01,0,0
+325180,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.01,0,0
+325180,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,169.07,70,0,0.04,97,0.03,2,0
+325180,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,40,40,0,0,0,0,0,0
+325180,Direct Uses-Total Process,TRUE,Machine Drive,65.02,18,0,0.01,47,0.01,0,0
+325180,Direct Uses-Total Process,TRUE,Other Process Use,6.02,5,0,0.01,1,0.01,0,0
+325180,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,3.02,3,0,0.01,0.01,0,0,0
+325180,Direct Uses-Total Process,TRUE,Process Heating,55.02,4,0,0.01,49,0.01,2,0
+325180,End Use Not Reported,FALSE,End Use Not Reported,75.01,1,0,0,0,0.01,0,74
+325180,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,104.04,2,0,0.02,51,0.02,51,0
+325180,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,82.02,0,0,0.01,36,0.01,46,0
+325180,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,22.02,2,0,0.01,15,0.01,5,0
+325180,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,358.1,79,0,1,151,0.1,53,74
+325193,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,7.07,3,0,0.5,4,0.03,0,0
+325193,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.125,0,0,0,0
+325193,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,4.01,1,0,0,3,0.01,0,0
+325193,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+325193,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.5,0,0.125,0.01,0.01,0,0
+325193,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,0.5,0,0.125,1,0.01,0,0
+325193,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0,0,0.125,0.01,0,0,0
+325193,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,174.02,33,0,0.5,138,0.01,3,0
+325193,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+325193,Direct Uses-Total Process,TRUE,Machine Drive,27.02,26,0,0.5,1,0.01,0,0
+325193,Direct Uses-Total Process,TRUE,Other Process Use,16,1,0,0,15,0,0,0
+325193,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,5,4,0,0,1,0,0,0
+325193,Direct Uses-Total Process,TRUE,Process Heating,126,2,0,0,121,0,3,0
+325193,End Use Not Reported,FALSE,End Use Not Reported,55.02,1,0,0.01,3,0.01,43,8
+325193,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,254,1,0,0,218,0,35,0
+325193,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,126,0,0,0,97,0,29,0
+325193,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,128,1,0,0,121,0,6,0
+325193,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,491.05,39,0,1,363,0.05,80,8
+325194,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.09,2,0,0.03,0.03,0.03,0,0
+325194,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+325194,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,1,0,0.01,0.01,0.01,0,0
+325194,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+325194,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+325194,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+325194,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.01,0,0,0,0.01,0,0,0
+325194,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,17.05,8,0,0.03,9,0.02,0,0
+325194,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+325194,Direct Uses-Total Process,TRUE,Machine Drive,5.01,5,0,0.01,0,0,0,0
+325194,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.01,0.5,0.01,0,0
+325194,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,2.01,2,0,0.01,0,0,0,0
+325194,Direct Uses-Total Process,TRUE,Process Heating,9.01,1,0,0,8.5,0.01,0,0
+325194,End Use Not Reported,FALSE,End Use Not Reported,7.01,0.01,0,0,0,0,0,7
+325194,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,15.02,0.01,0,0.01,15,0,0,0
+325194,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,9,0,0,0,9,0,0,0
+325194,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,6.02,0.01,0,0.01,6,0,0,0
+325194,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,41.12,10,0,0.07,24,0.05,0,7
+325199,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,15.04,8,0,1,6,0.04,0,0
+325199,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.2,0.01,0,0,0
+325199,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,7.02,3,0,0.2,4,0.01,0,0
+325199,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,3,3,0,0,0,0,0,0
+325199,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.6666,0,0.2,0.01,0.01,0,0
+325199,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,0.6666,0,0.2,1,0.01,0,0
+325199,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,1.01,0.6666,0,0.2,0.98,0.01,0,0
+325199,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,176.04,48,0,1,127,0.04,0,0
+325199,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,3,3,0,0,0,0,0,0
+325199,Direct Uses-Total Process,TRUE,Machine Drive,52.01,36,0,1,15,0.01,0,0
+325199,Direct Uses-Total Process,TRUE,Other Process Use,20.03,0.01,0,0.01,20,0.01,0,0
+325199,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,11.01,7,0,0,4,0.01,0,0
+325199,Direct Uses-Total Process,TRUE,Process Heating,90.02,2,0,0.01,88,0.01,0,0
+325199,End Use Not Reported,FALSE,End Use Not Reported,321.03,1,0,0.01,0.01,0.01,13,307
+325199,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,279.04,1,2,0.02,230,0.02,46,0
+325199,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,190.02,0,0,0.01,145,0.01,45,0
+325199,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,88.02,1,2,0.01,84,0.01,1,0
+325199,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,791.11,57,2,2,364,0.11,59,307
+325211,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,14.05,6,0.01,1,6,0.4,1,0
+325211,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+325211,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,8.03,3,0.01,0.01,4,0.1,1,0
+325211,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+325211,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.03,0.01,0,1,0.01,0.1,0,0
+325211,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,3.02,1,0,0.01,2,0.1,0,0
+325211,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.1,0,0
+325211,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,143.08,50,0.01,0.03,86,0.4,7,0
+325211,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,9,9,0,0,0,0,0,0
+325211,Direct Uses-Total Process,TRUE,Machine Drive,38.02,34,0,0.01,4,0.1,0,0
+325211,Direct Uses-Total Process,TRUE,Other Process Use,5.03,0.01,0,0.01,5,0.1,0,0
+325211,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,9.02,3,0,0.01,6,0.1,0,0
+325211,Direct Uses-Total Process,TRUE,Process Heating,82.02,3,0.01,0,72,0.1,7,0
+325211,End Use Not Reported,FALSE,End Use Not Reported,104.02,1,0,0,0.01,0.01,0,103
+325211,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,290.06,1,0.02,0.02,283,0.2,6,0
+325211,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,257.03,0,0.01,0.01,257,0.01,0,0
+325211,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,32.03,1,0.01,0.01,25,0.19,6,0
+325211,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,552.04,58,0.04,1,375,1,14,103
+325212,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1.09,1,0,0.03,0.03,0.03,0,0
+325212,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+325212,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,0.03,0.2,0,0,0.01,0.01,0,0
+325212,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.2,0,0,0,0,0,0
+325212,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.2,0,0.01,0,0.01,0,0
+325212,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.02,0.2,0,0,0.01,0,0,0
+325212,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.2,0,0.01,0.01,0.01,0,0
+325212,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,4.04,3,0,0.03,1,0.01,0,0
+325212,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0,0,0,0,0,0,0,0
+325212,Direct Uses-Total Process,TRUE,Machine Drive,2.03,2,0,0.01,0.01,0.01,0,0
+325212,Direct Uses-Total Process,TRUE,Other Process Use,0.02,0,0,0.01,0.01,0,0,0
+325212,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.01,1,0,0,0.01,0,0,0
+325212,Direct Uses-Total Process,TRUE,Process Heating,1.02,0.01,0,0.01,1,0,0,0
+325212,End Use Not Reported,FALSE,End Use Not Reported,10.03,0.01,0,0.01,0,0.01,0,10
+325212,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,19.04,0.01,0,0.02,18,0.01,1,0
+325212,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,11.02,0,0,0.01,10,0.01,1,0
+325212,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,8.02,0.01,0,0.01,8,0,0,0
+325212,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,34.15,4,0,0.09,19,0.06,1,10
+325220,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.1,2,0,0.04,0.03,0.03,0,0
+325220,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+325220,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.02,1,0,0,0.01,0.01,0,0
+325220,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+325220,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+325220,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0.01,0.01,0,0,0
+325220,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.01,0,0
+325220,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,13.07,9,0.01,0.02,4,0.03,0.01,0
+325220,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+325220,Direct Uses-Total Process,TRUE,Machine Drive,6.03,6,0,0.01,0.01,0.01,0,0
+325220,Direct Uses-Total Process,TRUE,Other Process Use,1.02,1,0,0,0.01,0.01,0,0
+325220,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,2,1,0,0,1,0,0,0
+325220,Direct Uses-Total Process,TRUE,Process Heating,4.04,1,0.01,0.01,3,0.01,0.01,0
+325220,End Use Not Reported,FALSE,End Use Not Reported,0.03,0,0,0,0.01,0.01,0,0.01
+325220,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,19.05,0.01,0.01,0.02,9,0.01,10,0
+325220,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,14.01,0,0,0.01,5,0,9,0
+325220,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,5.04,0.01,0.01,0.01,4,0.01,1,0
+325220,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,34.19,11,0.02,0.08,13,0.08,10,0.01
+325311,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.07,2,0,0.03,0.02,0.02,0,0
+325311,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+325311,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.02,1,0,0,0.01,0.01,0,0
+325311,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+325311,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+325311,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.02,0.01,0,0,0.01,0,0,0
+325311,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0.01,0,0.01,0,0,0,0
+325311,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,125.05,10,0,0.04,115,0.01,0,0
+325311,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+325311,Direct Uses-Total Process,TRUE,Machine Drive,11.01,8,0,0.01,3,0,0,0
+325311,Direct Uses-Total Process,TRUE,Other Process Use,9.02,0.01,0,0.01,9,0,0,0
+325311,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.02,1,0,0.01,0.01,0,0,0
+325311,Direct Uses-Total Process,TRUE,Process Heating,104.02,1,0,0.01,103,0.01,0,0
+325311,End Use Not Reported,FALSE,End Use Not Reported,18.01,1,0,0,7,0.01,0,10
+325311,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,36.03,0.01,0.01,0,36,0.01,0,0
+325311,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,24.02,0,0.01,0,24,0.01,0,0
+325311,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,12.01,0.01,0,0,12,0,0,0
+325311,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,181.13,13,0.01,0.07,158,0.05,0,10
+325312,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1.09,0.05,0,1,0.02,0.02,0,0
+325312,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+325312,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,0.03,0.01,0,0,0.01,0.01,0,0
+325312,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+325312,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.02,0.01,0,1,0,0.01,0,0
+325312,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.02,0.01,0,0,0.01,0,0,0
+325312,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0.01,0,0.01,0,0,0,0
+325312,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,28.04,6,0,0.02,22,0.02,0,0
+325312,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0,0,0,0,0,0,0,0
+325312,Direct Uses-Total Process,TRUE,Machine Drive,6.01,6,0,0.01,0,0,0,0
+325312,Direct Uses-Total Process,TRUE,Other Process Use,0.03,0,0,0.01,0.01,0.01,0,0
+325312,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.01,0,0,0.01,0,0,0
+325312,Direct Uses-Total Process,TRUE,Process Heating,21.02,0.01,0,0,21,0.01,0,0
+325312,End Use Not Reported,FALSE,End Use Not Reported,0.03,0.01,0,0,0.01,0,0,0.01
+325312,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,6.03,0.2,0.01,1,3,0.01,2,0
+325312,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,5.02,0,0.01,1,2,0.01,2,0
+325312,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.01,0.2,0,0,1,0,0,0
+325312,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,36.07,7,0.01,2,25,0.05,2,0.01
+325412,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,14.1,9,0,0.5,4,0.05,1,0
+325412,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.1,0.01,0.01,0,0
+325412,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,11.02,6,0,0.1,4,0.01,1,0
+325412,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+325412,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.1,0.01,0.01,0,0
+325412,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.03,1,0,0.1,0.01,0.01,0,0
+325412,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.1,0.01,0.01,0,0
+325412,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,13.07,10,0,0.4,3,0.03,0,0
+325412,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+325412,Direct Uses-Total Process,TRUE,Machine Drive,5.03,5,0,0.1,0.01,0.01,0,0
+325412,Direct Uses-Total Process,TRUE,Other Process Use,1.03,0.01,0,0.1,1,0.01,0,0
+325412,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,3.02,3,0,0.1,0.01,0,0,0
+325412,Direct Uses-Total Process,TRUE,Process Heating,3.02,1,0,0.1,2,0.01,0,0
+325412,End Use Not Reported,FALSE,End Use Not Reported,3.02,0.01,0,0,0.01,0,0,3
+325412,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,16.05,0.01,0,0.1,14,0.02,2,0
+325412,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,8.02,0,0,0.01,6,0.01,2,0
+325412,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,8.04,0.01,0,0.09,8,0.01,0.01,0
+325412,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,47.1,19,0,1,21,0.1,3,3
+325992,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1.12,1,0,0.05,0.04,0.03,0,0
+325992,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+325992,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,1,0,0.01,0.01,0.01,0,0
+325992,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+325992,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+325992,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.01,0.01,0,0
+325992,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0.01,0,0,0
+325992,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,3.04,2,0,0.01,1,0.03,0,0
+325992,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+325992,Direct Uses-Total Process,TRUE,Machine Drive,1.03,1,0,0.01,0.01,0.01,0,0
+325992,Direct Uses-Total Process,TRUE,Other Process Use,0.02,0.01,0,0,0.01,0,0,0
+325992,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.01,1,0,0,0,0.01,0,0
+325992,Direct Uses-Total Process,TRUE,Process Heating,1.02,0.01,0,0,1,0.01,0,0
+325992,End Use Not Reported,FALSE,End Use Not Reported,2.03,0.01,0,0,0.01,0.01,0,2
+325992,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,2.04,0.01,0.01,0.01,2,0.01,0,0
+325992,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1.03,0,0.01,0.01,1,0.01,0,0
+325992,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.01,0.01,0,0,1,0,0,0
+325992,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,9.16,3,0.01,0.07,4,0.08,0,2
+327120,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,3.08,1,0,0.5,2,0.04,0,0
+327120,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.125,0.25,0.01,0,0
+327120,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,0.2,0,0.125,1,0.01,0,0
+327120,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.2,0,0,0,0,0,0
+327120,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.2,0,0.125,0.25,0.01,0,0
+327120,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.2,0,0,0.25,0.01,0,0
+327120,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.2,0,0.125,0.25,0,0,0
+327120,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,37.07,4,0.01,0.5,32,0.03,1,0
+327120,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+327120,Direct Uses-Total Process,TRUE,Machine Drive,3.03,3,0,0.166666667,0.01,0.01,0,0
+327120,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.166666667,0.01,0.01,0,0
+327120,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+327120,Direct Uses-Total Process,TRUE,Process Heating,34.03,1,0.01,0.166666667,32,0.01,1,0
+327120,End Use Not Reported,FALSE,End Use Not Reported,2.04,0.01,0,0.01,1,0.01,0.01,1
+327120,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.01,0.01,0,0,1,0,0,0
+327120,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1,0,0,0,1,0,0,0
+327120,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.02,0.01,0,0,0.01,0,0,0
+327120,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,43.09,5,0.01,1,35,0.08,1,1
+327211,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.07,1,0,0.04,1,0.03,0,0
+327211,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+327211,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,0.25,0,0.01,1,0.01,0,0
+327211,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.25,0,0,0,0,0,0
+327211,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.25,0,0.01,0,0.01,0,0
+327211,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.25,0,0,0.01,0.01,0,0
+327211,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.01,0,0,0.01,0,0,0,0
+327211,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,48.04,5,0,0.02,43,0.02,0,0
+327211,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+327211,Direct Uses-Total Process,TRUE,Machine Drive,4.01,2,0,0.01,2,0,0,0
+327211,Direct Uses-Total Process,TRUE,Other Process Use,1.03,0.01,0,0.01,1,0.01,0,0
+327211,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,2.01,0.01,0,0,2,0,0,0
+327211,Direct Uses-Total Process,TRUE,Process Heating,41.01,2,0,0,39,0.01,0,0
+327211,End Use Not Reported,FALSE,End Use Not Reported,11.03,0.01,0,0.01,2,0.01,0,9
+327211,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,0.02,0.01,0,0,0.01,0,0,0
+327211,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0,0,0,0,0,0,0,0
+327211,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.02,0.01,0,0,0.01,0,0,0
+327211,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,62.13,6,0,0.07,47,0.06,0,9
+327212,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.06,1,0,0.03,1,0.03,0,0
+327212,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+327212,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,2.01,1,0,0,1,0.01,0,0
+327212,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+327212,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+327212,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.02,0.01,0,0,0.01,0,0,0
+327212,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0,0,0.01,0,0.01,0,0
+327212,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,26.06,6,0,0.03,20,0.03,0,0
+327212,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+327212,Direct Uses-Total Process,TRUE,Machine Drive,3.02,2,0,0.01,1,0.01,0,0
+327212,Direct Uses-Total Process,TRUE,Other Process Use,1.03,0.01,0,0.01,1,0.01,0,0
+327212,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.01,1,0,0,0.01,0,0,0
+327212,Direct Uses-Total Process,TRUE,Process Heating,22.02,3,0,0.01,19,0.01,0,0
+327212,End Use Not Reported,FALSE,End Use Not Reported,0.02,0,0,0,0,0.01,0,0.01
+327212,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,3.03,0.01,0,0.02,3,0,0,0
+327212,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,3.01,0,0,0.01,3,0,0,0
+327212,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.03,0.01,0,0.01,0.01,0,0,0
+327212,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,32.16,8,0,0.08,24,0.07,0,0.01
+327213,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,3.07,1.22,0,0.04,2,0.03,0,0
+327213,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+327213,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,3.02,0.6,0,0.01,2,0.01,0,0
+327213,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,0.6,0,0,0,0,0,0
+327213,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+327213,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+327213,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.01,0,0,0.01,0,0,0,0
+327213,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,54.05,11,0,0.03,43,0.02,0,0
+327213,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0,0,0,0,0,0,0,0
+327213,Direct Uses-Total Process,TRUE,Machine Drive,7.02,6,0,0.01,1,0.01,0,0
+327213,Direct Uses-Total Process,TRUE,Other Process Use,0.02,0.5,0,0.01,0,0,0,0
+327213,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.5,0,0,0.01,0,0,0
+327213,Direct Uses-Total Process,TRUE,Process Heating,46.02,4,0,0.01,42,0.01,0,0
+327213,End Use Not Reported,FALSE,End Use Not Reported,0.02,0,0,0,0,0.01,0,0.01
+327213,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,0.04,0.01,0,0,0.02,0.01,0,0
+327213,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.02,0,0,0,0.01,0.01,0,0
+327213,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.02,0.01,0,0,0.01,0,0,0
+327213,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,58.15,12,0,0.07,46,0.07,0,0.01
+327215,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,4.09,2,0,0.03,2,0.05,0.01,0
+327215,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.03,0,0,0.01,0.01,0.01,0,0
+327215,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,3.02,1,0,0,2,0.01,0.01,0
+327215,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+327215,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+327215,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+327215,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+327215,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,17.05,9,0,0.02,8,0.03,0,0
+327215,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.666666667,0,0,0,0,0,0
+327215,Direct Uses-Total Process,TRUE,Machine Drive,3.03,3,0,0.01,0.01,0.01,0,0
+327215,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.666666667,0,0.01,0.01,0.01,0,0
+327215,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.666666667,0,0,0.01,0,0,0
+327215,Direct Uses-Total Process,TRUE,Process Heating,12.01,4,0,0,8,0.01,0,0
+327215,End Use Not Reported,FALSE,End Use Not Reported,1.04,1,0,0.01,0.01,0.01,0,0.01
+327215,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.05,0.01,0.01,0.01,1,0.02,0,0
+327215,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1.03,0,0.01,0.01,1,0.01,0,0
+327215,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.03,0.01,0,0,0.01,0.01,0,0
+327215,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,22.21,11,0.01,0.07,11,0.11,0.01,0.01
+327310,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,4.06,2,0,2,0.02,0.04,0,0
+327310,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+327310,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,1,0,0.01,0.01,0.01,0,0
+327310,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+327310,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,2.02,0.01,0,2,0,0.01,0,0
+327310,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+327310,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.01,0,0
+327310,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,214.05,35,0.01,2,20,0.04,157,0
+327310,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+327310,Direct Uses-Total Process,TRUE,Machine Drive,28.02,26,0,1,0.01,0.01,1,0
+327310,Direct Uses-Total Process,TRUE,Other Process Use,1.02,1,0,0.01,0,0.01,0,0
+327310,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,2.02,2,0,0,0.01,0.01,0,0
+327310,Direct Uses-Total Process,TRUE,Process Heating,184.02,7,0.01,1,20,0.01,156,0
+327310,End Use Not Reported,FALSE,End Use Not Reported,77.04,0.01,0,0.01,0.01,0.01,0,77
+327310,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.02,0.01,0,0,0.01,0,1,0
+327310,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1.01,0,0,0,0.01,0,1,0
+327310,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.01,0.01,0,0,0,0,0,0
+327310,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,298.1,38,0.01,4,21,0.09,158,77
+327410,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,1.08,0.04,0,1,0.02,0.02,0,0
+327410,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+327410,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,0.03,0.01,0,0,0.01,0.01,0,0
+327410,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+327410,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,1.02,0.01,0,1,0,0.01,0,0
+327410,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.02,0.01,0,0,0.01,0,0,0
+327410,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0,0,0,0,0,0,0,0
+327410,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,84.06,5,0,0.03,6,0.03,73,0
+327410,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0,0,0,0,0,0,0,0
+327410,Direct Uses-Total Process,TRUE,Machine Drive,4.02,4,0,0.01,0,0.01,0,0
+327410,Direct Uses-Total Process,TRUE,Other Process Use,0.03,0.01,0,0.01,0,0.01,0,0
+327410,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+327410,Direct Uses-Total Process,TRUE,Process Heating,80.02,1,0,0.01,6,0.01,73,0
+327410,End Use Not Reported,FALSE,End Use Not Reported,19.03,0.01,0,0.01,0,0.01,0,19
+327410,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,0.01,0.01,0,0,0,0,0,0
+327410,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0,0,0,0,0,0,0,0
+327410,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.01,0.01,0,0,0,0,0,0
+327410,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,104.06,5,0,1,6,0.06,73,19
+327420,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,3.06,1,0,0.03,2,0.03,0,0
+327420,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0,0.01,0,0,0
+327420,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,0.25,0,0.01,1,0.01,0,0
+327420,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.25,0,0,0,0,0,0
+327420,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.25,0,0.01,0,0.01,0,0
+327420,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.25,0,0.01,0.01,0.01,0,0
+327420,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0,0,0,0,0,0,0,0
+327420,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,49.03,4,0,0.03,45,0,0,0
+327420,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0,0,0,0,0,0,0,0
+327420,Direct Uses-Total Process,TRUE,Machine Drive,5.01,3,0,0.01,2,0,0,0
+327420,Direct Uses-Total Process,TRUE,Other Process Use,0.01,0,0,0.01,0,0,0,0
+327420,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.5,0,0,0,0,0,0
+327420,Direct Uses-Total Process,TRUE,Process Heating,43.02,0.5,0,0.01,43,0,0,0
+327420,End Use Not Reported,FALSE,End Use Not Reported,0.01,0,0,0,0,0,0,0.01
+327420,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.02,0.01,0,0.01,1,0,0,0
+327420,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.01,0,0,0,0.01,0,0,0
+327420,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.03,0.01,0,0.01,0.01,0,0,0
+327420,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,52.11,5,0,0.07,47,0.03,0,0.01
+327993,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,3.09,1,0,0.05,2,0.04,0,0
+327993,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+327993,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,2.03,0.01,0,0.01,2,0.01,0,0
+327993,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+327993,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+327993,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.01,0.01,0,0
+327993,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+327993,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,27.06,9,0,0.02,18,0.04,0,0
+327993,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+327993,Direct Uses-Total Process,TRUE,Machine Drive,4.03,4,0,0.01,0.01,0.01,0,0
+327993,Direct Uses-Total Process,TRUE,Other Process Use,2.02,1,0,0.01,1,0.01,0,0
+327993,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.03,0.01,0,0,0.01,0.01,0,0
+327993,Direct Uses-Total Process,TRUE,Process Heating,22.01,5,0,0,17,0.01,0,0
+327993,End Use Not Reported,FALSE,End Use Not Reported,1.03,0.01,0,0,0.01,0.01,0,1
+327993,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,0.04,0.01,0,0.01,0.02,0,0,0
+327993,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.02,0,0,0.01,0.01,0,0,0
+327993,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.02,0.01,0,0,0.01,0,0,0
+327993,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,32.17,11,0,0.08,20,0.09,0,1
+331110,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,36.05,14,0,3,19,0.05,0,0
+331110,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0,0.01,0,0
+331110,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,19.02,5,0,0.01,14,0.01,0,0
+331110,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,6,6,0,0,0,0,0,0
+331110,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,3.03,0.01,0,3,0.01,0.01,0,0
+331110,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,6.01,2,0,0,4,0.01,0,0
+331110,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,1.03,0.01,0,0.01,1,0.01,0,0
+331110,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,533.04,182,0,1,333,0.04,17,0
+331110,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,5,5,0,0,0,0,0,0
+331110,Direct Uses-Total Process,TRUE,Machine Drive,66.02,63,0,0.01,3,0.01,0,0
+331110,Direct Uses-Total Process,TRUE,Other Process Use,44.02,3,0,0.01,34,0.01,7,0
+331110,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,8.01,3,0,0,5,0.01,0,0
+331110,Direct Uses-Total Process,TRUE,Process Heating,411.02,108,0,0.01,292,0.01,11,0
+331110,End Use Not Reported,FALSE,End Use Not Reported,556.03,8,0.01,0.01,4,0.01,0,544
+331110,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,46.03,1,0.02,0,45,0.01,0,0
+331110,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,31.02,0,0.01,0,31,0.01,0,0
+331110,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,15.01,1,0.01,0,14,0,0,0
+331110,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,1170.14,204,0.03,4,401,0.11,17,544
+331314,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.07,1,0,0.04,1,0.03,0,0
+331314,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+331314,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,0.2,0,0.01,1,0.01,0,0
+331314,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.2,0,0,0,0,0,0
+331314,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.2,0,0.01,0,0.01,0,0
+331314,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.02,0.2,0,0,0.01,0,0,0
+331314,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.2,0,0.01,0,0.01,0,0
+331314,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,16.06,2,0,0.03,14,0.03,0,0
+331314,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+331314,Direct Uses-Total Process,TRUE,Machine Drive,1.03,1,0,0.01,0.01,0.01,0,0
+331314,Direct Uses-Total Process,TRUE,Other Process Use,0.03,0.01,0,0.01,0,0.01,0,0
+331314,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+331314,Direct Uses-Total Process,TRUE,Process Heating,15.02,1,0,0.01,14,0.01,0,0
+331314,End Use Not Reported,FALSE,End Use Not Reported,1.03,0.01,0,0,1,0.01,0,0.01
+331314,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,0.03,0.01,0,0,0.02,0,0,0
+331314,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.01,0,0,0,0.01,0,0,0
+331314,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.02,0.01,0,0,0.01,0,0,0
+331314,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,19.15,3,0,0.07,16,0.07,0,0.01
+331315,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,7.04,2,0,0.02,5,0.02,0,0
+331315,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0,0,0,0,0,0,0,0
+331315,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,5,1,0,0,4,0,0,0
+331315,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+331315,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+331315,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.02,0.01,0,0,1,0.01,0,0
+331315,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0.01,0,0.01,0,0,0,0
+331315,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,51.05,13,0.01,0.02,38,0.02,0,0
+331315,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+331315,Direct Uses-Total Process,TRUE,Machine Drive,14.01,10,0,0.01,4,0,0,0
+331315,Direct Uses-Total Process,TRUE,Other Process Use,0.03,0.01,0,0,0.01,0.01,0,0
+331315,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.03,0.01,0,0.01,0.01,0,0,0
+331315,Direct Uses-Total Process,TRUE,Process Heating,37.02,3,0.01,0,34,0.01,0,0
+331315,End Use Not Reported,FALSE,End Use Not Reported,2,0,0,0,0,0,0,2
+331315,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,2.01,0.01,0,0,2,0,0,0
+331315,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.01,0,0,0,0.01,0,0,0
+331315,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,2.01,0.01,0,0,2,0,0,0
+331315,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,62.09,15,0.01,0.04,45,0.04,0,2
+331318,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,3.08,1,0.01,0.04,2,0.03,0,0
+331318,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.333,0,0,0
+331318,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.04,0.01,0.01,0.01,1,0.01,0,0
+331318,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+331318,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.333,0.01,0,0
+331318,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.333,0.01,0,0
+331318,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0.01,0,0.01,0,0,0,0
+331318,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,15.05,4,0,0.02,11,0.03,0,0
+331318,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+331318,Direct Uses-Total Process,TRUE,Machine Drive,3.03,3,0,0.01,0.01,0.01,0,0
+331318,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+331318,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.01,0,0,0.01,0,0,0
+331318,Direct Uses-Total Process,TRUE,Process Heating,11.01,1,0,0,10,0.01,0,0
+331318,End Use Not Reported,FALSE,End Use Not Reported,0.05,0.01,0,0.01,0.01,0.01,0,0.01
+331318,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.03,0.01,0,0,1,0.02,0,0
+331318,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.02,0,0,0,0.3,0.01,0,0
+331318,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.03,0.01,0,0,0.7,0.01,0,0
+331318,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,19.18,6,0.01,0.07,13,0.09,0,0.01
+331410,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.07,1,0,0.03,1,0.04,0,0
+331410,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+331410,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,2.01,1,0,0,1,0.01,0,0
+331410,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.01,0,0,0,0,0,0
+331410,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+331410,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.01,0,0,0.01,0.01,0,0
+331410,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0,0.01,0,0
+331410,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,35.05,25,0,0.03,9,0.02,1,0
+331410,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,6,6,0,0,0,0,0,0
+331410,Direct Uses-Total Process,TRUE,Machine Drive,2.02,2,0,0.01,0.01,0,0,0
+331410,Direct Uses-Total Process,TRUE,Other Process Use,3.03,2,0,0.01,0.01,0.01,1,0
+331410,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1,1,0,0,0,0,0,0
+331410,Direct Uses-Total Process,TRUE,Process Heating,23.02,14,0,0.01,9,0.01,0,0
+331410,End Use Not Reported,FALSE,End Use Not Reported,4.02,0.01,0,0,0,0.01,0,4
+331410,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,6.03,0.01,0,0.02,6,0,0,0
+331410,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,4.01,0,0,0.01,4,0,0,0
+331410,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,2.02,0.01,0,0.01,2,0,0,0
+331410,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,48.15,27,0,0.08,16,0.07,1,4
+331511,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,10.11,4,0.01,0.05,6,0.05,0,0
+331511,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0,0.01,0,0
+331511,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,9.03,3,0.01,0.01,6,0.01,0,0
+331511,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+331511,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+331511,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.01,0.01,0,0
+331511,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+331511,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,25.06,16,0,0.02,9,0.03,0.01,0
+331511,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+331511,Direct Uses-Total Process,TRUE,Machine Drive,5.03,5,0,0.01,0.01,0.01,0,0
+331511,Direct Uses-Total Process,TRUE,Other Process Use,1.02,0.01,0,0,1,0.01,0,0
+331511,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.01,0.01,0,0,0,0,0,0
+331511,Direct Uses-Total Process,TRUE,Process Heating,19.03,10,0,0.01,9,0.01,0.01,0
+331511,End Use Not Reported,FALSE,End Use Not Reported,15.04,0.01,0,0.01,0.01,0.01,0,15
+331511,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,0.06,0.01,0,0.01,0.02,0.02,0,0
+331511,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.03,0,0,0.01,0.01,0.01,0,0
+331511,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.03,0.01,0,0,0.01,0.01,0,0
+331511,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,52.22,21,0.01,0.09,16,0.11,0.01,15
+331523,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,5.08,2,0,0.05,3,0.03,0,0
+331523,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+331523,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,3.02,1,0,0.01,2,0.01,0,0
+331523,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+331523,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.333,0.01,0,0
+331523,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.333,0.01,0,0
+331523,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0.333,0,0,0
+331523,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,18.05,5,0,0.02,13,0.03,0,0
+331523,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+331523,Direct Uses-Total Process,TRUE,Machine Drive,3.03,3,0,0.01,0.01,0.01,0,0
+331523,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+331523,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.01,0,0,0.01,0,0,0
+331523,Direct Uses-Total Process,TRUE,Process Heating,15.01,2,0,0,13,0.01,0,0
+331523,End Use Not Reported,FALSE,End Use Not Reported,0.03,0.01,0,0,0,0.01,0,0.01
+331523,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,1.01,0.01,0,0,1,0,0,0
+331523,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.01,0,0,0,0.01,0,0,0
+331523,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,1.01,0.01,0,0,1,0,0,0
+331523,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,24.15,7,0,0.07,17,0.07,0,0.01
+331524,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,2.06,1,0,0.02,1,0.04,0,0
+331524,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0,0.01,0,0,0
+331524,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,1.03,0.2,0,0.01,1,0.01,0,0
+331524,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,0.01,0.2,0,0,0,0,0,0
+331524,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.2,0,0.01,0.01,0.01,0,0
+331524,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.2,0,0,0.01,0.01,0,0
+331524,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0.2,0,0,0,0.01,0,0
+331524,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,9.07,2,0.01,0.03,7,0.03,0,0
+331524,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+331524,Direct Uses-Total Process,TRUE,Machine Drive,1.04,1,0.01,0.01,0.01,0.01,0,0
+331524,Direct Uses-Total Process,TRUE,Other Process Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+331524,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.02,0.01,0,0,0.01,0,0,0
+331524,Direct Uses-Total Process,TRUE,Process Heating,8.02,1,0,0.01,7,0.01,0,0
+331524,End Use Not Reported,FALSE,End Use Not Reported,0.04,0.01,0,0,0.01,0.01,0,0.01
+331524,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,0.07,0.01,0,0.02,0.02,0.02,0,0
+331524,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.03,0,0,0.01,0.01,0.01,0,0
+331524,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,0.04,0.01,0,0.01,0.01,0.01,0,0
+331524,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,11.19,3,0.01,0.07,8,0.1,0,0.01
+334413,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,32.1,24,0.01,0.05,8,0.04,0,0
+334413,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+334413,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,22.03,15,0.01,0.01,7,0.01,0,0
+334413,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,4,4,0,0,0,0,0,0
+334413,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.03,0.01,0,0.01,0,0.01,0,0
+334413,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,3.03,3,0,0.01,0.01,0.01,0,0
+334413,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,3.02,2,0,0.01,1,0.01,0,0
+334413,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,46.03,40,0,0.02,6,0.01,0,0
+334413,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,2,2,0,0,0,0,0,0
+334413,Direct Uses-Total Process,TRUE,Machine Drive,15.03,15,0,0.01,0.01,0.01,0,0
+334413,Direct Uses-Total Process,TRUE,Other Process Use,9.01,6,0,0.01,3,0,0,0
+334413,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,9.01,9,0,0,0.01,0,0,0
+334413,Direct Uses-Total Process,TRUE,Process Heating,11,8,0,0,3,0,0,0
+334413,End Use Not Reported,FALSE,End Use Not Reported,1.02,1,0,0,0.01,0,0,0.01
+334413,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,11.03,1,0,0.01,10,0.02,0,0
+334413,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,2.01,0,0,0,2,0.01,0,0
+334413,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,9.02,1,0,0.01,8,0.01,0,0
+334413,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,89.17,65,0.01,0.08,24,0.07,0,0.01
+336111,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,9.08,4,0,0.05,5,0.03,0,0
+336111,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.02,0,0,0.01,0.01,0,0,0
+336111,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,7.02,2,0,0.01,5,0.01,0,0
+336111,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,2,2,0,0,0,0,0,0
+336111,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.01,0,0.01,0.01,0.01,0,0
+336111,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.04,0.01,0,0.01,0.01,0.01,0,0
+336111,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.02,0.01,0,0.01,0,0,0,0
+336111,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,20.03,8,0,0.02,12,0.01,0,0
+336111,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.01,0,0,0,0,0,0
+336111,Direct Uses-Total Process,TRUE,Machine Drive,5.01,5,0,0.01,0,0,0,0
+336111,Direct Uses-Total Process,TRUE,Other Process Use,1.02,0.01,0,0.01,1,0,0,0
+336111,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1,1,0,0,0,0,0,0
+336111,Direct Uses-Total Process,TRUE,Process Heating,11.01,1,0,0,10,0.01,0,0
+336111,End Use Not Reported,FALSE,End Use Not Reported,1.02,0.01,0,0,0.01,0,0,1
+336111,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,2.04,0.1,0,0.01,2,0.01,0.01,0
+336111,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.02,0,0,0.01,0.01,0,0,0
+336111,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,2.03,0.1,0,0,2,0.01,0.01,0
+336111,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,32.14,12,0,0.08,19,0.05,0.01,1
+336112,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,10.07,4,0,0.04,6,0.03,0,0
+336112,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0.01,0,0,0,0
+336112,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,8.01,2,0,0,6,0.01,0,0
+336112,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,1,1,0,0,0,0,0,0
+336112,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.04,0.333,0,0.01,0.01,0.01,0,0
+336112,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,0.03,0.333,0,0.01,0.01,0,0,0
+336112,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.333,0,0.01,0,0.01,0,0
+336112,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,22.03,8,0,0.02,14,0.01,0,0
+336112,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.5,0,0,0,0,0,0
+336112,Direct Uses-Total Process,TRUE,Machine Drive,5.02,5,0,0.01,0.01,0,0,0
+336112,Direct Uses-Total Process,TRUE,Other Process Use,2.02,1,0,0.01,1,0.01,0,0
+336112,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,1.01,1,0,0,0.01,0,0,0
+336112,Direct Uses-Total Process,TRUE,Process Heating,13.01,0.5,0,0,13,0,0,0
+336112,End Use Not Reported,FALSE,End Use Not Reported,2.01,0,0,0.01,0,0,0,2
+336112,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,5.02,0.01,0,0,5,0,0.01,0
+336112,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,1,0,0,0,1,0,0,0
+336112,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,4.02,0.01,0,0,4,0,0.01,0
+336112,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,39.12,12,0,0.07,25,0.04,0.01,2
+336411,Direct Uses-Total Nonprocess,FALSE,Direct Uses-Total Nonprocess,12.91,7,0,0.88,5,0.03,0,0
+336411,Direct Uses-Total Nonprocess,TRUE,Conventional Electricity Generation,0.01,0,0,0,0.01,0,0,0
+336411,Direct Uses-Total Nonprocess,TRUE,Facility HVAC,8.02,3,0,0.01,5,0.01,0,0
+336411,Direct Uses-Total Nonprocess,TRUE,Facility Lighting,3,3,0,0,0,0,0,0
+336411,Direct Uses-Total Nonprocess,TRUE,Onsite Transportation,0.89,0.01,0,0.86,0.01,0.01,0,0
+336411,Direct Uses-Total Nonprocess,TRUE,Other Facility Support,1.02,1,0,0,0.01,0.01,0,0
+336411,Direct Uses-Total Nonprocess,TRUE,Other Nonprocess Use,0.03,0.01,0,0.01,0.01,0,0,0
+336411,Direct Uses-Total Process,FALSE,Direct Uses-Total Process,6.04,4,0,1.01,1,0.03,0,0
+336411,Direct Uses-Total Process,TRUE,Electro-Chemical Processes,0.01,0.333,0,0,0,0,0,0
+336411,Direct Uses-Total Process,TRUE,Machine Drive,3.02,2,0,1,0.01,0.01,0,0
+336411,Direct Uses-Total Process,TRUE,Other Process Use,0.02,0.333,0,0,0.01,0,0,0
+336411,Direct Uses-Total Process,TRUE,Process Cooling and Refrigeration,0.03,0.333,0,0,0.01,0.01,0,0
+336411,Direct Uses-Total Process,TRUE,Process Heating,2.02,1,0,0.01,1,0.01,0,0
+336411,End Use Not Reported,FALSE,End Use Not Reported,0.04,0.01,0,0,0.01,0.01,0,0.01
+336411,Indirect Uses-Boiler Fuel,FALSE,Indirect Uses-Boiler Fuel,4.04,0.01,0.01,0.01,4,0.01,0,0
+336411,Indirect Uses-Boiler Fuel,TRUE,CHP and/or Cogeneration Process,0.01,0,0,0,0.5,0,0,0
+336411,Indirect Uses-Boiler Fuel,TRUE,Conventional Boiler Use,3.04,0.01,0.01,0.01,3.5,0.01,0,0
+336411,TOTAL FUEL CONSUMPTION,FALSE,TOTAL FUEL CONSUMPTION,23,11,0.01,1.9,10,0.08,0,0.01

@@ -571,41 +571,62 @@ def calc_county_fraction(cbp_2012):
 
     return county_frac
 
+def format_state_energy(energy_state):
+    
+    energy_state.rename(columns={'NAICS':'naics', 'fuel_type': 'MECS_FT'},
+                         inplace=True)
+    
+    energy_state.replace({'DIESEL': 'Distillate_fuel_oil', 'ELECTRICITY':
+                          'Net_electricity', 'LP GAS': 'LPG_NGL',
+                          'NATURAL GAS': 'Natural_gas'}, inplace=True)
+    
+    
+    return energy_state
+
 #cbp_source = get_cbp.CBP(2012)
 #cbp = cbp_source.cbp
 #
 #county_frac = calc_county_fraction(cbp_2012)
 
-def calc_county_energy(calculation_years, fuel_state, county_frac, multiplier):
+def calc_county_energy(fuel_state, county_frac, multiplier,
+                       calculation_years=range(2010, 2017)):
     """
     Calculate county-level energy use.
     """
     # (4.2)County Fuel Consumption #############################################
-    fuel_county = pd.merge(fuel_state, county_frac, on=['state','NAICS'],
+    fuel_county = pd.merge(fuel_state, county_frac, on=['state','naics'],
                            how='outer')
 
     fuel_county['fuel_county_mmbtu'] = \
                fuel_county['fuel_state_mmbtu'] * fuel_county['est_county_frac']
 
     fuel_county = fuel_county[
-        ['state','state_abbr','county','NAICS','fuel_type','fuel_county_mmbtu']
+        ['state','state_abbr','fipstate', 'COUNTY_FIPS','naics','MECS_FT',
+         'fuel_county_mmbtu']
         ]
-
+        
     fuel_county = pd.merge(fuel_county, multiplier, on='state', how='outer')
 
-    for y in calculation_years:
-        fuel_county[y] = fuel_county[y] * fuel_county['fuel_county_mmbtu']
-        fuel_county = fuel_county.rename(
-            columns={y: str(y)+'_fuel_county_mmbtu'}
-            )
+#    for y in calculation_years:
+#        fuel_county[y] = fuel_county[y] * fuel_county['fuel_county_mmbtu']
+#        fuel_county = fuel_county.rename(
+#            columns={y: str(y)+'_fuel_county_mmbtu'}
+#            )
         
     fuel_county.update(fuel_county[[y for y in calculation_years]].multiply(
             fuel_county.fuel_county_mmbtu, axis=0
             ))
-
+    
+    fuel_county = pd.melt(
+            fuel_county, id_vars=['state_abbr','fipstate', 'COUNTY_FIPS',
+                                  'naics','MECS_FT'],
+            value_vars=[y for y in calculation_years], var_name='year',
+            value_name='MMBtu_TOTAL'
+            )
+    
     fuel_county = fuel_county.drop('fuel_county_mmbtu', axis=1)
 
-    fuel_county.set_index('state', inplace=True)
+    fuel_county.set_index('fipstate', inplace=True)
 
     # fuel_county.to_csv('output\cons_county.csv')
 
