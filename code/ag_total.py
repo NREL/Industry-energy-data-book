@@ -21,15 +21,23 @@ class Ag:
 
             group_desc = 'EXPENSES'
 
+            agg_level = 'STATE'
+
         if data == 'elctricity':
 
             data_desc = 'AG SERVICES, UTILITIES - EXPENSE, MEASURED IN $'
 
             group_desc = 'EXPENSES'
 
+            agg_level = 'STATE'
+
         if data == 'farm_counts':
 
+            data_desc = 'FARM OPERATIONS - NUMBER OF OPERATIONS'
 
+            group_desc = 'FARMS & LAND & ASSETS'
+
+            agg_level = 'COUNTY'
 
         base_url = 'http://quickstats.nass.usda.gov/api/api_GET/'
 
