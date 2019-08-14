@@ -42,6 +42,17 @@ def Manufacturing(calculation_years=range(2010, 2017)): #CBP data only through 2
     
         cbp_corrected = cm.correct_cbp(cbp_matching_counts)
         
+        #Export cbp_corrected for 2012 for mining
+        if y == 2012:
+            
+            cbp_corrected[(cbp_corrected.naics > 210000) & \
+                          (cbp_corrected.naics < 220000)][
+                                 ['fipstate', 'fipscty', 'naics', 'est',
+                                  'COUNTY_FIPS']
+                                 ].to_csv(
+                '../calculation_data/cbp_corrected_mining.csv'
+                )
+        
         # Run IPF only for MECS years, 2010 and 2014
         if (y == 2010) | (y == 2014):
     

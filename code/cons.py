@@ -1,6 +1,6 @@
 import pandas as pd
 import requests
-import urllib
+#import urllib
 import json
 import get_cbp
 
@@ -29,13 +29,13 @@ def census(naics):
 
     r = requests.get(base_url, params=params)
     #print(r.content)
-    url = r.url
-    #print(url)
-
-    response = urllib.request.urlopen(url)
-    data = response.read()
-    datajson = json.loads(data)
-    census = pd.DataFrame(datajson)
+#    url = r.url
+#    #print(url)
+#
+#    response = urllib.request.urlopen(url)
+#    data = response.read()
+#    datajson = json.loads(data)
+    census = pd.DataFrame(r.json())
 
     census.columns = census.iloc[0]
     census = census[1:]
@@ -75,7 +75,7 @@ def census(naics):
 
 
 ####### Fill in missing data for DE, DC & WV
-def fill_in_missing_data(selected_state):
+def fill_in_missing_data(census_data, selected_state):
 
     missing = census_data.loc[census_data['state_abbr']== selected_state]
     missing = missing.sort_index()
@@ -447,7 +447,7 @@ def calc_elec_state(census_data):
 
 # 3.REAL GDP ##################################################################
 # (3.1)Source Data from BEA ###################################################
-def calc_bea_multiplier(period=range(2010, 2017), base_year=2012):
+def calc_bea_multiplier(calculation_years=range(2010, 2017), base_year=2012):
     """
     bea: 1997-2018 annual GDP in the construction sector by state (real GDP in
     chained dollars). Columns: state, year, gdp
@@ -465,13 +465,12 @@ def calc_bea_multiplier(period=range(2010, 2017), base_year=2012):
               'ResultFormat':'JSON'}
 
     r = requests.get(base_url, params=params)
-    url = r.url
+#    url = r.url
     #print(url)
-
-    response = urllib.request.urlopen(url)
-    data = response.read()
-    datajson = json.loads(data)
-    bea = pd.DataFrame(datajson['BEAAPI']['Results']['Data'],
+#    response = urllib.request.urlopen(url)
+#    data = response.read()
+#    datajson = json.loads(data)
+    bea = pd.DataFrame(r.json()['BEAAPI']['Results']['Data'],
                        columns=['GeoName','TimePeriod','DataValue'])
 
     ####### Rename columns & Remove invalid values
@@ -483,6 +482,8 @@ def calc_bea_multiplier(period=range(2010, 2017), base_year=2012):
     ####### Remove commas in numbers & Change data types
     bea['gdp'] = bea['gdp'].apply(lambda x: x.replace(',',"")).astype(float)
     bea = bea.astype({'year': int})
+    
+    bea = bea[bea.year.between(calculation_years[0], calculation_years[-1])]
 
     # (3.2)GDP Growth Rate as A Multiplier #############################
     #multiplier: Index: state. Columns: 1997, 1998, 1999 ... 2018.
@@ -573,10 +574,10 @@ def calc_county_fraction(cbp_2012):
 
 def format_state_energy(energy_state):
     
-    energy_state.rename(columns={'NAICS':'naics', 'fuel_type': 'MECS_FT'},
+    energy_state.rename(columns={'fuel_type': 'MECS_FT'},
                          inplace=True)
     
-    energy_state.replace({'DIESEL': 'Distillate_fuel_oil', 'ELECTRICITY':
+    energy_state.replace({'DIESEL': 'Diesel', 'ELECTRICITY':
                           'Net_electricity', 'LP GAS': 'LPG_NGL',
                           'NATURAL GAS': 'Natural_gas'}, inplace=True)
     
@@ -594,14 +595,14 @@ def calc_county_energy(fuel_state, county_frac, multiplier,
     Calculate county-level energy use.
     """
     # (4.2)County Fuel Consumption #############################################
-    fuel_county = pd.merge(fuel_state, county_frac, on=['state','naics'],
+    fuel_county = pd.merge(fuel_state, county_frac, on=['state','NAICS'],
                            how='outer')
 
     fuel_county['fuel_county_mmbtu'] = \
                fuel_county['fuel_state_mmbtu'] * fuel_county['est_county_frac']
 
     fuel_county = fuel_county[
-        ['state','state_abbr','fipstate', 'COUNTY_FIPS','naics','MECS_FT',
+        ['state','state_abbr','fipstate', 'COUNTY_FIPS','NAICS','MECS_FT',
          'fuel_county_mmbtu']
         ]
         
@@ -619,7 +620,7 @@ def calc_county_energy(fuel_state, county_frac, multiplier,
     
     fuel_county = pd.melt(
             fuel_county, id_vars=['state_abbr','fipstate', 'COUNTY_FIPS',
-                                  'naics','MECS_FT'],
+                                  'NAICS','MECS_FT', 'fuel_county_mmbtu'],
             value_vars=[y for y in calculation_years], var_name='year',
             value_name='MMBtu_TOTAL'
             )

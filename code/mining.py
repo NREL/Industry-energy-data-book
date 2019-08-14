@@ -1,16 +1,18 @@
+#!/usr/bin/python
 import pandas as pd
 import requests
 import urllib
 import json
 import get_cbp
-
+import datetime as dt
+import numpy as np
 
 """
 Estimate county-level fuel consumption in the mining sector 
 """
 
 
-
+calculation_years = range(2010, 2017)
 
 # 1.NATIONAL FUEL CONSUMPTION #################################################
 # (1.1) fuel_cost: 2012 Costs (000$) by NAICS & Fuel ##########################
@@ -28,51 +30,49 @@ and misc), fuel_cost_k_usd.
 
 ####### Collect data from Census
 
-def get_fuel_cost(naics):
+def get_fuel_cost():
     
     base_url = 'https://api.census.gov/data/2012/ecnmatfuel'
     
     params = {
-    'get':
-    'NAICS2012,MATFUEL,MATFUEL_TTL,MATFUELCOST,MATFUELCOST_F,MATFUELQTY,UNITS_TTL,M_FI',
-    'for':'us',
-    'NAICS2012':naics,
-    'key':'489f08f390013bc6d41ee377e86ea8c1b0dd5267'}
+        'get':
+        'NAICS2012,MATFUEL,MATFUEL_TTL,MATFUELCOST,MATFUELCOST_F,MATFUELQTY,UNITS_TTL,M_FI',
+        'for':'us', 'NAICS2012':'21*',
+        'key':'489f08f390013bc6d41ee377e86ea8c1b0dd5267'
+        }
     
     r = requests.get(base_url, params=params)
     #print(r.content)
-    url = r.url
+#    url = r.url
     #print(url)
     
-    response = urllib.request.urlopen(url)
-    data = response.read()
-    datajson = json.loads(data)
-    get_fuel_cost = pd.DataFrame(datajson) 
+#    response = urllib.request.urlopen(url)
+#    data = response.read()
+#    datajson = json.loads(data)
+    fuel_cost = pd.DataFrame(r.json()) 
     
-    get_fuel_cost.columns = get_fuel_cost.iloc[0]
-    get_fuel_cost = get_fuel_cost[1:]
+    fuel_cost.columns = fuel_cost.iloc[0]
+    fuel_cost = fuel_cost[1:]
 
-    get_fuel_cost.rename(columns = {'NAICS2012':'NAICS',
-                                    'MATFUEL':'fuel_id', 
-                                    'MATFUEL_TTL':'fuel_type', 
-                                    'MATFUELCOST':'fuel_cost_k_usd',
-                                    'MATFUELCOST_F':'fuel_cost_missing',
-                                    'MATFUELQTY':'fuel_qty',
-                                    'UNITS_TTL':'fuel_qty_unit',
-                                    'M_FI':'fuel_flag'},
-                                    inplace=True)
+    fuel_cost.rename(columns={'NAICS2012':'NAICS', 'MATFUEL':'fuel_id', 
+                              'MATFUEL_TTL':'fuel_type', 
+                              'MATFUELCOST':'fuel_cost_k_usd',
+                              'MATFUELCOST_F':'fuel_cost_missing',
+                              'MATFUELQTY':'fuel_qty',
+                              'UNITS_TTL':'fuel_qty_unit',
+                              'M_FI':'fuel_flag'}, inplace=True)
     
-    get_fuel_cost = get_fuel_cost[['NAICS','fuel_id','fuel_type',
+    fuel_cost = fuel_cost[['NAICS','fuel_id','fuel_type',
                                    'fuel_cost_k_usd','fuel_cost_missing',
                                    'fuel_qty','fuel_qty_unit','fuel_flag']]
     
-    get_fuel_cost = get_fuel_cost.loc[:,~get_fuel_cost.columns.duplicated()]
+    fuel_cost = fuel_cost.loc[:,~fuel_cost.columns.duplicated()]
     
     # Remove material costs, keep only fuel costs:
-    get_fuel_cost = get_fuel_cost[get_fuel_cost.fuel_flag == 'F']
-    get_fuel_cost = get_fuel_cost.drop('fuel_flag', axis=1)
+    fuel_cost = fuel_cost[fuel_cost.fuel_flag == 'F']
+    fuel_cost = fuel_cost.drop('fuel_flag', axis=1)
     
-    return get_fuel_cost
+    return fuel_cost
 
 
 mining_naics = [211111,211112,212111,212112,212113,212210,212221,212222,212231,
@@ -80,11 +80,7 @@ mining_naics = [211111,211112,212111,212112,212113,212210,212221,212222,212231,
                 212324,212325,212391,212392,212393,212399,213111,213112,213113,
                 213114,213115]
 
-fuel_cost_source = pd.DataFrame()
-
-for n in mining_naics:
-    fuel_cost_source = pd.concat([fuel_cost_source, get_fuel_cost(n)])
-
+fuel_cost_source = get_fuel_cost()
 
 
 ####### Change data type
@@ -100,8 +96,6 @@ fuel_cost_source['fuel_qty'] = fuel_cost_source['fuel_qty'].astype(float)
 #fuel_cost_source.set_index('NAICS', inplace=True)                              # Only for test
 #fuel_cost_source.to_csv('mining_fuel_cost_source.csv')                         # Only for test
 #print(fuel_cost_source.head(20))
-
-
 
 
 ####### Fill out missing data in column fuel_cost_k_usd
@@ -141,7 +135,6 @@ fuel_cost = fuel_cost.reset_index()
 pd.set_option('display.max_columns', None)
 
 
-
 ####### Rename fuels
 fuel_type_dict = {'fuel_id':[2,960018,974000,21111003,21111015,21111101,
                              21211003,32411015,32411017,32411019],
@@ -167,9 +160,6 @@ fuel_cost = fuel_cost.loc[(fuel_cost['fuel_type']!='TOTAL') &
 #fuel_cost.set_index('NAICS', inplace=True)                                     # Only for test
 #fuel_cost.to_csv('mining_fuel_cost.csv')                                       # Only for test
 #print(fuel_cost.head(20))
-
-
-
 
 
 
@@ -335,8 +325,6 @@ price_misc['fuel_type'] = 'MISC'
 price_misc = price_misc[['fuel_type', 'price_usd_per_mmbtu']]
 
 
-
-
 ####### fuel_price
 fuel_price = pd.concat([price_coal, price_diesel, price_residual, price_ng,
                         price_gasoline, price_crude, price_misc])
@@ -344,9 +332,6 @@ fuel_price = pd.concat([price_coal, price_diesel, price_residual, price_ng,
 #fuel_price.set_index('fuel_type', inplace=True)                                # Only for test
 #fuel_price.to_csv('mining_fuel_price.csv')                                     # Only for test
 #print(fuel_price)
-
-
-
 
 
 
@@ -374,7 +359,7 @@ fuel_nation = fuel_nation.dropna()
 ####### Add ng self-used and crude oil to fuel_use
 #fuel_cost_source = pd.read_csv('mining_fuel_cost_source.csv')                  # Only for test
 
-fuel_cost_source.reset_index()
+fuel_cost_source.reset_index(inplace=True)
 
 fuel_nation_added = fuel_cost_source[fuel_cost_source.fuel_cost_missing =='X']
 
@@ -395,8 +380,9 @@ fuel_nation_added_ng = fuel_nation_added_ng[['NAICS','fuel_type',
 fuel_nation = pd.concat([fuel_nation, fuel_nation_added_ng])
 
 # crude oil (million barrels to mmbtu)
-fuel_nation_added_crude = \
-                       fuel_nation_added[fuel_nation_added.fuel_id == 21111101]
+fuel_nation_added_crude = pd.DataFrame(
+        fuel_nation_added[fuel_nation_added.fuel_id == 21111101]
+        )
 
 fuel_nation_added_crude['fuel_nation_mmbtu'] = \
                             fuel_nation_added_crude['fuel_qty'] * 1000000 * 5.8 # EIA MER Table A2
@@ -408,16 +394,9 @@ fuel_nation = pd.concat([fuel_nation, fuel_nation_added_crude])
 
 fuel_nation = fuel_nation.groupby(['NAICS','fuel_type']).sum()
 
-fuel_nation.to_csv('mining_fuel_nation.csv')                                   # Only for test
+#fuel_nation.to_csv('../results/mining_fuel_nation.csv')                                   # Only for test
 
 fuel_nation.reset_index(inplace=True)
-
-
-
-
-
-
-
 
 
 
@@ -434,65 +413,71 @@ fuel_nation: country-level fuel consumption by NAICS. Columns: NAICS,
 fuel_type, fuel_nation_mmbtu.
 """
 
-def census(naics):
+def get_census_data():
     
     base_url = 'http://api.census.gov/data/2012/ecnbasic'
 
     params = {'get':'ESTAB,ELECPCH',
               'for':'us',
-              'NAICS2012':naics,
+              'NAICS2012':'21*',
               'key':'489f08f390013bc6d41ee377e86ea8c1b0dd5267'}
 
     r = requests.get(base_url, params=params)
     #print(r.content)
-    url = r.url
+#    url = r.url
     #print(url)
     
-    response = urllib.request.urlopen(url)
-    data = response.read()
-    datajson = json.loads(data)
-    census = pd.DataFrame(datajson) 
+#    response = urllib.request.urlopen(url)
+#    data = response.read()
+#    datajson = json.loads(data)
+    census_data = pd.DataFrame(r.json()) 
     
-    census.columns = census.iloc[0]
-    census = census[1:]
-
-    census.rename(columns = {'ESTAB':'estab_counts',
+    census_data.columns = census_data.iloc[0]
+    census_data = census_data[1:]
+    
+    census_data.rename(columns = {'ESTAB':'estab_counts',
                              'NAICS2012':'NAICS', 
                              'ELECPCH':'elec_nation_mwh'}, 
                              inplace=True)
     
-    census['estab_counts'] = census['estab_counts'].astype(int)
-    census['elec_nation_mwh'] = census['elec_nation_mwh'].astype(int)
+    census_data['n_naics'] = census_data.NAICS.apply(
+            lambda x: len(str(x))
+            )
+    
+    census_data = census_data[census_data.n_naics == 6]
+
+    census_data.drop('n_naics', axis=1, inplace=True)
+    
+    census_data['estab_counts'] = census_data['estab_counts'].astype(int)
+    census_data['elec_nation_mwh'] = \
+        census_data['elec_nation_mwh'].astype(int)
     
     # NAICS 211111 has two rows, one of them has 0 electricity consumption.
-    if census.shape[0] > 1:
-        census = census[census.elec_nation_mwh != 0]
+    if census_data.shape[0] > 1:
+        census_data = census_data[census_data.elec_nation_mwh != 0]
         
-    census['fuel_type'] = 'ELECTRICITY'
+    census_data['fuel_type'] = 'ELECTRICITY'
     
-    census = census[['NAICS','fuel_type','elec_nation_mwh','estab_counts']]
+    census_data = census_data[
+            ['NAICS','fuel_type','elec_nation_mwh','estab_counts']
+            ]
 
-    return census
+    return census_data
 
-
-census_data = pd.DataFrame()
-
-for n in mining_naics:
-    census_data = pd.concat([census_data, census(n)])
+census_data = get_census_data()
     
-
 
 ####### Fill out missing elec use data
-missing_elec = census_data[census_data.elec_nation_mwh == 0]
-
-census212 = census(212)
-mwh_per_estab = census212.iloc[0]['elec_nation_mwh'] / census212.iloc[0][
-                                                       'estab_counts']
-
-missing_elec['elec_nation_mwh'] = missing_elec['estab_counts'] * mwh_per_estab
-
-census_data = census_data[census_data.elec_nation_mwh != 0]
-census_data = pd.concat([census_data, missing_elec])
+#missing_elec = census_data[census_data.elec_nation_mwh == 0]
+#
+#census212 = census_data(212)
+#mwh_per_estab = census212.iloc[0]['elec_nation_mwh'] / census212.iloc[0][
+#                                                       'estab_counts']
+#
+#missing_elec['elec_nation_mwh'] = missing_elec['estab_counts'] * mwh_per_estab
+#
+#census_data = census_data[census_data.elec_nation_mwh != 0]
+#census_data = pd.concat([census_data, missing_elec])
 
 
 
@@ -509,11 +494,6 @@ fuel_nation = pd.concat([fuel_nation, elec_nation])
 
 #fuel_nation.set_index('NAICS', inplace=True)                                   # Only for test
 #fuel_nation.to_csv('mining_fuel_nation.csv')                                   # Only for test
-
-
-
-
-
 
 
 
@@ -541,7 +521,6 @@ intensity = intensity[['NAICS', 'fuel_type', 'mmbtu_per_estab']]
 
 
 
-
 # (3.2)cbp: Establishment Counts in each county ###############################
 """
 cbp_source: 2012 establishment counts by NAICS code and county. Columns: 
@@ -553,75 +532,83 @@ Under 50, naics_n, industry.
 cbp: state, state_abbr, county, NAICS, est.
 """
 
-cbp_source = get_cbp.CBP(2012)
-cbp = cbp_source.cbp
-
-cbp = cbp[['fipstate', 'COUNTY_FIPS', 'naics', 'est']]
-
-
-######## Only keep mining-sector NAICS codes
-cbp.set_index('naics', inplace=True)
-cbp = cbp.loc[mining_naics].reset_index()
-cbp.rename(columns = {'naics':'NAICS',
-                      'fipstate':'state_fips',
-                      'COUNTY_FIPS':'county_fips'}, 
-                      inplace=True)
+#cbp_source = get_cbp.CBP(2012)
+#cbp = cbp_source.cbp
+#
+#cbp = cbp[['fipstate', 'COUNTY_FIPS', 'naics', 'est']]
+#
+#
+######### Only keep mining-sector NAICS codes
+#cbp.set_index('naics', inplace=True)
+#cbp = cbp.loc[mining_naics].reset_index()
+#cbp.rename(columns = {'naics':'NAICS'}, 
+#                      inplace=True)
 
     
 ####### Add state names and county names
-fips = pd.read_csv('input_us_fips_codes.csv')
+fips = pd.read_csv('../calculation_data/input_us_fips_codes.csv')
 fips = fips[['State', 'County_Name', 'FIPS State', 'COUNTY_FIPS']]
 fips.rename(columns = {'State':'state', 
                        'County_Name':'county',
-                       'FIPS State':'state_fips',
-                       'COUNTY_FIPS':'county_fips'},
+                       'FIPS State':'fipstate'},
                        inplace=True)
-
-cbp = pd.merge(cbp, fips, on=['state_fips','county_fips'], how='outer')
-
-cbp = cbp[['state','county','NAICS','est']]
-cbp = cbp.dropna()
-cbp.set_index('state',inplace=True)
-
-cbp['NAICS'] = cbp['NAICS'].astype(int)
-cbp['est'] = cbp['est'].astype(int)
-cbp.reset_index(inplace=True)
-
-cbp['state'] = cbp['state'].str.upper()
-cbp['county'] = cbp['county'].str.upper()
+#
+#cbp = pd.merge(cbp, fips, on=['fipstate', 'COUNTY_FIPS'], how='outer')
+#
+#cbp = cbp[['state','county','NAICS','est', 'fipstate', 'COUNTY_FIPS']]
+#cbp = cbp.dropna()
+#cbp.set_index('state',inplace=True)
+#
+#cbp['NAICS'] = cbp['NAICS'].astype(int)
+#cbp['est'] = cbp['est'].astype(int)
+#cbp.reset_index(inplace=True)
+#
+#cbp['state'] = cbp['state'].str.upper()
+#cbp['county'] = cbp['county'].str.upper()
 
 
 ####### Add state_abbr
-state_abbr = pd.read_csv('input_region.csv')
-state_abbr = state_abbr[['state', 'state_abbr']]
-cbp = pd.merge(cbp, state_abbr, on='state', how='outer')
-cbp = cbp[['state', 'state_abbr', 'county', 'NAICS', 'est']]
+#state_abbr = pd.read_csv('../calculation_data/input_region.csv')
+#state_abbr = state_abbr[['state', 'state_abbr']]
+#cbp = pd.merge(cbp, state_abbr, on='state', how='outer')
+#cbp = cbp[['state', 'state_abbr', 'county', 'NAICS', 'est',
+#           'fipstate', 'COUNTY_FIPS']]
 
 
+# Import corrected cbp
+cbp_corrected = pd.read_csv(
+        '../calculation_data/cbp_corrected_mining.csv', index_col=0,
+        dtype={'naics':int, 'COUNTY_FIPS':int}
+        )
 
+cbp_corrected.rename(columns={'naics': 'NAICS'}, inplace=True)
+
+cbp_corrected = pd.merge(cbp_corrected, fips,
+                         on=['fipstate', 'COUNTY_FIPS'], how='left')
+
+cbp_corrected['state'] = cbp_corrected['state'].str.upper()
+
+cbp_corrected['county'] = cbp_corrected['county'].str.upper()
 
 # (3.3) fuel_county ###########################################################
 """
 fuel_county: Merge cbp and intensity. Columns: state, state_abbr, county, 
 NAICS, fuel_type, fuel_county_mmbtu.
 """
-fuel_county = pd.merge(cbp, intensity, on='NAICS', how='outer')
+fuel_county = pd.merge(cbp_corrected, intensity, on='NAICS', how='outer')
 
 fuel_county['fuel_county_mmbtu'] = \
                             fuel_county['est'] * fuel_county['mmbtu_per_estab']
                             
 fuel_county['NAICS'] = fuel_county['NAICS'].astype(int)
 
-fuel_county = fuel_county[['state', 'state_abbr', 'county', 'NAICS', 
-                           'fuel_type', 'fuel_county_mmbtu']]
+fuel_county = fuel_county[['state', 'county', 'NAICS', 
+                           'fipstate', 'COUNTY_FIPS', 'fuel_type',
+                           'fuel_county_mmbtu']]
 
 #print(fuel_county.head(30))
 #fuel_county.set_index('state',inplace=True)                                    # Only for test
 #fuel_county.to_csv('mining_fuel_county.csv')                                   # Only for test
-
-
-
-
 
 
 
@@ -672,8 +659,7 @@ bea = bea[(bea.gdp != '(NA)') & (bea.gdp != '(L)')]
 bea['gdp'] = bea['gdp'].apply(lambda x: x.replace(',',"")).astype(float)
 bea = bea.astype({'year': int})
 
-
-
+bea = bea[bea.year.between(calculation_years[0], calculation_years[-1])]
 
 
 # (4.2)GDP Growth Rate as A Multiplier ########################################
@@ -681,15 +667,22 @@ bea = bea.astype({'year': int})
 multiplier: Index: state. Columns: 1997, 1998, 1999 ... 2018.
 """
 multiplier = bea.pivot(index='state', columns='year', values='gdp')
-multiplier['base_year_2012'] = multiplier[2012]
 
-years = range(1997,2018)
-for y in years:
-    multiplier[y] = multiplier[y] / multiplier['base_year_2012']
+base_year = 2012
+#multiplier['base_year_2012'] = multiplier[2012]
+
+#years = range(1997,2018)
+#for y in years:
+#    multiplier[y] = multiplier[y] / multiplier['base_year_2012']
+    
+multiplier.loc[:, [y for y in calculation_years]] = \
+    multiplier[[y for y in calculation_years]].divide(
+            multiplier[base_year], axis=0
+            )
 
 
 multiplier.reset_index(inplace=True)                                           
-multiplier = multiplier.drop('base_year_2012', axis=1)                     
+#multiplier = multiplier.drop('base_year_2012', axis=1)                     
 multiplier['state'] = multiplier['state'].str.upper()
 
 multiplier.set_index('state',inplace=True)
@@ -701,26 +694,26 @@ multiplier.reset_index(inplace=True)
 #print(multiplier.head(20))
 
 
-
-
-
-
-
-
-
-
 # 5. MULTIYEAR COUNTY LEVEL ENERGY CONSUMPTION ################################
 fuel_county = pd.merge(fuel_county, multiplier, on='state', how='outer')
 
-years = range(1997, 2018)
-for y in years:
-    fuel_county[y] = fuel_county[y] * fuel_county['fuel_county_mmbtu']
-    fuel_county = fuel_county.rename(columns={y: str(y)+'_fuel_county_mmbtu'})
+#years = range(1997, 2018)
+#for y in years:
+#    fuel_county[y] = fuel_county[y] * fuel_county['fuel_county_mmbtu']
+#    fuel_county = fuel_county.rename(columns={y: str(y)+'_fuel_county_mmbtu'})
+    
+fuel_county.loc[:, [y for y in calculation_years]] =\
+        fuel_county[[y for y in calculation_years]].multiply(
+                fuel_county.fuel_county_mmbtu, axis=0
+                )
     
 fuel_county = fuel_county.drop('fuel_county_mmbtu', axis=1)
 
-fuel_county.set_index('state', inplace=True)
+#fuel_county.set_index('state', inplace=True)
 
-fuel_county.to_csv('output\mining_county.csv')
+filename = 'mining_county_energy_'+ \
+    dt.datetime.now().strftime('%Y%m%d_%H%M')+'.csv'
+
+fuel_county.to_csv('../results/'+filename, index=False)
 
 #print(fuel_county.head(10))

@@ -1,0 +1,91 @@
+
+
+import pandas as pd
+import dask.dataframe as dd
+#import run_mfg
+# import mfg calcs
+# import cons, ag, mining calcs
+# import combine_sectors
+
+
+# For now just read in dask dataframes of calculated data. Code for
+# agriculture, construction, and mining needs to be refactored into 
+# classes and methods that can then be called here.
+mfg_file = 'mfg_county_energy_20190809.parquet.gzip'
+
+ag_file = 'ag_county_energy_20190813_1604.parquet.gzip'
+
+cons_file = 'cons_county_energy_20190813_1555.parquet.gzip'
+
+mining_file = 'mining_county_energy_20190813_1309.parquet.gzip'
+
+county_energy = dd.concat(
+        [dd.read_parquet('../results/'+f, engine='pyarrow') for f in \
+             [mfg_file, ag_file, cons_file, mining_file]],
+        interleave_partitions=True
+        ).compute()
+
+def check_naics(naics):
+    """
+    Map 6-digit NAICS to description of 2-digit NAICS.
+    """
+    
+    n2_dict = {11: 'Agriculture', 21: 'Mining', 23: 'Construction',
+               31: 'Manufacturing', 32: 'Manufacturing', 
+               33: 'Manufacturing', 92: 'Manufacturing', 48: 'Manufacturing'}
+    
+    if type(naics) == str:
+        
+        n_out = 'Agriculture'
+        
+    else:
+
+        n2 = int(str(naics)[0:2])
+            
+        n_out = n2_dict[n2]
+        
+    return n_out
+
+county_energy['ind_sector'] = county_energy.NAICS.apply(
+        lambda x: check_naics(x)
+        )
+
+# Sum for county totals by fuel 
+county_energy.groupby(
+        ['COUNTY_FIPS', 'MECS_FT']
+        ).MMBtu_TOTAL.sum().to_csv('county_summary_fuels.csv')
+
+# Sum for county totals by sector
+county_energy.groupby(
+        ['COUNTY_FIPS', 'ind_sector']
+        ).MMBtu_TOTAL.sum().to_csv('county_summary_sector.csv')
+
+
+## Set calulation years
+#years = range(2010, 2018)
+
+## Run energy calculations for each industrial subsector
+#mfg_energy = run_mfg.Manufacturing(calculation_years=years)
+#
+#cons_energy = run_cons.Construction(calculation_years=years)
+#
+#mining_energy = run_mining.Mining(calculation_years=years)
+#
+#ag_energy = run_ag.Agriculture(calculation_years=years)
+#
+## Combine and format combine sectors
+#county_energy = combine_sectors(mfg=mfg_energy, cons=cons_energy,
+#                                mining=mining_energy, ag=ag_energy)
+
+
+#def county_formatting():
+#
+#    # Match fuel types to MECS fuel types
+#    df.replace({'COAL': 'Coal', 'NATURAL GAS': 'Natural_gas',
+#                'CRUDE OIL': 'Other', 'Gasoline': 'Other', 'MISC': 'Other',
+#                'RESIDUAL FUEL OIL': 'Residual_fuel_oil',
+#                'ELECTRICITY': 'Net_electricity',
+#                'DIESEL': 'Distillate_fuel_oil', 'LP GAS': 'LPG_HGL'},
+#                inplace=True)
+#
+#    fuel_county.rename(columns={'NAICS': 'naics'}, inplace=True)

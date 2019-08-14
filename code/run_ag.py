@@ -26,16 +26,19 @@ def Agriculture():
     
 
     def import_format(results_filepath):
+        """
+        
+        """
 
         ag_energy = pd.read_csv(results_filepath, index_col=0)
         
         # Check if index was written to file
-        if ag_energy.index.names != None:
+        if ag_energy.index.names != [None]:
             
             ag_energy.reset_index(inplace=True)
 
         ag_energy.replace({'LP GAS': 'LPG_NGL', 'NATURAL_GAS': 'Natural_gas',
-                           'DIESEL': 'Distillate_fuel_oil', 'LPG': 'LPG_NGL',
+                           'DIESEL': 'Diesel', 'LPG': 'LPG_NGL',
                            'GASOLINE': 'Other', 'OTHER': 'Residual_fuel_oil',
                            'ELECTRICITY': 'Net_electricity'}, inplace=True)
     
@@ -43,7 +46,6 @@ def Agriculture():
         ag_energy.rename({'fuel_type': 'MECS_FT'}, inplace=True)
         
         return ag_energy
-    
     
     fuel_12 = import_format(fuel_results_file_12)
     
@@ -92,6 +94,9 @@ def Agriculture():
         df['fipstate'] = df.fipstate.astype(int)
         
         df.reset_index(inplace=True)
+        
+        # Drop any Alaksan counties missing info
+        df = df[df.COUNTY_FIPS !=2]
         
         df.rename(columns={'fuel_type': 'MECS_FT'}, inplace=True)
         

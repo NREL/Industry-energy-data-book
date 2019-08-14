@@ -1,21 +1,19 @@
 import pandas as pd
-import requests
-import urllib
-import json
 import get_cbp
 import cons
+import datetime as dt
+import dask.dataframe as dd
 
 def Construction(calculation_years=range(2010, 2017)):
     # import 2012 Economic Census data.
-    
     census_data = pd.concat(
                 [cons.census(naics) for naics in [23, 236, 237, 238]],
                 ignore_index=True
                 )
     # Fill in missing values
-    DE = cons.fill_in_missing_data('DE')
-    DC = cons.fill_in_missing_data('DC')
-    WV = cons.fill_in_missing_data('WV')
+    DE = cons.fill_in_missing_data(census_data, 'DE')
+    DC = cons.fill_in_missing_data(census_data, 'DC')
+    WV = cons.fill_in_missing_data(census_data, 'WV')
 
     census_data = census_data[(census_data.state_abbr != 'DE') &
                               (census_data.state_abbr != 'DC') &
@@ -28,7 +26,6 @@ def Construction(calculation_years=range(2010, 2017)):
     census_data = census_data.sort_index().reset_index()
 
     census_data = census_data.apply(pd.to_numeric, errors='ignore')
-    
     
     # Calculate state-level energy use (all in MMBtu)
     # Diesel use
@@ -48,20 +45,38 @@ def Construction(calculation_years=range(2010, 2017)):
             ignore_index=True
             )
     
+    energy_state = cons.format_state_energy(energy_state)
+    
     # Calculate GDP multiplier
     multiplier = cons.calc_bea_multiplier()
+    
+    cbp_2012 = get_cbp.CBP(2012).cbp
     
     # Calculate county fraction of state construction establishments by 
     # NAICS code.
     county_frac = cons.calc_county_fraction(cbp_2012)
     
-    # Format state energy data.
+    county_frac.rename(columns={'naics': 'NAICS'}, inplace=True)
     
     # Calculate county energy 
     cons_energy = cons.calc_county_energy(
-       energy_state, county_frac, multiplier,
-       calculation_years=range(2010, 2017)
-       )
+            energy_state, county_frac, multiplier, 
+            calculation_years=range(2010, 2017)
+            )
+    
+    # remove sector total (NAICS == 23) and reset index
+    cons_energy = cons_energy[cons_energy.NAICS != 23].reset_index()
+    
+    cons_energy = dd.from_pandas(
+            cons_energy.set_index('fipstate'),
+            npartitions=len(cons_energy.fipstate.unique())
+            )
+    
+    filename = 'cons_county_energy_'+\
+        dt.datetime.now().strftime('%Y%m%d_%H%M')+'.parquet.gzip'
+        
+    cons_energy.to_parquet('../results/'+filename, compression='gzip',
+                           engine='pyarrow')
     
 
     
