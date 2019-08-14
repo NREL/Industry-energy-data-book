@@ -10,7 +10,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 import numpy as np
-
+import re
 
 
 def summarize_ghgrp_energy(data):
@@ -25,6 +25,168 @@ def summarize_ghgrp_energy(data):
     
     data['MECS_FT'] = pd.merge(data, fuelxwalk, left_on='FUEL_TYPE',
                                right_on='EPA_FUEL_TYPE', how='left')
+#%%
+    def define_equipment(data):
+        """
+
+        """
+        unitname_eq_dict = {'furnace': ['furnace', 'furn'],
+                            'dryer': ['dryer', 'dehydrator', 'drying'],
+                            'kiln': ['kiln'],
+                            'process_heater': ['heater', 'htr', 'heating', 
+                                               'reheat'],
+                             'oven': ['oven', 'stove'], 'calciner': ['calciner'],
+                             'cupola': ['cupola'], 'boiler': ['boiler'], 
+                             'building_heating': ['building heat', 'space heater',
+                                                  'comfort heater', 'hot water',
+                                                  'water heater', 'bld heat',
+                                                  'office', 'hvac', 'space heat'],
+                             'turbine': ['turbine'],
+                             'engine': ['engine', 'rice', 'ice', 'ic', 'mill',
+                                        'screen', 'crush'], 'pump':['pump'],
+                             'compressor': ['compressor'],
+                             'generator': ['generator'], 'other': ['crane'],
+                             'oxidizer': ['RTO','oxidizer', 'RCO', 'TODF',
+                                          'thermox'],
+                            'incinerator': ['incinerator']}
+
+        unittype_eq_dict = {'furnace': ['F', 'Chemical Recovery Furnace', 'CF',
+                                        'Chemical Recovery Combustion Unit',
+                                        'Direct Reduction Furnace'],
+                            'boiler': ['OB', 'S', 'PCWW', 'BFB', 'PCWD',
+                                       'PCT', 'CFB', 'PCO', 'OFB', 'PFB'],
+                            'kiln': ['Pulp Mill Lime Kiln', 'Lime Kiln', 'K'],
+                            'calciner': ['C'], 
+                            'process_heater':['PRH', 'CatH', 'NGLH', 'HMH', 
+                                              'FeFL'],
+                            'engine': ['RICE', 'Electricity Generator'],
+                            'turbine': ['CCCT', 'SCCT'],
+                            'sulfur_recovery': ['Sulfur Recovery Plant'],
+                            'flare': ['Flare', 'FLR'],
+                            'oven': ['O', 'COB', 'IFCE'], 'dryer':['PD'],
+                            'hydrogen_production': ['HPPU'],
+                            'building_heating': ['CH', 'HWH'], 
+                            'oxidizer': ['TODF', 'RTO', 'RCO'],
+                            'incinerator': ['ICI', 'MWC', 'II']}
+
+        def equip_dict_to_df(eq_dict):
+            """
+            Convert unit type/unit name dictionaries to dataframes.
+            """
+            eq_df = pd.DataFrame.from_dict(
+                    eq_dict, orient='index'
+                    ).reset_index()
+
+            eq_df = pd.melt(
+                    eq_df, id_vars='index', value_name='unit'
+                    ).rename(columns={'index': 'equipment'}).drop(
+                            'variable', axis=1
+                            )
+
+            eq_df = eq_df.dropna().set_index('unit')
+
+            return eq_df
+
+        def equip_unit_type(unit_type, unittype_eq_df):
+            """
+            Match GHGRP unit type to end use specified in unittype_eu_dict.
+            """
+
+            equip = re.match('(\w+) \(', unit_type)
+
+            if equip != None:
+
+                equip = re.match('(\w+)', equip.group())[0]
+
+                if equip in unittype_eq_df.index:
+
+                    equip = unittype_eq_df.loc[equip, 'equipment']
+
+                else:
+
+                    equip = np.nan
+
+            else:
+
+                if unit_type in unittype_eq_df.index:
+
+                    equip = unittype_eq_df.loc[unit_type, 'equipment']
+
+            return equip
+
+        def equip_unit_name(unit_name, unitname_eq_df):
+            """
+            Find keywords in GHGRP unit name descriptions and match them
+            to appropriate end uses based on unitname_eu_dict.
+            """
+
+            for i in unitname_eq_df.index:
+
+                equip = re.search(i, unit_name.lower())
+
+                if equip == None:
+
+                    continue
+
+                else:
+
+                    equip = unitname_eq_df.loc[i, 'equipment']
+
+                    return equip
+
+            equip = np.nan
+
+            return equip
+
+        unittype_eq_df = equip_dict_to_df(unittype_eq_dict)
+
+        unitname_eq_df = equip_dict_to_df(unitname_eq_dict)
+        
+        unit_types = data.UNIT_TYPE.dropna().unique()
+
+        type_match = list()
+
+        for utype in unit_types:
+
+            equipment = equip_unit_type(utype, unittype_eq_df)
+
+            type_match.append([utype, equipment])
+
+        type_match = pd.DataFrame(type_match,
+                                  columns=['UNIT_TYPE', 'equipment'])
+        
+        # Fix None values
+        type_match.iloc[
+                type_match[type_match.equipment.isin([None])].index, 1
+                ] = np.nan
+
+        data = pd.merge(data, type_match, on='UNIT_TYPE', how='left')
+
+        # Next, match end use by unit name for facilites that report OCS for
+        # unit type.
+        eq_ocs = data[
+                (data.UNIT_TYPE == 'OCS (Other combustion source)') |
+                (data.UNIT_TYPE.isnull())
+                ][['UNIT_TYPE', 'UNIT_NAME']]
+
+        eq_ocs['equipment'] = eq_ocs.UNIT_NAME.apply(
+                lambda x: equip_unit_name(x, unitname_eq_df)
+                )
+
+        data.equipment.update(eq_ocs.equipment)
+
+        data.drop(data.columns.difference(
+                set(['COUNTY_FIPS','MECS_Region', 'MMBtu_TOTAL', 'MECS_FT',
+                     'PRIMARY_NAICS_CODE', 'MECS_NAICS','equipment',
+                     'UNIT_NAME','REPORTING_YEAR','FACILITY_ID'])
+                ), axis=1, inplace=True)
+
+        # Set equipment == 'other' for remaining 
+        data.equipment.fillna('other', inplace=True)
+        
+        return data
+#%%
+    data = define_equipment(data)
     
     #Export xls of energy data grouped by year for creating figures in excel
     with pd.ExcelWriter(
@@ -36,7 +198,7 @@ def summarize_ghgrp_energy(data):
                 ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_naics')
         
         data.groupby(
-                ['REPORTING_YEAR', 'UNIT_TYPE']
+                ['REPORTING_YEAR', 'equipment']
                 ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_unit')
         
         data.groupby(
@@ -52,6 +214,12 @@ def summarize_ghgrp_energy(data):
                 ).MMBtu_TOTAL.sum().reset_index().pivot(
                         'REPORTING_YEAR', 'MECS_FT'
                         ).to_excel(writer, sheet_name='by_fuel')
+        
+        data.groupby(
+                ['REPORTING_YEAR', 'FACILITY_ID', 'PRIMARY_NAICS_CODE']
+                ).MMBtu_TOTAL.sum().reset_index().pivot(
+                        'REPORTING_YEAR', 'FACILITY_ID', 'PRIMARY_NAICS_CODE
+                        ).to_excel(writer, sheet_name='by_facility')
     
     
     # Summary plots using Seaborn

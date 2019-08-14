@@ -17,7 +17,7 @@ ag_file = 'ag_county_energy_20190813_1604.parquet.gzip'
 
 cons_file = 'cons_county_energy_20190813_1555.parquet.gzip'
 
-mining_file = 'mining_county_energy_20190813_1309.parquet.gzip'
+mining_file = 'mining_county_energy_20190814_0006.parquet.gzip'
 
 county_energy = dd.concat(
         [dd.read_parquet('../results/'+f, engine='pyarrow') for f in \
@@ -50,15 +50,18 @@ county_energy['ind_sector'] = county_energy.NAICS.apply(
         lambda x: check_naics(x)
         )
 
+# Some 2017 data hangning around in mining (and others?)
+county_energy = county_energy[county_energy.year != 2017]
+
 # Sum for county totals by fuel 
 county_energy.groupby(
-        ['COUNTY_FIPS', 'MECS_FT']
-        ).MMBtu_TOTAL.sum().to_csv('county_summary_fuels.csv')
+        ['year', 'COUNTY_FIPS', 'MECS_FT'], as_index=False
+        ).MMBtu_TOTAL.sum().to_csv('../results/county_summary_fuels.csv')
 
 # Sum for county totals by sector
 county_energy.groupby(
-        ['COUNTY_FIPS', 'ind_sector']
-        ).MMBtu_TOTAL.sum().to_csv('county_summary_sector.csv')
+        ['year', 'COUNTY_FIPS', 'ind_sector'], as_index=False
+        ).MMBtu_TOTAL.sum().to_csv('../results/county_summary_sector.csv')
 
 
 ## Set calulation years
