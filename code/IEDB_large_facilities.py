@@ -12,7 +12,7 @@ import os
 import numpy as np
 import re
 
-
+#%%
 def summarize_ghgrp_energy(data):
     
     file_dir = '../calculation_data/'
@@ -23,9 +23,11 @@ def summarize_ghgrp_energy(data):
                 os.path.join(file_dir, fuelxwalk_file)
                 )[["EPA_FUEL_TYPE", "MECS_FT"]]
     
-    data['MECS_FT'] = pd.merge(data, fuelxwalk, left_on='FUEL_TYPE',
-                               right_on='EPA_FUEL_TYPE', how='left')
-#%%
+    data = pd.merge(data, fuelxwalk, left_on='FUEL_TYPE',
+                    right_on='EPA_FUEL_TYPE', how='left')
+    
+    data = data[data.REPORTING_YEAR.between(2010, 2016)]
+
     def define_equipment(data):
         """
 
@@ -178,14 +180,15 @@ def summarize_ghgrp_energy(data):
         data.drop(data.columns.difference(
                 set(['COUNTY_FIPS','MECS_Region', 'MMBtu_TOTAL', 'MECS_FT',
                      'PRIMARY_NAICS_CODE', 'MECS_NAICS','equipment',
-                     'UNIT_NAME','REPORTING_YEAR','FACILITY_ID'])
+                     'FUEL_TYPE', 'STATE_NAME', 'REPORTING_YEAR',
+                     'FACILITY_ID'])
                 ), axis=1, inplace=True)
 
         # Set equipment == 'other' for remaining 
-        data.equipment.fillna('other', inplace=True)
-        
+        data.equipment.fillna('not reported', inplace=True)
+
         return data
-#%%
+
     data = define_equipment(data)
     
     #Export xls of energy data grouped by year for creating figures in excel
@@ -199,68 +202,72 @@ def summarize_ghgrp_energy(data):
         
         data.groupby(
                 ['REPORTING_YEAR', 'equipment']
-                ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_unit')
+                ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_equipment')
+        
+        data.groupby(
+                ['REPORTING_YEAR', 'equipment']
+                ).MMBtu_TOTAL.sum().divide(
+                        data.groupby(['REPORTING_YEAR']).MMBtu_TOTAL.sum()
+                        ).to_excel(writer, sheet_name='by_equipment_fraction')
         
         data.groupby(
                 ['REPORTING_YEAR', 'COUNTY_FIPS']
                 ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_county')
         
-        data.groupby(
-                ['REPORTING_YEAR', 'STATE_NAME']
-                ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_state')
+        pd.concat(
+                [data.groupby(['REPORTING_YEAR', 'STATE_NAME']).MMBtu_TOTAL.sum(),
+                 data.groupby(
+                         ['REPORTING_YEAR', 'STATE_NAME']
+                         ).FACILITY_ID.unique().apply(lambda x: np.size(x))], 
+                 axis=1).to_excel(writer, sheet_name='by_state')
         
         data.groupby(
                 ['REPORTING_YEAR', 'MECS_FT']
                 ).MMBtu_TOTAL.sum().reset_index().pivot(
                         'REPORTING_YEAR', 'MECS_FT'
                         ).to_excel(writer, sheet_name='by_fuel')
-        
+
         data.groupby(
                 ['REPORTING_YEAR', 'FACILITY_ID', 'PRIMARY_NAICS_CODE']
-                ).MMBtu_TOTAL.sum().reset_index().pivot(
-                        'REPORTING_YEAR', 'FACILITY_ID', 'PRIMARY_NAICS_CODE
+                ).MMBtu_TOTAL.sum().reset_index().pivot_table(
+                        values=['MMBtu_TOTAL'],
+                        index=['FACILITY_ID', 'PRIMARY_NAICS_CODE'],
+                        columns=['REPORTING_YEAR']
                         ).to_excel(writer, sheet_name='by_facility')
-    
-    
+
     # Summary plots using Seaborn
     sns.set(context='talk', style='whitegrid', palette='Set2')
-        
+
     # Box and whiskers by year and facility, showing distribution over
     #time
     year_plant = data.groupby(
             ['REPORTING_YEAR', 'FACILITY_ID'], as_index=False
             ).MMBtu_TOTAL.sum()
-    
-    
-    
+
     # drop values == 0
     year_plant = pd.DataFrame(year_plant[year_plant.MMBtu_TOTAL >0])
-    
-    fac_counts = year_plant.groupby('REPORTING_YEAR',
-                                    as_index=False).FACILITY_ID.count()
-    
     
     fig, ax = plt.subplots(figsize=(10,8))
     
     sns.stripplot(x='REPORTING_YEAR', y='MMBtu_TOTAL',
-                  data=year_plant[year_plant.REPORTING_YEAR.isin([2010, 2017])],
+                  data=year_plant[year_plant.REPORTING_YEAR.isin([2010, 2016])],
                   dodge=True, jitter=True, palette=sns.color_palette("Paired"),
                   alpha=.30, zorder=1)
 
     sns.stripplot(
-            x=[2010, 2017],
+            x=[2010, 2016],
             y=year_plant[
-                    year_plant.REPORTING_YEAR.isin([2010, 2017])
+                    year_plant.REPORTING_YEAR.isin([2010, 2016])
                     ].groupby('REPORTING_YEAR').MMBtu_TOTAL.median(),
             dodge=False, jitter=False, palette=sns.color_palette("Paired"), 
             marker="D", size=12, linewidth=2, alpha=1,
             edgecolor='black')
 #    
     
-    [ax.text(p[0], p[1], p[1], color='black') for p in zip(
-            ax.get_xticks(), np.around(year_plant[year_plant.REPORTING_YEAR.isin(
-                    [2010, 2017]
-                    )].groupby('REPORTING_YEAR').MMBtu_TOTAL.median().values,0))]
+#    [ax.text(p[0], p[1], p[1], color='black') for p in zip(
+#            ax.get_xticks(), np.around(year_plant[year_plant.REPORTING_YEAR.isin(
+#                    [2010, 2016]
+#                    )].groupby('REPORTING_YEAR').MMBtu_TOTAL.median().values,0))]
 
     ax.set_yscale('log')
     
@@ -270,12 +277,12 @@ def summarize_ghgrp_energy(data):
     
     ax.set_xlabel('Year')
 
-    fig.savefig('Y:/6A20/Public/IEDB/large_fac_summary.png', dpi=100,
+    fig.savefig('Y:/6A20/Public/IEDB/large_fac_summary.pdf', dpi=100,
                 bbox_inches='tight')
     
     print(
         np.around(
-            year_plant[year_plant.REPORTING_YEAR.isin([2010, 2017])].groupby(
+            year_plant[year_plant.REPORTING_YEAR.isin([2010, 2016])].groupby(
                     'REPORTING_YEAR'
                     ).MMBtu_TOTAL.median().values,0
             )
@@ -319,11 +326,10 @@ def summarize_ghgrp_energy(data):
                       'Natural Gas', 'Other', 'Residual Fuel Oil'], ncol=1,
                       frameon=False)
     
-    fig.savefig('Y:/6A20/Public/IEDB/large_fac_fuel.png', dpi=100,
+    fig.savefig('Y:/6A20/Public/IEDB/large_fac_fuel.pdf', dpi=100,
                 bbox_inches='tight')
     
     fig.clear()
-    
     
     # Take top 5 "other fuels" in each year; aggregate remaining as
     # "everything else"
@@ -332,7 +338,7 @@ def summarize_ghgrp_energy(data):
             )
 
     year_fuel_other = pd.DataFrame()
-    
+
     for g in other_grpd.groups:
         
         top_fuels = other_grpd.get_group(g)[
@@ -340,7 +346,7 @@ def summarize_ghgrp_energy(data):
                         ].sort_values(
                     by='MMBtu_TOTAL', ascending=False
                     )[0:5]
-        
+    
         top_fuels['REPORTING_YEAR'] = g
         
         all_other = pd.DataFrame([[g,
@@ -358,7 +364,7 @@ def summarize_ghgrp_energy(data):
 
     year_fuel_other.replace('Wood and Wood Residuals (dry basis)',
                             'Wood and Wood Residuals', inplace=True)
-    
+
     year_fuel_other = year_fuel_other.groupby(['REPORTING_YEAR', 'FUEL_TYPE'],
                                               as_index=False).MMBtu_TOTAL.sum()
 
@@ -367,8 +373,7 @@ def summarize_ghgrp_energy(data):
             ).MMBtu_TOTAL.divide(
                 year_fuel.set_index('REPORTING_YEAR').MMBtu_TOTAL.sum(level=0)
                 ).reset_index()['MMBtu_TOTAL']
-    
-    
+
     # "Other fuels" plot
     fig, ax = plt.subplots(figsize=(10,8))
     
@@ -386,17 +391,17 @@ def summarize_ghgrp_energy(data):
     ax.legend(title='Fuel Type', bbox_to_anchor=(1.04,1), ncol=1,
               frameon=False)
     
-    fig.savefig('Y:/6A20/Public/IEDB/large_fac_fuel_other.png', dpi=100,
+    fig.savefig('Y:/6A20/Public/IEDB/large_fac_fuel_other.pdf', dpi=100,
                 bbox_inches='tight')
-    
-    # Table of largest emitting facilities
-    top_x = ghgrp_energy.groupby(
-            ['REPORTING_YEAR', 'FACILITY_ID', 'FACILITY_NAME',
-             'PRIMARY_NAICS_CODE', 'STATE'], as_index=False
-            ).MMBtu_TOTAL.sum().sort_values(ascending=False).xs(2017)[0:10]
-    
-    top_x.columns = ['GHGRP Facility ID', 'Facility Name', 'NAICS Code',
-                     'State' , 'TBtu']
-    
-    top_x['TBtu'] = top_x.TBtu.divide(10**6)
+#%%
+#    # Table of largest emitting facilities
+#    top_x = ghgrp_energy.groupby(
+#            ['REPORTING_YEAR', 'FACILITY_ID', 'FACILITY_NAME',
+#             'PRIMARY_NAICS_CODE', 'STATE'], as_index=False
+#            ).MMBtu_TOTAL.sum().sort_values(ascending=False).xs(2016)[0:10]
+#    
+#    top_x.columns = ['GHGRP Facility ID', 'Facility Name', 'NAICS Code',
+#                     'State' , 'TBtu']
+#    
+#    top_x['TBtu'] = top_x.TBtu.divide(10**6)
         
