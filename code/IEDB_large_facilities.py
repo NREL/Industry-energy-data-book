@@ -14,18 +14,18 @@ import re
 
 #%%
 def summarize_ghgrp_energy(data):
-    
+
     file_dir = '../calculation_data/'
 
     fuelxwalk_file = 'MECS_FT_IPF.csv'
-    
+
     fuelxwalk = pd.read_csv(
                 os.path.join(file_dir, fuelxwalk_file)
                 )[["EPA_FUEL_TYPE", "MECS_FT"]]
-    
+
     data = pd.merge(data, fuelxwalk, left_on='FUEL_TYPE',
                     right_on='EPA_FUEL_TYPE', how='left')
-    
+
     data = data[data.REPORTING_YEAR.between(2010, 2016)]
 
     def define_equipment(data):
@@ -35,10 +35,10 @@ def summarize_ghgrp_energy(data):
         unitname_eq_dict = {'furnace': ['furnace', 'furn'],
                             'dryer': ['dryer', 'dehydrator', 'drying'],
                             'kiln': ['kiln'],
-                            'process_heater': ['heater', 'htr', 'heating', 
+                            'process_heater': ['heater', 'htr', 'heating',
                                                'reheat'],
                              'oven': ['oven', 'stove'], 'calciner': ['calciner'],
-                             'cupola': ['cupola'], 'boiler': ['boiler'], 
+                             'cupola': ['cupola'], 'boiler': ['boiler'],
                              'building_heating': ['building heat', 'space heater',
                                                   'comfort heater', 'hot water',
                                                   'water heater', 'bld heat',
@@ -58,8 +58,8 @@ def summarize_ghgrp_energy(data):
                             'boiler': ['OB', 'S', 'PCWW', 'BFB', 'PCWD',
                                        'PCT', 'CFB', 'PCO', 'OFB', 'PFB'],
                             'kiln': ['Pulp Mill Lime Kiln', 'Lime Kiln', 'K'],
-                            'calciner': ['C'], 
-                            'process_heater':['PRH', 'CatH', 'NGLH', 'HMH', 
+                            'calciner': ['C'],
+                            'process_heater':['PRH', 'CatH', 'NGLH', 'HMH',
                                               'FeFL'],
                             'engine': ['RICE', 'Electricity Generator'],
                             'turbine': ['CCCT', 'SCCT'],
@@ -67,7 +67,7 @@ def summarize_ghgrp_energy(data):
                             'flare': ['Flare', 'FLR'],
                             'oven': ['O', 'COB', 'IFCE'], 'dryer':['PD'],
                             'hydrogen_production': ['HPPU'],
-                            'building_heating': ['CH', 'HWH'], 
+                            'building_heating': ['CH', 'HWH'],
                             'oxidizer': ['TODF', 'RTO', 'RCO'],
                             'incinerator': ['ICI', 'MWC', 'II']}
 
@@ -143,7 +143,7 @@ def summarize_ghgrp_energy(data):
         unittype_eq_df = equip_dict_to_df(unittype_eq_dict)
 
         unitname_eq_df = equip_dict_to_df(unitname_eq_dict)
-        
+
         unit_types = data.UNIT_TYPE.dropna().unique()
 
         type_match = list()
@@ -156,7 +156,7 @@ def summarize_ghgrp_energy(data):
 
         type_match = pd.DataFrame(type_match,
                                   columns=['UNIT_TYPE', 'equipment'])
-        
+
         # Fix None values
         type_match.iloc[
                 type_match[type_match.equipment.isin([None])].index, 1
@@ -184,48 +184,62 @@ def summarize_ghgrp_energy(data):
                      'FACILITY_ID'])
                 ), axis=1, inplace=True)
 
-        # Set equipment == 'other' for remaining 
-        data.equipment.fillna('not reported', inplace=True)
+        # Set equipment == 'other' for remaining
+        data.equipment.fillna('Not reported', inplace=True)
+
+        data['equipment'] = data.equipment.apply(lambda x: x.capitalize())
 
         return data
 
     data = define_equipment(data)
-    
+
     #Export xls of energy data grouped by year for creating figures in excel
     with pd.ExcelWriter(
-            'Y:/6A20/Public/IEDB/ghgrp_summary_IEDB.xlsx'
+            'Y:/6A20/Public/IEDB/Data/Large energy users/ghgrp_summary_IEDB.xlsx'
             ) as writer:
-        
+
         data.groupby(
-                ['REPORTING_YEAR', 'PRIMARY_NAICS_CODE']
+                ['REPORTING_YEAR', 'PRIMARY_NAICS_CODE'], as_index=False
                 ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_naics')
-        
+
         data.groupby(
-                ['REPORTING_YEAR', 'equipment']
+                ['REPORTING_YEAR', 'equipment'], as_index=False
                 ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_equipment')
-        
+
         data.groupby(
                 ['REPORTING_YEAR', 'equipment']
                 ).MMBtu_TOTAL.sum().divide(
                         data.groupby(['REPORTING_YEAR']).MMBtu_TOTAL.sum()
-                        ).to_excel(writer, sheet_name='by_equipment_fraction')
-        
+                        ).reset_index().to_excel(
+                            writer, sheet_name='by_equipment_fraction'
+                            )
+
         data.groupby(
-                ['REPORTING_YEAR', 'COUNTY_FIPS']
+                ['REPORTING_YEAR', 'COUNTY_FIPS'], as_index=False
                 ).MMBtu_TOTAL.sum().to_excel(writer, sheet_name='by_county')
-        
+
         pd.concat(
-                [data.groupby(['REPORTING_YEAR', 'STATE_NAME']).MMBtu_TOTAL.sum(),
+                [data.groupby(
+                    ['REPORTING_YEAR', 'STATE_NAME']
+                    ).MMBtu_TOTAL.sum(),
                  data.groupby(
                          ['REPORTING_YEAR', 'STATE_NAME']
-                         ).FACILITY_ID.unique().apply(lambda x: np.size(x))], 
-                 axis=1).to_excel(writer, sheet_name='by_state')
-        
-        data.groupby(
-                ['REPORTING_YEAR', 'MECS_FT']
-                ).MMBtu_TOTAL.sum().reset_index().pivot(
-                        'REPORTING_YEAR', 'MECS_FT'
-                        ).to_excel(writer, sheet_name='by_fuel')
+                         ).FACILITY_ID.unique().apply(lambda x: np.size(x))],
+                 axis=1).reset_index().to_excel(writer, sheet_name='by_state')
+
+        pd.concat(
+                [data.groupby(
+                        ['REPORTING_YEAR', 'MECS_FT']
+                        ).MMBtu_TOTAL.sum(), 
+                data.groupby(
+                        ['REPORTING_YEAR', 'MECS_FT']
+                        ).MMBtu_TOTAL.sum().divide(data.groupby(
+                                'REPORTING_YEAR'
+                                ).MMBtu_TOTAL.sum())], axis=1
+                ).reset_index().pivot('REPORTING_YEAR', 'FUEL_TYPE').to_excel(
+                        writer, sheet_name='by_fuel'
+                        )
+
 
         data.groupby(
                 ['REPORTING_YEAR', 'FACILITY_ID', 'PRIMARY_NAICS_CODE']
@@ -233,7 +247,9 @@ def summarize_ghgrp_energy(data):
                         values=['MMBtu_TOTAL'],
                         index=['FACILITY_ID', 'PRIMARY_NAICS_CODE'],
                         columns=['REPORTING_YEAR']
-                        ).to_excel(writer, sheet_name='by_facility')
+                        ).reset_index().to_excel(
+                            writer, sheet_name='by_facility'
+                            )
 
     # Summary plots using Seaborn
     sns.set(context='talk', style='whitegrid', palette='Set2')
@@ -246,9 +262,9 @@ def summarize_ghgrp_energy(data):
 
     # drop values == 0
     year_plant = pd.DataFrame(year_plant[year_plant.MMBtu_TOTAL >0])
-    
+
     fig, ax = plt.subplots(figsize=(10,8))
-    
+
     sns.stripplot(x='REPORTING_YEAR', y='MMBtu_TOTAL',
                   data=year_plant[year_plant.REPORTING_YEAR.isin([2010, 2016])],
                   dodge=True, jitter=True, palette=sns.color_palette("Paired"),
@@ -259,27 +275,27 @@ def summarize_ghgrp_energy(data):
             y=year_plant[
                     year_plant.REPORTING_YEAR.isin([2010, 2016])
                     ].groupby('REPORTING_YEAR').MMBtu_TOTAL.median(),
-            dodge=False, jitter=False, palette=sns.color_palette("Paired"), 
+            dodge=False, jitter=False, palette=sns.color_palette("Paired"),
             marker="D", size=12, linewidth=2, alpha=1,
             edgecolor='black')
-#    
-    
+#
+
 #    [ax.text(p[0], p[1], p[1], color='black') for p in zip(
 #            ax.get_xticks(), np.around(year_plant[year_plant.REPORTING_YEAR.isin(
 #                    [2010, 2016]
 #                    )].groupby('REPORTING_YEAR').MMBtu_TOTAL.median().values,0))]
 
     ax.set_yscale('log')
-    
+
     ax.yaxis.grid(True)
-    
+
     ax.set_ylabel('MMBtu (log)')
-    
+
     ax.set_xlabel('Year')
 
-    fig.savefig('Y:/6A20/Public/IEDB/large_fac_summary.pdf', dpi=100,
-                bbox_inches='tight')
-    
+    fig.savefig('Y:/6A20/Public/IEDB/Data/Large energy users/large_fac_summary.pdf',
+                dpi=100, bbox_inches='tight')
+
     print(
         np.around(
             year_plant[year_plant.REPORTING_YEAR.isin([2010, 2016])].groupby(
@@ -287,50 +303,50 @@ def summarize_ghgrp_energy(data):
                     ).MMBtu_TOTAL.median().values,0
             )
         )
-    
+
     #Fuel mix plot over time
     year_fuel = data.groupby(['REPORTING_YEAR','FUEL_TYPE', 'MECS_FT'],
                              as_index=False).MMBtu_TOTAL.sum()
-    
+
     year_fuel.fillna('Other', inplace=True)
-    
-    
+
+
     mecs_fraction = year_fuel.groupby(
             ['REPORTING_YEAR', 'MECS_FT']
             ).MMBtu_TOTAL.sum().divide(
                     year_fuel.groupby('REPORTING_YEAR').MMBtu_TOTAL.sum()
                     )
-    
+
     mecs_fraction.name = 'Fraction'
-    
+
     year_fuel = year_fuel.set_index(['REPORTING_YEAR', 'MECS_FT']).join(
             mecs_fraction
             ).reset_index()
-    
+
     # Fuel type plot
     fig, ax = plt.subplots(figsize=(10,8))
-    
+
     sns.lineplot(x='REPORTING_YEAR', y='Fraction', hue='MECS_FT',
                data=year_fuel.drop_duplicates())
-    
+
     ax.set_xlabel('Year')
-    
+
     yvals = ax.get_yticks()
-    
+
     ax.set_yticklabels(['{:,.0%}'.format(x) for x in yvals])
-    
+
     ax.set_ylabel('Annual Fuel Mix')
-    
+
     ax.legend(title='Fuel Type', bbox_to_anchor=(1.04,1),
-              labels=['Coal', 'Coke and Breeze', 'Diesel', 'LPG-NGL', 
+              labels=['Coal', 'Coke and Breeze', 'Diesel', 'LPG-NGL',
                       'Natural Gas', 'Other', 'Residual Fuel Oil'], ncol=1,
                       frameon=False)
-    
-    fig.savefig('Y:/6A20/Public/IEDB/large_fac_fuel.pdf', dpi=100,
-                bbox_inches='tight')
-    
+
+    fig.savefig('Y:/6A20/Public/IEDB/Data/Large energy users/large_fac_fuel.pdf',
+                dpi=100, bbox_inches='tight')
+
     fig.clear()
-    
+
     # Take top 5 "other fuels" in each year; aggregate remaining as
     # "everything else"
     other_grpd = year_fuel[year_fuel.MECS_FT == 'Other'].groupby(
@@ -340,15 +356,15 @@ def summarize_ghgrp_energy(data):
     year_fuel_other = pd.DataFrame()
 
     for g in other_grpd.groups:
-        
+
         top_fuels = other_grpd.get_group(g)[
                         ['FUEL_TYPE', 'MMBtu_TOTAL']
                         ].sort_values(
                     by='MMBtu_TOTAL', ascending=False
                     )[0:5]
-    
+
         top_fuels['REPORTING_YEAR'] = g
-        
+
         all_other = pd.DataFrame([[g,
                         other_grpd.get_group(g)[
                                 ['FUEL_TYPE', 'MMBtu_TOTAL']
@@ -356,9 +372,9 @@ def summarize_ghgrp_energy(data):
                             by='MMBtu_TOTAL', ascending=False
                             )[5:].MMBtu_TOTAL.sum()]],
                         columns=['REPORTING_YEAR', 'MMBtu_TOTAL'])
-        
+
         all_other['FUEL_TYPE'] = 'Everything Else'
-        
+
         year_fuel_other = pd.concat([year_fuel_other, top_fuels, all_other],
                                     axis=0, ignore_index=True, sort=False)
 
@@ -373,35 +389,39 @@ def summarize_ghgrp_energy(data):
             ).MMBtu_TOTAL.divide(
                 year_fuel.set_index('REPORTING_YEAR').MMBtu_TOTAL.sum(level=0)
                 ).reset_index()['MMBtu_TOTAL']
+    
+    year_fuel_other.pivot('REPORTING_YEAR', 'FUEL_TYPE').to_csv(
+            'Y:/6A20/Public/IEDB/Data/Large energy users/IEDB_large_fac_otherfuels.csv'
+            )
 
     # "Other fuels" plot
     fig, ax = plt.subplots(figsize=(10,8))
-    
+
     sns.lineplot(x='REPORTING_YEAR', y='Fraction', hue='FUEL_TYPE',
                  data=year_fuel_other, markers=False)
-    
+
     ax.set_xlabel('Year')
-    
+
     yvals = ax.get_yticks()
-    
+
     ax.set_yticklabels(['{:,.0%}'.format(x) for x in yvals])
-    
+
     ax.set_ylabel('Annual Fuel Mix')
-    
+
     ax.legend(title='Fuel Type', bbox_to_anchor=(1.04,1), ncol=1,
               frameon=False)
-    
-    fig.savefig('Y:/6A20/Public/IEDB/large_fac_fuel_other.pdf', dpi=100,
-                bbox_inches='tight')
+
+    fig.savefig(
+            'Y:/6A20/Public/IEDB/Data/Large energy users/large_fac_fuel_other.pdf',
+            dpi=100, bbox_inches='tight')
 #%%
 #    # Table of largest emitting facilities
 #    top_x = ghgrp_energy.groupby(
 #            ['REPORTING_YEAR', 'FACILITY_ID', 'FACILITY_NAME',
 #             'PRIMARY_NAICS_CODE', 'STATE'], as_index=False
 #            ).MMBtu_TOTAL.sum().sort_values(ascending=False).xs(2016)[0:10]
-#    
+#
 #    top_x.columns = ['GHGRP Facility ID', 'Facility Name', 'NAICS Code',
 #                     'State' , 'TBtu']
-#    
+#
 #    top_x['TBtu'] = top_x.TBtu.divide(10**6)
-        
