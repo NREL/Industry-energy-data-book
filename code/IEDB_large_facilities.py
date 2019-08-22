@@ -236,10 +236,9 @@ def summarize_ghgrp_energy(data):
                         ).MMBtu_TOTAL.sum().divide(data.groupby(
                                 'REPORTING_YEAR'
                                 ).MMBtu_TOTAL.sum())], axis=1
-                ).reset_index().pivot('REPORTING_YEAR', 'FUEL_TYPE').to_excel(
+                ).reset_index().pivot('REPORTING_YEAR', 'MECS_FT').to_excel(
                         writer, sheet_name='by_fuel'
                         )
-
 
         data.groupby(
                 ['REPORTING_YEAR', 'FACILITY_ID', 'PRIMARY_NAICS_CODE']
