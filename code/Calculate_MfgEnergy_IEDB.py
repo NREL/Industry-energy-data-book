@@ -164,25 +164,34 @@ class Manufacturing_energy:
                     self.energy_ghgrp_y[f].map(self.fuelxwalkDict)
                     )
 
-        #Match GHGRP-reported 6-digit NAICS code with MECS NAICS
-        
-        if self.naics_column == 'PRIMARY_NAICS_CODE_12':
-            
-            self.energy_ghgrp_y = \
-                pd.merge(self.energy_ghgrp_y,
-                         ghgrp_matching[['FACILITY_ID',
-                                         self.naics_column]],
-                         on='FACILITY_ID', how='left')
+        self.energy_ghgrp_y = \
+            pd.merge(self.energy_ghgrp_y,
+                     ghgrp_matching[['FACILITY_ID',
+                                     self.naics_column]],
+                     on='FACILITY_ID', how='left')
 
         self.energy_ghgrp_y = MatchMECS_NAICS(
                 self.energy_ghgrp_y, 'PRIMARY_NAICS_CODE'
                 )
 
+        print(self.energy_ghgrp_y.columns)
+
         # Filter out facilities that use PRIMARY_NAICS_CODE == 486210 and
         # NAICS_USED == 0
         self.energy_ghgrp_y = self.energy_ghgrp_y[
-                (self.energy_ghgrp_y[self.naics_column] != 486210)
-                ].copy(deep=True)
+                (self.energy_ghgrp_y[self.naics_column] != 486210) &\
+                (self.energy_ghgrp_y.MECS_NAICS !=0)
+                ]
+
+        if self.naics_column == 'PRIMARY_NAICS_CODE_12':
+
+            self.energy_ghgrp_y.drop('PRIMARY_NAICS_CODE', inplace=True,
+                                     axis=1)
+
+            self.energy_ghgrp_y.rename(
+                columns={'PRIMARY_NAICS_CODE_12': 'PRIMARY_NAICS_CODE'},
+                inplace=True
+                )
 
 
     def GHGRP_Totals_byMECS(self):
@@ -267,17 +276,17 @@ class Manufacturing_energy:
         with zipfile.ZipFile(io.BytesIO(r.content)) as data_zip:
 
             file_list = data_zip.namelist()
-            
+
             skip_rows_dis = 4
-            
+
             code_column = 'Sector Code'
-            
+
             if self.year == 2010:
-                
+
                 skip_rows_dis = 8
-                
+
                 code_column = 'Sector_Code'
-                
+
             for f in file_list:
 
                 if re.search('Disposition', f):
@@ -285,16 +294,16 @@ class Manufacturing_energy:
                     with data_zip.open(f) as data_file:
 
                         eia923_dis = pd.read_excel(
-                                data_file, skiprows=skip_rows_dis, 
+                                data_file, skiprows=skip_rows_dis,
                                 sheet_name=0
                                 )
 
                         eia923_dis.columns = \
                             [x.replace('\n', ' ') for x in eia923_dis.columns]
-                            
+
                         eia923_dis.columns = \
                             [x.replace('  ', ' ') for x in eia923_dis.columns]
-                            
+
                         eia923_dis.columns = \
                             [x.title() for x in eia923_dis.columns]
 
@@ -309,11 +318,11 @@ class Manufacturing_energy:
                 if re.search('2_3_4_5', f):
 
                     with data_zip.open(f) as data_file:
-                        
+
                         skip_rows_gen = 5
-                        
+
                         if self.year == 2010:
-                            
+
                             skip_rows_gen = 7
 
                         eia923_gen = pd.read_excel(
@@ -323,10 +332,10 @@ class Manufacturing_energy:
 
                         eia923_gen.columns = \
                             [x.replace('\n', ' ') for x in eia923_gen.columns]
-                            
+
                         eia923_gen.columns = \
                             [x.replace('  ', ' ') for x in eia923_gen.columns]
-                            
+
                         eia923_gen.columns = \
                             [x.title() for x in eia923_gen.columns]
 
@@ -352,13 +361,13 @@ class Manufacturing_energy:
 
         print('year:', self.year, '\n', 'dist columns:', eia923_dis.columns,
               '\n', 'gen index:', eia923_gen.index.names)
-        
+
         # Disposition file for 2011 labels plant names as Pplant State.
         if self.year == 2011:
-        
+
             eia923_dis.rename(columns={'Pplant State': 'Plant Name'},
                               inplace=True)
-    
+
         eia923 = eia923_dis.set_index('Plant Name').join(eia923_gen)
 
         eia923.replace('.', 0, inplace=True)
@@ -369,40 +378,40 @@ class Manufacturing_energy:
                     'RE_gen', 'Retail Sales', 'Sales for Resale',
                     'Sales For Resale', 'Other Outgoing Electricity',
                     'Outgoing Electricity', 'Tolling Agreements']:
-            
+
             if col in eia923.columns:
 
                 eia923[col] = eia923[col].astype(int)
-                
+
             else:
-                
+
                 continue
-            
-        if self.year == 2010: 
+
+        if self.year == 2010:
 
             eia923['Net_electricity'] = eia923[
                     ['Other Incoming Electricity', 'RE_gen']
                     ].sum(axis=1).subtract(
                         eia923[
-                            ['Retail Sales', 'Sales For Resale', 
+                            ['Retail Sales', 'Sales For Resale',
                              'Other Outgoing Electricity']
                             ].sum(axis=1)
                         )
-                
-                
+
+
         elif self.year == 2011:
 
             eia923['Net_electricity'] = eia923[
                     ['Incoming Electricity', 'RE_gen']
                     ].sum(axis=1).subtract(
                         eia923[
-                            ['Retail Sales', 'Sales For Resale', 
+                            ['Retail Sales', 'Sales For Resale',
                              'Outgoing Electricity']
                             ].sum(axis=1)
-                        )   
+                        )
 
         else:
-            
+
             eia923['Net_electricity'] = eia923[
                     ['Incoming Electricity', 'RE_gen']
                     ].sum(axis=1).subtract(
@@ -423,7 +432,7 @@ class Manufacturing_energy:
                 ['FACILITY_ID', 'EIA_PLANT_ID']
                 ].drop_duplicates(), left_on='Plant Code',
             right_on='EIA_PLANT_ID', how='inner')
-        
+
         elect_fac_ids = ghgrp_electricity.FACILITY_ID.values
 
         ghgrp_electricity['MECS_FT'] = 'Net_electricity'
@@ -444,10 +453,10 @@ class Manufacturing_energy:
 
         ghgrp_electricity['COUNTY_FIPS'] = \
             ghgrp_electricity.COUNTY_FIPS.astype(int)
-            
+
         ghgrp_electricity.drop(['EIA_PLANT_ID', 'Plant Code'], axis=1,
                                inplace=True)
-            
+
         ghgrp_electricity['fipstate'] = \
             [int(str(x)[0:(len(str(x)))-3]) for x in ghgrp_electricity.COUNTY_FIPS]
 
@@ -531,7 +540,7 @@ class Manufacturing_energy:
         counts, calculated MECS intensities, and calculated facility energy use
         for GHGRP facilites.
         Net electricity undergoes an additional adjustment.
-        
+
         County sums are not disaggregated by employment size class.
 
         Returns a Dask DataFrame
@@ -544,7 +553,7 @@ class Manufacturing_energy:
                 value_vars=[x for x in self.empsize_dict.values()],
                 var_name=['Emp_Size'], value_name='est_count'
                 )
-        
+
         # Get rid of non-manufacturing naics
         energy_nonghgrp = pd.DataFrame(
                 energy_nonghgrp[energy_nonghgrp.MECS_NAICS !=0]
