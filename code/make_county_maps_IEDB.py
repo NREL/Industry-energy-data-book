@@ -20,6 +20,18 @@ class mapping:
         sshp_file = \
             'Y:/6A20/Public/IEDB/cb_2014_us_state_5m/cb_2014_us_state_5m.shp'
 
+        fuel_file = \
+            'Y:/6A20/Public/IEDB/Code/output/county_summary_fuels.csv'
+
+        sector_file = \
+            'Y:/6A20/Public/IEDB/Code/output/' +\
+            'county_summary_sector_largest_sector.xlsx'
+
+        #import energy results
+        self.energy = pd.read_csv(fuel_file, index_col=0)
+
+        self.sector = pd.read_excel(sector_file, sheet='for_map')
+
         self.cshp = gpd.read_file(cshp_file)
 
         self.sshp = gpd.read_file(sshp_file)
@@ -59,7 +71,7 @@ class mapping:
 
                 self.colors[c][n] = hex_list
 
-    def make_county_choropleth(data, palette, filename, class_scheme,
+    def make_county_choropleth(self, data, palette, filename, class_scheme,
                                scheme_kwds):
         """
 
@@ -83,10 +95,10 @@ class mapping:
             data.set_index('COUNTY_FIPS').MMBtu
             )
 
-        map_data.dropna(subset=['MMBtu'], inplace=True)
+        map_data.dropna(subset=['MMBtu_TOTAL'], inplace=True)
 
         # set the range for the choropleth
-        vmin, vmax = map_data.MMBtu.min(), map_data.MMBtu.max()
+        vmin, vmax = map_data.MMBtu_TOTAL.min(), map_data.MMBtu_TOTAL.max()
 
         # create figure and axes for Matplotlib
         fig, ax = plt.subplots(1, figsize=(10, 10))
@@ -95,10 +107,18 @@ class mapping:
         #
         # cax = divider.append_axes("right", size="5%", pad=0.1)
 
-        map_data2.plot(column='MMBtu', cmap='Blues', linewidth=0.8, ax=ax,
-                       edgecolor='0.8', scheme=class_scheme,
-                       scheme_kwds=scheme_kwds, legend=True,
-                       legend_kwds={'title': 'Energy Use (MMBtu)'})
+        if scheme_kwds == None:
+
+            map_data2.plot(column='MMBtu_TOTAL', cmap=palette, linewidth=0.8,
+                           ax=ax, edgecolor='0.8', scheme=class_scheme,
+                           legend=True,
+                           legend_kwds={'title': 'Energy Use (MMBtu)'})
+        else:
+
+            map_data2.plot(column='MMBtu', cmap=palette, linewidth=0.8, ax=ax,
+                           edgecolor='0.8', scheme=class_scheme,
+                           scheme_kwds=scheme_kwds, legend=True,
+                           legend_kwds={'title': 'Energy Use (MMBtu)'})
 
         ax.axis('off')
 
@@ -114,13 +134,49 @@ class mapping:
         # cbar.ax.set_ylabel('Energy Use (MMBtu)')
 
         fig.savefig(filename+'_.svg', dpi=500, bbox_inches='tight')
-        # Create colorbar as a legend
-        #sm = plt.cm.ScalarMappable(
-            #cmap=’Blues’, norm=plt.Normalize(vmin=vmin, vmax=vmax)
-            #)
-        # empty array for the data range
-        #sm._A = []
-        # add the colorbar to the figure
-        #cbar = fig.colorbar(sm)
 
-        #fig.savefig(“map_export.svg”, dpi=400)
+        fig.close
+
+    def make_sector_map(self, data):
+        """
+        Method for creating county map indicating largest energy-using
+        subsector.
+        """
+
+        def format_county_fips(cf):
+
+            cf = str(cf)
+
+            if len(cf)<=4:
+
+                cf = '0'+cf
+
+            return cf
+
+        data['COUNTY_FIPS'] = data.COUNTY_FIPS.apply(
+            lambda x: format_county_fips(x)
+            )
+
+        # match on geo_id
+        map_data = self.cshp.set_index('GEOID').join(
+            data.set_index('COUNTY_FIPS').MMBtu
+            )
+
+        ## Need to specify colors or will geopandas automatcially assign?
+
+    # Make % change map (2010 - 2017)
+    pct_ch = self.energy.groupby(
+        ['COUNTY_FIPS', 'year'], as_index=False
+        ).MMBtu_TOTAL.sum()
+
+    pct_ch = pct_ch.groupby('COUNTY_FIPS').apply(
+        lambda x: x.pct_change()
+        )
+
+    pct_ch = pd.DataFrame(pct_ch.dropna().mean(level=0))
+
+    pct_ch.reset_index(inplace=True)
+
+    make_county_choropleth(pct_ch, palette='GnBu')
+
+    for fuel in self.energy.MECS_FT:
