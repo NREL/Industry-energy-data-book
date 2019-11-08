@@ -1,0 +1,3404 @@
+0,GP-TNO-T1
+1,GP-2
+2,GP-IHE_Diesel
+3,C-1
+4,GP - Diesel Fired Equipment
+5,CP - ASO to 7B1
+6,GP-BOHO RE
+7,GP-2 Diesel
+8,GP-Diesel Fired Sources
+9,GP-3
+10,GP-1 Diesel CoGen
+11,GP-01
+12,GP-MCU
+13,CP-CH10
+14,GP-02
+15,GP-1
+16,GP- 1
+17,GP-DFT1
+18,GP-DIESEL
+19,GP-RDOIL
+20,GP-WSOIL
+21,GP-HTOIL
+22,GP- Diesel Combustion
+23,GP_FWP
+24,GP-001
+25,GP-Tier 1 Diesel
+26,GP-011
+27,GP-014
+28,GP-012
+29,GP-015
+30,GP-Test Cells Bldg 467
+31,GP-Tub Grinders
+32,GP-Test Cells Bldg 474-JP8
+33,GP-Bldg 410 Test Cells-No.2 FO
+34,GP-FO
+35,GP-US
+36,GP-Verpol Sources
+37,GP- Aggregation of Units
+38,GP-0001 (Diesel)
+39,GP-all units
+40,CP-17&18 Blrs
+41,Enclosed Flame Vapor Control System
+42,GP-Purchased Diesel Combustion
+43,GP-Small Combustion Units-#2 Fuel Oil
+44,GP-#1
+45,GP-DIESEL EQUIPMENT
+46,GP-Small Sources
+47,GP-Diesel
+48,GP-Rose Hill
+49,GP-Plant 1
+50,GP-Group 1
+51,GP-SP
+52,GP-All Fuel Sources
+53,GP-MomentiveNorco
+54,GP-CUB
+55,GP-JMH1
+56,GP- PQ Corporation - Gurnee
+57,GP-DT1
+58,GPD-DVPE04
+59,GPD-DVPT06
+60,GPD-DVPH05
+61,GP- Auger GB-426A
+62,CP-GDN-FO-01
+63,GP-Powerhouse
+64,GP- MP-252
+65,GP- Misc Small Fuel Oil Combustion
+66,GP-RV
+67,GP-Facility GHG Emissions
+68,GP-Mineral Wool Production
+69,CP-1
+70,GP-Process Plant
+71,GP-#2FO-STL
+72,GPD-SPE04
+73,GPD-SPT06
+74,"GP-1,2,3,4,5,6,7,8,9,10,11"
+75,GP-Enchilada GB-128
+76,GP-2FuelOilUnits
+77,GP-002
+78,GP-Secondary Aluminium Production
+79,GP- DPI NO. 2 FUEL
+80,GP-Diesel 1
+81,GP-Sources Using Fuel Oil
+82,GP-BT
+83,GP- PQ Corporation - Jeffersonville
+84,GP-Aburn
+85,GP-AFP #4 Stationary Combustion Units
+86,GP-Natural Gas Users
+87,GP-Cogeneration Plant
+88,GP-SE
+89,GP-LPTCOMBUSTION
+90,GP- Brutus GC-158A
+91,CP-DF
+92,GP-FNGLW
+93,GP-002-D
+94,GP- Perdido AC-857
+95,GP-03
+96,GP-Underfire
+97,CP-N001 Fuel Oil Meter
+98,GPD-GPE04
+99,GP-Honda 2
+100,J-222
+101,GP-Stratford
+102,GP-Altavista
+103,CP-MCI-FO-01
+104,GP-BMW
+105,GP-2FO
+106,GP-Mars MC-807
+107,GP-IHW_Diesel
+108,"GP-1,2,3,4,5,6,7"
+109,GP-Ursa MC-809
+110,GP
+111,GP- HFC Austin Aggregation
+112,GP-Prod Test Cells
+113,GP-MU Site
+114,GP-R&D Cells
+115,"GP-Great Plains Ethanol, LLC"
+116,GP-Combustion
+117,GP-NSNE Stationary Combustion Sources
+118,GP-MPF-Greer-Site
+119,CP-NG
+120,GP-All Units at the Facility
+121,GP-ProcessUnits
+122,CP_3
+123,GP-Sandersville External Combustion
+124,CP-Plantwide
+125,CP- 1-2-3-4
+126,CP
+127,GP-Combustion Units
+128,GP-Fostoria Ethanol
+129,GP-1 Aggregation of All FFCC Sources
+130,GP- Ram Powell VK-956A
+131,GP-Diesel Equipment
+132,UU-1783
+133,UU-1782
+134,EFP-121
+135,GP-Fayetteville
+136,GP-D-SWFE04
+137,GP-D-SWFH05
+138,GP-Ward
+139,GPD-KSPT06
+140,GPD-KSPE04
+141,CP-National Grid Main Feed
+142,GP-Stationary Diesel Fuel Combustion
+143,GP-DFUEL03
+144,GP-Worthington
+145,GP-17-1
+146,GP-17-2
+147,GP-1MN
+148,GP- HS plant 6 units
+149,GP-NW
+150,GP-All Units
+151,GP-FA
+152,CP-Main Gas and Fuel Oil
+153,GP-2 Main Plant
+154,CP-Vaporizers
+155,GPD-MPH05
+156,GPD-MPE04
+157,GP-Ancillary Diesel
+158,CP-Fuel Oil Backup
+159,GP-2 Distillate Fuel Oil No. 2
+160,GP-BFG4 facility
+161,CP-All-Sources-Main
+162,CP-3500523522525526
+163,CP-009-NG40A-9214-8
+164,CRANE-EAST
+165,CRANE-WEST
+166,GP-WD143A/B
+167,GP-11-1
+168,GP-15-1
+169,GP-13-1
+170,GP-DIE
+171,GP-Combustion Equipment
+172,CRANE-1
+173,CRANE-2
+174,CRANE-3
+175,GP-NM
+176,CP-2
+177,CP-NEP-ESS-LI-4781-Diesel
+178,CP-SHE-65-LT-Diesel
+179,GP-16-1
+180,CRANE-4
+181,GP-SITECOMBUSTION
+182,GP-kingstree
+183,GP-25-1
+184,CRANE
+185,GP-Bldg 410 Test Cells-No. 2
+186,GP-Test Cells Bldg 474- No. 2 FO
+187,GP-MC773A
+188,GP-EB921A
+189,"GP-1,2,3"
+190,GP-9-1
+191,GP-254A
+192,GP-BOHO
+193,06A
+194,CRANE-A
+195,CRANE-E
+196,CRANE-F
+197,CRANE-H
+198,GP-Nitrogen Injection
+199,GP-Saint Gobain Proppants Fort Smith
+200,GP-GC powerhouse
+201,GP-4 Analyzer Vents
+202,GP-KaMin Sandersville
+203,GP-Mines
+204,GP-Yonkers Fuel Burning Equipment
+205,GP-CTTP01
+206,GP-MarsChocolate
+207,GP-Facility
+208,CP-Cedar-02 Fuel Oil
+209,GP-AA1
+210,GP-Fuel Combusting Units
+211,GP-23-1
+212,GP-PH
+213,GP- U990000
+214,GP- U750001
+215,GP-MCW
+216,GP-Memphis02
+217,GP-19-1
+218,GP-22-1
+219,GP-18-1
+220,GP-26-1
+221,GP-27-1
+222,GP-Diesel Fired Units
+223,CP-Fuel Oil 2
+224,GP-528864
+225,GP-Northstar Ethanol
+226,GP-AP01
+227,GP-EMER-GEN
+228,GP-NG
+229,GP-24-1
+230,GP-RFAB1
+231,GP-RRC Plant 5 & 8
+232,GP-DAK #2
+233,GP-00001
+234,GP-PNGT1
+235,"GP-02, FO"
+236,GP-Site
+237,GP-20-1
+238,GPGHG6&7
+239,GP-KaMin Macon
+240,CP-Eddyville02
+241,GP-PHL-2FO
+242,GP-KaMin Wrens
+243,CP-Oil
+244,GP-ALL
+245,GP-aggregated diesels
+246,GP-21-1
+247,GP-CE01
+248,"GP-4 Analyzer Vents GC 26, 27, 61, 1118"
+249,ES 185-127
+250,CP-NEP-FT-3451-FuelGas-2
+251,GP-CMBST1
+252,GP-Bldg 410 Test Cells-No. 2 FO
+253,GP- Diesel Fired Equipment
+254,GP-All Units_v1
+255,GP-7
+256,"GP-Northstar Ethanol, LLC"
+257,GP- Verpol Sources
+258,Plant 6
+259,CP-
+260,GP-RMBC
+261,GP-Pryor Plant
+262,GP-1a
+263,CP-ASO to 7-B-1
+264,GP-Diesel Fired Equipment
+265,CP-#2 Fuel Oil
+266,CP-KUCNGCP3
+267,69
+268,GP-NGCMBST1
+269,GP-Diesel Units
+270,CRANE-I
+271,GP-CUP and FAB
+272,GP-Site-Wide Natural Gas
+273,GP-MP-252
+274,GP-Combustion Sources
+275,CP-50-51
+276,GP-Wasson
+277,GP-DIESELFUEL
+278,GP-Auburn
+279,CP-3500522523525526
+280,Coal Dock
+281,GP- Fayetteville
+282,GP-GHG6&7
+283,"CP-6""-NG726-S-CS03-1"
+284,GP-B00456
+285,CP-01
+286,CP-Buckeye
+287,GP- Saint Gobain Proppants Little Rock
+288,GP- Diesel Usage
+289,GP-NGTOTAL
+290,X015-Start-Up
+291,Rail Car Thaw Pit
+292,GP-07 Misc Fuel Combustion
+293,CP- Natural Gas
+294,GP-RFAB2
+295,GP- Olympus MC-807B
+296,GP- Linkwood
+297,GP-Cogeneration Plant #1
+298,GP-Building 130
+299,GP-FWP
+300,LARC FCC Torch Oil
+301,GP-GHG2
+302,GP- ASR Baltimore
+303,GP-ENG2
+304,CP-3
+305,GP-HS
+306,GP-Everett
+307,GP-All Sources
+308,CP-GHG1
+309,CP-6
+310,GP-GC aggregation
+311,GP-natrual gas
+312,GP- P901 and P012
+313,GP-BP
+314,GP-RC Plant Process Ext Combustion
+315,CP-4
+316,GP-Gast
+317,GP-All Combustion Units
+318,CP-Total Plant
+319,GP-Sgt Natural Gas and Fuel Oil
+320,GP-Process Units
+321,GP- General Fuel Combustion
+322,GP-GHG5
+323,GP-1NG 1NGoil 2NGoilPro
+324,GP- PQ Corporation - Chester
+325,GP- Combustion Equipment
+326,GP-Fuel Combustion Units
+327,GP-Butler
+328,GP-04
+329,GP-303-CAP
+330,GP-GLOBALFOUNDRIES U.S. 2 LLC - Vermont
+331,GP-1b
+332,GP-DRILL
+333,LMPI KY/VA
+334,GP-other combustion source
+335,CP-Facility
+336,GP-MC365A
+337,CP-Diesel Combustion Sources
+338,CP-NEP-FT-3451-FuelGas
+339,GP-A
+340,GP-GLOBALFOUNDRIES East Fishkill NY
+341,GP-GEN
+342,GP-All
+343,CP-natural gas pipe
+344,DCE-01 (Platform P)
+345,DCE-01 (Platform F)
+346,GP-Agri-Mark
+347,CP-Building 2
+348,GP-HexionNorco
+349,GP-Plant 6
+350,GP-Bayport
+351,GP-Emmetsburg Natural Gas and Fuel Oil
+352,CP-Plant process
+353,GP-Facility Wide Sources
+354,CP-3500522523525526529
+355,GP-Wades
+356,CP-5
+357,CP-GHGRM1&RM2
+358,CP-POET BIG Facility
+359,CP- 1-2 -3 -4
+360,GP-1NG
+361,GP-Ethanol Production
+362,GP- Natural Gas/Distillate Oil #2
+363,GP-Coal/Distillate Oil Number 2
+364,GP-Manning Natural Gas and Fuel Oil
+365,GP-Dawson Facility Natural Gas and #6
+366,GP-Sheldon Natural Gas and Fuel Oil
+367,GP-NC01
+368,GP-Rendering Complex Combustion Units
+369,CP-Eastern NG Supply Line
+370,GP-Plant Total Usage (Main Meter/Diesel)
+371,GP- Natural Gas
+372,"GP-Tall Corn Ethanol,LLC d/b/a Poet"
+373,107
+374,GP-013
+375,GP-ALLDIESELCOMBUSTIONUNITS-5CRANE-1GEN
+376,GP-Stationary Gas Equipment
+377,GP- WR 551A
+378,GP-Fuel Oil Combustion
+379,GP- Combustion Sources
+380,GP- 1 & 2 & 3
+381,GP-COMBUSTION
+382,GP-Pasadena
+383,GP-PC
+384,CP-Main Gas
+385,CP-from local utility
+386,GP-CB
+387,GP- NGT1
+388,GP-Fuel Combustion Equipment
+389,CP-06
+390,CP-12 (999 Pine Buildings)
+391,CP-13 (Linde Main Plant)
+392,CP-04
+393,CP-09 (Steel Finishing)
+394,CP-10 (Galvanizing Area)
+395,CP-11 (1040 Pine Buildings)
+396,GP-NG Aggregated Reporting Group
+397,HE-554
+398,HE-553
+399,GP-B-91/95
+400,GP-B-502
+401,GP-Silver Roaster & Smelter
+402,GP-GC1
+403,CP-Id: 196900100
+404,GP-1 Natural Gas Sources
+405,CP BAP Natural Gas
+406,GP-UT-FT-7991 /Misc. Natural Gas Combust
+407,GP-ONG
+408,GP-1 Natural Gas
+409,CP-Extruder No. 6-9
+410,GP-Off Machine Coater
+411,GP-Other
+412,GP-2 Natural Gas NGCU
+413,GP-Abrasive Materials Operations
+414,GP-GREENVILLE808
+415,GP-Misc Natural Gas
+416,GP-NATURALGAS
+417,CP-RTO
+418,CP-NG Combustion Sources
+419,RSELDFLR
+420,CP-1 Factory NG Fired Units
+421,CP-2 Truck Shop NG Fired Units
+422,CP-4 MNEnergy Nat Gas
+423,CP-Natural Gas
+424,GP-AG-4
+425,CP- 1
+426,CP-7
+427,CP-15
+428,CP-COGEN
+429,CP-SRU3_4
+430,CP-9
+431,CP-8
+432,CP-UGIB022A
+433,CP-UGIB068A
+434,CP-UGIB138B
+435,CP-UGIB025C
+436,CP-UGIB033A
+437,CP-UGIB104C
+438,CP-UGIB109A
+439,CP-UGIB137A
+440,CP-UGIB087A
+441,CP-UGIB078B
+442,CP-UGIB112A
+443,CP-UGIWSMA
+444,CP-UGIB112B
+445,CP-UGIB0608A
+446,CP-UGIB068B
+447,CP-UGIB099A
+448,CP-UGIB138A
+449,CP-UGIB054A
+450,CP-UGIB118A
+451,CP-UGIB104B
+452,CP-UGIB104A
+453,CP- chx heat recovery
+454,CP-MainGasHouse
+455,CP-SILOROOM
+456,GP-NATGAS
+457,GP- PQ Corporation - Augusta GA 2010
+458,CP-Libbey Glass Toledo
+459,GP- PQ Corporation - Kansas City
+460,Cryo lab
+461,CP Natural Gas
+462,CP-Fuel Gas Header
+463,CP-Main Natural Gas Line For Facility
+464,CP-Id: 99763-00
+465,CP-Id: 99764-00
+466,CP- Building NG
+467,GP-Miscellaneous Natural Gas Consumer
+468,GP-
+469,Cogeneration Unit
+470,GP-GHG3
+471,GP-5 combustion units at Facility
+472,CP Asphalt Natural Gas
+473,GP-Area 1
+474,GP-0004 Refinery & Terminal NG
+475,GP-Area 2
+476,GP-Area 4
+477,GP-HC BLR FD
+478,GP-SRU NG
+479,GP-Natural Gas Combustion
+480,CP-Acme
+481,CP- 20 Coater
+482,GP-AGU 001
+483,"GP-unit#15a,b unit#3"
+484,GP-Cheney
+485,CP-4 BLR HOUSE
+486,CP-KUCNGCP5
+487,CP-KUCNGCP4
+488,CP-KUCNGCP1
+489,CP-KUCNGCP2
+490,GP-KUCNGGP1
+491,CP-001
+492,GP-Purchased Propane Combustion
+493,CP-LEI-NaturalGas
+494,CP-GHG6
+495,GP-POET LAD
+496,GP-IS2
+497,GP-IS1
+498,CP-2 (#4 PM & WWTP)
+499,GP-Natural Gas (Eq C-1a)
+500,GP-Natural Gas (Eq C-1b)
+501,GP-SV001
+502,GP-ALIQUIPPA PLANT
+503,GP-NatGas
+504,GP-LP4
+505,GP- Natural Gas Group
+506,CP-Main Natural Gas
+507,CP-1 Natural Gas
+508,GP-Bridgeport850
+509,GP-NAD
+510,CP-facility
+511,GP-SHOALS-NATURAL GAS
+512,CP-PSE1
+513,CP-Williams Pipeline
+514,GP- Natural Gas Combustion Sources
+515,GP-Stationary Combustion Units
+516,GP-Conroe-Stationary Combustion Sources
+517,CP-MX2
+518,GP-SV004
+519,CP- Newington
+520,GP-Plant Combustion Units
+521,GP-Burners
+522,GP-1: Other Natural Gas Combustion Units
+523,CP-NaturalGasUnits
+524,GP-Natural Gas
+525,CP-Lovell
+526,GP- Potters Industries LLC - Brownwood
+527,CP-RECButte
+528,"CP-Columbia Gas, Ram Energy"
+529,GP-Total
+530,GP-Round Mountain Unit
+531,GP-Natural Gas burners
+532,GP-NG Combustion
+533,GP- Potters Industries LLC Apex
+534,GP-NG-Fired Units
+535,GP-Eufaula
+536,GP-S10
+537,GP-NAC
+538,GP-FACILITY
+539,GP-GRP
+540,GP-NG-FOBLRS007
+541,GP-All Units Facility Wide
+542,GP- HTI - HUT
+543,GP-Buckshot
+544,CP-Paper Machine Aircaps
+545,GP-Comfort Heat
+546,GP-FQTNE
+547,CP-02
+548,GPN-DVPT03
+549,GPN-DVPH02
+550,CP-JO-1
+551,GP-0001
+552,CP-ACP1
+553,CP-All-Sources
+554,GP_100
+555,GP-Natural Gas Equipment
+556,GP-Total Gas Use
+557,GP- Plant 7
+558,CP- Low Pressure Gas Users
+559,CP- High Pressure Gas Users
+560,GP-Natural Gas Fired Units
+561,GP-Huron - 4 units.
+562,CP-60010
+563,GP-Blr
+564,GP-MOR1.1
+565,GP-Forney Plant
+566,GP-NGBLRS008
+567,GP-FacilityWide
+568,GP-McIntyre
+569,GP-Tetra Tech LC Fuel Combustion
+570,CP-Main Natural Gas Line
+571,CP-Main RTO Stack
+572,CP-001 Common Pipe
+573,GP-JWA
+574,GP-plantwide
+575,GP-Natural Gas Units
+576,GP-Natural Gass
+577,GP-Roswell
+578,GP-General Stationary Combustion Source
+579,GP-Toomsboro
+580,CP-SWGAS
+581,GP-Amb
+582,CP-Tacoma
+583,CP-TKS SEMPRA
+584,GP-NG-STL
+585,GP-NG-1
+586,GPN-SPT03
+587,GP-1NaturalGasUnits
+588,GP- No.1 and No. 3 Filter Burners
+589,GP-ENF1
+590,Harsco Metals Scarfer
+591,GP-UOPSHREVEPORT COMBUSTION GG
+592,GP-2: Small BTU Units
+593,GP-Misc Nat Gas
+594,GP-01 common pipe
+595,CP-NGBill
+596,GP- DPI NG
+597,GP- DYN COMBUSTION SOURCES
+598,GP-NatGas1
+599,CP-Poet Alexandria
+600,CP-Common Natural Gas Line
+601,GP-Etowah
+602,GP-NGSources
+603,GP-Natural Gas Sources
+604,GP-All combustion units
+605,CP-Fletcher
+606,CP-Wheatfield
+607,CP-GPO1
+608,GP-1MM(18);2MM(9);4MM(1);8MM(1)(29UNITS)
+609,80-HRG-001
+610,CP-NG Common Pipe Natural Gas
+611,CP-NG1
+612,CP-Main Gas Line
+613,CP-Cowpens Gas Line
+614,GP-WPA
+615,GP-Whole Plant
+616,GP-NAT GAS EQUIPMENT
+617,GP-EQS
+618,GP-EMP2
+619,GP-EMP1
+620,GP-Natural Gas Meters
+621,CP-52a
+622,CP-52c
+623,CP-52b
+624,CP-33
+625,CP-52d
+626,CP-Entire Plant
+627,GP-Stationary Fuel Combustion Source
+628,GP- Galena Park Natural Gas Units
+629,CP-Plant Gas Supply Line
+630,GP-Facility Combustion Emissions
+631,GP-Plant Total Natural Gas Usage
+632,GP-TRK TRE SHP
+633,GP-IRR BLD NG
+634,GP-TRK Rail CTR
+635,GP-TRK OFC WSH
+636,GP-NGunits
+637,GP- Plant 1
+638,GP-NG Combustion Srcs Plantwide
+639,CP-03
+640,GP-Natural Gas Combustion Units
+641,CP-Natural Gas Powerhouse Pipe
+642,CP-Natural Gas A5/A6 Building Pipe
+643,CP-Natural Gas Main Factory Pipe
+644,CP-Common Utility Gas Meter
+645,GP-NAA
+646,GP-NAL
+647,"GP-SN16A, SN-16B"
+648,"GP-EU-AF01, 02, HT0V001, Blr,Wlk Beam"
+649,GP-Lehrs
+650,GP-Forehearths
+651,GP-General Combustion Sources
+652,GP-CARR01
+653,GP-Shelbyville Plants
+654,GP-B
+655,GP-Plaster City Natural Gas
+656,GP-Waupaca Plant 5
+657,GP-Lanett Plant
+658,GP-MARTIN MARIETTA MANISTEE PLANT
+659,GP-WAB1.1
+660,CP-KM Natural Gas
+661,CP-Facility Main Natural Gas Meter
+662,GP-LE1.1
+663,CP-ValleyCitiesGas
+664,CP-Id: 45307
+665,GPN-GPT03
+666,GPN-GPH02
+667,CP-Plant Meter 11400013
+668,CP-ACP2
+669,GP-1 Natural Gas Fired Sources
+670,CP- Restaurant
+671,CP- Truck Shop
+672,CP- Admin Building
+673,CP- Swan Building
+674,CP-Manufacturing Plant
+675,GP-CVL GHG Emission Units
+676,GP-facility-wide fuel combustion units
+677,CP-NG Main Billing Meter
+678,CP-NG MPI
+679,GP- natural gas- non-CEMS units
+680,GP-NGAGG
+681,GP- Main Process Meter
+682,GP- Scalehouse meter
+683,GP-Auto Shop Meter
+684,GP-PLANT
+685,GP-Newark Plant
+686,GP-other sources
+687,CP- Common Pipe Group 1
+688,GP-natural gas
+689,GP-natural gas combustion
+690,CP- Credit Union Natural Gas Meter
+691,GP-MISC
+692,CP-All NG Units
+693,GP-Duct Burner
+694,GP-D-F Gas Units
+695,GP-Process Gas Units
+696,CP-Header
+697,GP-WashingtonPlant
+698,CP- Monsanto Ave West
+699,CP-Fujifilm NG Line
+700,GP-Cleburne
+701,GP-H-103 and H-205
+702,GP-Natural Gas Usage
+703,GP-Facility Total
+704,GP- Sewage Sludge Pelletizing Trains
+705,Roof Heaters
+706,GP-Process Equipment Fuel Combustion
+707,GP-B10 & B11
+708,CP-Natural Gas Usage
+709,GP-MTG
+710,CP- Main Natural Gas Line
+711,GP-BKT-B00345
+712,GP-1-3
+713,GP-Small Natural Gas
+714,CP-Facility Natural Gas
+715,GP-Source Stack
+716,GP-Gas fired burners
+717,GP-CW4.1
+718,GP-CW1.1
+719,GP-CW1.2
+720,GP-CW3.1
+721,GP-CW2.1
+722,CP-Natural Gas Sources
+723,GP-gas fired units
+724,CP-Main Gas Line to Plant
+725,GP-Gregory-Stationary Combustion Units
+726,GP-All NG Sources at BLE except HRSG
+727,CP-Sweetwater
+728,GP-Tank 4
+729,GP-Clermont Plant
+730,GP-Building
+731,GP-NGBLRS006
+732,GP-Process
+733,GP- Potters Industries LLC - Muscatine
+734,GP-NGPall
+735,GP-Almatis
+736,GP-B11-B12
+737,GP-Fuel Billing Meter Records Reconcile
+738,GP- PQ Corporation - Potsdam
+739,GP- PQ Corporation - St. Louis
+740,CP-Libbey Glass Shreveport
+741,GP- All NG sources
+742,GP-003
+743,GP-EUWOOD-Blrs-MAUs-AHUs
+744,GP-Natural Gas Plant Wide
+745,GP-NATURAL GAS COMBUSTION UNITS
+746,GP-HTI-Eau Claire
+747,GP-all combustion
+748,GP-Kop
+749,CP-MAIN PLANT SUPPLY
+750,GP-9201
+751,GP-Burner
+752,GP- natural gas
+753,GP-SAG1.1
+754,GP-NG-4
+755,CP-7108971
+756,CP-6203458
+757,CP-8193028
+758,CP-06502200
+759,CP-Main Gas Feed Pipe
+760,GP-Plant Use
+761,GP-Natural Gas and Coke Combustion Units
+762,GP-Miscellaneous combustion
+763,GP-SMRC all Combustion Units
+764,CP-Plant #1
+765,CP-Plant 6/7
+766,CP-Planr #2
+767,CP-Fulton
+768,GP-Stationary Fuel Combustion Sources
+769,CP-Chowchilla
+770,GP-NATURAL GAS UNITS
+771,GP-NATURALGAS1
+772,GP-Beaumont Combustion Sources
+773,GP-Leprino LW
+774,CP-MJ
+775,GP-N-SRFE01
+776,GP-N-SRFT03
+777,GP-N-SRFH02
+778,GP-3M CG Natural Gas
+779,GP-Lost Hills
+780,GP-P001
+781,GPN-KSPH02
+782,GPN-KSPT03
+783,GPN-KSPE01
+784,GP-Fractionator
+785,GP-Splitter
+786,GP-NGBLRS004
+787,CP-Natural Gas Units
+788,GP- Heat Units
+789,GP-Balance of Plant (Gas)
+790,GP-Gas Burning units
+791,"CP-AIRS ID003, ECH-001, AIRS ID009 Pilot"
+792,GP-All Other Stationary Sources
+793,GP-JuniperMain
+794,CP-1_NG
+795,CP- Megtec RTO
+796,CP-CV all glass lines
+797,GP-Aggregation Unit A1
+798,"GP-1,2,3,4"
+799,GP-SRC
+800,GP-northeast missouri grain
+801,CP-Natural Gas Factory
+802,CP-Natural Gas Powerhouse
+803,GP- Natural Gas Equipment
+804,GP-Natural Gas #391597
+805,GP-Main Factory #574774
+806,GP-Natural Gas#698873_B-products
+807,GP-Natural Gas # 700218_Raw Receiving
+808,GP-P1 and P3
+809,Facility
+810,CP-Main_Metered_Line_Into_Intalco
+811,GP-Poet Ashton
+812,GP-Lamp production
+813,GPN-MPT03
+814,GPN-MPH02
+815,GPN-MPE01
+816,HT43
+817,CP-TPCHNO
+818,CP-ODPC-1
+819,CP-Complex Wide Natural Gas
+820,CP-Heat Treat Natural Gas Usage
+821,GP-GSP
+822,GP-HSP
+823,GP-FSP
+824,GP-Misc Natural Gas Combustion
+825,CP-Natural Gas Foundry N
+826,CP-Natural Gas 1010 Building
+827,CP-Natural Gas A Building
+828,CP-Natural Gas Foundry S
+829,CP-Natural Gas East Lot
+830,GP-Shasta Lake Total Plant.
+831,GP-Manufacturing
+832,CP-Qwestar Natural Gas
+833,GP-3 Plant Natural Gas
+834,GP-air makeup units
+835,CP- All Natural Gas Use
+836,CP-Cogen
+837,CP-Cafe
+838,CP-RTO&Process Heat
+839,GP-B36
+840,GP-E39
+841,GP-G3-G19
+842,GP-D11-D35
+843,GP-H26-H32
+844,GP-B161 Heat Units
+845,GP-SKCP1
+846,GP-Multiple Natural Gas-Fired Units
+847,CP-EP12
+848,CP-EP3
+849,CP-EP4
+850,CP-EP5
+851,CP-Natural GAS
+852,CP-Dominion East Ohio Gas
+853,GP-GrantProcessing
+854,GP-Albion Facility
+855,GP-SUBFAB (3Guardian and 2 TPUs)
+856,GP-HD1 Cafe AHUs (2)
+857,GP-HD1 Cafe Gas Appliances
+858,GP-Internal Natural Gas Combustion Units
+859,CP-All Combustion Units
+860,GP-Gas Fired Equipment
+861,CP-27
+862,CP-T02
+863,CP-24
+864,CP-56-2
+865,CP-39
+866,CP-32
+867,CP-48
+868,CP-54
+869,CP-56-1
+870,CP-T03
+871,CP-T04-1
+872,CP-36
+873,CP-47
+874,CP-42
+875,CP-9A
+876,CP-71
+877,CP-31
+878,CP-21
+879,CP-T06
+880,"CP-25,26"
+881,CP-T05
+882,CP-T01
+883,CP-5-2
+884,CP-43
+885,"CP-10,11,12"
+886,CP-20
+887,CP-80
+888,CP-44
+889,CP-46
+890,"CP-13,14,15"
+891,CP-28
+892,CP-5-1
+893,CP-41
+894,CP-29
+895,CP-45
+896,CP-T04-2
+897,GP-Hastings Facility Natural Gas Use
+898,GP-Jackson
+899,GP-UC
+900,GP-AllCombustion
+901,CP-1-Corn Plant
+902,CP-2-Corn Plant- WWTP
+903,CP-4-Polymer North
+904,CP-3-Polymer South
+905,CP-205
+906,CP-304
+907,CP-309
+908,CP-315
+909,CP-317
+910,CP-335
+911,CP-338
+912,CP-210
+913,CP-225
+914,CP-348
+915,CP-216
+916,CP-200
+917,CP-218
+918,CP-300
+919,CP-130
+920,CP-208N
+921,CP-208H
+922,CP-209
+923,CP-111
+924,CP-351
+925,CP-214
+926,CP-224
+927,GP-Greenville Facility
+928,CP-20706
+929,CP-20714 - FAP
+930,GP-Exhaust Blowers
+931,CP- 303202
+932,CP-303700
+933,1D
+934,1A
+935,1E
+936,1B
+937,CP-CHGP FUEL
+938,CP-TOTAL PLANT FUEL
+939,CP- Natural Gas Combustion Units
+940,GP-NGCOMB
+941,CP-223245
+942,CP- 223246
+943,CP-223255
+944,CP- 223256
+945,CP-223257
+946,CP-BAP Natural Gas
+947,GP- EL Dorado NG Units
+948,GP-MP41BOBBNG
+949,GP-Methane Busters
+950,CP-Building 1
+951,CP-Site Utilities
+952,ROTOR CONCENTRATOR
+953,GP-SMI236NG
+954,GP-Degas Wells
+955,GP-Hillview Fab 4
+956,CP-Main Pipeline
+957,GP-BarberCreek
+958,CP-NG2
+959,"GP-C1-2,C4-12,C14-15,H2001,T870,H2510"
+960,GP-Sitewide Natural Gas Usage
+961,CP-Main Plant
+962,CP-Truck Shop
+963,CP-Lab Building
+964,CP-NG-Supply-Line
+965,CP-Id: 219511022
+966,CP- Natural Gas Combustion Sources
+967,CP-Id: 226836
+968,CP-Id: 226835
+969,EG
+970,GP-Clymers Facility
+971,GP-PLANTWIDE
+972,GP-Farbest
+973,CP-TX Gas Meter
+974,GP-Prairie Ethanol
+975,GP-small nat. gas units
+976,GPN-DGP02
+977,CP-Building NG
+978,"GP-H-1,H-2,H-3,H-4"
+979,GP-GRANULE PLANT
+980,GP-FRY MAIN PLANT
+981,GP-BLDGHEAT
+982,CP-NatGasUnits
+983,GP-MID EQT 1
+984,GP-MID EQT 2
+985,GP-MID HEP 3
+986,GP-MID Hope 4
+987,GP-MID Hope 5
+988,GP-MID Hope 6
+989,GP-MID Hope 7
+990,GP-MID Hope 8
+991,GP-MID Hope 9
+992,CP-MainGasMeter
+993,GP-MTI
+994,GP-El Ebanito
+995,GP-Energy Center
+996,GP-COGEN
+997,GP- Combustion Units
+998,GP-Dawson Facility Natural Gas
+999,CP-FML1
+1000,GP-LPC Natural Gas
+1001,GP-1 Non-core
+1002,GP-2 Core units
+1003,CP-IP
+1004,GP-TN
+1005,GP-231
+1006,GP-540
+1007,GP-264
+1008,GP- plant wide natural gas usage
+1009,CP-All Natural Gas Use
+1010,GP-Sgt Natural Gas
+1011,GP- Wahpeton01
+1012,GP-Somers
+1013,CP- Kentucky
+1014,GP-Paige
+1015,GP-Marshall Plant
+1016,GP-Natural Soda Plant
+1017,CP-Cedar01 Natural Gas
+1018,CP-Savannah
+1019,CP-Natural Gas Burning Sources
+1020,GP-ARC-GC
+1021,GP-process
+1022,GP-combustion units
+1023,GP-GAS
+1024,"GP-unit#15a,b unit#3, H890"
+1025,GP-Natural Gas Fuel Equipment
+1026,GP-Zones 1 and 17
+1027,CP-BF
+1028,CP- Facility Main Feed
+1029,GP-Aggregated NG Combustion Units
+1030,GP-POET Cloverdale
+1031,GP-Natural Gas Equpiment
+1032,GP-Boillers
+1033,GP-Carlin South Area
+1034,CP-GHG3
+1035,GP-SCO
+1036,GP-Sanders
+1037,CP-Natural gas
+1038,GP- MMDTOUs
+1039,GP- IS7
+1040,GP-250
+1041,GP-504
+1042,GP-251
+1043,GP-503
+1044,GP-104
+1045,GP-485
+1046,CP- incoming gas line to plant
+1047,GP-U1
+1048,GP-Natural Gas Meter #391597
+1049,GP-Natural Gas Meter #700218-Raw Receivi
+1050,GP-Natural Gas Meter # 574774_Main Fact
+1051,GP-Natural Gas Meter #698873_B_Products
+1052,GP-HOT ROOMS
+1053,CP-Natural Gas BES
+1054,CP-Natural Gas MCMM
+1055,GP-COMBUSTION SOURCES GULF ST
+1056,CP-Hammond01
+1057,CP-Utility Natural Gas
+1058,GP-Fossil Fuel Combustion
+1059,CP-20107
+1060,CP-20708
+1061,CP-20709
+1062,CP-20710
+1063,GP-NG Equipment
+1064,GP-TOU
+1065,GP-001 (Sum of all combustion units)
+1066,GP-NG Use
+1067,"GP-01, NG"
+1068,CP-Fordyce
+1069,Coater Infrared Dryers
+1070,Coater Oven
+1071,VA Fan
+1072,Wet Stack IR
+1073,CP-917Crosby
+1074,GP-Storm Lake Equipment
+1075,GP-SITE WIDE NATURAL GAS USAGE
+1076,GP-Main Meter
+1077,GP-Intake Meter
+1078,GP-MISC02
+1079,GP-MISC04
+1080,GP-MISC01
+1081,GP-MISC03
+1082,GP-MAP
+1083,CP-Other Natural Gas Sources
+1084,GP-permitted units natural gas only
+1085,GP-RTO
+1086,GP-Natural gas equipment
+1087,GP-Plant1
+1088,GP-Facility Wide Combustion Sources
+1089,GP-CeliteSubpartC
+1090,CP- Libbey Glass Shreveport
+1091,CP-bob
+1092,CP-Eddyville01
+1093,GP-PHL-NG
+1094,CP-Entire Facility
+1095,GP-Abatement Units
+1096,CP-H-103 and H-205
+1097,CP-Gas
+1098,CP-B01B03
+1099,CP-Sitewide
+1100,GP-natual gas
+1101,GP-AIRS Point ID 026
+1102,GP-UH1.1
+1103,GP-UH2.1
+1104,GP-COMP
+1105,GP-AMINE
+1106,GP-DEHY
+1107,Flare Assist Gas
+1108,CP-102
+1109,GP-01 Miscellaneous Natural Gas Sources
+1110,GP-SMI217 Treater Burners
+1111,CP- Libbey Glass Toledo
+1112,CP-PX-1
+1113,CP-PX-2
+1114,GP-Facility Natural Gas Usage
+1115,GP-ENGRH
+1116,GP-01A
+1117,GP-BOB
+1118,GP-6
+1119,GP-Natrual gas equipment
+1120,GP-Stack
+1121,GP-Small Combustion Units-Natural Gas
+1122,GP- COMP1_Update
+1123,GP-COMP3_Update
+1124,CP-Id: 219511023
+1125,GP-Miscellaneous
+1126,"CP- Hess, Halcon Energy"
+1127,KB-401
+1128,GP-PDMC-C
+1129,CP-T09
+1130,GP-Natural Gas Meter #391597- Main
+1131,GP-Natural Gas Meter #700218 - Raw Recei
+1132,GP-Natural Gas Meter #574774_ Main Facto
+1133,GP-Natural Gas Meter #698873_B-Products
+1134,CP-Fuel Meter 221052
+1135,CP-Fuel Meter 221053
+1136,CP-Fuel Meter 221140
+1137,CP-Fuel Meter 221139
+1138,CP-Fuel Meter 221054
+1139,CP-Fuel Meter 221146
+1140,CP-Fuel Meter 221051
+1141,GP-Gas
+1142,GP-phase3and4
+1143,CP-Fuel Meter 303200
+1144,CP-Fuel Meter 303201
+1145,CP-Fuel Meter 13353 - WP
+1146,CP-Fuel Meter 131200
+1147,GP-2 The Gas Company
+1148,GP-1 United Energy Trading
+1149,CP-V-COM
+1150,CP-Natural Gas Pipe Line
+1151,GP-010
+1152,GP-Circleville Natural Gas
+1153,GP-GBRO-1
+1154,GP-Manning Natural Gas
+1155,GP- MDF Plant-1
+1156,GP- Outokumpu Facility
+1157,CP-aggregated natural gas pipeline
+1158,"CP-IES-20, IES-74, IES-75, IES-76"
+1159,GP-NG Coke Lances
+1160,GP-Plant wide usage
+1161,GP-Natural Gas Equipments
+1162,GP-Natural Gas Facility
+1163,"GP-Lancing, Natural Gas"
+1164,CP-Papermaking NG Meter 904458
+1165,CP-site
+1166,GP-1 Main Plant
+1167,GP-NG Units
+1168,GP-B009
+1169,GP-Process Meter
+1170,GP- Shop & Admin Meter
+1171,GP-Natural Gas Tuboscope
+1172,GP-ImerysSubpartC
+1173,"GP-01 (EU001, EU002, EU003, EU004)"
+1174,GP-Facility-wide Coal and Natural Gas
+1175,CP-NG11302C1-8
+1176,GP-Agra Resources Group
+1177,"GP-unit#15a,b unit#3, unit #50"
+1178,GP-Lamp production facility
+1179,CP-DC1
+1180,CP-REG Seneca Natural Gas
+1181,CP-City Gate Gas Meter
+1182,CP-BOB
+1183,GP- Combustion
+1184,CP-KUCNGCP6
+1185,CP-362932
+1186,CP-222073
+1187,CP-222041
+1188,CP-222042
+1189,CP-222074
+1190,CP-222043
+1191,CP-222066
+1192,CP-222076
+1193,GP-Specialty Grains & Powders Operations
+1194,"GP-X034, TM, BM"
+1195,CP-Nat Gas Units
+1196,CP-Training Facility
+1197,CP-Id: P9003-00
+1198,CP-Id: P9004-00
+1199,CP- Antioch
+1200,"GP-GEN 1&2 LAN0401, LAN0402"
+1201,CP-303202
+1202,GP-Aggregation
+1203,GP-PD
+1204,GP-Majorsville
+1205,GP-Fuel Gas
+1206,GP-Misc Building Sources
+1207,CP-362901
+1208,Cogeneration Unit  (SN-25)
+1209,GP-North Hobbs
+1210,GP-24352
+1211,CP-Id: 883000401
+1212,GP-COMP 1&2 DRIVER
+1213,GP-DGP02
+1214,GP-DGP01
+1215,GP-Idaho Plant
+1216,Flare-1
+1217,GP- Miscellaneous Natural Gas Consumer
+1218,GP-Natural Gas Meter #391597- Main Facto
+1219,CO2 CoGen Unit (EPN EP-216)
+1220,CP-phenixcitynaturalgas
+1221,CP-Schenectady Campus
+1222,GP-Bridgeport 850
+1223,CP-McQueeney
+1224,CP-Cumberland
+1225,GP-NGCombustion
+1226,GP-Tesla Natural Gas
+1227,CP- EAF No.5
+1228,GP-Edsell Station
+1229,CP-Plant #2
+1230,GP-Blstr
+1231,Co-generation energy & steam system
+1232,GP-2 AF and LMF
+1233,CP-All Combustion sources
+1234,GP-WJCP
+1235,GP-HMIN 01
+1236,GP-AGG
+1237,GP-All Fuel Combustion Sources
+1238,GP- Coal & Natural gas
+1239,GP-2  Southern California Gas
+1240,GP-DYESS TREATER
+1241,GP-AOB_Gas_Meter
+1242,GP-BOB&GOB_Gas_Meter
+1243,GP-EOB-Gas_Meter
+1244,GP-FOB-Gas_Meter
+1245,GP-HOB-Gas_Meter
+1246,GP-ROB_Gas_Meter
+1247,GP-NATURAL GAS USAGE
+1248,GP-SCMines
+1249,CP-Plant
+1250,GHG3
+1251,GHG4
+1252,FLARE
+1253,CP-Facility Natural Gas Line
+1254,CP-NG-1
+1255,CP-Entire plant
+1256,CP-Centerpoint Bill
+1257,GP-Leprino Allendale
+1258,GP- Fuel billing meter records reconcile
+1259,CP-Common Pipeline
+1260,GP-No. 1 and No. 3 Filter Burners
+1261,GP-Natural Gas Combustion Sources
+1262,CP- NG fueled sources
+1263,CP-The CMM Group RTO
+1264,"CP- Natural Gas, Diesel and Gasoline Use"
+1265,GP-4201NGCombustion
+1266,GP-4301NGCombustion
+1267,GP-Cogen
+1268,GP-Combustion and Annealing
+1269,GP-Midpoint natural gas fired units
+1270,CP-n 36 29.322 w 079 03.715
+1271,CP-SSC001
+1272,GP-C
+1273,GP-J
+1274,GP-G
+1275,GP-F
+1276,GP-H
+1277,GP-I
+1278,GP-D
+1279,GP-E
+1280,SPO-1
+1281,GP-METERS
+1282,GP-Natual Gas
+1283,GP- Natuiral Gas
+1284,GP- TRK TRE SHP
+1285,GP- IRR BLD NG
+1286,GP- Idaho Plant
+1287,GP-8009
+1288,GP-Natrium Internal Combustion Sources
+1289,GP-Newberry
+1290,Combustor1 (65884-ACTs)
+1291,Combustor2 (65885-ACTs)
+1292,GP-MID Propane
+1293,GP-Nat Gas Blrs
+1294,CP-RC/TOs
+1295,CP-UGIDANA
+1296,SN-08 Hydrogen Reformer No. 1
+1297,GP-Gen 1 & 2
+1298,GP-TOs
+1299,GP-ENG
+1300,"CP-H-103, H-201, H-205"
+1301,GP-New DeBeque Plant
+1302,GP-Old DeBeque Plant
+1303,CP-21818
+1304,CP-Asphalt Natural Gas
+1305,CP-master fuel meter
+1306,CP-ONG
+1307,CP-13353-WP
+1308,CP-303200
+1309,CP-303201
+1310,CP-131200
+1311,GP-Facility wide
+1312,CP-Natural Gas for Purging
+1313,CP-5288
+1314,CP- Natural Gas Use
+1315,GP-NG Total
+1316,CP-Common Pipe 01
+1317,CP-79-1
+1318,CP-79-2
+1319,CP-79-3
+1320,CP-79-4
+1321,CP-79-5
+1322,CP-79-6
+1323,GP-ALL UNITS
+1324,GP-ENG1
+1325,GP-Flame Attenuation Lines 1 thru 20
+1326,CP-ANTHILLS
+1327,GP-Fort Dodge
+1328,CP-Tierritas Blancas Fuel Supply
+1329,GP-Pratt Energy LLC
+1330,GP-1 So Cal Gas
+1331,CP-Sherwin
+1332,GP-Nat Gas
+1333,CP-Natural Gas Comb
+1334,CP-Algas
+1335,CP-SR
+1336,GP-GHGRM
+1337,GP-All Stationary Combustion - B1 - B6
+1338,GP- Tyler Union Natural Gas
+1339,GP-Plantwide
+1340,"GP-P17,P18,P18A"
+1341,GP-Grant Prideco Natural Gas
+1342,V-COM
+1343,CP-RFM-41
+1344,CP- EAF No.5 + Facility
+1345,CP-01 Natural Gas
+1346,BRF #1
+1347,GP-HNA_Waterville
+1348,Plant Flare
+1349,GP-100
+1350,GP-JD1
+1351,CP- Centerpoint Bill
+1352,CP-CoGeneration
+1353,GP-Honda 1
+1354,GP-Ovid
+1355,CP-Memphis01
+1356,GP-Nampa Site Natural Gas Units
+1357,GP-Lamp Production Facility
+1358,GP-Benchmarks 2.0
+1359,CP-Natural Gas for purging
+1360,CP-Natural Gas Energy Center
+1361,GP-Mol Sieve
+1362,Duct Burner
+1363,GP-L2 Yankee Hood
+1364,GP-RTOs
+1365,CP-00-730-362-WWTP
+1366,GP-001/ Misc. Combustion Units
+1367,GP-Facility Natural Gas Use
+1368,GP-COMPHT
+1369,GP-COMHT
+1370,GP- Miscellaneous
+1371,GP-Natural Gas Aggregate
+1372,CP-Natural Gas X21
+1373,CP-UGIDANA-A
+1374,CP-UGIDANA-B
+1375,Battery No. 8 Underfire
+1376,GP-1 Misc. Natural Gas Comb. Sources
+1377,GP-FEATHERSTON COMBUSTION UNITS
+1378,CP-Residue Compression
+1379,GP-Combustion Sources (NG)
+1380,GP-545757
+1381,GP-Gensets
+1382,GP-729CS
+1383,GP-COMBUSTION UNITS
+1384,GP-50Buttes
+1385,GP-Multiple Units
+1386,GP-Combustion units
+1387,CP-Rock Creek Common Pipe
+1388,GP-Misc. Nat Gas Consumers
+1389,CP-221051
+1390,CP-221140
+1391,CP-221052
+1392,CP-221053
+1393,CP-221054
+1394,CP-221139
+1395,CP-221146
+1396,CP-138
+1397,GP-RUCKI COMBUSTION UNITS
+1398,CP-5 Xcel NatGas
+1399,GP-Total Fuel Usage_Natural Gas-Kerosene
+1400,CP-Id: 136750053
+1401,CP-plant fuel
+1402,CP-Smokey Fuel
+1403,GP- GP2 & DH5
+1404,CP-Id: 136750023
+1405,CP-MC
+1406,CP-Id: 136750063
+1407,GP-Plant
+1408,GP-HAPE 14 COMBUSTION UNITS
+1409,CP-Id: 136750073
+1410,GP-gas
+1411,GP-Berne Internal Combustion Sources
+1412,CP-incoming gas line to plant
+1413,CP-Ameren
+1414,GP-BLOCKER COMBUSTION UNITS
+1415,GP-448TEMP
+1416,CP-Lake Charles Plant
+1417,GP-HOSS COMBUSTION UNITS
+1418,GP-Winchester Stationary Combustion
+1419,GP-TOX
+1420,GP-Plant Combustion Burners
+1421,GP-4
+1422,GP-Plant Heat
+1423,CP-Atmos Line
+1424,GP-NPPC_KWM_ALL
+1425,GP-FacilityCombustion
+1426,GP-Misc. Natural Gas Combustion
+1427,CP-EU-15
+1428,CP- EU-21
+1429,CP-F9985
+1430,GP-NGT1
+1431,CP-3500523522525526530531
+1432,GP-Admin Building
+1433,CP-Id: 136750043
+1434,CP-Main
+1435,CP-Id: 136750013
+1436,GP-1 MISC Units
+1437,GP- Natural Gas Units
+1438,CP-137
+1439,GP- All NG Sources
+1440,GP- Waupaca Plant 5
+1441,GP-Fuel Combustion equipment
+1442,CP-Bayport
+1443,CP-Id: 06678-00
+1444,CP-Fuel
+1445,GP-GBB
+1446,CP-Plant Low Meter - 27101941
+1447,CP-Plant High Meter - 94400001
+1448,CP-11
+1449,GP-TROY
+1450,GP-EDCC
+1451,CP-AIS 9155
+1452,CP-ColorXpress
+1453,CP-Selkirk Production
+1454,CP-ATO-COMBUSTION UNITS
+1455,CP-Id: 99740-00
+1456,CP-Id: 99791-00
+1457,CP-Id: 99722-00
+1458,GP-B003/B004
+1459,GP-CPGHG1
+1460,CP-NW-794967
+1461,CP-NW-713048
+1462,CP-Williams
+1463,CP-NW-374286
+1464,CP-NW-743848
+1465,CP-NW-1058744
+1466,CP-NW-1089465
+1467,CP-NW-1090961
+1468,Unmetered EG
+1469,CP-Id: 236264
+1470,CP-Id: 04407002
+1471,GP-SGP
+1472,"GP-""B"" Station"
+1473,GP-SCS
+1474,CP-COGEN Area
+1475,GP-Northridge
+1476,GP-NaturalGasCombu-3COMP-2GEN-3PE-GR-2HT
+1477,GP-NaturalGasCombu-4COMP-2GEN-GR
+1478,GP-CB1 and 2 and 3
+1479,GP-557741
+1480,GP-Fuel Consumption
+1481,GP-Flame Attenuation Lines
+1482,CP-Fuel Meter
+1483,CP-MDF
+1484,GP-1 Natural Gas Units
+1485,GP-Continental Dairy Facilities LLC
+1486,GP-Fuel Combustion
+1487,GP- C1 C2 C3 C4 C5 C410 C420
+1488,GP-NH
+1489,Ammonia Train Flue Gas Stacks 30-0248-03
+1490,GP-Mubea NG Combustion
+1491,GP-B21-23
+1492,GP-P50
+1493,GP-Facility-wide Combustion Sources
+1494,CP-Warehouse Natural Gas Meter
+1495,GP-NGE&NGT
+1496,CP-Id: 06678-00 (GHG Only)
+1497,GP-Propane Vaporizers
+1498,GP-FL-4
+1499,CP-002
+1500,CP-004
+1501,CP-003
+1502,CP-008
+1503,CP-007
+1504,CP-006
+1505,CP-005
+1506,CP-ALL
+1507,GP-Main+WWTP
+1508,GP- SFD RSP
+1509,GP- SD
+1510,GP-SFD PA
+1511,GP- CWS Drover
+1512,GP-BPD
+1513,CP-Id: 99740-00 (GHG Only)
+1514,GP- Total Plant Usage
+1515,GP-CPGHG2
+1516,GP-Kraft Heinz Ontario Gas
+1517,Natural Gas
+1518,Unmetered EG (GHG Only)
+1519,CP-Id: 236264 (GHG Only)
+1520,GP-8
+1521,GP-5
+1522,CP-Id: 16868 (GHG Only)
+1523,CP-Id: 16869 (GHG Only)
+1524,CP-Id: 16870 (GHG Only)
+1525,CP-Id: 16904 (GHG Only)
+1526,East WWTP JZTO
+1527,GP- 1 & 2
+1528,CP-Faustina
+1529,GP-All combustion sources
+1530,GP- C1 C2 C3 C4
+1531,GP-Carbon Plant
+1532,GP-P01
+1533,CP-Hosford
+1534,CP-Plant Fuel
+1535,CP-Newberry
+1536,GP-Gurdon
+1537,GP- WBGPCHF Combustion
+1538,GP-East Dublin
+1539,GP-LORDSTOWN
+1540,GP-Equipment Shops
+1541,GP-NATURAL GAS EQUIPMENT
+1542,CP- Reclaimed Oil
+1543,CP-OT
+1544,GP-Honda 4
+1545,GP-PROPANE
+1546,GP-AF11
+1547,GP-002 Propane Vaporizers
+1548,EP 159 - Propane Gas Feed Vaporizer
+1549,CP-KUCPROPCP1
+1550,GP-KUCPROPGP1
+1551,GP-Small Combustion Units- Propane
+1552,GP-#2
+1553,GP-Flame Hardeners
+1554,CP-Plant Propane Supply
+1555,CP-LPG
+1556,GP-004-P
+1557,GP-Propane Units
+1558,CP-44 Common Pipe - Propane
+1559,GP-Propane
+1560,CP_2
+1561,Propane
+1562,GP-CBP
+1563,Petrotherm Poso
+1564,CP-SAV-LPG-01
+1565,CP- Vaporizers
+1566,CP-Propane Vaporizer
+1567,CP-Propane
+1568,GP-6 C3 AMP
+1569,CP-Cafeteria
+1570,GP-PROPCOMB
+1571,CP-PT1
+1572,CP-PT2
+1573,CP-PT3
+1574,CP-PT5
+1575,CP-PT6
+1576,CP-PT7
+1577,CP-PT8
+1578,CP-PT9
+1579,CP-PT10
+1580,CP-PT11
+1581,"CP-Make Up Air Units, Main Building"
+1582,GP-GHG4
+1583,GP-Propane Process
+1584,CP-Complex Wide Propane Usage
+1585,GP-Bldg 13M01
+1586,GP-2 C45 CEMs Analyzers
+1587,CP- General Premises Use
+1588,CP-PT4
+1589,Flash Tester
+1590,CP-05-North Antelope Hills
+1591,GP-1c
+1592,GP-TVILLETYSONPROPANE
+1593,WWTP Vapor Combustion Unit
+1594,GP-Beridge Propane
+1595,CP-0005 (KHT Propane)
+1596,GP-2 Propane Fired Units
+1597,GP-3M CG - Propane
+1598,GP-PropComb
+1599,GP-3  Propane
+1600,GP-Propane Deliveries
+1601,CP-heattreat
+1602,GP-WWTP
+1603,LAB
+1604,GP- LP Combustion units
+1605,GP-Propane_Cylinders
+1606,GP-02 North Antelope Hills
+1607,VCU propane
+1608,Space Heating
+1609,GP- Propane Process
+1610,Raws Lab
+1611,CP-Propane for Start Ups
+1612,GP - Propane Vaporizers
+1613,GP-TVILLETYSON
+1614,"GP-Orcutt,Propane"
+1615,CP-PT13
+1616,CP-PT12
+1617,GP-GPGHG2
+1618,GP-Miscellaneous Propane Fired Units
+1619,GP-Liquified Petroleum Gas
+1620,GP-WFB
+1621,GP-Wellons
+1622,GP-MJ
+1623,"GP-Biomass Units: A-Area, K-Area, L-Area"
+1624,GP-Fordyce Biomass
+1625,CP-ACI
+1626,GP-06
+1627,CP-GHG2
+1628,GP-3 Propane Fired Sources
+1629,GP-4 C59 CEMs
+1630,GP-3 C58 CEMs Analyzers
+1631,GP-Carbon Adsorber 103 105 190 and 520
+1632,GP-Maintenance/Garage Buildings
+1633,CP- LPG
+1634,GP-LP Gas 1
+1635,GP-Honda 3
+1636,GP-Mines LPG
+1637,GP-Mines External Combustion
+1638,CP-Terra MS Nitrogen
+1639,Metal Flame Cutter (D288)
+1640,GP-7 LPG CoGen
+1641,GP-IAP
+1642,GP - Gasoline Fired Equipment
+1643,GP-MOGAS
+1644,GP-Tier 1 Gasoline
+1645,GP-0002 (Gasoline)
+1646,GP-MLB
+1647,GP-Maintenance Equipment
+1648,GP-Gaasoline Fired Equipment
+1649,GP-GAS02
+1650,GP- Gasoline Fired Equipment
+1651,GP-Purchased Gasoline Combustion
+1652,GP-5 GC Combusted Liquid Samples
+1653,GP- Gasoline Use
+1654,GP-HEG
+1655,GP-5 GC Analyzer Combusted Liquid Sample
+1656,VR-290
+1657,GP-003-K
+1658,GP-Kerosene units
+1659,Catox Start-up Vent
+1660,GP-NPPC_BLM_ALL
+1661,CP-General Stationary Fuel Combustion
+1662,GP-TEST
+1663,CP-3 Bio-gas fired units
+1664,GP-Combined Biomethanators
+1665,GP-Fresno Winery Emission Units
+1666,GP-TO
+1667,GP-Hartley
+1668,CP-BM
+1669,GP-1 Biogas
+1670,GP-Refinery Fuel Gas Fired Units
+1671,TOs/HRSGs
+1672,GP-TOs/HRGSs
+1673,CP-2 Biogas
+1674,CP-ATM1
+1675,GP-AB
+1676,GP-COALBRLS004
+1677,GP-1 Bituminous Coal
+1678,GP-BLRS
+1679,GP-Bio-STL
+1680,Cupola
+1681,SU-1
+1682,GP-Coke
+1683,GP-COKE
+1684,GP-Test Cells at Building 410-JP8
+1685,GP-Test Cells Bldg 474-No. 2 FO
+1686,GP-Test Cells Bldg 128
+1687,GP-PHL-JETA
+1688,GP-Bldg 410 Test Cells-JP8
+1689,GP-Residual #6 Oil
+1690,CP-Main Fuel Oil Line
+1691,GP- DPI NO. 6 FUEL
+1692,CP-BFO
+1693,GP-FOBLRS004
+1694,CP-Recovery Stack/AP-10
+1695,GP-FTSF
+1696,GP-PHL-6FO
+1697,GP-Revere
+1698,CP - FCC Disulfide Vent Gas
+1699,CP - CCR Lock Hoppers
+1700,CP - BRU OH Vent Gas
+1701,GP-Vacuum Hot Well
+1702,CP- Lockhopper 7504
+1703,CP- Lockhopper 7505
+1704,CP-0013 Hotwell Offgas
+1705,East Marine Vapor Recovery Unit
+1706,West Refinery Truck Rack VCU
+1707,West Railcar (Metaxylene) Rack VCU
+1708,GP-BPFG
+1709,CP-Reformer Lock Hopper Vents
+1710,CP-CUA SBRU Vent
+1711,CP-Lockhopper 7504
+1712,CP-Lockhopper 7505
+1713,CP-FCC Disulfide Vent Gas
+1714,CP-CCR Lock Hoppers
+1715,GP-4 GC Combusted Gaseous Samples
+1716,GP-4 GC Analyzer Combusted Gas Samples
+1717,CP-Ptr3 Lock Hopper Vents
+1718,CP-Ptr4 Lock Hopper Vents
+1719,West Marine Vapor Recovery Unit
+1720,Plant Acetylene fuel system
+1721,East MVRU
+1722,GP- Biogas
+1723,CRAN_PFB
+1724,"GP-P17B,P17C"
+1725,GP-Biomass
+1726,GP-4 nC4 AMP
+1727,GP-2 CEMs Analyzers
+1728,GP-F505Matl
+1729,GP-ANTHRACITE
+1730,Startup Scrubber
+1731,Chlorination Reactor Startup Scrubber
+1732,CP-Fuel Oil System
+1733,GP-BPHGO
+1734,GP-Battery A and B
+1735,GW-CASPUCFER1
+1736,GW-CASPUCFER2
+1737,GW-CASPUCFER3
+1738,GW-CASPUCFER4
+1739,GW-CASPUCPFR1
+1740,GW-CASPUCPFR2
+1741,GP-Miscellaneous Propylene Fired Untis
+1742,D2 CATOX
+1743,GP-LANDFILLGAS
+1744,GP-Biogas Usage
+1745,CP-Landfill Gas
+1746,"GP-Biomass Units: A, K, & L Areas"
+1747,GP-Rexburg ID Combustion
+1748,GP-Hosford Biomass
+1749,GP Biogas to Gluten Plant#2
+1750,Digester
+1751,Flare Purge Gas
+1752,CP-NG_IHE
+1753,CP-Meter #368598
+1754,CP-Meter #680353
+1755,CP-Meter #893273
+1756,GP-GPDF
+1757,Thomasville Plant Total Fuel Used
+1758,GP-Memphis01
+1759,CP-NG_IHW
+1760,CP-Hammond02
+1761,CP-Incoming gas from Centerpoint
+1762,CP-0029901
+1763,CP-0209901
+1764,CP-0019901
+1765,CP-Simpson Main
+1766,CP-0319901
+1767,GP-HPE01
+1768,GP-HPH02
+1769,GP-HPT03
+1770,CP-Natural Gas Combustion
+1771,CP- 1a
+1772,GP-SIRE
+1773,GP- natural gas - non-CEMS units
+1774,CP-Natural Gas supply
+1775,CP-1750401
+1776,CP-1770401
+1777,CP-0279901
+1778,CP-0309901
+1779,Other
+1780,CP-Biogas
+1781,CP-SCG-02
+1782,GP-PROCESSHEAT
+1783,GP-NGComb
+1784,GP-nat.gas.comb.
+1785,CP-COMBUSTION
+1786,GP-Paper Machines
+1787,GP-Bellevue
+1788,GP-SiteCombustion
+1789,GP-DuPont Memphis Combustion
+1790,CP-A
+1791,CP-NGStationarySources
+1792,GP-Small Units
+1793,CP-W
+1794,CP-E
+1795,CP-LP Finish Meter
+1796,CP-North Meter
+1797,CP-South Meter
+1798,CP-208
+1799,GP-PPGCIRC
+1800,CP-KGPN-PH
+1801,CP-KGPS-PH
+1802,CP-TURB-A/B
+1803,GP-JM-08
+1804,GP-JM-02
+1805,GP-GAS1
+1806,GP-East Mamm CS
+1807,GP- Natural Gas Combustion
+1808,CP-Barracuda Plant Fuel Meter #80005
+1809,"CP-CF Industries Nitrogen, LLC"
+1810,CP-4686775
+1811,"GP-Jackson, TN"
+1812,CP-LEP2 main fuel
+1813,GT-1 (B-10) Cogeneration Plant
+1814,GP-CBF4 F04&F05 - CBF5 F07&F08
+1815,GP-Toronto OH Combustion
+1816,GP- North Bend
+1817,CP-Fujifilm K-Plant Methane Gas
+1818,GP-Grouped
+1819,GP-Cargill Hutchinson
+1820,GP-Carbon Bake
+1821,GP-Carbon Rodding
+1822,GP-Green Carbon
+1823,GP-Metal Products
+1824,GP-099 Misc.
+1825,Source 108 Multi-torch Cut-off
+1826,Source 165 Axle Torch Cut-off (AFM)
+1827,GP-40A
+1828,GP-COMBUSTUNITS
+1829,GP- FE 3901
+1830,GP-TWIN GROVES
+1831,GP- WOOLLY HOLLOW
+1832,GP-Hunter Mesa CS
+1833,GP-Mamm Creek CS
+1834,GP-Pumba CS
+1835,CP-Refinery Produced Gas
+1836,CP-GFCU
+1837,GP-Natural Gas Usage MBPP
+1838,GP-High Mesa CS
+1839,CP-SHINTECH INCORPORATED
+1840,CP-NG Sources
+1841,CP-DAYTON01
+1842,CP-CHP Power Plant
+1843,CP-HCC4
+1844,GP-Nat Gas Fired Equip (<100 MMBtu/hr)
+1845,GP-CCE01
+1846,GP-CCH02
+1847,GP-DAK Natural Gas
+1848,CP-Natural Gas to P&G
+1849,GP-IKE & MIKE CS
+1850,GP-Jarvisville CS
+1851,GP-Salem CS Fuel
+1852,GP-combustion
+1853,CP-FG
+1854,GP-Perkins CS
+1855,GP-Morgan CS
+1856,GP-Columbia Gas Supply
+1857,GP-Zinnia CS
+1858,CP-0199901
+1859,GP-Banner CS
+1860,GP-B322E25A-B-C
+1861,CP-Ammonia Plant
+1862,"CP-39NSPS, 26NSPS, 20"
+1863,GP_UTIL_02_03
+1864,GP_UTIL_07
+1865,GP-UTIL_02_03
+1866,GP-UTIL_07
+1867,GP-Claus Burners
+1868,GP-Cogens and Enclosed Vapor Combustor
+1869,CR-601
+1870,CP-1 Supplied to Facility
+1871,CP-CP-COG2
+1872,CP-CP-COG3
+1873,CP-CP-NG1
+1874,CP-CP-NG2
+1875,CP-FFSNG-1
+1876,GP-Misc. Natural Gas Consumer
+1877,GP-TNO-B83
+1878,CP-TNO-NG
+1879,CP-TNO-NGHP
+1880,CP-TNO-NGLP
+1881,CP-TNO-NGAGC
+1882,CP-TNO-NGBAE
+1883,CP-ET-BFG1
+1884,CP-ET-BFG2
+1885,CP-ET-NG1
+1886,CP-ET-COG2
+1887,CP-ET-COG3
+1888,CP-ET-COG4
+1889,GP-1T2
+1890,CP-1_Greek St 2 Incoming NG
+1891,CP-2_Cutting Line
+1892,CP-3_Weir Ave Incoming NG
+1893,CP-4_Veolia
+1894,CP-5_H2Plant
+1895,CP-Greek St. 1
+1896,GP-TOUandPMCoaters
+1897,CP-03 Lost Hills
+1898,CP-04 Lost Hills
+1899,CP-05 Lost Hills
+1900,CP-06-North Antelope Hills
+1901,CP-07 North Antelope Hills
+1902,GP01
+1903,GP-PX1
+1904,GP-PX2
+1905,GP-PX3
+1906,GP-9
+1907,GP-Solid fuels
+1908,GP_NG
+1909,GP_AFO
+1910,GP-Hot Oil & Regen Burner
+1911,GP-NaturalGas
+1912,P040C
+1913,CP-GW-COG1
+1914,CP-GWNG-1
+1915,GP-Meter 900903
+1916,CP-GBB Main Nat Gas Line
+1917,GP-Meter 904453
+1918,CP-IP-COG1
+1919,CP-IP-COG2
+1920,CP-IP-NG1
+1921,GP-Block 31
+1922,CP-Thaw Pits
+1923,GP-Ignitors
+1924,EU109
+1925,EU110
+1926,EU111
+1927,EU114
+1928,EU115
+1929,EU116
+1930,EU120
+1931,EU121
+1932,EU122
+1933,EU123
+1934,EU200
+1935,EU3
+1936,EU4
+1937,EU5
+1938,TC34N
+1939,GP 0-05
+1940,EU2
+1941,CP-UGI LDC Gas Line to P&G
+1942,CP-870 H-01/H-02
+1943,CG-4
+1944,Battery No. 1 Underfire
+1945,Battery No. 2 Underfire
+1946,Battery No. 3 Underfire
+1947,CP-Incoming gas line from Centerpoint
+1948,CP-KT-NG1
+1949,CP-LTO-NG1
+1950,CP-MW-NG1
+1951,CP-MT-LFO1
+1952,CP-MT-LFO2
+1953,CP-MT-NG1
+1954,FE-5601
+1955,FE-5602
+1956,T-1
+1957,T-2
+1958,1902-F491-IQ
+1959,1904-F491-IQ
+1960,1923-F702-IQ
+1961,1926-F702-IQ
+1962,1954-F491-IQ
+1963,1955-F491-IQ
+1964,CP-16-1
+1965,CP-16-2
+1966,GP-Facility Wide Natural Gas
+1967,GP-VCM Combustion Sources
+1968,GP-Aggregation of Units
+1969,GP-CaCl2
+1970,GP-LaPorte VCM
+1971,CP- EP Duct Work
+1972,GP-522628
+1973,GP-522638
+1974,CP-9-1
+1975,CP-9-2
+1976,CP-9-3
+1977,FE-2327
+1978,GP-Bison
+1979,GP-522467
+1980,GP-522492
+1981,GP-522494
+1982,GP-522506
+1983,GP-MM
+1984,GPN-HPE01
+1985,GPN-HPH02
+1986,GPN-HPT03
+1987,GP-Site Aggregation
+1988,CP-EC3930
+1989,GP-Bunsen Burner
+1990,Hydrogen Reformer
+1991,GP-522412
+1992,GP-522414
+1993,GP-522415
+1994,GP-Hilight
+1995,GP-522419
+1996,GP-522420
+1997,GP-Little Thunder
+1998,GP-522421
+1999,GP-522422
+2000,GP-522423
+2001,GP-522424
+2002,GP-522425
+2003,GP-522426
+2004,CP-19-1
+2005,CP-19-2
+2006,GP-SJRGP Combustion
+2007,GP-522676
+2008,GP-522679
+2009,CP-Hugoton CS
+2010,GP-522680
+2011,CP-Hugoton 3
+2012,GP-LKEW
+2013,CP-ECTO-NG1
+2014,CP-ECTO-NG2
+2015,CP-FFTNG-1
+2016,CP-GLWNG1
+2017,CP-GLWNG3
+2018,CP-GLWNG2
+2019,CP-GLWCOG1
+2020,EA-057
+2021,EA-005-D
+2022,EA-005-E
+2023,EA-005-F
+2024,EA-015-C
+2025,EA-015-E
+2026,EA-015-F
+2027,EA-210
+2028,EA-211
+2029,EA-222
+2030,EA-232
+2031,EA-005-A
+2032,EA-015-G
+2033,EA-015-I
+2034,EA-220
+2035,EA-005-A - Cell 6
+2036,EA-015-G - Cell 46
+2037,EA-015-I - Cell 5
+2038,EA-005-D - Cell 40
+2039,EA-005-E - Cell 43
+2040,EA-005-F - Cell 44
+2041,EA-015-E - Cell 38
+2042,EA-015-F - Cell 45
+2043,EA-057 - Cell A5
+2044,EA-210 - Cell A18
+2045,EA-211 - Cell A19
+2046,EA-220 - Cell A1
+2047,EA-222 - Cell A6
+2048,EA-232 - Cell 11
+2049,EA-235 - Cell A2
+2050,EA-541 - Cell A20
+2051,EA-015-J - Cell 1
+2052,GP-522400
+2053,GP-Granger
+2054,GP-522404
+2055,CP-22-1
+2056,CP-22-2
+2057,CP-22-3
+2058,CP-22-4
+2059,CP-23-1
+2060,CP-23-2
+2061,CP-24-1
+2062,CP-24-2
+2063,GP- Natural Gas Fired Units
+2064,GP-522632
+2065,CP-E-68 & E-72 (FT 603)
+2066,GP-522484
+2067,CP-12 INCH / CP-8 INCH
+2068,CP-BPNG
+2069,CP-CGNG
+2070,GP-522510
+2071,GP-522533
+2072,GP-522610
+2073,GP-EMN Natural Gas
+2074,GP-TOs/HRSGs
+2075,GP-Fort Lupton and Platte Valley
+2076,GP-522931
+2077,GP-RFG
+2078,CP-Id: 42529
+2079,CP-Id: 42529 (GHG Only)
+2080,CP-Id: 82206
+2081,CP-Id: 82206 (GHG Only)
+2082,CP-Id: 214448
+2083,CP-Id: 214448 (GHG Only)
+2084,CP-Id: TAMF611
+2085,B401_Throx
+2086,B402_Throx
+2087,FTOB_Thermatrix
+2088,GP-LPFG HEADER AGGREGATE
+2089,PCMU_R732
+2090,PHAC_CATOXID
+2091,S-1114-20
+2092,S-3755-19
+2093,CP-Wastewater diesel backup
+2094,GP- Facility natural gas use
+2095,GP-Facility natural gas use
+2096,GP-522928
+2097,CP-Id: 01834-00
+2098,CP-Id: 01834-00 (GHG Only)
+2099,CP-Id: 382502130
+2100,CP-Utilities NG Meter 904459
+2101,GP-5660
+2102,GP-7890
+2103,GP-7920
+2104,"GP-5660, 7890, 7920"
+2105,CP-Miscellaneous NGas
+2106,CP-SCGC-02
+2107,CP-AFS-01
+2108,CP-PLANTFUEL
+2109,CP-STANDBYFUEL
+2110,GP-Chipeta
+2111,GP-522895
+2112,CP-Id: 0P1572-00
+2113,CP-Id: 0P1572-00 (GHG Only)
+2114,CP-Id: 41804-01
+2115,CP-Id: 41804-01 (GHG Only)
+2116,GP-522899
+2117,GP-AGGNG
+2118,GP-Wilderness CO2/Hayes 29 Plant
+2119,GP-3 (GPNGT2)
+2120,AB-140
+2121,CP-4501
+2122,CP-4501-3
+2123,CP-Id: 02401001
+2124,CP-Id: 02401003
+2125,CP-Id: 02402006
+2126,CP-Id: 02404002
+2127,CP-Id: 02401001 (GHG Only)
+2128,CP-Id: 02401003 (GHG Only)
+2129,CP-Id: 02402006 (GHG Only)
+2130,S-1114-10
+2131,S-1114-107
+2132,S-1114-111
+2133,S-1114-15(a)
+2134,S-1114-15(b)
+2135,S-1114-16
+2136,S-1114-74
+2137,S-1114-83(a)
+2138,S-1114-83(b)
+2139,S-1114-84(a)
+2140,S-1114-84(b)
+2141,GP-Oakhill
+2142,GP-522707
+2143,GP-522709
+2144,GP-Bethel
+2145,GP-522715
+2146,No. 1 Ammonia Plant Reformer
+2147,No. 2 Ammonia Plant Reformer
+2148,No. 3 Ammonia Plant Reformer
+2149,No. 4 Ammonia Plant Reformer
+2150,No. 5 Ammonia Plant Reformer
+2151,No. 6 Ammonia Plant Reformer
+2152,CP-Calso-01
+2153,CP-HILL-01
+2154,CP-HILL-02
+2155,CP-HILL-03
+2156,CP-HILL-04
+2157,GP-NGAllOtherT2
+2158,GP-UH2.2
+2159,Natural Gas Equipment
+2160,GP-SRP_Incin
+2161,GP-LAR_NG
+2162,GP-SRP_NG
+2163,CP-Id: 2478
+2164,CP-Id: 68401050
+2165,CP-Id: 196900117
+2166,CP-Id: 196900120
+2167,CP-Id: 196910010
+2168,CP-Id: 196910011
+2169,CP-Id: 196900117 (GHG Only)
+2170,CP-Id: 196900120 (GHG Only)
+2171,CP-Id: 196910010 (GHG Only)
+2172,CP-Id: 196910011 (GHG Only)
+2173,CP-Id: 06663-00
+2174,CP-Id: P1020-00
+2175,CP-Id: 06663-00 (GHG Only)
+2176,CP-Id: P1020-00 (GHG Only)
+2177,CP-Id: 71437015
+2178,CP-Id: 71437015 (GHG Only)
+2179,CP-Id: P0995-00
+2180,GP- Yellowhammer Gas Plant
+2181,CP-Diboll
+2182,GP-SRP NG
+2183,CP-Id: 45002
+2184,CP-Id: 45002 (GHG Only)
+2185,CP-Id: 45307 (GHG Only)
+2186,CP-Id: 01321-00
+2187,CP-Id: 722458-00
+2188,CP-Id: 72436014
+2189,CP-Id: 72436014 (GHG Only)
+2190,CP-005791
+2191,CP-006858
+2192,CP-007120
+2193,CP-007914
+2194,GP-Mallet
+2195,GP-Salt Creek
+2196,CP-Plant Main
+2197,GP-Misc.
+2198,CP-Id: TAMF711
+2199,CP-Id: TAMF711 (GHG Only)
+2200,GP-1 Combustion Sources
+2201,GP-Fuel Meter
+2202,CP-Id: 04035-00
+2203,CP-Id: 04035-00 (GHG Only)
+2204,TURBS
+2205,GP-Total Facility Fuel
+2206,GP-Total Fuel
+2207,CP_100
+2208,CP-100
+2209,GP-NSKNK 2010
+2210,GP-NSKNK 2011
+2211,CP-SAV-NG-01
+2212,GP-COMP1
+2213,GP-COMP2
+2214,GP-COMP1_Update
+2215,GP-COMP2_Update
+2216,TO
+2217,GP-Slaughter Gasoline Plant
+2218,GP-Willard
+2219,GP-001-NG
+2220,CP-Id: 14008-756
+2221,CP-Id: 14009-752
+2222,CP-Id: 14138-757
+2223,CP-Id: 14195-750
+2224,CP-Id: 16893
+2225,CP-Id: 219511006
+2226,CP-Id: 219511007
+2227,CP-Id: 219511021
+2228,CP-Id: 219511006 (GHG Only)
+2229,CP-Id: 219511023 (GHG Only)
+2230,CP-Id: 629500052
+2231,CP-Id: 629500052 (GHG Only)
+2232,GP-GP-Sitecombustion
+2233,GP-GP-SiteCombustion
+2234,GP-NGPortableEquipment
+2235,GP-NGStationarySources
+2236,CP-14A-F
+2237,FL-6901
+2238,GP-North Cross
+2239,CP-NG Common Feed
+2240,GP-NG-2
+2241,GP-NG-3
+2242,EP033-pilot
+2243,GP-1-p1
+2244,GP-1-p2
+2245,GP-1-p3
+2246,CP-Main Supply
+2247,CP-13-1
+2248,GP-1 Natural Gas-Fired Units
+2249,CP-Natural Gas Fired Units
+2250,CP-BC
+2251,GP-Marquez
+2252,GP-277
+2253,GP-SPringtown
+2254,GP-Avinger
+2255,GP-South Zybach CS
+2256,GP-Abraham
+2257,PDMC
+2258,PDMC-C
+2259,GP-Trinidad
+2260,GP-Terrell
+2261,GP-Aker
+2262,GP-Indian Basin
+2263,GP-Allison CS
+2264,GP-Wattenberg
+2265,GP-536857
+2266,GP-524800
+2267,GP- Fuel Meter 3601
+2268,CP-A122 Line
+2269,CP-NAT GAS TO FUEL GAS B PLT
+2270,CP-NAT GAS TO PLT 90
+2271,CP-NAT GAS TO PLT 91
+2272,CP-NAT GAS TO PLT 92
+2273,CP-DC
+2274,GP-Hidetown
+2275,GP-Weatherford
+2276,GP-Zybach
+2277,CP-MCI-NG-01
+2278,CP-Sterling GC Plant Fuel Meter#18707002
+2279,CP-Targas Sterling Fuel Meter #18707001
+2280,CP-Lancaster Gas Combustion Sources
+2281,CP-1UGI
+2282,CP-NG_Powerhouse
+2283,OLD DUPONT COGEN
+2284,CP-Severstal_NGEAST
+2285,CP-Severstal_NGWEST
+2286,GP-CG
+2287,CP-COMBUSTUNIT
+2288,GP-581
+2289,CP- Plantwide
+2290,CP-NG to Fuel Gas Drum
+2291,CP-Alky Splitter to Fuel Gas
+2292,CP-222023
+2293,CP-222024
+2294,CP-Main Landfill Gas Line
+2295,CP-CoGen Common Pipe
+2296,CP- Fuel Meter 20714 - FAP
+2297,CP-Fuel Meter 20706
+2298,CP-LFI01
+2299,GP-LFI01
+2300,CP-4 Refinery NG Total
+2301,CP-5 Cogen Med-BTU Gas
+2302,CP-5 Cogen Mixed Natural Gas
+2303,CP-126210
+2304,CP-26900
+2305,CP-26901
+2306,CP-82722
+2307,CP-COLG Common Pipe Natural Gas
+2308,CP-General Natural Gas
+2309,GP-Natural Gas Industrial Uses
+2310,GP-Fuel Gas Area 1
+2311,GP- Flares
+2312,GP-Flare Pilots
+2313,CP-BF-01
+2314,CP-Gillis Master Fuel
+2315,CP-Plant Fuel #2
+2316,CP-Plant Fuel #3
+2317,CP-Plant Fuel #4
+2318,CP-plant fuel #1
+2319,GP-959603 to 607-830-831-833-983-984-993
+2320,CP-fuel 5.6.7
+2321,CP-plant master
+2322,CP-Caddis CPF-2
+2323,CP-Cove Creek CPF-4
+2324,CP-Gravel Hill CPF-2
+2325,CP-Southwest Greer Lake CPF-3
+2326,CP-Steelhead CPF-2
+2327,CP-Sturgeon CPF-1
+2328,CP-Tiger CPF-1
+2329,CP-Yogi CPF-1
+2330,CP-Yogi CPF-2
+2331,GP- 1 - Coal
+2332,GP- 2 - Natural Gas
+2333,"GP- 1 - Coal, Prior to April 1, 2013"
+2334,"GP-2 Natural Gas, Prior to June 30, 2013"
+2335,"GP-3 Natural Gas, After July 1, 2013"
+2336,CP-not subject(C)
+2337,CP-Cove Creek CPF-3
+2338,CP-Gravel Hill CPF-3
+2339,CP-Southeast Rainbow CPF-2
+2340,CP-West Cutthroat CPF-1
+2341,CP-West Cutthroat CPF-2
+2342,CP-Yellowstone CPF-1
+2343,CP-Mako CPF-1
+2344,CP-New Quitman CPF-1
+2345,CP-New Quitman CPF-2
+2346,CP-North Yellowstone CPF-1
+2347,CP-North Yellowstone CPF-2
+2348,CP-Phillips Mountain CPF-1
+2349,CP-South Rainbow CPF-1
+2350,CP-South Rainbow CPF-4
+2351,CP-Southwest Greer Lake CPF-2
+2352,CP-10
+2353,CP-01-NG_South
+2354,CP-02-NG_North
+2355,GP-RONLER ACRES
+2356,CP-AIS 9156
+2357,GP-NGT2
+2358,CP-#1
+2359,CP-#3
+2360,GP_1
+2361,GP_2
+2362,CP-1_23
+2363,CP-2_30
+2364,CP-3_GO
+2365,CP-SHE-35-FT-81308-FuelGas
+2366,CP-SHE-35-FT-81308-Fuel Gas
+2367,GP-Meters
+2368,"CP-NG11302C1-8"""
+2369,CP-SRU
+2370,CP-Intel Ocotillo Campus
+2371,GP-OC
+2372,EU-30-015 API Combustor
+2373,EU-96-901 VOC Loading Combustor
+2374,GP-ALL UNITS ON SITE
+2375,GP-Combustion Stacks
+2376,CP-005358
+2377,CP-007244
+2378,CP-008734
+2379,CP-Fuel Oil
+2380,GP- LFG
+2381,CP- UT
+2382,GP- FO
+2383,GP-CBF4 Main Fuel
+2384,CP_1
+2385,GP-Hobart Ranch
+2386,17AH-101A
+2387,17AH-101B
+2388,74H-101
+2389,75H-102
+2390,81H-101
+2391,CP-Id: 04716101
+2392,CP-Id: 04716102
+2393,CP-Id: 4716102
+2394,CP-Id: 04716101 (GHG Only)
+2395,CP-Id: 04716102 (GHG Only)
+2396,CP-Id: 43929
+2397,CP-All Combustion Sources
+2398,GP-Minor Sources
+2399,CP-COMP
+2400,CP-H1
+2401,CP-MMA / SAR UNITS
+2402,GP-HCN Combustion
+2403,CP-001A
+2404,GP-Blackfoot ID Combustion
+2405,CP-Anschutz
+2406,CP-AR
+2407,CP-BLR3
+2408,CP-MELT
+2409,CP-MM
+2410,CP-RM
+2411,CP-WM
+2412,CP-BLRS
+2413,CP-fuel for C-01 through C-07
+2414,CP-fuel for refrig comp
+2415,CP-Master Plant Fuel Meter #100005
+2416,GP-007
+2417,GP-008
+2418,GP-009
+2419,GP-004
+2420,GP-005
+2421,GP-006
+2422,WSR Combustion Sources
+2423,Fuel Oil Combustion Sources
+2424,GP- WSR Combustion Sources
+2425,GP- Fuel Oil Combustion Sources
+2426,GP-3 WSR Combustion Sources
+2427,GP-1 Fuel Oil Combustion Sources
+2428,CP-Northern Natural Fuel Meter 118100097
+2429,CP-Total Plant Fuel Meter #118100007
+2430,GP-OrcuttSubpartC
+2431,"GP-Orcutt,SGs"
+2432,GP-NGAS01
+2433,CP-Brady
+2434,CP-Brady 2
+2435,CP-NG_IHLC
+2436,GP-Lube Plant
+2437,GP-DAIKIN FG Units
+2438,GP-FGBLRS
+2439,GP- Bldg 101 Meter
+2440,GP- Bldg 75 Meter
+2441,GP- Main Meter
+2442,GP- Coal
+2443,CP-All
+2444,CP-01-Kern Front
+2445,CP-02 Kern Front
+2446,GP-01-NTP and Robinson B
+2447,CP-03 Kern Front
+2448,CP-201A/B
+2449,CP-7311
+2450,CP-7315
+2451,CP-7317
+2452,bottom SCOT burner
+2453,CP-7225
+2454,CP-7229
+2455,GP-01 (Residue Gas Combustion)
+2456,GP-02 (Permeate Combustion)
+2457,GP-03 (Cogen Fuel Combustion)
+2458,GP-01-SCVGP
+2459,GP-TGPall
+2460,GP-STATIONARY COMBUSTION
+2461,GP-coal & NG
+2462,GP-CogenNeb
+2463,CP-HPL-Power 4
+2464,CP-KM-Power 4
+2465,CP-HPL NG to Refinery
+2466,CP-KM NG to Refinery
+2467,CP-Hamilton Facility
+2468,CP- Hamilton Facility
+2469,CP-1 (PLANT GAS METER #1)
+2470,CP-2 (PLANT GAS METER #2)
+2471,GP-Fuel Oil
+2472,CP-Metson-01
+2473,CP-Metson-02
+2474,CP-Id: M0486-00
+2475,CP-Id: M0487-00
+2476,CP-Id: M0488-00
+2477,CP-Id: M0486-00 (GHG Only)
+2478,CP-Id: M0487-00 (GHG Only)
+2479,CP-Id: M0488-00 (GHG Only)
+2480,CP-Id: 214663
+2481,CP-Id: 214663 (GHG Only)
+2482,CP-Id: 99735-00
+2483,CP-Id: 99742-00
+2484,CP-Id: 99722-00 (GHG Only)
+2485,CP-Id: 99763-00 (GHG Only)
+2486,CP-Id: 99764-00 (GHG Only)
+2487,CP-Id: 99791-00 (GHG Only)
+2488,CP-Id: 04637-00
+2489,CP-Id: 04661-00
+2490,CP-Id: 04637-00 (GHG Only)
+2491,CP-Id: 04661-00 (GHG Only)
+2492,CP-GU-1
+2493,CP-GU-2
+2494,CP-Plantwide natural gas/co-located faci
+2495,CP-LH-01
+2496,CP-LH-02
+2497,CP-LH-03
+2498,CP-LH-04
+2499,GP- Denver Unit CO2 Recovery Plant
+2500,GP-CORVETTE GAS PROCESSING PLANT
+2501,GP-POINT REMOVE
+2502,GP-Wilson Creek CS Fuel
+2503,GP-FE 920
+2504,GP-INDIAN CREEK FUEL
+2505,GP-Rose Bud Plant Fuel
+2506,CP-GCW-BFG2
+2507,CP-GCW-NG2
+2508,CP-GCW-NG1
+2509,CP - Nigas
+2510,CP-BRU OH Vent Gas
+2511,CP- Nigas
+2512,CP-CyressGasMeter
+2513,SRU-1 Tail Gas Burner
+2514,SRU-1 Thermal Reactor
+2515,SRU-1 Thermal Reactor Auxilery
+2516,SRU-2 Thermal Reactor
+2517,SRU-3 Thermal Reactor
+2518,SRU-1 Thermal Reactor Auxillary
+2519,CP-SoCalGas_11122802
+2520,CP-SoCalGas_5026295
+2521,Cogen Unit Duct Burner EQT 0002
+2522,CP-Id: 22222
+2523,CP-Id: 226835 (GHG Only)
+2524,CP-Id: 226836 (GHG Only)
+2525,CP-Main Gas Pipe
+2526,CP-Plants1and2
+2527,OMC
+2528,Nat Gas to F68220
+2529,Nat Gas to F68250
+2530,Nat Gas to SRU Main Burner
+2531,GP- Coal/Distillate Oil #2/Resid. Oil #6
+2532,GP Natural Gas Useage at MBPP
+2533,GP-Natural Gas Useage at MBPP
+2534,GP-Natural Gas Useage MBPP
+2535,CP-El Paso Common Pipe
+2536,CP-Id: 873003000
+2537,CP-Id: 36401003
+2538,CP-Id: 36401004
+2539,CP-Id: 36401003 (GHG Only)
+2540,CP-Id: 36401004 (GHG Only)
+2541,GP-1 Coal Fired Units
+2542,GP-Henderson
+2543,CP-Westvaco
+2544,GP-Shelley ID Combustion
+2545,CP-7372
+2546,GP-1300 DIB HP-HRU (EPN 27)
+2547,"GP-DIB 900 Fired HRU (EPNs 23,24,25)"
+2548,GP-Seminole Fractionator Duct Burner
+2549,CP-DHTCOMP
+2550,CP-FPNG-1
+2551,GP-AuxGas
+2552,CO2 CoGen Unit
+2553,CP-CG-01
+2554,CP-CG-02
+2555,CP-Id: 04404001
+2556,CP-Id: 04404002
+2557,CP-Id: 04404003
+2558,CP-Id: 04404005
+2559,CP-Id: 04404006
+2560,CP-Id: 04405001
+2561,CP-Id: 04407003
+2562,CP-Id: 04407011
+2563,CP-Id: 04408001
+2564,CP-Id: 04408002
+2565,CP-Id: 4404002
+2566,CP-Id: 04404001 (GHG Only)
+2567,CP-Id: 04404002 (GHG Only)
+2568,CP-Id: 04404003 (GHG Only)
+2569,CP-Id: 04404005 (GHG Only)
+2570,CP-Id: 04404006 (GHG Only)
+2571,CP-Id: 04405001 (GHG Only)
+2572,CP-Id: 04407002 (GHG Only)
+2573,CP-Id: 04407003 (GHG Only)
+2574,CP-Id: 04408001 (GHG Only)
+2575,CP-Id: 04408002 (GHG Only)
+2576,CP-FCG
+2577,CP-IBG
+2578,CP-WTP
+2579,CP-FCG Coater Gas
+2580,CP-WTP Water Treatment Plant Gas
+2581,CP-Shintech Freeport
+2582,CP-Reformer
+2583,CP-NP1
+2584,CP-NP2
+2585,CP-SM
+2586,CP-NP 2
+2587,CP-SP
+2588,CP- North
+2589,CP- South
+2590,CP-MO
+2591,CP-006086
+2592,CP-10100401
+2593,CP-Id: 04400401
+2594,GP-Newcastle
+2595,GP-537077
+2596,GP-SRU NG to Claus Units
+2597,CP- Cogen Fuels Duct Burners and Gas Tur
+2598,CP- LARC Cogen
+2599,GP-LARC Aggregated Ext Combustion
+2600,GP-LARC Flare Purge
+2601,GP-LARW_NG
+2602,LARC Claus B NG
+2603,LARC No5 Flare Purge NG
+2604,CP-DAYTON02
+2605,GP-#6 Combustion
+2606,CP-Id: 7705301
+2607,CP-Id: 7705601
+2608,CP-Id: 7705701
+2609,CP-Id: 7705301 (GHG Only)
+2610,CP-Id: 7705601 (GHG Only)
+2611,CP-Id: 7705701 (GHG Only)
+2612,CP-910
+2613,CP-HDPEI-01
+2614,CP-Ll-01
+2615,CP-Natural Gas Users
+2616,CP-UT-02
+2617,CP-UT-03
+2618,CP-EDC-01
+2619,GP-Elk City Plant
+2620,GP-Cypress
+2621,GP-1 Miscellaneous Sources
+2622,GP-05
+2623,CP-008155
+2624,GP-Longview
+2625,CP-Id: 99147-00
+2626,CP-Id: 99239-00
+2627,CP-Id: 99241-00
+2628,CP-Id: 99926-00
+2629,CP-Id: 99147-00 (GHG Only)
+2630,CP-Id: 99239-00 (GHG Only)
+2631,CP-Id: 99241-00 (GHG Only)
+2632,CP-Id: 99926-00 (GHG Only)
+2633,CP-Id: 01331-00
+2634,CP-Id: 01398-00
+2635,CP-Id: P1857-00
+2636,CP-Id: 01331-00 (GHG Only)
+2637,CP-Id: 01398-00 (GHG Only)
+2638,CP-Id: P1857-00 (GHG Only)
+2639,CP-GDN-NG-01
+2640,CP-AF-01
+2641,CP-AF-02
+2642,CP-BL-02
+2643,CP-BL-03
+2644,CP-BL-04
+2645,CP-BL-05
+2646,CP-BL-07
+2647,CP-BL-08
+2648,CP-BL-09
+2649,CP-BL-10
+2650,CP-BL-11
+2651,CP-BL-12
+2652,CP-BL-14
+2653,CP-BL-13
+2654,CP-BL-15
+2655,CP-BL-16
+2656,CP-BL-17
+2657,CP-BL-18
+2658,CP-BL-19
+2659,CP-BL-20
+2660,GP-BL-01
+2661,GP-BL-02
+2662,GP-BL-03
+2663,GP-BL-04
+2664,CP-BL-21
+2665,GP-BL-05
+2666,GP-BL-06
+2667,CP-BL-22
+2668,CP-BL-23
+2669,CP-BL-24
+2670,CP-BL-25
+2671,CP-BL-26
+2672,CP-BL-27
+2673,CP-SA-01
+2674,CP-SA-02
+2675,CP-SA-03
+2676,CP-SA-04
+2677,GP-Platteville CS
+2678,GP-522936
+2679,CP-006840
+2680,CP-Id: 009026-00
+2681,CP-Id: 009026-00 (GHG Only)
+2682,CP-MOCOD&E-01
+2683,CP-MOCOD&E-02
+2684,CP-MOCOD&E-03
+2685,CP-MOCOD&E-04
+2686,CP-MOCOD&E-05
+2687,CP-MOCOD&E-06
+2688,CP-MOCOD&E-07
+2689,CP-MOCOD&E-08
+2690,CP-MOCOD&E-09
+2691,CP-MOCOD&E-10
+2692,CP-MOCOD&E-11
+2693,CP-MOCOD&E-12
+2694,CP-MOCO D&E-05
+2695,CP-MOCO D&E-07
+2696,"GP-X195, X196, X034, TM, BM"
+2697,EthyleneUnit 24 HeaterPilotGas/24-36-7
+2698,CP-3 NNG NatGas
+2699,OCS-002
+2700,GP-016
+2701,GP-017
+2702,DIST_FLR_ACRYLATES FLARE 3414
+2703,DIST_FLR_FLARE V-3567
+2704,CP-1 natural gas
+2705,GP- N Gas Combustion sources
+2706,GP-522527
+2707,CP-South Rainbow CPF-2
+2708,CP-NG_EOG
+2709,GP-CAST
+2710,GP-FAB
+2711,CP-GPAR030
+2712,Cogen 38
+2713,MSJ-414
+2714,MSJ-415
+2715,MSJ-416
+2716,GP-Process Heat
+2717,CP-Shops Heat Treating
+2718,GP-Asphalt Base Field
+2719,GP-Refinery Minor Natural Gas Sources
+2720,GP-SRU NG Combustion
+2721,GP-Group
+2722,MSJ-407
+2723,MSJ-413
+2724,MSJ-430
+2725,GP-522652
+2726,GP-Aggregated NG Combustion
+2727,GP-Chem Plant NG
+2728,CP-EU-Combustion Stack
+2729,Plac-20
+2730,Plac-28
+2731,Plac-47
+2732,Plac-50
+2733,CP-EFM-901
+2734,CP-208435
+2735,CP-Master Plant Fuel Meter #161100047
+2736,GP-PM01-PM05
+2737,GP-04 Natural Gas
+2738,GP-522643
+2739,GP-Pittsburg Plant
+2740,GP-Teague
+2741,CP-LAGO
+2742,GP-AGP
+2743,GP-AG-3
+2744,GP-CHASCHEM
+2745,Benzene Barge Loading MVC
+2746,CP-NG Fuel Gas Outlet Manifold
+2747,CP-NG New Source Manifold
+2748,CP-NG New Supply Header
+2749,CP-West Property NG (SRU/SCOT/WWTP)
+2750,CP-BOPTR4
+2751,CP-BOPTR5
+2752,CP-BTECNG
+2753,CP-MOBNG
+2754,CP-VENDNG
+2755,GP-522611
+2756,CP- Plant NG
+2757,CP-Plant NG
+2758,CP-Natural gas common pipe
+2759,CP-BRCN natural gas
+2760,GP-522417
+2761,Natural Gas Fired Sources
+2762,GP-Natural Gas Fired Sources
+2763,GP_G-Frn-Ht-WHB
+2764,GP_G-H-K2-001/-002
+2765,H-K2-003
+2766,H-K2-004
+2767,GP-G-Frn-Ht-WHB
+2768,GP-G-H-K2-001/-002
+2769,CP-XX
+2770,CP-YY
+2771,CP-ZZ
+2772,CP-Main natural gas line
+2773,CP-Natural Gas to BMRF (Centana/Duke)
+2774,CP-EP1Comps
+2775,CP-6 Refinery Natural Gas - Tier 2
+2776,CP-9 Cogen Natural Gas- Tier 2
+2777,D Train DB Natural Gas
+2778,GPN-CCE01
+2779,GPN-CCH02
+2780,CP-RFAB1
+2781,CP-Phillips Mountain CPF-2
+2782,CP-Pike CPF-1
+2783,CP-207000
+2784,GP-Natural Buttes
+2785,GP-537098
+2786,CP-Id: 570573040
+2787,CP-Id: 570573040 (GHG Only)
+2788,CP-6695
+2789,CP-Id: 13135392
+2790,GP-Area 31 CGP Total Fuel
+2791,GP-Area 41 CGP Total Fuel
+2792,GP-Area 51 CGP Total Fuel
+2793,GP-Area CGP 61 Total Fuel
+2794,GP-Area 71 CGP Total Fuel
+2795,GP-Area 72 CGP Total Fuel
+2796,GP-Area CGP 81 Total Fuel
+2797,CP-Hammerhead CPF-1
+2798,CP-Midge CPF-2
+2799,CP-Midge CPF-5
+2800,CP-Sharkey CPF-1
+2801,CP-South West Greer Lake CPF-5
+2802,CP-Steelhead CPF-1
+2803,CP-Tiger CPF-2
+2804,CP-Yellowstone CPF-2
+2805,CP-DeEth
+2806,CP-DeEth2
+2807,CP-Mobley
+2808,CP-Inlet Comp Fuel
+2809,CP-Sherwood
+2810,CP-Id: 009738-00
+2811,CP-Id: 009738-00 (GHG Only)
+2812,CP-Id: 001227-00
+2813,CP-Id: 001234-00
+2814,CP-Id: 001227-00 (GHG Only)
+2815,CP-Id: 001234-00 (GHG Only)
+2816,CP-Id: 16868
+2817,CP-Id: 16869
+2818,CP-Id: 16870
+2819,CP-Id: 16904
+2820,GP-Tyler
+2821,GP-537258
+2822,CP-Fuel Meter 303175
+2823,CP-005288
+2824,CP-008386
+2825,CP-008534
+2826,CP-007798
+2827,CP-008619
+2828,CP-008919
+2829,S-3755-113
+2830,S-3755-1
+2831,S-3755-11
+2832,S-3755-18(a)
+2833,S-3755-18(b)
+2834,S-3755-2
+2835,S-3755-32
+2836,CP-New Quitman CPF-3
+2837,GP-AL
+2838,GP-Hudson
+2839,GP-HD
+2840,CP-Maxwell-01
+2841,CP-Maxwell-02
+2842,CP-Wier-01
+2843,CP-Maxwell-04
+2844,CP-Wier Gore Maxwell-03
+2845,CP-Maxwell-05
+2846,CP-Id: 883000401 (GHG Only)
+2847,CP-Id: 237983
+2848,CP-Id: 237983 (GHG Only)
+2849,CP-DW90005
+2850,CP-DW90006
+2851,CP-EF90001
+2852,CP-EF90002
+2853,CP-EF90003
+2854,CP-Cadiz
+2855,CP-DW90001
+2856,CP-Id: 873003500
+2857,CP-Id: 873003600
+2858,CP-Id: 873003500 (GHG Only)
+2859,CP-Id: 873003600 (GHG Only)
+2860,GP-545717
+2861,GP-545719
+2862,GP-545718
+2863,GP- All Stationary equipment
+2864,GP-545698
+2865,CP-Id: P9003-00 (GHG Only)
+2866,CP-Gravel Hill CPF-4
+2867,CP-PX1
+2868,CP-PX2
+2869,CP-Id: TH-480703
+2870,CP-Id: 629501583
+2871,GP-Ajax Plant
+2872,GP-6595
+2873,CP-Milton Hub
+2874,GP-Fuel Meter No. 3050
+2875,GP-Moses Lake WA Combustion
+2876,CP-Marshall Hub
+2877,GP-551257
+2878,CP-Hopedale
+2879,CP-Hopedale 3
+2880,CP-Seneca
+2881,CP-P1
+2882,CP-P2
+2883,CP-P3
+2884,CP-P4
+2885,GP-NGt2
+2886,CP-Remington NG combustion units
+2887,GP-184
+2888,GP-553757
+2889,GP-West Union CS
+2890,GP-553743
+2891,GP-553758
+2892,GP-553759
+2893,GP-553760
+2894,GP-553761
+2895,CP-Atmos Energy
+2896,GP-554737
+2897,CP-Shiner Hub
+2898,CP- Greenzweig CPF #1
+2899,CP- Clark CPF #1
+2900,CP-Puma CPF-1
+2901,CP-Scotland CPF-2
+2902,CP-South Brownie CPF-2
+2903,CP-Yellowstone CPF-3
+2904,CP-Three Brothers
+2905,CP- Fuel Meter 224156
+2906,CP- Fuel Meter 224157
+2907,GP-556217
+2908,CP-Id: 728935-00
+2909,CP-Id: 728935-00 (GHG Only)
+2910,GP-557057
+2911,GP-557482
+2912,CP-Id: P3462-00
+2913,CP-master fuel
+2914,CP-High Plains Plant Fuel Meter#20007001
+2915,CP-EHWNE01120
+2916,CP-EHWNE02120
+2917,GP-558057
+2918,GP-2403STMBLR
+2919,GP-CE-01toCE-11
+2920,GP-CGP 11B
+2921,CP-Sturgeon CPF-3
+2922,CP-Charley CPF-4
+2923,CP-Smiley Hub
+2924,CP-White CPF #1
+2925,CP-Cove Creek CPF-2
+2926,CP-Steelhead CPF-3
+2927,CP-Charley CPF-3
+2928,CP-Northwest Charley CPF-2
+2929,CP-South Brownie CPF-1
+2930,CP-Id: 228299
+2931,CP-New Quitman CPF-4
+2932,CP-Midge CPF-1
+2933,GP-560842
+2934,GP-560839
+2935,GP-560838
+2936,GP-CE01 toCE-11
+2937,CP-Carpenter Fuel
+2938,CP-Royal Oak Fuel
+2939,CP-Trilith Fuel
+2940,CP-10030000F09
+2941,CP-Titan Hub
+2942,GP-CARRACS CS 3661
+2943,GP-Beckville
+2944,CP-03.00
+2945,GP- All Combustion Equipment
+2946,CP-NG01
+2947,CP-PZ-01
+2948,CP-Lockwood-01
+2949,GP-P30
+2950,GP-Total Combustion
+2951,GP-Area 71B CGP Total Fuel
+2952,GP-568923
+2953,GP-Fuel Meter 3608
+2954,CP-Plant1and2
+2955,CP-69
+2956,CP-CF_RFG
+2957,CP-FXG
+2958,CP-LOP_RFG
+2959,CP-88FQI945
+2960,GP-Refinery Fuel Gas
+2961,Roaster 1
+2962,Roaster 2
+2963,GP- FG1
+2964,GP- FG2
+2965,GP-OL1 COMBUSTION
+2966,GP-OL2 COMBUSTION
+2967,CP-Phillips 66 Refinery Fuel Gas
+2968,CP-FGBD
+2969,CP-Power Plant
+2970,CP-B52_11-12
+2971,CP-LO Refinery
+2972,007
+2973,008
+2974,CP-FFSBFG-2
+2975,CP-03-BFG_Mix
+2976,CP-GCW-BFG1
+2977,CP-CP-COG1
+2978,CP-ET-COG1
+2979,CP-COG
+2980,CP-04-COG_Mix
+2981,C_01_Bat1_Underfire
+2982,C_02_Bat2_Underfire
+2983,CP-GCW-COG1
+2984,G-3407
+2985,CP-Ethane
+2986,CP-UT-FI7780 CoGeneration
+2987,112B-2
+2988,GP-10
+2989,CP-1791/1391
+2990,CP-191
+2991,CP-291/293
+2992,CP-292/1792
+2993,CP-491
+2994,CP-H-0028 & H-0029 (FT 124)
+2995,"CP-H-0046, H-1001, & H-0048 (FT 702)"
+2996,CP-H-8601 & H-8602 (FT 045)
+2997,CP-H-9901 & H-9902 (FT 034)
+2998,CP-Fuel Gas
+2999,CP-Merox
+3000,CP-RFG
+3001,CP-RFG-CCR
+3002,GP- Refinery Fuel Gas
+3003,GP-LAR_RFG
+3004,CP 88FQI945
+3005,10-4 #1COB
+3006,10-4 #3COB
+3007,GP-Refinery Fuel Gas Aggregate
+3008,CP-WPStationaryCombustion
+3009,CP-243
+3010,CP-REFINERY FUEL GAS
+3011,CP-REFINERY FUEL GAS TO PLANT 24
+3012,CP-REFINERY FUEL GASTO PX PLANT
+3013,GP-Ethylene
+3014,GP-Fuel Gas System
+3015,CP-GGU Separator Purge to Fuel Gas
+3016,CP-Platformer Debut to Fuel Gas
+3017,CP-Platformer Overhead to Fuel Gas
+3018,CP-Sulfur Plant Sweet Gas to Fuel Gas
+3019,GP-F9006
+3020,GP-FG1011
+3021,GP-FG1601
+3022,GP-FG3901
+3023,GP-M90FGMD
+3024,CP-1 RFG V-475 minus H2 Plant
+3025,CP-2 RFG V-701
+3026,CP-3 RFG V-870
+3027,GP-Fuel Gas Combustion
+3028,GP-Fuel Gas Area 2
+3029,CP-Refinery Fuel Gas
+3030,CP-HTU_CRU1
+3031,CP-HTU_CRU2
+3032,CP-PLT_FUELGAS
+3033,CP-PF Hydrogen
+3034,CP-Sour Gas
+3035,CP-Sweet Gas
+3036,CP-Burning Line Gas
+3037,GP-712
+3038,GP-807
+3039,GP- ABKL-USC & AB-VMR
+3040,CP-954H123
+3041,CP-CFHU
+3042,CP-DDU100200
+3043,CP-DDU300
+3044,CP-RHU
+3045,CP-T2
+3046,GP-Mixed Fuel Gas
+3047,CP-Conoco Refinery Fuel Gas
+3048,CP-1 Crude & Vacuum Units
+3049,CP-2 PLAT DHT SRU
+3050,CP-3 UNIF & NAPH
+3051,CP-1 200-H3 & 200-H4 Vac and Old Husky
+3052,CP-CR2
+3053,CP-GO1
+3054,CP-OL5
+3055,CP-OP1
+3056,CP-292F-1 and 292F-2
+3057,GP-AGG-1
+3058,GP-AGG-2
+3059,GP-AGG-3
+3060,GP-AGG-4
+3061,CP - GTG
+3062,CP - Refinery Fuel Gas
+3063,CP-GTG
+3064,CP-FI197 TIU Mix Drum Consumers
+3065,Total RFG Flow
+3066,CP-1 Total RFG Flow
+3067,CP-Regen gas
+3068,CP-NGL Common Pipe
+3069,GP-H-501
+3070,GP-U110 RFG
+3071,GP-SPP Coens NG & RFG
+3072,C-4601A
+3073,C-4601B
+3074,C-4601C
+3075,H-4761
+3076,CP-WFG1
+3077,CP-WFG2
+3078,H-3413
+3079,Truck Rack Vapor Combustor
+3080,CP-Fuel Gas to Fuel Drum
+3081,GP-REFINERY FUEL GAS
+3082,CP-Cogen Duct Burners
+3083,GP-LARW H-302&303
+3084,GP-LARW_RFG
+3085,CP-UT-01
+3086,CP-Merox Off Gas
+3087,CP-41MD Fuel Gas
+3088,CP-45MD Fuel Gas
+3089,GP- Area 1
+3090,CP-1 FGT Gas
+3091,CP-2 GTG Cogen Gas
+3092,CP-3 Mix Drum Fuel Gas
+3093,CP-No. 2 Reformer
+3094,GP-Aggregated RFG Combustion
+3095,CP-B52
+3096,GP-01 NS Fuel Gas
+3097,GP-02 Iso Fuel Gas
+3098,GP-03 Amine Fuel Gas
+3099,GP-05 Platformer Fuel Gas
+3100,CP-CU2
+3101,CP-CU3
+3102,GP- GR CU1A/CU1B
+3103,GP-CU1A/CU1B
+3104,"CP-DW - H20, H21, and H36"
+3105,CP-Main Plant RFG Combustion
+3106,CP-BBG
+3107,CP-BOPBFG
+3108,CP-BOPFFG
+3109,CP-BOPXFG
+3110,CP-DCUBG
+3111,CP-FNBG
+3112,CP-FXKBG
+3113,CP-FXKLBG
+3114,CP-HU9BG
+3115,CP-TR1234HRSG
+3116,CP-TR123GTG
+3117,CP-COU
+3118,GP-Complex 1 FG
+3119,GP-Complex 2 FG
+3120,CP- Complex 1 Fuel Gas
+3121,CP- Complex 2 Fuel Gas
+3122,CP- Fuel Gas
+3123,CP-BELA5
+3124,CP-CMM
+3125,CP-ECLA W
+3126,CP-HPBL system
+3127,CP-NSPS system
+3128,SCOLA
+3129,CP-BELA 5
+3130,CP-HPBL
+3131,CP-NSPS
+3132,GP-5 Fuel Gas FGCU
+3133,CP FE/FT 12
+3134,CP FE/FT 8208
+3135,CP-FE/FT 12
+3136,CP-FE/FT 8208
+3137,CP #4 NHT and NRU 
+3138,CP Refinery
+3139,CP-#4 NHT and NRU
+3140,CP-Refinery
+3141,CP-120# Fuel
+3142,CP-120# Para
+3143,CP-CHD-1 Vent Offgas
+3144,CP-Expander TG
+3145,CP-Regen Gas
+3146,CP-Wharf Marine Combustor
+3147,CP-Ethane Combustion
+3148,CP-CHD1 Vent Offgas to B1
+3149,CP-4PlatFG
+3150,CP-ADPFG
+3151,CP-CumeneFG
+3152,CP-EP2FG
+3153,CP-HydrarFG
+3154,CP-PG
+3155,CP7 - COGEN V-4540 Fuel Gas
+3156,CP8 - COGEN V4560 Fuel Gas
+3157,CP-7 - COGEN V-4540 Fuel Gas
+3158,CP-8 - COGEN V4560 Fuel Gas
+3159,CP-1 LSFO V1800 fuel gas
+3160,CP-2 Isomax V846 fuel gas
+3161,CP-3 - DPD V500 fuel gas
+3162,CP-4 - RSD V4560 Fuel Gas
+3163,CP-5 - RSD V4540 Fuel Gas
+3164,CP-7 - COGEN V4540 Fuel Gas
+3165,A Train DB Fuel Gas
+3166,B Train DB Fuel Gas
+3167,C Train DB Fuel Gas
+3168,D Train DB Fuel Gas
+3169,GP-1 V1800 Fuel Gas
+3170,GP-2 V846 Fuel Gas
+3171,GP-3 V500 Fuel Gas
+3172,GP-SRU
+3173,CP-1 Reformer Fuel Gas
+3174,CP-2 Refinery Fuel Gas
+3175,CP-3 Refinery Fuel Gas
+3176,CP GP 22F205
+3177,CP GP 22F206
+3178,CP-GP 22F205
+3179,CP-GP 22F206
+3180,CP-22F205 High Pressure Fuel Gas
+3181,CP-22F206 Low Pressure Fuel Gas
+3182,GP- 40# Fuel Gas System
+3183,GP- 90# Fuel Gas System
+3184,GP- CCR Loop 1
+3185,GP- CCR Loop 2
+3186,GP- MSTDP Fuel Gas
+3187,GP- Mid Plant Fuel Gas
+3188,GP- West Crude Fuel Gas
+3189,CP-Mid Plant Fuel Gas
+3190,CP-90# Fuel Gas System
+3191,GP- East Plant Fuel Gas
+3192,CP-East Plant Fuel Gas
+3193,GP-North Fuel Gas Drum
+3194,GP-South Fuel Gas Drum
+3195,CP-Refinery Fuel GAs
+3196,GP-RT Produced Gas
+3197,C-1500A
+3198,C-1500B
+3199,C-1500C
+3200,C-200A
+3201,C-200B
+3202,C-200C
+3203,CP-WFG3
+3204,CP-113
+3205,CP-73
+3206,CP-25-1
+3207,CP-15-1
+3208,CP-15-2
+3209,CP-18-1
+3210,CP-20-1
+3211,CP-20-2
+3212,CP-20-3
+3213,CP-20-4
+3214,CP-26-1
+3215,CP-26-2
+3216,CP-21-1
+3217,CP-21-2
+3218,CP-21-3
+3219,CP-21-4
+3220,GP-AUX Fuel 601620
+3221,GP-Clark Fuel 601570
+3222,GP-F-1 Fuel 601530
+3223,GP-FII Fuel 601600
+3224,GP-GMV Fuel 601520
+3225,GP-R1 & R2 Fuel 801800
+3226,GP-Bremer PUC Meter
+3227,GP-Chevron Taft PUC Meter 278
+3228,GP-Dome/Aera PUC Meter 210 ex-Cogen
+3229,GP-E&M PUC Meter
+3230,GP-Bremer PUC Meter 211
+3231,GP-Dome/Aera PUC Meter 210 incl Cogens
+3232,GP-E&M PUC Meter 209
+3233,GP-Associated Gas Meter 1303
+3234,GP-Associated Gas Meter 1502
+3235,GP-Associated Gas Meter 5173
+3236,GP-Associated Gas Meter 6165
+3237,GP-PUC Meter 5176
+3238,GP-PUC Meter 7211
+3239,GP-PUC Meter 8031
+3240,GP-PUC Meter 8036
+3241,GP-PUC Meter 951 ex-Cogen
+3242,GP-PUC Meter 951
+3243,GP-Stm Gens K-E Gas to SB Mtr 6165
+3244,GP-Stm Gens Oxy Mtr 8031 to SB
+3245,CP-Hawkins
+3246,Cogen Duct Burner
+3247,Mix Drum Fuel Gas To Refinery
+3248,GP-Mix Drum Fuel Gas To Refinery
+3249,GP-2 Mix Drum Fuel Gas to Ref
+3250,GP-Fuel Gas From V-8 and Pawnee Plant
+3251,GP-GHG1
+3252,CP-17
+3253,CP-92
+3254,GP-SPP Natural Gas
+3255,CP-17-1
+3256,CP-4 Natural Gas
+3257,CP-27-1
+3258,CP-Natural Gas to Sulfur Block
+3259,GP-AG-2
+3260,GP-AG-5
+3261,CP-22
+3262,CP-16
+3263,CP-23
+3264,CP-DOCKSTO
+3265,CP-RACKSTO
+3266,CP-14
+3267,GP- Area 31 CGP Total Fuel
+3268,GP-Area 41 CGP Total fuel
+3269,GP-Area CGP 51 Total fuel
+3270,GP-Area 61 CGP Total fuel
+3271,GP-Area 72 Total Fuel
+3272,GP-Area 81 CGP Total Fuel
+3273,GP- West Plant Purchased Natural Gas
+3274,GP- East Plant Purchased Natural Gas
+3275,CP-East PNG
+3276,CP-83
+3277,CP-Combustion Equipment
+3278,CP-Propane to Fuel Gas
+3279,CP-6 Cogen LPG
+3280,CP-6_FO
+3281,5-1-H1A
+3282,U8 acetylene flare
+3283,GP-T201
+3284,GP-T5822
+3285,Vapor Combustion Unit
+3286,CS-Cogen
+3287,CS-001
+3288,CS-4000
+3289,CS-THROX
+3290,CS-1
+3291,CS-
+3292,CS-EGCP01
+3293,CS-1 PB 1&2
+3294,CS-10
+3295,CS-1 Coal-Fired
+3296,CS-2 Coal-Fired
+3297,CS-5BH_CEMS
+3298,CS-09
+3299,CS-2
+3300,CS-Stack 67E Big Stack
+3301,CS-15
+3302,MHF Production Line 1 & Afterburner
+3303,EU-200
+3304,CS-134
+3305,CS-01
+3306,CS-Eddyville01
+3307,CS-PH-1
+3308,X015
+3309,CS001
+3310,Unit 10-C
+3311,EMU-3
+3312,002
+3313,001
+3314,003
+3315,CS01
+3316,Keymark Corporation
+3317,Unit 15
+3318,Unit 02
+3319,Z003
+3320,Z032
+3321,07-2505
+3322,07-5105
+3323,07-2723
+3324,B011
+3325,P001
+3326,X012
+3327,X003
+3328,X014
+3329,X001
+3330,RF5
+3331,LK1
+3332,LK2
+3333,LK4
+3334,RB4
+3335,RB5
+3336,RB1
+3337,RB2
+3338,RB3 (NA-41-41)
+3339,LK (1224-06-06)
+3340,EU 005
+3341,EU 033
+3342,Z011
+3343,R407
+3344,L537
+3345,R401
+3346,4RF
+3347,4LK
+3348,EURF15
+3349,EULK29
+3350,6063
+3351,RF3
+3352,LK3
+3353,X026
+3354,X024
+3355,L001
+3356,L002
+3357,D001
+3358,B25
+3359,EUCOPELAND
+3360,82-0022-36
+3361,82-0022-34
+3362,RE01
+3363,LK01
+3364,RB3
+3365,GHG-01_RB10
+3366,GHG-02_LK
+3367,LK
+3368,N001
+3369,RF1
+3370,LKEU
+3371,RFEU
+3372,REC 13
+3373,LK07
+3374,RF15
+3375,RF2
+3376,RF01
+3377,RF02
+3378,LK02
+3379,P22
+3380,B14
+3381,03
+3382,08
+3383,09-PU-004
+3384,08-PU-012
+3385,RF4
+3386,Recovery 2
+3387,Recovery 3
+3388,LK / EU-21
+3389,LK1 (AA003)
+3390,RB1 (AA005)
+3391,AA-011
+3392,AA-013
+3393,BR-REC2-M006
+3394,BR-REC1-M003
+3395,BR-REC3-M010
+3396,BR-CRP5-S010
+3397,BR-CRP7-S015
+3398,RF#1
+3399,RF#2
+3400,LK#1
+3401,7040
+3402,Combined Recovery Stack AP10
+3403,BR-REC4-M001
