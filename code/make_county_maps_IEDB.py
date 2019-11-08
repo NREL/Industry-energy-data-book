@@ -9,6 +9,7 @@ import zipfile
 from io import BytesIO
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 import re
+import mapclassify
 
 class mapping:
 
@@ -31,6 +32,8 @@ class mapping:
         self.energy = pd.read_csv(fuel_file, index_col=0)
 
         self.sector = pd.read_excel(sector_file, sheet_name='for_map')
+
+        self.sector.dropna(inplace=True)
 
         self.cshp = gpd.read_file(cshp_file)
 
@@ -104,7 +107,7 @@ class mapping:
         map_data.dropna(subset=['MMBtu_TOTAL'], inplace=True)
 
         # set the range for the choropleth
-        vmin, vmax = map_data.MMBtu_TOTAL.min(), map_data.MMBtu_TOTAL.max()
+        #vmin, vmax = map_data.MMBtu_TOTAL.min(), map_data.MMBtu_TOTAL.max()
 
         # create figure and axes for Matplotlib
         fig, ax = plt.subplots(1, figsize=(10, 10))
@@ -170,33 +173,33 @@ class mapping:
 
         ## Need to specify colors or will geopandas automatcially assign?
 
-# mapping = mapping()
+mm = mapping()
+
+# Make % change map (2010 - 2016)
+pct_ch = mm.energy.groupby(
+    ['COUNTY_FIPS', 'year'], as_index=False
+    ).MMBtu_TOTAL.sum()
+
+pct_ch = pct_ch[pct_ch.year.isin([2010, 2016])]
+
+pct_ch = pct_ch.groupby('COUNTY_FIPS').apply(
+    lambda x: x.pct_change()
+    ).dropna()
+
+pct_ch.drop(['COUNTY_FIPS', 'year'], axis=1, inplace=True)
+
+pct_ch.reset_index('COUNTY_FIPS', inplace=True)
 #
-# # Make % change map (2010 - 2016)
-# pct_ch = mapping.energy.groupby(
-#     ['COUNTY_FIPS', 'year'], as_index=False
-#     ).MMBtu_TOTAL.sum()
-#
-# pct_ch = pct_ch[pct_ch.year.isin([2010, 2016])]
-#
-# pct_ch = pct_ch.groupby('COUNTY_FIPS').apply(
-#     lambda x: x.pct_change()
-#     ).dropna()
-#
-# pct_ch.drop(['COUNTY_FIPS', 'year'], axis=1, inplace=True)
-#
-# pct_ch.reset_index('COUNTY_FIPS', inplace=True)
-#
-# mapping.make_county_choropleth(pct_ch, palette='GnBu',
+# mm.make_county_choropleth(pct_ch, palette='GnBu',
 #                                filename='county_pct_change',
 #                                class_scheme='fisherjenks', scheme_kwds=None)
 #
 # Make total energy map
-mapping.make_county_choropleth(
-    mapping.energy[mapping.energy.year==2016].groupby(
+mm.make_county_choropleth(
+    mm.energy[mm.energy.year==2016].groupby(
         'COUNTY_FIPS', as_index=False).MMBtu_TOTAL.sum(), palette='Blues',
-    filename='county_total_2016',class_scheme='fisherjenks',scheme_kwds={'k':7}
-    )
+        filename='county_total_2016',class_scheme='Percentiles', scheme_kwds=None
+        )
 
 # Make fuel maps
 fuel_maps = {'Coal':'Greys', 'Natural_gas':'bone_r',
@@ -204,15 +207,19 @@ fuel_maps = {'Coal':'Greys', 'Natural_gas':'bone_r',
 
 for fuel, palette in fuel_maps.items():
 
-    map_data = mapping.energy[
-        (mapping.energy.MECS_FT==fuel) &
-        (mapping.energy.year==2016)
+    map_data = mm.energy[
+        (mm.energy.MECS_FT==fuel) &
+        (mm.energy.year==2016)
         ]
 
-    mapping.make_county_choropleth(
+    mm.make_county_choropleth(
         map_data, palette=palette, filename='county_'+fuel+'_2016',
-        class_scheme='fisherjenks', scheme_kwds={'k':7}
+        class_scheme='Percentiles', scheme_kwds=None
         )
+
+# Pct change: {palette:'PuOr', class_scheme: 'Percentiles'}
+
+
 
 # Colors Accent, Accent_r, Blues, Blues_r, BrBG, BrBG_r, BuGn, BuGn_r, BuPu,
 #BuPu_r, CMRmap, CMRmap_r, Dark2, Dark2_r, GnBu, GnBu_r, Greens, Greens_r,
