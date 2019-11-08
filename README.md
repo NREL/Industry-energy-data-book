@@ -20,11 +20,11 @@ of the developer and energy analyst communities.
 ## Combustion Energy Estimates of Large Energy Users
 Annual combustion energy is estimated from 2010 - 2017 for all industrial
 facilities reporting combustion emissions under the (U.S. EPA's Greenhouse Gas
-Reporting Program (GHGRP))[https://www.epa.gov/ghgreporting]. The basic approach
+Reporting Program GHGRP)[https://www.epa.gov/ghgreporting]. The basic approach
 is to back out combustion energy use from reported GHG emissions. The calculation
 methodology is an evolution of the approach first outlined by
-(McMillan et al. (2016))[https://doi.org/10.2172/1335587] and
-subsequently refined by (McMillan and Ruth (2018))[https://doi.org/10.1016/j.apenergy.2019.01.077].
+(McMillan et al. 2016)[https://doi.org/10.2172/1335587] and
+subsequently refined by (McMillan and Ruth 2019)[https://doi.org/10.1016/j.apenergy.2019.01.077].
 Note that because the GHGRP does not track estimates from purchased electricity,
 electricity use is not estimated in this data set.
 
@@ -41,5 +41,5 @@ estimates of large energy users provide the foundation of the county-level
 estimates. Energy use of industrial facilities that do not report to the GHGRP
 are estimated using data sources from the Energy Information Administration,
 Census Bureau, and the U.S. Department of Agriculture. The methodology was first
-described by (McMillan and Narwade (2018))[https://doi.org/10.2172/1484348],
+described by (McMillan and Narwade 2018)[https://doi.org/10.2172/1484348],
 with the associated source code provided here: https//github.com/NREL/Industry-Energy-Tool/.
