@@ -41,4 +41,7 @@ estimates. Energy use of industrial facilities that do not report to the GHGRP
 are estimated using data sources from the Energy Information Administration,
 Census Bureau, and the U.S. Department of Agriculture. The methodology was first
 described by [McMillan and Narwade (2018)](https://doi.org/10.2172/1484348),
-with the associated source code provided here: https//github.com/NREL/Industry-Energy-Tool/.
+with the associated source code provided [here](https//github.com/NREL/Industry-Energy-Tool/).
+
+The methodology has changed slightly in an effort to automate more calculation
+steps.

@@ -468,7 +468,7 @@ class GHGRP:
                     (energy_subC.FUEL_TYPE == 'Wood and Wood Residuals (dry basis)'),
                         'T4CH4COMBUSTIONEMISSIONS'].multiply(1.9 / 7.2)
 
-        tier_calcs = ghg_tiers_IPH.tier_energy(years=self.years,
+        tier_calcs = ghg_tiers_IEDB.tier_energy(years=self.years,
                                                std_efs=self.std_efs)
 
         #New method for calculating energy based on tier methodology

@@ -36,6 +36,6 @@ time = dt.datetime.today().strftime("%Y%m%d-%H%M")
 
 # Save results
 energy_ghgrp.to_parquet(
-        "../Results analysis/ghgrp_energy_" + time + ".parquet",
+        "../results/ghgrp_energy_" + time + ".parquet",
         engine='pyarrow', compression='gzip'
         )
