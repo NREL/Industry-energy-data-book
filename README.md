@@ -17,7 +17,7 @@ timeliness of publicly-available industrial energy data for the United States.
 The source code provided here is meant to be improved over time with the help
 of the developer and energy analyst communities.   
 
-##Combustion Energy Estimates of Large Energy Users
+## Combustion Energy Estimates of Large Energy Users
 Annual combustion energy is estimated from 2010 - 2017 for all industrial
 facilities reporting combustion emissions under the (U.S. EPA's Greenhouse Gas
 Reporting Program (GHGRP))[https://www.epa.gov/ghgreporting]. The basic approach
@@ -34,7 +34,7 @@ and emission factors) instead of relying solely on EPA default emission factors.
 Methods have also been introduced to estimate the uncertainty of calculations,
 as discussed in McMillan and Ruth (2019).
 
-##County-Level Estimates of Industrial Energy
+## County-Level Estimates of Industrial Energy
 Annual energy use for the industrial sector (agriculture, construction, mining,
 and manufacturing) for 2010 - 2016 at the county level. The combustion energy
 estimates of large energy users provide the foundation of the county-level
