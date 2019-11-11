@@ -252,6 +252,10 @@ class tier_energy:
 
         data_columns.append(tier_column)
 
+        data_columns.append('TIER3_EQ_C5_FUEL_QTY')
+
+        data_columns.append('TIER3_EQ_C8_HHV_GAS')
+
         if tier_column == 'T4CH4COMBUSTIONEMISSIONS':
 
             data_columns.append('ANNUAL_HEAT_INPUT')

@@ -10,7 +10,6 @@ from calc_GHGRP_energy_IEDB import GHGRP
 from calc_GHGRP_AA_IEDB import subpartAA
 
 
-
 ghgrp = GHGRP((2010, 2017), calc_uncertainty=False)
 
 ghgrp_data = {}
