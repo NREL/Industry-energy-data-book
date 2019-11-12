@@ -9,9 +9,9 @@ import dask.dataframe as dd
 
 
 # For now just read in dask dataframes of calculated data. Code for
-# agriculture, construction, and mining needs to be refactored into 
+# agriculture, construction, and mining needs to be refactored into
 # classes and methods that can then be called here.
-mfg_file = 'mfg_county_energy_20190809.parquet.gzip'
+mfg_file = 'mfg_county_energy_20191111.parquet.gzip'
 
 ag_file = 'ag_county_energy_20190813_1604.parquet.gzip'
 
@@ -29,21 +29,21 @@ def check_naics(naics):
     """
     Map 6-digit NAICS to description of 2-digit NAICS.
     """
-    
+
     n2_dict = {11: 'Agriculture', 21: 'Mining', 23: 'Construction',
-               31: 'Manufacturing', 32: 'Manufacturing', 
+               31: 'Manufacturing', 32: 'Manufacturing',
                33: 'Manufacturing', 92: 'Manufacturing', 48: 'Manufacturing'}
-    
+
     if type(naics) == str:
-        
+
         n_out = 'Agriculture'
-        
+
     else:
 
         n2 = int(str(naics)[0:2])
-            
+
         n_out = n2_dict[n2]
-        
+
     return n_out
 
 county_energy['ind_sector'] = county_energy.NAICS.apply(
@@ -53,7 +53,7 @@ county_energy['ind_sector'] = county_energy.NAICS.apply(
 # Some 2017 data hangning around in mining (and others?)
 county_energy = county_energy[county_energy.year != 2017]
 
-# Sum for county totals by fuel 
+# Sum for county totals by fuel
 county_energy.groupby(
         ['year', 'COUNTY_FIPS', 'MECS_FT'], as_index=False
         ).MMBtu_TOTAL.sum().to_csv('../results/county_summary_fuels.csv')

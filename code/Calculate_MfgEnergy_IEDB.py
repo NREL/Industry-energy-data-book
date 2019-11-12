@@ -164,8 +164,6 @@ class Manufacturing_energy:
                     self.energy_ghgrp_y[f].map(self.fuelxwalkDict)
                     )
 
-        print(self.naics_column)
-
         if self.naics_column == 'PRIMARY_NAICS_CODE':
 
             self.energy_ghgrp_y.set_index('FACILITY_ID', inplace=True)
@@ -183,8 +181,6 @@ class Manufacturing_energy:
                          ghgrp_matching[['FACILITY_ID',
                                          self.naics_column]],
                          on='FACILITY_ID', how='left')
-
-        print(self.energy_ghgrp_y.columns)
 
         self.energy_ghgrp_y = MatchMECS_NAICS(
                 self.energy_ghgrp_y, self.naics_column
@@ -273,7 +269,7 @@ class Manufacturing_energy:
     def GHGRP_electricity_calc(self):
         """
         Retrieve EIA 923 data and return a dataframe of net electricity for
-            industrial cogen and noncogen reporters.
+        industrial cogen and noncogen reporters.
         """
 
         base_url = \
@@ -470,11 +466,30 @@ class Manufacturing_energy:
         ghgrp_electricity['COUNTY_FIPS'] = \
             ghgrp_electricity.COUNTY_FIPS.astype(int)
 
+        elec_fac_count = ghgrp_electricity.groupby(
+            'COUNTY_FIPS', as_index=False
+            ).EIA_PLANT_ID.count()
+
+        elec_fac_count.rename(columns={'EIA_PLANT_ID': 'est_count'},
+                              inplace=True)
+
         ghgrp_electricity.drop(['EIA_PLANT_ID', 'Plant Code'], axis=1,
                                inplace=True)
 
+        ghgrp_electricity = ghgrp_electricity.groupby(
+            ['year', 'MECS_Region', 'COUNTY_FIPS', 'MECS_NAICS', 'NAICS',
+             'data_source'],as_index=False
+            ).MMBtu_TOTAL.sum()
+
+        ghgrp_electrity = ghgrp_electricity.set_index('COUNTY_FIPS').join(
+            elec_fac_count.set_index('COUNTY_FIPS')
+            ).reset_index()
+
         ghgrp_electricity['fipstate'] = \
             [int(str(x)[0:(len(str(x)))-3]) for x in ghgrp_electricity.COUNTY_FIPS]
+
+        ghgrp_electricity['fipscty'] = \
+            [str(x)[(len(str(x))-3):] for x in ghgrp_electricity.COUNTY_FIPS]
 
         ghgrp_electricity = dd.from_pandas(
             ghgrp_electricity.set_index('fipstate'),
@@ -625,10 +640,23 @@ class Manufacturing_energy:
                  'MECS_NAICS','MECS_FT'], as_index=False
                 ).MMBtu_TOTAL.sum()
 
+        ghgrp_counts = self.energy_ghgrp_y.groupby(
+            ['COUNTY_FIPS', 'MECS_FT'], as_index=False
+            ).FACILITY_ID.count()
+
+        ghgrp_counts.rename(columns={'FACILITY_ID': 'est_count'},
+                            inplace=True)
+
         energy_ghgrp_y['data_source'] = 'ghgrp'
 
         energy_ghgrp_y.rename(columns={'PRIMARY_NAICS_CODE':'NAICS'},
-                                       inplace=True)
+                              inplace=True)
+
+        energy_ghgrp_y = energy_ghgrp_y.set_index(
+            ['COUNTY_FIPS', 'MECS_FT']
+            ).join(
+                ghgrp_counts.set_index(['COUNTY_FIPS', 'MECS_FT'])
+                ).reset_index()
 
         energy_ghgrp_y['COUNTY_FIPS'] = energy_ghgrp_y.COUNTY_FIPS.astype(int)
 
