@@ -10,21 +10,21 @@ class IPF_seed:
     Create and format iterative proportional fitting (IPF) seed.
     """
     def __init__(self, year=2014):
-        
+
         if year >= 2014:
-    
+
             self.year = 2014
-            
+
             file_extension = '.xlsx'
-            
+
             skipfooter = 12
-            
+
         if year < 2014:
-            
+
             self.year = 2010
-            
+
             file_extension = '.xls'
-            
+
             skipfooter = 46
 
         self.filepath = os.path.join('../', 'calculation_data/')
@@ -36,7 +36,7 @@ class IPF_seed:
         self.url_3_3 = \
             'https://www.eia.gov/consumption/manufacturing/data/'+\
             str(self.year) + '/xls/table3_3' + file_extension
-        
+
         self.naics_group_dict = {
             2007: {311:[31131, 3112, 3114, 3115, 3116],
                    3112: [311221], 321: [321113, 3212, 3219], 312: [],
@@ -83,18 +83,18 @@ class IPF_seed:
                 df.iloc[:, 0].fillna(method='ffill', inplace=True)
 
                 df.reset_index(inplace=True, drop=True)
-    
+
             #table3_2 = table3_2.fillna(axis=1, method='bfill')
 
             table3_3 = table3_3.fillna(axis=1, method='bfill')
-            
-            table3_2.columns = ['NAICS', 'NAICS_desc', 'Total', 
-                                'Net_electricity', 'Residual_fuel_oil',	
+
+            table3_2.columns = ['NAICS', 'NAICS_desc', 'Total',
+                                'Net_electricity', 'Residual_fuel_oil',
                                 'Diesel', 'Natural_gas', 'LPG_NGL',	'Coal',
                                 'Coke_and_breeze', 'Other']
-            
-            table3_3.columns = ['Characteristic', 'Total', 
-                                'Net_electricity', 'Residual_fuel_oil',	
+
+            table3_3.columns = ['Characteristic', 'Total',
+                                'Net_electricity', 'Residual_fuel_oil',
                                 'Diesel', 'Natural_gas', 'LPG_NGL', 'Coal',
                                 'Coke_and_breeze', 'Other']
 
@@ -119,64 +119,64 @@ class IPF_seed:
 
                     table3_3.iloc[:, n] = \
                         table3_3.iloc[:, n].apply(lambda x: str(x).strip())
-                        
+
             def get_regions(df, df_column):
                 """
                 Returns dataframe with region values.
                 """
-                
+
                 df['Region'] = np.nan
-                
+
                 df['Region'].update(
                     df.loc[
                         df[df_column].apply(lambda x: type(x)) ==str, 'Total'
                         ].apply(lambda x: x.split(' Census Region')[0])
                         )
-            
+
                 df.Region.fillna(method='ffill', inplace=True)
-                
+
                 df.replace({'Total United States': 'United States'},
                            inplace=True)
-                
+
                 return df
-            
+
             table3_2 = get_regions(table3_2, 'Total')
-                    
+
             table3_2.dropna(thresh=5, axis=0, inplace=True)
-            
+
             table3_2['nans'] = \
                 table3_2.apply(lambda x: x.isnull(), axis=0).sum(axis=1)
-                
+
             for i in table3_2[table3_2.nans ==1].index:
-                
+
                 if table3_2.loc[i, 'Total'] == np.nan:
-                    
+
                     continue
-                
+
                 else:
-                    
+
                     na_fill = table3_2.loc[i, 'Total'] - \
                         table3_2.loc[i, ('Net_electricity'): ('Other')].sum()
-                        
+
                     table3_2.loc[i, :] = table3_2.loc[i,:].fillna(na_fill)
-                        
+
             table3_2.drop('nans', inplace=True, axis=1)
-            
+
             # Create regions column for Table 3.3
             table3_3 = get_regions(table3_3, 'Total')
-            
+
             table3_3['Data_cat'] = table3_3[table3_3.Characteristic.isin(
                     ['Value of Shipments and Receipts', 'Employment Size']
                     )].Characteristic
-            
+
             table3_3.replace(
                 {'Employment Size': 'Employment_size',
                  'Value of Shipments and Receipts': 'Value_of_shipments'},
                  inplace=True
                  )
-            
+
             table3_3.Data_cat.fillna(method='ffill', inplace=True)
-            
+
             table3_3.dropna(thresh=4, inplace=True)
 
             # Export for manual final formatting and filling in data.
@@ -191,18 +191,20 @@ class IPF_seed:
                               na_rep='NaN')
 
             writer.save()
-            
+
         # First check if "MECS2014_unformatted.xlsx" exists in filepath.
         # If not, proceed with creating it.
+        # Need to make sure that automated formatting above does not
+        # result in negative values for fuels other than net electricity.
         if 'Tables3_'+str(self.year)+'_formatted.xlsx' not in os.listdir(
                 self.filepath
                 ):
 
             create_unformatted_tables()
-            
+
             print('Unformatted file created.','\n',
                   'Perform manual formatting for MECS and re-run')
-            
+
             return
 
         # Re-import formatted sheets
@@ -225,7 +227,7 @@ class IPF_seed:
         self.table3_3 = \
             self.table3_3[(self.table3_3.Characteristic != 'Total') &
                           (self.table3_3.Region != 'United States')]
-            
+
         self.table3_3.rename(columns={'Characteristic': 'employment_class',
                                       'HGL': 'LPG_NGL'},
                              inplace=True)
@@ -236,7 +238,7 @@ class IPF_seed:
                       inplace=True)
 
             df.drop(['Total'], axis=1, inplace=True)
-            
+
         self.table3_3.fillna(0, inplace=True)
 
 
@@ -244,28 +246,28 @@ class IPF_seed:
         # in Table 3.2 to capture energy use of NAICS codes not covered by
         # MECS.
         if self.year < 2012:
-        
+
             naics_year = 2007
-        
+
         else:
-    
+
             naics_year = 2012
-    
+
         self.table3_2.set_index('region', inplace=True)
 
         dummy_all = pd.DataFrame()
-    
+
         for ng in self.naics_group_dict[naics_year].keys():
-            
+
             # Skip 312, which is covered by survey results for 3121, and 3122
             if ng == 312:
-                
+
                 self.table3_2 = self.table3_2[self.table3_2.naics != ng]
-                
+
                 continue
-            
+
             dummy_naics = int(str(ng) + (5-len(str(ng)))*str(0) + str(9))
-            
+
             dummy_value = \
                 self.table3_2[self.table3_2.naics == ng].loc[
                     :, ('Net_electricity'):('Other')].subtract(
@@ -275,46 +277,46 @@ class IPF_seed:
                                     :, ('Net_electricity'):('Other')
                                     ].sum(level=0)
                         )
- 
+
             dummy_value['naics'] = dummy_naics
-            
+
             # Replace negative values with zero.
             dummy_value = dummy_value.where(dummy_value>0).fillna(0)
-            
+
             dummy_value.fillna(0, inplace=True)
-            
+
             dummy_all = dummy_all.append(dummy_value, sort=True)
 
-            #Delete category total           
+            #Delete category total
             self.table3_2 = self.table3_2[self.table3_2.naics != ng]
-            
+
         self.table3_2 = pd.DataFrame(self.table3_2).append(
                 dummy_all, sort=True
                 )
-            
+
     def create_seed(self, cbp_matching):
         """
-        Create IPF seed based on reformatted and adjusted MECS Table 3.2 and 
-        Table 3.3. Seed is adjusted based on CBP data and MECS fuel use 
+        Create IPF seed based on reformatted and adjusted MECS Table 3.2 and
+        Table 3.3. Seed is adjusted based on CBP data and MECS fuel use
         from Table 3.2.
         """
-        
+
         regions =  self.table3_3.region.unique()
 
         fuels = self.table3_2.columns.difference(['NAICS_desc', 'naics'])
-        
+
         emply = self.table3_3[
                 self.table3_3.Data_cat == 'Employment_size'
                 ].employment_class.unique()
-    
+
         seed_index = \
             ['_'.join(x) for x in itools.product(regions, fuels, emply)]
-        
+
         seed_df = pd.DataFrame(1, columns=self.table3_2.naics.unique(),
                                index=seed_index)
-        
+
         seed_df.reset_index(inplace=True)
-        
+
         def ft_split(s):
             """
             Handles splitting off fuel types with more than one word.
@@ -340,7 +342,7 @@ class IPF_seed:
         seed_df.loc[:, 'EMPSZES'] = seed_df.iloc[:, 0].apply(
             lambda x: x.split('_')[-1]
             )
-        
+
         #Change seed values to zero based on CBP employment size count by
         #industry and region.
         seed_df.set_index(['region', 'EMPSZES'], inplace=True)
@@ -369,21 +371,21 @@ class IPF_seed:
         shared_cols = []
 
         for c in cbp_pivot.columns:
-    
+
             if c in seed_df.columns:
-    
+
                 shared_cols.append(c)
 
         cbp_mask = cbp_pivot[shared_cols].reindex(seed_df.index).fillna(0)
 
         seed_df_cbp = seed_df.copy(deep=True)
-        
+
         seed_df_cbp.update(
                 seed_df_cbp[shared_cols].where(cbp_mask != 0, False)
                 )
 
         #Change seed values to zero based on MECS fuel use by industry and
-        #region.        
+        #region.
         table3_2_mask = \
             self.table3_2.drop('NAICS_desc', axis=1).reset_index().melt(
                 id_vars=['region', 'naics'], var_name=['Fuel_type']
@@ -399,7 +401,7 @@ class IPF_seed:
         seed_df_cbp.reset_index(drop=False, inplace=True)
 
         seed_df_cbp.set_index(['region','Fuel_type'], inplace=True)
-        
+
         seed_df_cbp_t32 = seed_df_cbp.copy(deep=True)
 
         table3_2_mask = table3_2_mask.reindex(
@@ -413,17 +415,17 @@ class IPF_seed:
 #        seed_df_cbp_t32.update(
 #                seed_df_cbp_t32[shared_cols].where(table3_2_mask != 0, 0)
 #                )
-        
+
         seed_df.reset_index(inplace=True)
-        
+
         seed_df.set_index(['region', 'Fuel_type'], inplace=True)
-        
+
         seed_df_cbp_t32.update(seed_df_cbp_t32[shared_cols].multiply(
                 seed_df[shared_cols]
                 ))
 
         seed_df_cbp_t32.reset_index(drop=False, inplace=True)
-        
+
         seed_df_cbp_t32.update(
                 seed_df_cbp_t32[shared_cols].where(
                         seed_df_cbp_t32[shared_cols] == 0, 1
@@ -431,7 +433,7 @@ class IPF_seed:
                 )
 
         seed_df_cbp_t32.drop(['EMPSZES', 'Fuel_type'], axis=1, inplace=True)
-        
+
         seed_df_cbp_t32[shared_cols] = \
             seed_df_cbp_t32[shared_cols].astype(int)
 

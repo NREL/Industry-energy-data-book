@@ -11,7 +11,11 @@ import dask.dataframe as dd
 # For now just read in dask dataframes of calculated data. Code for
 # agriculture, construction, and mining needs to be refactored into
 # classes and methods that can then be called here.
-mfg_file = 'mfg_county_energy_20191111.parquet.gzip'
+# This is the version for the databook.
+mfg_file = 'mfg_county_energy_20190809.parquet.gzip'
+
+# # This is the updated version
+# mfg_file = 'mfg_county_energy_20191111_2207.gzip'
 
 ag_file = 'ag_county_energy_20190813_1604.parquet.gzip'
 
@@ -53,15 +57,35 @@ county_energy['ind_sector'] = county_energy.NAICS.apply(
 # Some 2017 data hangning around in mining (and others?)
 county_energy = county_energy[county_energy.year != 2017]
 
-# Sum for county totals by fuel
-county_energy.groupby(
-        ['year', 'COUNTY_FIPS', 'MECS_FT'], as_index=False
-        ).MMBtu_TOTAL.sum().to_csv('../results/county_summary_fuels.csv')
+# Clean up columns
+county_energy = county_energy[county_energy.index.notnull()]
 
-# Sum for county totals by sector
-county_energy.groupby(
-        ['year', 'COUNTY_FIPS', 'ind_sector'], as_index=False
-        ).MMBtu_TOTAL.sum().to_csv('../results/county_summary_sector.csv')
+county_energy.state.update(county_energy.state.dropna().drop_duplciates())
+
+county_energy.drop(['MECS_NAICS', 'MECS_Region', 'STATE', 'data_source',
+                    'est_count', 'fipscty', 'state_abbr'], axis=1, inplace=True)
+
+county_energy.reset_index(inplace=True)
+
+county_energy.columns = [x.upper() for x in county_energy.columns]
+
+county_energy.set_index('FIPSTATE', inplace=True)
+
+# Export for data catalog
+county_energy.to_csv(
+    '../results/county_energy_estimates_IEDB.gzip', compression='gzip',
+    index=True, header=True
+    )
+
+# Sum for county totals by fuel
+# county_energy.groupby(
+#         ['year', 'COUNTY_FIPS', 'MECS_FT'], as_index=False
+#         ).MMBtu_TOTAL.sum().to_csv('../results/county_summary_fuels.csv')
+#
+# # Sum for county totals by sector
+# county_energy.groupby(
+#         ['year', 'COUNTY_FIPS', 'ind_sector'], as_index=False
+#         ).MMBtu_TOTAL.sum().to_csv('../results/county_summary_sector.csv')
 
 
 ## Set calulation years
