@@ -10,7 +10,7 @@ industrial energy use. The landing page for the IEDB is here: (tbd)
 This repository contains the source code for estimating combustion energy
 for large energy users and for estimating industrial energy use at the county
 level. Both data sets are available for download from the
-[NREL Data Catalog](https://data.nrel.gov/).
+[NREL Data Catalog](https://dx.doi.org/10.7799/1575074).
 
 These estimates are a small part of the effort to improve the resolution and
 timeliness of publicly-available industrial energy data for the United States.
